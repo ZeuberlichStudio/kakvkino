@@ -5,7 +5,7 @@ export default class Header extends Component{
   render() {
     return(
       <header id="header" className={ this.props.color === 'light' ? 'light' : null }>
-        <a><div className="logo"></div>
+        <a href="#title" className="logo"></a>
         <div className="nav-wrapper">
           <nav>
             <ul>

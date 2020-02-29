@@ -6,8 +6,9 @@ section#service{
   display: grid;
   grid-template: repeat(2, max-content) / max-content 1fr;
 
-  background-image: url('../images/service_bg.jpg');
-  background-size: cover;
+  background-blend-mode: darken;
+  background-image: url('../images/service_bg.jpg'), url('../images/Pattern_1.svg');
+  background-size: cover, get-vw(320px) auto;
 
   color: $sand;
 

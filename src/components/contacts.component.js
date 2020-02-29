@@ -27,24 +27,24 @@ export default class Contacts extends Component{
           </div>
 
           <div className="person">
-            <h2 className="vh-bebas-30">Ирина ларцева</h2>
+            <h2 className="vh-bebas-30">Юрий лешок</h2>
             <h3 className="vh-helvetica-14-bold opacity-075">Основатель проекта</h3>
-            <a href="/" className="vh-bebas-20">+7 (903) 161 55-33</a>
-            <a href="/" className="vh-bebas-20">IL<span className="opacity-05">@Kakvkino.Group</span></a>
+            <a href="/" className="vh-bebas-20">+7 (926) 495 35-46</a>
+            <a href="/" className="vh-bebas-20">UL<span className="opacity-05">@Kakvkino.Group</span></a>
           </div>
 
           <div className="person">
-            <h2 className="vh-bebas-30">Ирина ларцева</h2>
-            <h3 className="vh-helvetica-14-bold opacity-075">Основатель проекта</h3>
-            <a href="/" className="vh-bebas-20">+7 (903) 161 55-33</a>
-            <a href="/" className="vh-bebas-20">IL<span className="opacity-05">@Kakvkino.Group</span></a>
+            <h2 className="vh-bebas-30">Николай Кравченко</h2>
+            <h3 className="vh-helvetica-14-bold opacity-075">Руководитель отдела продаж</h3>
+            <a href="/" className="vh-bebas-20">+7 (909) 323 44-43</a>
+            <a href="/" className="vh-bebas-20">SalesManager<span className="opacity-05">@Kakvkino.Group</span></a>
           </div>
 
           <div className="person">
-            <h2 className="vh-bebas-30">Ирина ларцева</h2>
-            <h3 className="vh-helvetica-14-bold opacity-075">Основатель проекта</h3>
-            <a href="/" className="vh-bebas-20">+7 (903) 161 55-33</a>
-            <a href="/" className="vh-bebas-20">IL<span className="opacity-05">@Kakvkino.Group</span></a>
+            <h2 className="vh-bebas-30">Мария Шестакович</h2>
+            <h3 className="vh-helvetica-14-bold opacity-075">Специалист отдела продаж</h3>
+            <a href="/" className="vh-bebas-20">+7 (965) 330 54-93</a>
+            <a href="/" className="vh-bebas-20">SALES<span className="opacity-05">@Kakvkino.Group</span></a>
           </div>
 
           <a href="/" className="vh-bebas-20">125080 Москва<br/> Волоколамское ш., д.1., стр.1, офис 709А</a>
