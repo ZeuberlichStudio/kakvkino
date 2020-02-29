@@ -7,11 +7,9 @@ header#header{
   padding-right: get-m-vw(10px);
 
   position: fixed;
-  display: grid;
-  grid-template:
-  get-m-vw(36px) max-content /
-  max-content 1fr;
-
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
   align-items: center;
 
   backdrop-filter: blur(8px);
@@ -20,7 +18,7 @@ header#header{
 
   .logo{
     width: get-m-vw(100px);
-    height: get-m-vw(25px);
+    height: 100%;
 
     background-color: $black;
     mask-image: url('../../images/logo.svg');
