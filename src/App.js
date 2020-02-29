@@ -78,9 +78,9 @@ class App extends React.Component {
   render(){
     return (
       <Fragment>
-      
+
         { this.state.device !== 'mobile' ?
-        <Animation device={ this.state.device } /> : null }
+        <Animation/> : null }
 
         { this.state.device === 'mobile' ?
         <MobileHeader color={ this.state.uiColor }/> :

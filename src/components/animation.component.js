@@ -16,8 +16,6 @@ export default class Animation extends Component{
       animationData: start
     });
 
-    animation.setSpeed(5);
-
     animation.addEventListener('enterFrame', () => {
       if( animation.currentFrame >= 240  && !container.classList.contains('dots')){
         window.scrollTo(0, 0)
@@ -31,10 +29,6 @@ export default class Animation extends Component{
         }, 4500 );
       }
     });
-  }
-
-  state = {
-    device: this.props.device,
   }
 
   render() {
