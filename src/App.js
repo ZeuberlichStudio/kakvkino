@@ -21,9 +21,10 @@ import Service from './components/service.component';
 class App extends React.Component {
 
   componentDidMount() {
-
     window.addEventListener('resize', () => {
       this.setState({ device: document.documentElement.clientWidth <= 768 ? 'mobile' : 'desktop' });
+      let vh = document.documentElement.clientHeight;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
     window.dispatchEvent(new Event('resize'));
 

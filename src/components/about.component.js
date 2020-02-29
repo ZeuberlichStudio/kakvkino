@@ -5,7 +5,6 @@ import AboutArticle3 from './about/about_article_3.component';
 import AboutAside from './about/about_aside.component';
 
 export default class About extends Component{
-
   render() {
     return(
       <section id="about">

@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 
 export default class MobileHeader extends Component{
 
-  componentDidMount() {
-    let vh = document.documentElement.clientHeight;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-
   state = {
     active: false
   }
