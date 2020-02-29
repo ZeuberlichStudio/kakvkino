@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 export default class Counter extends Component{
 
   componentDidMount() {
-
         let counts = [];
 
         for(let i = 500000; i < 8000000; i+=14000){

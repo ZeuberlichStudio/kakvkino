@@ -78,13 +78,16 @@ class App extends React.Component {
   render(){
     return (
       <Fragment>
-        { this.state.device !== 'mobile' ? <Animation device={ this.state.device } /> : null }
+      
+        { this.state.device !== 'mobile' ?
+        <Animation device={ this.state.device } /> : null }
+
         { this.state.device === 'mobile' ?
         <MobileHeader color={ this.state.uiColor }/> :
         <Header onClick={ this.handleClick } color={ this.state.uiColor }/> }
-        { this.state.device !== 'mobile' ?
-        <Counter count={ this.state.count }/> :
-        null }
+
+        { this.state.device !== 'mobile' ? <Counter/> : null }
+
         <main id="content">
             <Title device={ this.state.device }/>
             <About/>
@@ -92,8 +95,12 @@ class App extends React.Component {
             <Service/>
             <AboutUs/>
         </main>
+
         <Footer/>
-        { this.state.device !== 'mobile' ? <Contacts ref={ this.contactsElement } active=""/> : null }
+
+        { this.state.device !== 'mobile' ?
+        <Contacts ref={ this.contactsElement } active=""/> : null }
+
       </Fragment>
     );
   }

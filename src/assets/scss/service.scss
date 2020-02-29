@@ -63,6 +63,8 @@ section#service{
       grid-auto-flow: row;
       grid-row-gap: get-vw(5px);
       justify-items: center;
+
+      span{ opacity: 0.5; }
     }
   }
 }
