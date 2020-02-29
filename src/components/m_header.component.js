@@ -28,7 +28,7 @@ export default class MobileHeader extends Component{
             <ul>
               <li className="nav-link"><a href="#about">Как это работает</a></li>
               <li className="nav-link"><a href="#service">Что снимаем</a></li>
-              <li className="nav-link"><a href="#about_us">Кто мы</a></li>
+              <li className="nav-link"><a href="#about-us">Кто мы</a></li>
               <li className="nav-link"><a href="#stats">Статистика</a></li>
             </ul>
           </nav>
