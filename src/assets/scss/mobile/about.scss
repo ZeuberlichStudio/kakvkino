@@ -65,19 +65,22 @@ section#about{
 /*backgrounds*/
 
 .about--article-1{
-  background-image: url('../../images/about_bg_1.png');
-  background-size: auto 100%;
-  background-position: left 60% top;
+  background-image: url('../../images/about_bg_1.png'), url('../../images/Pattern_1.svg');
+  background-blend-mode: overlay;
+  background-size: auto 100%, auto;
+  background-position: left 60% top, left top;
 }
 .about--article-2{
-  background-image: url('../../images/about_bg_2.png');
-  background-size: auto 100%;
-  background-position: left 10% top;
+  background-image: url('../../images/about_bg_2.png'), url('../../images/Pattern_1.svg');
+  background-blend-mode: overlay;
+  background-size: auto 100%, auto;
+  background-position: left 10% top, left top;
 }
 .about--article-3{
-  background-image: url('../../images/about_bg_3.png');
-  background-size: auto 100%;
-  background-position: left 100% top;
+  background-image: url('../../images/about_bg_3.png'), url('../../images/Pattern_1.svg');
+  background-blend-mode: overlay;
+  background-size: auto 100%, auto;
+  background-position: left 100% top, left top;
 }
 
 /*slider*/
@@ -86,6 +89,17 @@ section#about{
   width: 100%;
   height: var(--vh);
   overflow: hidden;
+
+  &::before{
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-image:
+    url('../../images/about_bg_1.png'),
+    url('../../images/about_bg_2.png'),
+    url('../../images/about_bg_3.png');
+    content: '';
+  }
 }
 
 .slider-content{

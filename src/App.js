@@ -22,7 +22,7 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener('resize', () => {
-      this.setState({ device: document.documentElement.clientWidth <= 768 ? 'mobile' : 'desktop' });
+      this.setState({ device: document.documentElement.clientWidth <= 1024 ? 'mobile' : 'desktop' });
       let vh = document.documentElement.clientHeight;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
@@ -72,17 +72,17 @@ class App extends React.Component {
 
   state = {
     uiColor: 'dark',
-    device: ''
+    device: 'mobile'
   }
 
   render(){
     return (
       <Fragment>
-        { this.props.device !== 'mobile' ? <Animation/> : null }
+        { this.state.device !== 'mobile' ? <Animation device={ this.state.device } /> : null }
         { this.state.device === 'mobile' ?
         <MobileHeader color={ this.state.uiColor }/> :
         <Header onClick={ this.handleClick } color={ this.state.uiColor }/> }
-        { this.state.device !== 'moile' ?
+        { this.state.device !== 'mobile' ?
         <Counter count={ this.state.count }/> :
         null }
         <main id="content">
@@ -93,7 +93,7 @@ class App extends React.Component {
             <AboutUs/>
         </main>
         <Footer/>
-        { this.props.device !== 'mobile' ? <Contacts ref={ this.contactsElement } active=""/> : null }
+        { this.state.device !== 'mobile' ? <Contacts ref={ this.contactsElement } active=""/> : null }
       </Fragment>
     );
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import start from '../assets/json/start.json';
 
 export default class Animation extends Component{
+
   componentDidMount() {
     document.documentElement.style.overflow = 'hidden';
     let wrapper = document.getElementById('animation-wrapper');
@@ -29,7 +30,6 @@ export default class Animation extends Component{
       }
     });
   }
-
 
   render() {
     return(
