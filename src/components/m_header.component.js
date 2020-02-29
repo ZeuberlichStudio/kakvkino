@@ -26,10 +26,10 @@ export default class MobileHeader extends Component{
           <nav className="m-bebas-20">
             <h2 className="m-bebas-30">Меню:</h2>
             <ul>
-              <li className="nav-link"><a href="/#about">Как это работает</a></li>
-              <li className="nav-link"><a href="/#service">Что снимаем</a></li>
-              <li className="nav-link"><a href="/#about_us">Кто мы</a></li>
-              <li className="nav-link"><a href="/#stats">Статистика</a></li>
+              <li className="nav-link"><a href="#about">Как это работает</a></li>
+              <li className="nav-link"><a href="#service">Что снимаем</a></li>
+              <li className="nav-link"><a href="#about_us">Кто мы</a></li>
+              <li className="nav-link"><a href="#stats">Статистика</a></li>
             </ul>
           </nav>
           <div className="contacts-container">
