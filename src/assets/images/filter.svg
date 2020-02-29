@@ -1,0 +1,5 @@
+<svg width="1024" height="768">
+  <filter id="f1">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+</svg>

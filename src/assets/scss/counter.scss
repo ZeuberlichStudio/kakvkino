@@ -1,0 +1,113 @@
+#parallax{
+  width: get-vw(58px);
+  height: calc(100vh - 2.65625vw);
+  left: 0; top: 2.65625vw;
+
+  position: fixed;
+}
+
+#parallax.fixed{
+  position: absolute;
+  left: 0;
+  top: unset!important;
+  bottom: 27.73438vw!important;
+}
+
+#timeline-container{
+  width: calc(100vh - 2.65625vw);
+  height: get-vw(49px);
+  left: 0; top: 0;
+  position: absolute;
+
+  overflow: hidden;
+  transform-origin: get-vw(24.5px);
+  transform: rotate(90deg);
+}
+
+#timeline{
+  width: get-vw(4022px);
+  height: get-vw(49px);
+
+  background-image: url('../images/timeline.svg');
+  background-size: auto get-vw(49px);
+  background-position: right top 0px;
+  background-repeat: no-repeat;
+
+  transform-origin: left center;
+  will-change: transform;
+}
+
+#counter-container{
+  width: calc(100vh - 2.65625vw);
+  height: get-vw(25px);
+  left: 0; top: 0;
+
+  position: absolute;
+
+  overflow: hidden;
+  transform-origin: get-vw(12.25px);
+  transform: rotate(90deg);
+  z-index: 2;
+}
+
+#counter-wrapper{
+  width: max-content;
+  height: max-content;
+
+  will-change: transform;
+}
+
+#counter{
+  width: get-vw(104px);
+  height: get-vw(25px);
+  padding: 0 get-vw(5px);
+
+  position: relative;
+  display: flex;
+
+  background-color: #FF6C57;
+}
+
+#counter::before{
+  width: get-vw(11.3px);
+  height: get-vw(11.3px);
+  margin-top: get-vw(9px);
+  margin-right: get-vw(6px);
+
+  background-image: url('../images/glasses.svg');
+  background-size: cover;
+  background-position: center;
+
+  content: '';
+}
+
+#counter::after{
+  width: 0;
+  height: 0;
+  border-bottom: $sand solid get-vw(6px);
+  border-left: transparent solid get-vw(8px);
+  border-right: transparent solid get-vw(8px);
+  left: 0; right: 0;
+  top: get-vw(2px);
+  margin: auto;
+
+  position: absolute;
+
+  content: '';
+}
+
+#counter span{
+  width: max-content;
+
+  left: get-vw(20px); right: get-vw(6px);
+  top: get-vw(9.5px);
+  margin: auto;
+
+  position: absolute;
+
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: get-vw(14px);
+  line-height: get-vw(14px);
+  color: $sand;
+}

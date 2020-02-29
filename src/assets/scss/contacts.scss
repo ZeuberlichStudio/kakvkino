@@ -1,0 +1,117 @@
+aside#contacts{
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.1s linear;
+
+  color: $sand;
+}
+
+aside#contacts.active{
+  pointer-events: all;
+  opacity: 1;
+  transition: 0.1s linear;
+}
+
+aside#contacts{
+  width: get-vw(320px);
+  height: calc(100vh  - 54vw/1280*100);
+  right: 0; top: get-vw(54px);
+
+  position: fixed;
+
+  background-color: $black;
+  overflow: visible;
+
+  a{ display: block;}
+
+  .contacts-content{
+    width: 100%;
+    height: 100%;
+    padding: get-vh(15px) get-vh(15px) 0 get-vh(15px);
+
+    overflow: scroll;
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    grid-row-gap: get-vh(33px);
+  }
+
+  .person{
+    h3{
+      margin-top: get-vh(-3px);
+    }
+
+    a:nth-child(3){
+      margin-top: get-vh(10px);
+    }
+    a:nth-child(4){
+      margin-top: get-vh(3px);
+    }
+  }
+
+  .social-links{
+    height: get-vh(33px);
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: get-vh(33px);
+    grid-auto-rows: get-vh(33px);
+    grid-column-gap: get-vh(20px);
+    justify-content: center;
+
+    a{
+      width: 100%;
+      height: 100%;
+
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    a:nth-child(1){
+      background-image: url('../images/wa_icon.svg');
+    }
+    a:nth-child(2){
+      background-image: url('../images/fb_icon.svg');
+    }
+    a:nth-child(3){
+      background-image: url('../images/inst_icon.svg');
+    }
+  }
+}
+
+#close-contacts{
+  width: get-vh(16px);
+  height: get-vh(16px);
+  right: get-vh(15px); top: get-vh(15px);
+
+  position: absolute;
+  display: block;
+
+  background-image: url('../images/close.svg');
+  background-size: get-vh(17px) get-vh(17px);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+aside#contacts::before{
+  width: get-vw(18px);
+  height: get-vw(18px);
+  right: get-vw(30px); top: get-vw(-18px);
+
+  position: absolute;
+  display: block;
+
+  transform-origin: get-vw(-9px) get-vw(9px);
+  transform: rotate(45deg);
+  background-color: $black;
+  content: '';
+}

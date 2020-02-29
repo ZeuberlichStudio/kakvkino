@@ -1,0 +1,112 @@
+section#title{
+  width: 100vw;
+  height:100vh;
+
+  position: relative;
+  display: flex;
+
+  overflow: hidden;
+
+  background: url('../images/title.png');
+  background-size: 100vw auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  article:not(.title--aside){
+    padding: get-vw(216px) get-vw(678px) 0 get-vw(115px);
+
+    flex-grow: 1;
+
+
+    & > :nth-child(1){
+      width: get-vw(487px);
+    }
+    & > :nth-child(2){
+      width: get-vw(366px);
+      margin-top: get-vw(-8px);
+    }
+    & > :nth-child(3){
+      width: get-vw(394px);
+      margin-top: get-vw(60px);
+    }
+
+    .links-container{
+      height: get-vw(32px);
+      margin-top: get-vw(18px);
+
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+      grid-column-gap: get-vw(12px);
+
+      a{
+        padding: 0 get-vw(18px);
+        padding-top: get-vw(8px);
+
+        background-color: $black;
+      }
+    }
+  }
+
+  .title--aside-wrapper{
+    width: get-vw(320px);
+    height: 100%;
+    right: 0; top: 0;
+
+    position: absolute;
+
+    :before{
+      width: get-vw(2px);
+      height: calc(100vh - 5.07812vw * 2);
+      left: 0; top: 5.07812vw;
+
+      position: absolute;
+
+
+      background-color: $black;
+      content: '';
+    }
+
+    article.title--aside{
+      width: 100%;
+      height: 100%;
+      padding-left: get-vw(14px);
+      padding-right: get-vw(16px);
+      padding-top: get-vh(120px);
+      background-color: $sand;
+
+      & > :nth-child(1){
+        width: get-vw(292px);
+        letter-spacing: get-vw(-0.3px);
+      }
+      & > :nth-child(2){
+        width: get-vw(204px);
+        margin-top: get-vw(5px);
+      }
+
+      ul{
+        margin-top: get-vw(28px);
+
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: get-vw(90px) get-vw(68.22px) get-vw(71.82px) get-vw(71.82px);
+        grid-row-gap: get-vw(10px);
+
+        img{
+          width: auto;
+          height: 100%;
+
+          display: block;
+        }
+      }
+
+      span.notice{
+        width: get-vw(198px);
+        margin-left: get-vw(16px);
+        margin-top: get-vw(20px);
+
+        display: inline-block;
+      }
+    }
+  }
+}

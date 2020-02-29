@@ -1,0 +1,76 @@
+footer{
+    width: 100vw;
+    height: max-content;
+    padding: get-m-vw(20px);
+
+    background-color: $black;
+    color: $sand;
+
+  .contacts-container-1{
+    display: grid;
+    grid-template:
+    repeat(4, max-content) /
+    max-content 1fr;
+    grid-row-gap: get-m-vw(20px);
+    grid-column-gap: get-m-vw(36px);
+
+    .person{
+      margin-top: get-m-vw(8px);
+
+      display: grid;
+      grid-auto-flow: row;
+
+      a{ width: max-content }
+      h2{ margin-bottom: get-m-vw(-4px) }
+    }
+
+    & > h2,
+    .person:nth-child(n+4){
+      grid-column: 1/3;
+    }
+  }
+
+  .contacts-container-2{
+    margin-top: get-m-vw(20px);
+
+    .social-links{
+      display: grid;
+      grid-template:
+      get-m-vw(22px) /
+      repeat(3, get-m-vw(22px));
+      grid-column-gap: get-m-vw(12px);
+
+      a{
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      a:nth-child(1){
+        background-image: url('../../images/wa_icon.svg');
+      }
+      a:nth-child(2){
+        background-image: url('../../images/fb_icon.svg');
+      }
+      a:nth-child(3){
+        background-image: url('../../images/inst_icon.svg');
+      }
+    }
+
+    .map-container{
+      width: 100%;
+      height: get-m-vw(200px);
+      margin-top: get-m-vw(20px);
+
+      background-image: url('../../images/map.png');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .address,
+  .site-map-container{ display: none; }
+}

@@ -1,0 +1,55 @@
+//animation
+
+#animation-wrapper{
+  width: 100vw;
+  height: 100vh;
+  left: 0; top: 0;
+
+  position: fixed;
+
+  z-index: 5;
+  overflow: hidden;
+  background-color: $sand;
+}
+
+#animation{
+  width: get-vw(1280px)!important;
+  height: get-vw(800px);
+  left: 0;
+  top: 0; bottom: 0;
+  margin: auto;
+
+  position: absolute;
+
+  background-color: $sand;
+
+  svg{
+    width: 100vw!important;
+    height: auto!important;
+    left: 0; top: 0;
+
+    position: absolute;
+
+    background-color: $sand!important;
+  }
+}
+
+#animation.dots{
+  background-image: url('../images/Pattern_1.svg');
+  background-size: 200vw auto;
+  background-position: left top;
+  background-repeat: repeat;
+  transition: 2s;
+}
+
+#animation.scaled{
+  background-size: get-vw(320px) auto;
+  background-position: left get-vw(640px) top get-vw(400px);
+
+  svg{
+    width: get-vw(160px)!important;
+    height: auto!important;
+    left: get-vw(640px); top: get-vw(400px);
+    transition: 2s;
+  }
+}

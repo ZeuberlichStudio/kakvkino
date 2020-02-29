@@ -1,0 +1,67 @@
+.form-wrapper{
+  width: get-vw(212px);
+  height: get-vw(296px);
+  padding: get-vw(10px) get-vw(23px) 0 get-vw(7px);
+  left: get-vw(120px); top: get-vw(350px);
+
+  position: absolute;
+  display: none;
+
+  opacity: 0;
+  backdrop-filter: blur(8px);
+  border: get-vw(2px) solid $sand;
+  transition: opacity 0.1s;
+
+  z-index: 2;
+  :before{
+    width: get-vw(15px);
+    height: get-vw(15px);
+    right: 0; left: 0;
+    bottom: get-vw(10px);
+    margin: auto;
+
+    position: absolute;
+    display: block;
+
+    transform-origin: get-vw(-15px) get-vw(15px);
+    transform: rotate(45deg);
+    background-color: $sand;
+    content: '';
+  }
+}
+
+#form{
+  padding: get-vw(10px) get-vw(24px) 0 0;
+
+  display: grid;
+  grid-template:
+  repeat(10, max-content)
+  #{/ 100%};
+  grid-row-gap: get-vw(6px);
+
+  input{
+    padding-left: get-vw(3px);
+    display: block;
+  }
+  ::placeholder{
+    opacity: 0.6;
+  }
+  hr{
+    width: 100%;
+    height: get-vw(2px);
+    margin-top: get-vw(-6px);
+
+    background-color: $sand;
+    border: none;
+  }
+  button{
+    width: 100%;
+    height:  get-vw(34px);
+    padding-left: get-vw(9px);
+    left: 0; bottom: 0;
+
+    position: absolute;
+
+    background-color: $sand;
+  }
+}

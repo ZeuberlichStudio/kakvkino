@@ -1,0 +1,536 @@
+a{
+  text-decoration: none;
+}
+
+.opacity-075{
+  opacity: 0.75;
+}
+.opacity-05{
+  opacity: 0.5;
+}
+
+.light{
+  color: $sand;
+}
+.dark{
+  color: $black;
+}
+.marked{
+  color: $orange;
+}
+
+
+/*pc*/
+@media screen and (max-width: 1024px){
+  .m-bebas-30{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-m-vw(30px);
+    line-height: get-m-vw(30px);
+  }
+
+  .m-bebas-25{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-m-vw(25px);
+    line-height: get-m-vw(25px);
+  }
+
+  .m-bebas-20{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-m-vw(20px);
+    line-height: get-m-vw(20px);
+  }
+
+  .m-bebas-14-bold{
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: get-m-vw(14px);
+    line-height: get-m-vw(15px);
+  }
+
+  .m-helvetica-12-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-m-vw(12px);
+    line-height: get-m-vw(14px);
+  }
+
+  .m-helvetica-10-medium{
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: get-vw(10px);
+    line-height: get-vw(11px);
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .bebas-64{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(64px);
+    line-height: get-vw(64px);
+    letter-spacing: get-vw(-1px);
+  }
+
+  .bebas-30{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(30px);
+    line-height: get-vw(32px);
+  }
+
+  .bebas-20{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+  }
+
+  .helvetica-14-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(14px);
+    line-height: get-vw(15px);
+    letter-spacing: get-vw(-0.86px);
+  }
+
+  .helvetica-12-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(12px);
+    line-height: get-vw(14px);
+  }
+
+  .helvetica-{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(12px);
+    line-height: get-vw(14px);
+  }
+}
+
+/*title*/
+@media screen and (min-width: 1025px){
+section#title{
+  h1{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(64px);
+    line-height: get-vw(64px);
+    letter-spacing: get-vw(-1px);
+    color: $black;
+  }
+
+  p{
+    font-family: 'Helvetica Neue';
+    font-size: get-vw(14px);
+    font-weight: bold;
+    line-height: get-vw(15px);
+    letter-spacing: get-vw(-0.86px);
+    color: $black;
+    opacity: 0.8;
+  }
+
+  h2{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(30px);
+    line-height: get-vw(32px);
+    color: $black;
+
+    span{
+      color: $orange;
+    }
+  }
+
+  .title--aside h2{
+    letter-spacing: get-vw(-0.86px);
+  }
+
+  a{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+    color: $sand;
+  }
+
+  span.notice{
+    font-family: 'Helvetica Neue';
+    font-size: get-vw(12px);
+    font-weight: bold;
+    line-height: get-vw(18px);
+    color: $black;
+  }
+
+}
+
+/*about*/
+section#about{
+  h2{
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: get-vw(64px);
+    line-height: get-vw(64px);
+  }
+
+  h3{
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: get-vw(30px);
+    line-height: get-vw(30px);
+  }
+
+  p{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(14px);
+    line-height: get-vw(16px);
+  }
+}
+
+section#about .about--aside{
+  h2, h3{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(30px);
+    line-height: get-vw(30px);
+  }
+
+  p{
+    font-family: 'Helvetica Neue';
+    font-size: get-vw(12px);
+    line-height: get-vw(14px);
+  }
+}
+
+/*stats*/
+
+section#stats{
+  color: $black;
+
+  .stats--article-1 .text-left-container h2,
+  .stats--article-2 .text-left-container h1{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(64px);
+    line-height: get-vw(58px);
+    & > span:nth-child(1){
+      letter-spacing: get-vw(-1.5px);
+    }
+    & > span:nth-child(3){
+      letter-spacing: get-vw(-1.5px);
+    }
+    & > span:nth-child(5){
+      letter-spacing: get-vw(-2.75px);
+    }
+  }
+
+  .stats--article-1 .text-left-container h1{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(14px);
+    line-height: get-vw(14px);
+  }
+  .stats--article-1 h3{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(30px);
+    line-height: get-vw(30px);
+
+    sup{
+      font-size: get-vw(14px);
+    }
+  }
+
+  .stats--article-2 .text-left-container h2{
+    font-family: 'Helvetica Neue';
+    font-size: get-vw(12px);
+    line-height: get-vw(14px);
+  }
+  .stats--article-2 .text-left-container span.notice{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+  }
+
+  .stats--article-2 .text-right-container h2{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(30px);
+    line-height: get-vw(32px);
+  }
+
+  p{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(14px);
+    line-height: get-vw(16px);
+    span.opacity{
+      opacity: 0.8;
+    }
+  }
+
+  p.small{
+    font-family: 'Helvetica Neue';
+    font-weight: 500;//medium
+    font-size: get-vw(10px);
+    line-height: get-vw(11px);
+  }
+
+  span.orange{
+    color: $orange;
+  }
+}
+
+/*About us*/
+
+section#about-us{
+  color: $black;
+
+  h1{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(64px);
+    line-height: get-vw(64px);
+  }
+
+  h2{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(30px);
+    line-height: get-vw(30px);
+  }
+
+  h3{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+  }
+
+  p.accented{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(14px);
+    line-height: get-vw(16px);
+  }
+
+  p{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(12px);
+    line-height: get-vw(14px);
+  }
+}
+
+/*service*/
+
+section#service{
+  /*first article*/
+
+  h2{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(64px);
+    line-height: get-vw(64px);
+    color: $sand;
+  }
+
+  p, li{
+    font-family: 'Helvetica Neue';
+    font-size: get-vw(14px);
+    line-height: get-vw(18px);
+    color: $sand;
+
+    span{
+      display: inline-block;
+      opacity: 0.6;
+    }
+  }
+
+  a{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+    color: $sand;
+  }
+
+  .service--aside-1{
+    h2, h3{
+      font-family: 'Bebas Neue';
+      font-size: get-vw(30px);
+      line-height: get-vw(30px);
+    }
+
+    li{
+      font-family: 'Bebas Neue';
+      font-size: get-vw(20px);
+      line-height: get-vw(20px);
+    }
+    color: $sand;
+  }
+
+  .service--aside-2{
+    h2, h3{
+      font-family: 'Bebas Neue';
+      font-size: get-vw(30px);
+      line-height: get-vw(30px);
+    }
+
+    p{
+      font-family: 'Helvetica Neue';
+      font-weight: bold;
+      font-size: get-vw(13px);
+      line-height: get-vw(16px);
+    }
+    color: $sand;
+  }
+
+}
+
+#tab-content{
+  color: $sand;
+
+  th{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(30px);
+    font-weight: normal!important;
+    line-height: get-vw(26px);
+  }
+
+  h2{
+    font-weight: normal!important;
+  }
+
+  td{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+  }
+
+
+  .align-center{
+    text-align: center;
+  }
+  .align-left{
+    text-align: left;
+  }
+  .big{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+  }
+  .small{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(13px);
+    line-height: get-vw(14.5px);
+  }
+  .line-height-small{
+    line-height: get-vw(14px);
+  }
+  .opacity{
+    opacity: 0.6;
+  }
+  .green{
+    color: #7AD188;
+  }
+}
+
+
+/*form*/
+
+section#service .form-wrapper{
+  h2{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(30px);
+    line-height: get-vw(30px);
+  }
+  p{
+    font-family: 'Helvetica Neue';
+    font-size: get-vw(14px);
+    line-height: get-vw(16px);
+  }
+}
+
+#form{
+  input, button{
+    font-family: 'Bebas Neue';
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+
+    text-align: left;
+    color: $sand;
+  }
+  ::placeholder{
+    color: $sand;
+  }
+  button{color: $black;}
+}
+
+/*footer*/
+footer{
+
+  font-family: 'Bebas Neue';
+
+  h2{
+    font-size: get-vw(30px);
+    line-height: get-vw(31px);
+  }
+
+  .contacts-container h3{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(13px);
+    line-height: get-vw(14px);
+
+    opacity: 0.8;
+  }
+
+  .contacts-container  a{
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+
+    span{
+      opacity: 0.6;
+    }
+  }
+
+  .site-map-container h3{
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+  }
+
+  li{
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+    font-size: get-vw(13px);
+    line-height: get-vw(14px);
+    opacity: 0.8;
+  }
+
+  color: $sand;
+}
+
+
+/*contacts*/
+aside#contacts{
+  font-family: 'Bebas Neue';
+  color: $sand;
+
+  h2{
+    font-size: get-vh(30px);
+    line-height: get-vh(31px);
+  }
+
+  h3{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vh(13px);
+    line-height: get-vh(14px);
+
+    opacity: 0.8;
+  }
+
+  a{
+    font-size: get-vh(20px);
+    line-height: get-vh(20px);
+
+    span{
+      opacity: 0.6;
+    }
+  }
+}
+}

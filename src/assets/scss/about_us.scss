@@ -1,0 +1,103 @@
+section#about-us{
+  width: 100vw;
+  height: get-vw(800px);
+
+  position: relative;
+  display: flex;
+  background-color: $sand;
+  background-image: url('../images/Pattern_1.svg');
+  background-size: get-vw(320px) get-vw(200px);
+  background-position: top right 100px;
+  background-repeat: round;
+
+  color: $black;
+
+  /*left container*/
+
+  div.text-left-container{
+    flex-shrink: 0;
+    width: get-vw(960px);
+    height: 100%;
+    padding: get-vw(90px) get-vw(184px) get-vw(135px) get-vw(115px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2{ opacity: 0.5; font-size: get-vw(20px); line-height: get-vw(20px); }
+
+    div:first-child p{
+      margin-top: get-vw(-10px)
+    }
+
+    div:not(:first-child){
+      display: grid;
+      grid-template:
+      max-content max-content /
+      max-content max-content
+      1fr;
+      grid-row-gap: get-vw(10px);
+      grid-column-gap: get-vw(26px);
+
+      img{ height: get-vw(40px); }
+      h2{ align-self: end; }
+      p{ grid-column: 1/4; }
+    }
+
+    & > :nth-child(2)
+    img{
+      height: get-vw(48px)!important;
+      margin-bottom: get-vw(-8px);
+    }
+
+    & > :nth-child(3){
+      img{
+       height: get-vw(28px)!important;
+       margin-bottom: get-vw(4px);
+      }
+    }
+    & > :nth-child(4){
+      img{
+       height: get-vw(40px)!important;
+       margin-bottom: get-vw(4px);
+      }
+    }
+  }
+
+  /*right container*/
+
+  .text-right-wrapper{
+    flex-grow: 1;
+  }
+
+  .text-right-wrapper::before{
+    width: get-vw(2px);
+    height: calc( 100vh - 5.07812vw * 2 );
+    margin-top: get-vw(65px);
+    margin-bottom: get-vw(65px);
+    left: get-vw(0px);
+    top: get-vw(65px);
+
+    position: sticky;
+    display: block;
+
+    background-color: $black;
+    content: '';
+  }
+
+  div.text-right-container{
+    height: 100%;
+    margin-top: -100vh;
+    padding: get-vw(123px) get-vw(22px) 0 get-vw(14px);
+
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    grid-row-gap: get-vw(45px);
+
+    h3{
+      margin-top: get-vw(28px);
+    }
+  }
+}

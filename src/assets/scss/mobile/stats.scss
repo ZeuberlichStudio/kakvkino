@@ -1,0 +1,132 @@
+section#stats{
+  width: 100vw;
+  height: max-content;
+  padding: get-m-vw(20px);
+
+  position: relative;
+
+  background-color: $sand;
+
+  color: $black;
+}
+
+.stats--article-1{
+  .stage-3{
+    right: get-m-vw(20px); top: get-m-vw(190px);
+
+    position: absolute;
+    text-align: right;
+    letter-spacing: get-m-vw(-0.4px);
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: get-m-vw(15px);
+    justify-items: flex-end;
+
+    & > :nth-child(1){ margin-bottom: get-m-vw(-15px); }
+    & > :nth-child(2){ width: get-m-vw(212px); }
+    & > :nth-child(3){ width: get-m-vw(290px); }
+    & > :nth-child(4){ width: get-m-vw(155px); }
+  }
+
+  .stage-2{
+    width: get-m-vw(194px);
+    left: get-m-vw(20px); top: get-m-vw(508px);
+
+    position: absolute;
+
+    letter-spacing: get-m-vw(-0.4px);
+  }
+
+  .stage-1{
+    width: get-m-vw(218px);
+    left: get-m-vw(20px); top: get-m-vw(690px);
+
+    position: absolute;
+
+    letter-spacing: get-m-vw(-0.4px);
+  }
+
+  .profit{
+    margin-top: get-m-vw(723px);
+    padding: get-m-vw(10px) get-m-vw(5px) get-m-vw(5px) get-m-vw(5px);
+
+    background-color: $sand;
+    box-shadow: 0px get-m-vw(2px) get-m-vw(6px) 0px rgba(0,0,0,0.18);
+
+    h3 :nth-child(1),
+    h3 br{display: none;}
+  }
+
+  .text-left-container{
+    h2{letter-spacing: get-m-vw(-0.85px);}
+    h2 br{display: none;}
+  }
+
+  .text-right-container{
+    margin-top: get-m-vw(37px);
+  }
+
+  .comparison{
+    img{display: none;}
+
+    width: 100%;
+    height: get-m-vw(138px);
+    margin-top: get-m-vw(22px);
+
+    background-image: url('../../images/mobile/comparison.svg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .comparison-notice{
+    margin-top: get-m-vw(14px);
+  }
+}
+
+.stats--article-2{
+
+  margin-top: get-m-vw(60px);
+
+  .text-left-container h2{
+    margin-left: get-m-vw(12px);
+    margin-top: get-m-vw(23px);
+
+    position: absolute;
+    z-index: 2;
+  }
+  .text-left-container .graph{
+    width: get-m-vw(375px);
+    height: get-m-vw(466px);
+    margin-left: get-m-vw(-20px);
+    margin-top: get-m-vw(24px);
+
+    background-image: url('../../images/mobile/stats_graph.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .text-right-container{
+    margin-top: get-m-vw(60px);
+
+    img{
+      width: get-m-vw(227px);
+      margin-top: get-m-vw(20px);
+    }
+  }
+}
+
+#popcorn-container{
+ width: 100%;
+ height: get-m-vw(542px);
+ left: 0; top: get-m-vw(200px);
+
+ position: absolute;
+
+ background-image: url('../../images/mobile/popcorn.svg');
+ background-size: auto 100% ;
+ background-position: left get-m-vw(-109px) bottom;
+ background-repeat: no-repeat;
+}
+
+//hide dev

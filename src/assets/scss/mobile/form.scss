@@ -1,0 +1,73 @@
+.form-wrapper{
+  width: get-m-vw(230px);
+  height: get-m-vw(296px);
+  padding: get-m-vw(10px) get-m-vw(23px) 0 get-m-vw(8px);
+  left: get-m-vw(20px);
+  top: get-m-vw(292px);
+
+  position: absolute;
+  display: none;
+
+  opacity: 0;
+  backdrop-filter: blur(8px);
+  border: get-m-vw(2px) solid $sand;
+  transition: opacity 0.25s;
+
+  p{margin-top: 4px};
+
+  z-index: 2;
+  :before{
+    width: get-m-vw(15px);
+    height: get-m-vw(15px);
+    right: 0; left: 0;
+    bottom: get-m-vw(10px);
+    margin: auto;
+
+    position: absolute;
+    display: block;
+
+    transform-origin: get-m-vw(-15px) get-m-vw(15px);
+    transform: rotate(45deg);
+    background-color: $sand;
+    content: '';
+  }
+}
+
+#form{
+  padding: get-m-vw(10px) get-m-vw(24px) 0 0;
+
+  display: grid;
+  grid-template:
+  repeat(10, max-content)
+  #{/ 100%};
+  grid-row-gap: get-m-vw(6px);
+
+  input{
+    height: get-m-vw(20px);
+    padding-left: get-m-vw(3px);
+    display: block;
+    color: $sand;
+  }
+  ::placeholder{
+    opacity: 0.6;
+  }
+  hr{
+    width: 100%;
+    height: get-m-vw(2px);
+    margin-top: get-m-vw(-6px);
+
+    background-color: $sand;
+    border: none;
+  }
+  button{
+    width: 100%;
+    height:  get-m-vw(32px);
+    padding-left: get-m-vw(9px);
+    padding-top: get-m-vw(4px);
+    left: 0; bottom: 0;
+
+    position: absolute;
+
+    background-color: $sand;
+  }
+}
