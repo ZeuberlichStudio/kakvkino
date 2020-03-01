@@ -65,6 +65,10 @@ section#service{
   backdrop-filter: blur(8px);
 }
 
+#tabs-container.samsung{
+  background-color: rgba(29, 32, 56, 0.65);
+}
+
 #tabs{
   li{
     height: max-content;

@@ -6,6 +6,8 @@ export default class MobileHeader extends Component{
     active: false
   }
 
+  isSamsungBrowser = navigator.userAgent.match(/SamsungBrowser/i);
+
   handleClick = () => {
     this.state.active ? this.setState({ active: false }) :
     this.setState({ active: true })
@@ -13,7 +15,7 @@ export default class MobileHeader extends Component{
 
   render() {
     return(
-      <header id="header" className={ this.props.color === 'light' ? 'light' : null  }>
+      <header id="header" className={ (this.props.color === 'light' ? 'light' : null) + " " + (this.isSamsungBrowser ? 'samsung' : null)  }>
         <div className="logo"></div>
         <button onClick={ this.handleClick }></button>
         <div className={ this.state.active ? 'active nav-container' :

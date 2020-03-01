@@ -6,6 +6,8 @@ export default class MobileTabs extends Component{
     tab: 0
   }
 
+  isSamsungBrowser = navigator.userAgent.match(/SamsungBrowser/i);
+
   onClick = (e) => {
     let tab = parseInt(e.currentTarget.dataset.tab);
     this.setState({ tab });
@@ -21,7 +23,7 @@ export default class MobileTabs extends Component{
     } = this;
 
     return(
-      <div id="tabs-container">
+      <div id="tabs-container" className={ this.isSamsungBrowser ? 'samsung' : null }>
         <ul id="tabs">
           <li className={ tab === 0 ? 'active' : null }>
             <a
