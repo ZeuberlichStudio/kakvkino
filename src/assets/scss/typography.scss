@@ -118,6 +118,13 @@ a{
     line-height: get-vw(16px);
   }
 
+  .helvetica-13-regular{
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: get-vw(13px);
+    line-height: get-vw(15px);
+  }
+
   .helvetica-12-bold{
     font-family: 'Helvetica Neue';
     font-weight: bold;
@@ -164,6 +171,7 @@ a{
 section#service .form-wrapper{
   h2{
     font-family: 'Bebas Neue';
+    font-weight: normal;
     font-size: get-vw(30px);
     line-height: get-vw(30px);
   }
@@ -177,6 +185,7 @@ section#service .form-wrapper{
 #form{
   input, button{
     font-family: 'Bebas Neue';
+    font-weight: normal;
     font-size: get-vw(20px);
     line-height: get-vw(20px);
 

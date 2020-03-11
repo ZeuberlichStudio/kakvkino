@@ -30,7 +30,7 @@ class App extends React.Component {
 
     window.addEventListener('scroll', () => {
       let aboutRect = document.getElementById('about').getBoundingClientRect();
-      let aboutRect2 = document.getElementsByClassName('about--aside')[0].getBoundingClientRect();
+      let aboutRect2 = document.getElementById('about--aside').getBoundingClientRect();
       let serviceRect = document.getElementById('service').getBoundingClientRect();
       let headerRect =
       document.getElementById('header').getBoundingClientRect();
@@ -67,7 +67,7 @@ class App extends React.Component {
   }
 
   handleClick = () => {
-    this.contactsElement.current.changeActive()
+    this.contactsElement.current.openContacts()
   }
 
   state = {

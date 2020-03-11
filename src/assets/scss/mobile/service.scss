@@ -36,9 +36,16 @@ section#service{
   grid-auto-flow: row;
   grid-row-gap: get-m-vw(15px);
 
+  /*still in production*/
+  #empty-blocks{
+    display: none;
+  }
+  /*still in production^*/
+
   ul:nth-child(2){
     line-height: get-m-vw(18px);
   }
+  p:nth-child(3){ letter-spacing: get-m-vw(0.1px); }
   ul:nth-child(4){
     display: grid;
     grid-auto-flow: row;
@@ -47,7 +54,7 @@ section#service{
     line-height: get-m-vw(18px);
   }
 
-  .referance{
+  .note{
     display: block;
   }
 }
@@ -439,7 +446,7 @@ button.next-slide{
   width: get-m-vw(280.5px);
   padding: get-m-vw(10px);
   left: 0; right: 0;
-  top: get-m-vw(206px);
+  top: get-m-vw(220px);
   margin: auto;
 
   position: absolute;
@@ -450,8 +457,22 @@ button.next-slide{
 
   opacity: 0;
   transition: opacity 0.25s;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(16px);
   border: $sand solid get-m-vw(2px);
+
+  #close-note{
+    width: get-m-vw(14px);
+    height: get-m-vw(14px);
+    right: get-m-vw(8px);
+    top: get-m-vw(8px);
+
+    position: absolute;
+
+    background-image: url('../../images/close.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   ul{
     display: grid;
@@ -474,7 +495,7 @@ button.next-slide{
     }
   }
 
-  :before{
+  &::before{
     width: 0; height: 0;
     right: 0; left: 0;
     bottom: get-m-vw(-13px);

@@ -5,7 +5,7 @@ export default class Counter extends Component{
   componentDidMount() {
         let counts = [];
 
-        for(let i = 500000; i < 8000000; i+=14000){
+        for(let i = 500000; i < 8000000; i+=51851){
           if( i < 7000000 ){
             counts.push(i);
           }else{

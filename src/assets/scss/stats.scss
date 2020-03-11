@@ -217,6 +217,7 @@ section#stats .stats--article-2{
 
   .text-right-wrapper{
     flex-grow: 1;
+    background-color: $sand;
   }
 
   .text-right-wrapper::before{
@@ -232,6 +233,7 @@ section#stats .stats--article-2{
 
     background-color: $black;
     content: '';
+    z-index: 2;
   }
 
   .text-right-container{

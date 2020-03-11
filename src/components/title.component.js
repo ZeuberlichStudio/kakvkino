@@ -14,7 +14,7 @@ export default class Title extends Component{
         <article className="dark">
           <h1 className="bebas-64 m-bebas-30">Первая реклама в кино на правах инвестиций</h1>
           <p className="helvetica-14-bold m-helvetica-12-bold">Рекламодатели становятся соинвесторами фильма и
-            получают доходность от будущего кинопроката</p>
+            получают доход от будущего кинопроката</p>
           <h2 className="bebas-30 m-bebas-25">
             получите свыше <span className="marked">14 000 000</span> контактов<br/>
             с вашей рекламой в 1й год по<br/>

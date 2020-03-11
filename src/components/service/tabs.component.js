@@ -10,29 +10,29 @@ export default class Tabs extends Component{
   render() {
     const{
       tab,
-      onClick
+      changeTab
     } = this.props;
 
     return(
       <div id="tabs-container">
         <ul id="tabs-navigation" className="bebas-20">
           <li data-tab="0"
-           onClick={ (e) => onClick(e) }
+           onClick={ (e) => changeTab(e) }
            className={ tab === 0 ? 'active tab-nav' : 'tab-nav' }>
             Тарифные планы
           </li>
           <li  data-tab="1"
-          onClick={ (e) => onClick(e) }
+          onClick={ (e) => changeTab(e) }
           className={ tab === 1 ? 'active  tab-nav' : 'tab-nav' }>
             Прогноз эффективности
           </li>
           <li  data-tab="2"
-          onClick={ (e) => onClick(e) }
+          onClick={ (e) => changeTab(e) }
           className={ tab === 2 ? 'active tab-nav' : 'tab-nav' }>
             Прогноз доходности
           </li>
           <li  data-tab="3"
-          onClick={ (e) => onClick(e) }
+          onClick={ (e) => changeTab(e) }
           className={ tab === 3 ? 'active tab-nav' : 'tab-nav' }>
             График производства
           </li>
@@ -66,7 +66,7 @@ class TabContent0 extends Component{
 
         <div className="bebas-20">
           <span className="bebas-30">Эпизодическая<br/>роль</span>
-          <span className="opacity-05 helvetica-12-bold">3 500 000 руб</span>
+          <span className="opacity-05">3 500 000 руб</span>
           <span>ИЛИ</span>
           <span>ИЛИ</span>
           <span>Нет</span>
@@ -79,7 +79,7 @@ class TabContent0 extends Component{
 
         <div className="bebas-20">
           <span className="bebas-30">Роль второго<br/>плана</span>
-          <span className="helvetica-12-bold opacity-05">7 000 000 руб</span>
+          <span className="opacity-05">7 000 000 руб</span>
           <span>ДА</span>
           <span>ДА</span>
           <span>ДА</span>
@@ -92,7 +92,7 @@ class TabContent0 extends Component{
 
         <div className="bebas-20">
           <span className="bebas-30">Главная<br/>роль</span>
-          <span className="helvetica-12-bold opacity-05">21 000 000 руб</span>
+          <span className="opacity-05">21 000 000 руб</span>
           <span>ДА</span>
           <span>ДА</span>
           <span>ДА</span>
@@ -119,6 +119,7 @@ class TabContent1 extends Component{
 
           <div className="bebas-20 columns">
             <div className="bebas-20">
+              <span className="opacity-05">Бюджет</span>
               <span>
                 Кинопрокат<br/>
                 <span className="helvetica-12-bold opacity-05">
@@ -138,22 +139,22 @@ class TabContent1 extends Component{
               </span>
             </div>
             <div className="">
-              <span className="m-bebas-25">Эпизодическая<br/>роль</span>
-              <span className="opacity-05 helvetica-12-bold">3 500 000 руб</span>
+              <span className="bebas-25">Эпизодическая<br/>роль</span>
+              <span className="opacity-05">3 500 000 руб</span>
               <span>1.5 млн</span>
               <span>12.5 МЛН</span>
               <span>7 Млн</span>
             </div>
             <div className="">
-              <span className="m-bebas-25">Роль второго<br/>плана</span>
-              <span className="helvetica-12-bold opacity-05">7 000 000 руб</span>
+              <span className="bebas-25">Роль второго<br/>плана</span>
+              <span className="opacity-05">7 000 000 руб</span>
               <span>3 МЛн</span>
-              <span>14 млн</span>
               <span>25 млн</span>
+              <span>14 млн</span>
             </div>
             <div className="">
-              <span className="m-bebas-25">Главная<br/>роль</span>
-              <span className="helvetica-12-bold opacity-05">21 000 000 руб</span>
+              <span className="bebas-25">Главная<br/>роль</span>
+              <span className="opacity-05">21 000 000 руб</span>
               <span>7.5 млн</span>
               <span>35 млн</span>
               <span>62.5 млн</span>
@@ -162,7 +163,7 @@ class TabContent1 extends Component{
 
           <div>
             <h2 className="bebas-25">Цена за 1 контакт
-            <span className="opacity-05">(по этапам трансляции)</span><sup>1</sup></h2>
+            <span className="opacity-05"> (по этапам трансляции)</span><sup>1</sup></h2>
           </div>
 
           <div className="illustrations">
@@ -190,60 +191,63 @@ class TabContent2 extends Component{
             Зрители  в кинотеатре:
             <span className="opacity-05">(Доход в процентах)</span>
           </span>
-          <span>500 000 <span className="opacity-05">(20%)</span></span>
-          <span>1 000 000 <span className="opacity-05">(50%)</span></span>
-          <span>1 500 000 <span className="opacity-05">(75%)</span></span>
-          <span>2 000 000 <span className="opacity-05">(100%)</span></span>
-          <span>2 500 000 <span className="opacity-05">(120%)</span></span>
-          <span>3 000 000 <span className="opacity-05">(140%)</span></span>
-          <span>4 000 000 <span className="opacity-05">(180%)</span></span>
-          <span>5 000 000 <span className="opacity-05">(220%)</span></span>
-          <span>6 000 000 <span className="opacity-05">(280%)</span></span>
+          <span className="opacity-05">Бюджет</span>
+          <span>500 000
+            <span className="opacity-05">&nbsp;&nbsp;&nbsp;&nbsp;(20%)</span>
+          </span>
+          <span>1 000 000 <span className="opacity-05"> (50%)</span></span>
+          <span>1 500 000 <span className="opacity-05"> (75%)</span></span>
+          <span>2 000 000 <span className="opacity-05"> (100%)</span></span>
+          <span>2 500 000 <span className="opacity-05"> (120%)</span></span>
+          <span>3 000 000 <span className="opacity-05"> (140%)</span></span>
+          <span>4 000 000 <span className="opacity-05"> (180%)</span></span>
+          <span>5 000 000 <span className="opacity-05"> (220%)</span></span>
+          <span>6 000 000 <span className="opacity-05"> (280%)</span></span>
         </div>
         <div className="bebas-20">
           <span className="bebas-30">Эпизодическая<br/>роль</span>
-          <span className="helvetica-12-bold opacity-05">3 500 000 руб</span>
-          <span>0.84</span>
-          <span>1.75</span>
-          <span>2.63</span>
-          <span>3.50</span>
-          <span>4.02</span>
-          <span>5.43</span>
-          <span>6.30</span>
-          <span>7.70</span>
-          <span>9.80</span>
+          <span className="opacity-05">3 500 000 руб</span>
+          <span>840 000</span>
+          <span>1 750 000</span>
+          <span>2 630 000</span>
+          <span>3 500 000</span>
+          <span>4 020 000</span>
+          <span>5 430 000</span>
+          <span>6 300 000</span>
+          <span>7 700 000</span>
+          <span>9 800 000</span>
         </div>
           <div className="bebas-20">
             <span className="bebas-30">Роль второго<br/>плана</span>
-            <span className="helvetica-12-bold opacity-05">7 000 000 руб</span>
-            <span>1.68</span>
-            <span>3.50</span>
-            <span>5.52</span>
-            <span>7.00</span>
-            <span>8.05</span>
-            <span>10.85</span>
-            <span>12.60</span>
-            <span>15.40</span>
-            <span>19.60</span>
+            <span className="opacity-05">7 000 000 руб</span>
+            <span>1 680 000</span>
+            <span>3 500 000</span>
+            <span>5 520 000</span>
+            <span>7 000 000</span>
+            <span>8 050 000</span>
+            <span>10 850 000</span>
+            <span>12 600 000</span>
+            <span>15 400 000</span>
+            <span>19 600 000</span>
           </div>
           <div className="bebas-20">
             <span className="bebas-30">Главная<br/>роль</span>
-            <span className="helvetica-12-bold opacity-05">21 000 000 руб</span>
-            <span>5.04</span>
-            <span>10.50</span>
-            <span>15.75</span>
-            <span>21.00</span>
-            <span>24.15</span>
-            <span>32.55</span>
-            <span>37.80</span>
-            <span>46.20</span>
-            <span>58.80</span>
+            <span className="opacity-05">21 000 000 руб</span>
+            <span>5 040 000</span>
+            <span>10 500 000</span>
+            <span>15 750 000</span>
+            <span>21 000 000</span>
+            <span>24 150 000</span>
+            <span>32 550 000</span>
+            <span>37 800 000</span>
+            <span>46 200 000</span>
+            <span>58 800 000</span>
           </div>
 
           <span className="bebas-20">
-            <i/>Доход по тарифу, в со-
-            ответствии с финансовой
-            моделью <span className="opacity-075">(МЛН РУБ)</span>
+            <i/>Доход по тарифу, в соответствии с &nbsp;
+            <a href="#stats--article-2"><u>финансовой моделью</u></a>
+            <span className="opacity-075"> (МЛН ₽)</span>
           </span>
       </div>
     )

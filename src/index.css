@@ -5,6 +5,12 @@
 @font-face{
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/HelveticaNeue-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face{
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/HelveticaNeue-Regular.woff') format('woff');
+  font-weight: normal;
 }
 
 body {

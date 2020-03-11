@@ -3,20 +3,20 @@
   height: get-m-vw(296px);
   padding: get-m-vw(10px) get-m-vw(23px) 0 get-m-vw(8px);
   left: get-m-vw(20px);
-  top: get-m-vw(292px);
+  top: get-m-vw(310px);
 
   position: absolute;
   display: none;
 
   opacity: 0;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(16px);
   border: get-m-vw(2px) solid $sand;
   transition: opacity 0.25s;
 
   p{margin-top: 4px};
 
   z-index: 2;
-  :before{
+  &::before{
     width: get-m-vw(15px);
     height: get-m-vw(15px);
     right: 0; left: 0;
@@ -31,6 +31,20 @@
     background-color: $sand;
     content: '';
   }
+}
+
+#close-form{
+  width: get-m-vw(14px);
+  height: get-m-vw(14px);
+  right: get-m-vw(8px);
+  top: get-m-vw(8px);
+
+  position: absolute;
+
+  background-image: url('../../images/close.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #form{

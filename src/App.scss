@@ -16,10 +16,11 @@ body{
   height: auto;
   margin: 0;
   background-color: $sand;
+  overflow-x: hidden;
 }
 
 #root{
-  width: max-content;
+  width: 100vw;
   position: relative;
 }
 
@@ -62,6 +63,7 @@ input, button{
 @media screen and (max-width: 1024px){
 
   body{ -webkit-text-size-adjust: none; }
+  #root{overflow: hidden;}
 
   @import './assets/scss/mobile/header.scss';
   @import './assets/scss/mobile/footer.scss';

@@ -17,10 +17,10 @@ export default class Service extends Component{
     device: '',
     tab: 0,
     form: 0,
-    referance: 0
+    note: 0
   }
 
-  handleClick = e => {
+  changeTab = e => {
     let tab = parseInt(e.currentTarget.dataset.tab);
     let tab_content = document.getElementById('tab-content');
 
@@ -30,41 +30,68 @@ export default class Service extends Component{
     setTimeout( () => { tab_content.style.opacity = 1 }, 500 );
   }
 
-  handleClickForm = () => {
-    let form_wrapper = document.getElementsByClassName('form-wrapper')[0];
-    let form = this.state.form ? 0 : 1;
-    if( form ){
-      this.setState({form});
-      form_wrapper.style.display = 'block';
-      setTimeout( () => form_wrapper.style.opacity = 1, 100 );
-    }else{
-      this.setState({form});
-      form_wrapper.style.opacity = 0;
-      setTimeout( () => form_wrapper.style.display = 'none', 100 );
-    }
+  openForm = () => {
+    if( this.state.form ) return;
+
+    let form = document.getElementsByClassName('form-wrapper')[0];
+
+    form.style.display = 'block';
+    setTimeout( form => form.style.opacity = 1, 50, form);
+
+    this.setState({form: 1});
+
+    document.addEventListener('click', this.closeForm);
   }
 
-  handleClickReferance = () => {
-    let referance_wrapper = document.getElementsByClassName('service--aside-1')[0];
-    let referance = this.state.referance ? 0 : 1;
-    if( referance ){
-      this.setState({referance});
-      referance_wrapper.style.display = 'grid';
-      setTimeout( () => referance_wrapper.style.opacity = 1, 100 );
-    }else{
-      this.setState({referance});
-      referance_wrapper.style.opacity = 0;
-      setTimeout( () => referance_wrapper.style.display = 'none', 100 );
-    }
+  closeForm = e => {
+    if( e.target.closest('#close-form'));
+    else if( e.target.closest('.form-wrapper')){ return; }
+
+    let form = document.getElementsByClassName('form-wrapper')[0];
+
+    form.style.opacity = 0;
+    setTimeout( form => form.style.display = 'none', 100, form);
+
+    this.setState({form: 0});
+
+    document.removeEventListener('click', this.closeForm);
+  }
+
+  openNote = () => {
+    if( this.state.note ) return;
+
+    let note = document.getElementsByClassName('service--aside-1')[0];
+
+    note.style.display = 'grid';
+    setTimeout( note => note.style.opacity = 1, 50, note);
+
+    this.setState({note: 1});
+
+    document.addEventListener('click', this.closeNote);
+  }
+
+  closeNote = e => {
+    if( e.target.closest('#close-note') );
+    else if( e.target.closest('.service--aside-1')) return;
+
+    let note = document.getElementsByClassName('service--aside-1')[0];
+
+    note.style.opacity = 0;
+    setTimeout( note => note.style.display = 'none', 100, note);
+
+    this.setState({note: 0});
+
+    document.removeEventListener('click', this.closeNote);
   }
 
   render() {
     return(
       <section id="service">
-        <Form/>
+        <Form closeForm={ this.closeForm }/>
         <ServiceArticle1
-        onClick={ this.handleClick } onClickForm={ this.handleClickForm }
-        onClickReferance={ this.handleClickReferance }
+        changeTab={ this.changeTab }
+        openForm={ this.openForm }
+        openNote={ this.openNote }
         device={this.state.device} tab={this.state.tab}/>
         <div className="aside-container">
           <ServiceAside1/>
@@ -80,13 +107,14 @@ class ServiceArticle1 extends Component{
     const{
       device,
       tab,
-      onClick,
-      onClickForm,
-      onClickReferance
+      changeTab,
+      openForm,
+      openNote
     } = this.props;
 
     return(
       <article className="service--article service--article-1">
+        <div id="empty-blocks"></div>
         <h2 className="bebas-64 m-bebas-30">Любовь в большом городе</h2>
         <ul className="helvetica-14-bold m-helvetica-12-bold">
           <li><span className="opacity-05">Жанр:</span> Комедия, мелодрама</li>
@@ -101,21 +129,21 @@ class ServiceArticle1 extends Component{
           <li>
             <span className="opacity-05">Целевая аудитория:</span> 20-45 лет, мужчины и женщины
             { this.props.device === 'mobile' ?
-              <span className="referance">
-                <u onClick={ () => onClickReferance() }>
+              <span className="note">
+                <u onClick={ () => openNote() }>
                   фильмы-референсы и их аудитория
                 </u>
               </span> :
               null
             }
           </li>
-          <li><span className="opacity-05">Дримкаст:</span> <u onClick={ () => onClickForm() }>По запросу</u></li>
+          <li><span className="opacity-05">Дримкаст:</span> <u onClick={ e => openForm(e) }>По запросу</u></li>
         </ul>
 
         {
           device !== 'mobile' ?
-          <Tabs tab={ tab } onClick={ onClick }/> :
-          <MobileTabs tab={ tab } onClick={ onClick }/>
+          <Tabs tab={ tab } changeTab={ changeTab }/> :
+          <MobileTabs tab={ tab } changeTab={ changeTab }/>
         }
       </article>
     )
@@ -126,6 +154,7 @@ class ServiceAside1 extends Component{
   render(){
     return(
       <article className="service--aside service--aside-1">
+        <button closeNote={ this.props.closeNote } id="close-note"></button>
         <h2 className="bebas-30 m-bebas-30">Фильмы - референсы<br/>и их аудитория:</h2>
         <ul className="bebas-20 m-bebas-20">
           <h3>Ёлки последние</h3>
@@ -165,8 +194,8 @@ class ServiceAside2 extends Component{
           <h3 className="bebas-20 m-bebas-20">Трейлер к фильму</h3>
           <p className="helvetica-12-bold m-helvetica-12-bold">
           включение эпизода с присутствием бренда.
-          существенно увеличивает охват – 55% ки-нозрителей смотрят трейлеры к фильмам
-          <span className="opacity-05">(Фонд кино, Кинозритель 2017-2018)</span>
+          существенно увеличивает охват – 55% кинозрителей смотрят трейлеры к фильмам
+          <span className="opacity-05"> (Фонд кино, Кинозритель 2017-2018)</span>
           </p>
         </div>
         <div>

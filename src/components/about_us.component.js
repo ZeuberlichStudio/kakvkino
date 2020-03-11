@@ -20,22 +20,28 @@ export default class AboutUs extends Component{
           </div>
 
           <div>
-            <img alt="" src={planLogo}/>
+            <a href="https://planagency.ru"><img alt="" src={planLogo}/></a>
             <h2 className="bebas-20 m-bebas-20">Коммуникационное агентство</h2>
             <p className="helvetica-12-bold m-helvetica-12-bold">
               Команда экспертов с опытом в маркетинге и рекламе свыше 15 лет разрабатывает стратегические решения по развитию бизнеса и реализует комплекс коммуникационных решений.
             </p>
           </div>
           <div>
-            <img alt="" src={paragraphLogo}/>
+            <a href="http://paragraphfilm.ru">
+              <img alt="" src={paragraphLogo}/>
+            </a>
             <h2 className="bebas-20 m-bebas-20">Кинокомпания</h2>
             <p className="helvetica-12-bold m-helvetica-12-bold">
               Больше 10 лет производит  документальные и игровые сериалы, рекламные и музыкальные клипы, музыкальные шоу.  Оказывает помощь в организации съемок для компаний из Европы, США, Китая, Индии.
             </p>
           </div>
           <div>
-            <img alt="" src={origoLogo}/>
-            <img alt="" src={eurasianLogo}/>
+            <a href="http://eurasianfilms.com">
+              <img alt="" src={origoLogo}/>
+            </a>
+            <a href="http://eurasianfilms.com">
+              <img alt="" src={eurasianLogo}/>
+            </a>
             <h2 className="bebas-20 m-bebas-20">Кинокомпания</h2>
             <p className="helvetica-12-bold m-helvetica-12-bold">
               Origo Studios/ Eurasian Films<br/>
@@ -47,21 +53,22 @@ export default class AboutUs extends Component{
         <div className="text-right-wrapper">
           <div className="text-right-container">
             <div>
-              <h2 className="bebas-30 m-bebas-30">цель группы «КАК В КИНО» :</h2>
+              <h2 className="bebas-30 m-bebas-30">цель группы «КАК В КИНО» :
+              </h2>
               <p className="helvetica-12-bold m-helvetica-12-bold">
-                создание успешного коммерческого кино для массового просмотра и долгосрочное сотруд-ничество с брендами в разных кинокартинах.
+                создание успешного коммерческого кино для массового просмотра и долгосрочное сотрудничество с брендами в разных кинокартинах.
               </p>
             </div>
 
             <div>
               <h2 className="bebas-30 m-bebas-30">Принципы работы: </h2>
               <h3 className="bebas-20 m-bebas-20">
-                Честные и понятные правила Интеграции «брендов» в кинопроекты
+                Честные и понятные правила Интеграции брендов в кинопроекты
               </h3>
               <p className="helvetica-12-bold m-helvetica-12-bold">
                 - естественные и ненавязчивые способы включения продукции брендов в готовящиеся фильмы, не противоречащие сохранению художественной ценности кинокартин.
                 <br/><br/>
-                - стремление к сохранению утвержденного дрим-кастинга актеров при запуске съемок фильма и внесение изменений по согласованию с брендами.
+                - стремление к сохранению утвержденного дримкастинга актеров при запуске съемок фильма и внесение изменений по согласованию с брендами.
                 <br/><br/>
                 - сохранение преемственности режиссерского сценария фильмов к синопсису и подписанному договору.
               </p>

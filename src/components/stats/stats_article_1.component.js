@@ -59,7 +59,7 @@ export default class StatsArticle1 extends Component{
             </p>
           </div>
           <p className="helvetica-14-bold m-helvetica-12-bold">
-          Цена 1 киноконтакта в интернете
+          Цена 1 киноконтакта в интернете<br/>
           в 3 раза ниже, чем в видео на Youtube
           </p>
           <div className="comparison">

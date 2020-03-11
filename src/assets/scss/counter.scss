@@ -25,11 +25,11 @@
 }
 
 #timeline{
-  width: get-vw(4022px);
+  width: get-vw(12000px);
   height: get-vw(49px);
 
   background-image: url('../images/timeline.svg');
-  background-size: auto get-vw(49px);
+  background-size: auto get-vw(37px);
   background-position: right top 0px;
   background-repeat: no-repeat;
 
@@ -85,8 +85,8 @@
   width: 0;
   height: 0;
   border-bottom: $sand solid get-vw(6px);
-  border-left: transparent solid get-vw(8px);
-  border-right: transparent solid get-vw(8px);
+  border-left: transparent solid get-vw(6.45px);
+  border-right: transparent solid get-vw(6.45px);
   left: 0; right: 0;
   top: get-vw(2px);
   margin: auto;

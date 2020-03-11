@@ -9,7 +9,7 @@ export default class Header extends Component{
         <div className="nav-wrapper">
           <nav>
             <ul>
-              <li className="nav-link"><a href="#about">Как это работает</a></li>
+              <li className="nav-link"><a href="#stats--article-2">Как это работает</a></li>
               <li className="nav-link"><a href="#service">Что снимаем</a></li>
               <li className="nav-link"><a href="#about-us">Кто мы</a></li>
               <li className="nav-link"><a href="#stats">Статистика</a></li>

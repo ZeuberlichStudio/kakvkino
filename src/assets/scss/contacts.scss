@@ -29,7 +29,7 @@ aside#contacts{
     height: 100%;
     padding: get-vh(15px) get-vh(15px) 0 get-vh(15px);
 
-    overflow: scroll;
+    overflow: hidden;
 
     display: grid;
     grid-auto-flow: row;

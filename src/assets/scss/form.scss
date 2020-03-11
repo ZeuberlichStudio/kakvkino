@@ -2,7 +2,7 @@
   width: get-vw(212px);
   height: get-vw(296px);
   padding: get-vw(10px) get-vw(23px) 0 get-vw(7px);
-  left: get-vw(120px); top: get-vw(350px);
+  left: get-vw(120px); top: get-vw(356px);
 
   position: absolute;
   display: none;
@@ -13,7 +13,7 @@
   transition: opacity 0.1s;
 
   z-index: 2;
-  :before{
+  &::before{
     width: get-vw(15px);
     height: get-vw(15px);
     right: 0; left: 0;
@@ -28,6 +28,20 @@
     background-color: $sand;
     content: '';
   }
+}
+
+#close-form{
+  width: get-vw(20px);
+  height: get-vw(20px);
+  right: get-vw(6px);
+  top: get-vw(6px);
+
+  position: absolute;
+
+  background-image: url('../images/close.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #form{

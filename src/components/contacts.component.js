@@ -6,11 +6,19 @@ export default class Contacts extends Component{
     active: 0
   }
 
-  changeActive = () => {
-    let active = this.state.active
-    active = active === 0 ? 1 : 0
-    this.setState({active})
+  openContacts = () => {
+    this.setState({active: 1});
+
+    document.addEventListener('click', this.closeContacts);
   }
+
+  closeContacts = e => {
+    if( e.target.closest('#close-contacts'));
+    else if( e.target.closest('#contacts')) return;
+
+    this.setState({active: 0});
+    document.removeEventListener('click', this.closeContacts);
+  };
 
   render() {
     return(

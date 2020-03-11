@@ -42,7 +42,7 @@ header#header{
   .nav-container.active{
     max-height: get-m-vw(490px);
     padding-top: get-m-vw(20px);
-    padding-bottom: get-m-vw(20px);
+    padding-bottom: get-m-vw(40px);
   }
 
   .nav-container{
@@ -108,8 +108,8 @@ header#header{
     & > h2{ grid-column: 1/6; }
 
     a{
-      width: get-m-vw(32px);
-      height: get-m-vw(32px);
+      width: get-m-vw(30px);
+      height: get-m-vw(30px);
       padding-top: get-m-vw(8px);
 
       background-color: $black;
@@ -129,13 +129,14 @@ header#header{
       background-image: url('../../images/fb_dark_icon.svg');
     }
     a:nth-child(6){
+      margin-right: get-m-vw(4px);
       background-color: transparent;
       background-image: url('../../images/inst_dark_icon.svg');
     }
 
     a:nth-child(-n+3){
       width: get-m-vw(108px);
-      height: get-m-vw(32px);
+      height: get-m-vw(30px);
     }
   }
 }
