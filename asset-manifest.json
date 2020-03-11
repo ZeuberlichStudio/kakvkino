@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.9f6e0d4f.chunk.css",
-    "main.js": "/kakvkino/static/js/main.7eacad29.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.7eacad29.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.9c6a1330.chunk.css",
+    "main.js": "/kakvkino/static/js/main.5bf128ce.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.5bf128ce.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.52ee6f4c.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.52ee6f4c.js.map",
     "static/js/2.ffa80e73.chunk.js": "/kakvkino/static/js/2.ffa80e73.chunk.js",
     "static/js/2.ffa80e73.chunk.js.map": "/kakvkino/static/js/2.ffa80e73.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.fe5abeac1e83eed36551a58b02f2bab0.js": "/kakvkino/precache-manifest.fe5abeac1e83eed36551a58b02f2bab0.js",
+    "precache-manifest.86b0c55d626e6cf23d638e237b9ab990.js": "/kakvkino/precache-manifest.86b0c55d626e6cf23d638e237b9ab990.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.9f6e0d4f.chunk.css.map": "/kakvkino/static/css/main.9f6e0d4f.chunk.css.map",
+    "static/css/main.9c6a1330.chunk.css.map": "/kakvkino/static/css/main.9c6a1330.chunk.css.map",
     "static/js/2.ffa80e73.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.ffa80e73.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.52ee6f4c.js",
     "static/js/2.ffa80e73.chunk.js",
-    "static/css/main.9f6e0d4f.chunk.css",
-    "static/js/main.7eacad29.chunk.js"
+    "static/css/main.9c6a1330.chunk.css",
+    "static/js/main.5bf128ce.chunk.js"
   ]
 }
