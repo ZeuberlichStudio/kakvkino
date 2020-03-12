@@ -1,7 +1,7 @@
 {
   "name": "kakvkino",
   "version": "0.1.0",
-  "homepage": "https://ydymov.github.io/kakvkino",
+  "homepage": "https://zeuberlichstudio.github.io/kakvkino",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

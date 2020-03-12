@@ -135,12 +135,6 @@
 }
 
 .animated ul{
-
-  li.active{
-    animation-name: blinkActive;
-    animation-duration: 2s;
-  }
-
   li{
     animation-name: blink;
     animation-duration: 2s;

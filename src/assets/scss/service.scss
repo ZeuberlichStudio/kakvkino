@@ -51,9 +51,13 @@ section#service{
 .service--aside-1{
   height: max-content;
   margin-top: -100vh;
-  padding: get-vw(164px) get-vw(20px) 0 get-vw(20px);
+  padding: get-vw(104px) get-vw(20px) 0 get-vw(20px);
 
   position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: max-content;
+  grid-row-gap: get-vw(50px);
 
   z-index: 1;
 
@@ -61,12 +65,6 @@ section#service{
     display: none;
   }
 
-  & > :nth-child(1){
-    margin-top: get-vw(80px);
-  }
-  & > :nth-child(n+4){
-    margin-top: get-vw(50px);
-  }
   ul{
     padding-left: get-vw(5px);
 
@@ -92,7 +90,7 @@ section#service{
 //aside 2
 
 .service--aside-2{
-  margin-top: get-vw(24px + 60px);
+  margin-top: get-vw(24px + 100px);
 
   grid-column: 2/3;
   height: max-content;
@@ -120,6 +118,8 @@ section#service{
 
   position: absolute;
 
+  background-blend-mode: darken;
+  background-color: lightgrey;
   background-image: url('../images/service_bg.jpg');
   background-size: auto get-vw(1308px);
   background-position: left get-vw(-960px) top;

@@ -39,8 +39,8 @@ a{
   .m-bebas-20{
     font-family: 'Bebas Neue';
     font-weight: normal;
-    font-size: get-m-vw(20px);
-    line-height: get-m-vw(20px);
+    font-size: get-m-vw(20px)!important;
+    line-height: get-m-vw(20px)!important;
   }
 
   .m-bebas-14{
@@ -55,6 +55,13 @@ a{
     font-weight: bold;
     font-size: get-m-vw(14px);
     line-height: get-m-vw(15px);
+  }
+
+  .m-helvetica-16-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-m-vw(16px);
+    line-height: get-m-vw(20px);
   }
 
   .m-helvetica-12-bold{
@@ -101,6 +108,20 @@ a{
     font-family: 'Bebas Neue';
     font-weight: normal;
     font-size: get-vw(20px);
+    line-height: get-vw(20px);
+  }
+
+  .bebas-14{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(14px);
+    line-height: get-vw(20px);
+  }
+
+  .helvetica-16-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(16px);
     line-height: get-vw(20px);
   }
 

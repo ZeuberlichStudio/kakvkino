@@ -157,6 +157,14 @@ class ServiceAside1 extends Component{
         <button closeNote={ this.props.closeNote } id="close-note"></button>
         <h2 className="bebas-30 m-bebas-30">Фильмы - референсы<br/>и их аудитория:</h2>
         <ul className="bebas-20 m-bebas-20">
+          <h3>Холоп</h3>
+          <li><span>12-17</span>8%</li>
+          <li><span>18-24</span>28%</li>
+          <li><span>25-34</span>29%</li>
+          <li><span>35-44</span>16%</li>
+          <li><span>44+</span>19%</li>
+        </ul>
+        <ul className="bebas-20 m-bebas-20">
           <h3>Ёлки последние</h3>
           <li><span>12-17</span>8%</li>
           <li><span>18-24</span>21%</li>

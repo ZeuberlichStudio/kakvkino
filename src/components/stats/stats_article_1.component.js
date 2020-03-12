@@ -18,41 +18,41 @@ export default class StatsArticle1 extends Component{
           <h1 className="helvetica-14-bold m-helvetica-12-bold">Жизненный цикл кино за 1й год</h1>
           <div className="profit">
             <h3 className="no-before bebas-30 m-bebas-30">
-              <span className="orange">14 000 000 </span>
+              <span className="marked">14 000 000 </span>
               <span className="marked">14 млн </span>
-              контактов<br/>По
+              контактов<br/> По
               <span className="orange marked"> 6 копеек</span>
             </h3>
             <p className="helvetica-14-bold m-helvetica-12-bold">Кинопрокат + онлайн с учётом инвестиционной доходности</p>
           </div>
           <div className="stage-2">
-            <h3 className="bebas-30 m-bebas-25 orange-before">Стадия 2|интернет</h3>
+            <h3 className="bebas-30 m-bebas-25 orange-before">Этап 2|интернет</h3>
             <p className="helvetica-14-bold m-helvetica-12-bold">
               <span className="opacity-075">
-              72% россиян смотрят фильмы в Интернете (Mediascope, 2019).
+              72% россиян смотрят фильмы в Интернете (Mediascope, 2019)
               </span>
             </p>
             <p className="helvetica-10-medium m-helvetica-10-medium">
-              <sup>2</sup> Средняя аудитория российского фильма состовляет 12.5 — 20 мллн. чел.
+              <sup>2</sup> Средняя аудитория российского фильма состовляет 12.5 - 20 млн. чел.
             </p>
           </div>
           <div className="stage-1">
-            <h3 className="bebas-30 m-bebas-25 blue-before">Стадия 1|кинотеатры</h3>
+            <h3 className="bebas-30 m-bebas-25 blue-before">Этап 1|кинотеатры</h3>
             <p className="helvetica-10-medium m-helvetica-10-medium">
-              <sup>1</sup> Средний уровень кинопроката в России в 2018-2019 году.
+              <sup>1</sup> Средний уровень кинопроката в России<br/> в 2018-2019 году
             </p>
           </div>
         </div>
 
         <div className="text-right-container">
           <div className="stage-3">
-            <h3 className="bebas-30 m-bebas-25 red-before">Стадия 3|тв <sup>4</sup></h3>
+            <h3 className="bebas-30 m-bebas-25 red-before">Этап 3|тв <sup>4</sup></h3>
             <p className="helvetica-14-bold m-helvetica-12-bold opacity-075">
-            48% россиян используют ТВ для просмотра кино (Mediascope, 2019).
+            48% россиян используют ТВ для просмотра кино (Mediascope, 2019)
             </p>
             <p className="helvetica-10-medium m-helvetica-10-medium">
             <sup>3</sup> Средняя доля телесмотрения одного выхода российских РомКомов составляет
-            7,4% - более 7 млн. чел.
+            7,4%
             </p>
             <p className="helvetica-10-medium m-helvetica-10-medium">
             <sup>4</sup> Для сохранения рекламы в ТВ версии требуются отдельные договорённости
@@ -67,7 +67,7 @@ export default class StatsArticle1 extends Component{
             <img alt="YouTube stats" src={stats2} />
           </div>
           <p className="helvetica-10-medium m-helvetica-10-medium comparison-notice">
-          <sup>5</sup> До вычета инвестиционной доходности.
+          <sup>5</sup> До вычета инвестиционной доходности
           </p>
         </div>
       </article>

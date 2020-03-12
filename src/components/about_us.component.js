@@ -15,19 +15,19 @@ export default class AboutUs extends Component{
           <div>
             <h1 className="bebas-64 m-bebas-30">Кто мы?</h1>
             <p className="helvetica-14-bold m-helvetica-12-bold">
-              Группа компаний «КАК В КИНО» объединила профессионалов кино и медиа индустрий.
+              Группа компаний «КАК В КИНО» объединила профессионалов кино и медиа индустрий
             </p>
           </div>
 
           <div>
-            <a href="https://planagency.ru"><img alt="" src={planLogo}/></a>
+            <a href="https://planagency.ru" target="_blank"><img alt="" src={planLogo}/></a>
             <h2 className="bebas-20 m-bebas-20">Коммуникационное агентство</h2>
             <p className="helvetica-12-bold m-helvetica-12-bold">
               Команда экспертов с опытом в маркетинге и рекламе свыше 15 лет разрабатывает стратегические решения по развитию бизнеса и реализует комплекс коммуникационных решений.
             </p>
           </div>
           <div>
-            <a href="http://paragraphfilm.ru">
+            <a href="http://paragraphfilm.ru" target="_blank">
               <img alt="" src={paragraphLogo}/>
             </a>
             <h2 className="bebas-20 m-bebas-20">Кинокомпания</h2>
@@ -36,16 +36,16 @@ export default class AboutUs extends Component{
             </p>
           </div>
           <div>
-            <a href="http://eurasianfilms.com">
+            <a href="http://origostudios.com" target="_blank">
               <img alt="" src={origoLogo}/>
             </a>
-            <a href="http://eurasianfilms.com">
+            <a href="http://eurasianfilms.com" target="_blank">
               <img alt="" src={eurasianLogo}/>
             </a>
             <h2 className="bebas-20 m-bebas-20">Кинокомпания</h2>
             <p className="helvetica-12-bold m-helvetica-12-bold">
-              Origo Studios/ Eurasian Films<br/>
-              Ориго - крупнейшая  киностудия в Европе, партнер в киносъемках для мэйджоров мировой киноиндустрии. PARAMAUNT, DISNEY, UNIVERSAL, SONY/COLUMBIA, LUCAS Film. Eurasion Films  Продакшн компания в холдинге Origo Studios.
+              Origo Studios — крупнейшая  киностудия в Европе, партнер в киносъемках для мэйджоров мировой киноиндустрии: PARAMAUNT, DISNEY, UNIVERSAL, SONY/COLUMBIA, LUCAS Film.<br/>
+              Eurasion Films — продакшн компания в холдинге Origo Studios.
             </p>
           </div>
         </div>
@@ -56,30 +56,36 @@ export default class AboutUs extends Component{
               <h2 className="bebas-30 m-bebas-30">цель группы «КАК В КИНО» :
               </h2>
               <p className="helvetica-12-bold m-helvetica-12-bold">
-                создание успешного коммерческого кино для массового просмотра и долгосрочное сотрудничество с брендами в разных кинокартинах.
+                создание успешного коммерческого кино для массового просмотра и долгосрочное сотрудничество<br/> с брендами в разных кинокартинах
               </p>
             </div>
 
             <div>
               <h2 className="bebas-30 m-bebas-30">Принципы работы: </h2>
               <h3 className="bebas-20 m-bebas-20">
-                Честные и понятные правила Интеграции брендов в кинопроекты
+                Честные и понятные правила<br/> Интеграции брендов в кинопроекты
               </h3>
               <p className="helvetica-12-bold m-helvetica-12-bold">
-                - естественные и ненавязчивые способы включения продукции брендов в готовящиеся фильмы, не противоречащие сохранению художественной ценности кинокартин.
+                - естественные и ненавязчивые способы включения продукции брендов в готовящиеся фильмы,<br/> не противоречащие сохранению художественной ценности кинокартин
                 <br/><br/>
-                - стремление к сохранению утвержденного дримкастинга актеров при запуске съемок фильма и внесение изменений по согласованию с брендами.
+                - стремление к сохранению утвержденного дримкастинга актеров при запуске съемок фильма<br/> и внесение изменений по согласованию с брендами
                 <br/><br/>
-                - сохранение преемственности режиссерского сценария фильмов к синопсису и подписанному договору.
+                - сохранение преемственности режиссерского сценария фильмов к синопсису и подписанному договору
               </p>
               <h3 className="bebas-20 m-bebas-20">Производственный контроль</h3>
               <p className="helvetica-12-bold m-helvetica-12-bold">
-              - соблюдение графика реализации проекта.
-
-              - открытость с партнерами на каждом этапе кинопроизводства и кинопроката.
+              - соблюдение графика реализации проекта
+              <br/><br/>
+              - открытость с партнерами на каждом этапе кинопроизводства и кинопроката
               </p>
             </div>
           </div>
+        </div>
+        <div id="pre-footer">
+          <h2 className="bebas-64 m-bebas-30 dark">
+            Пришло время<br/> включить магию кино<br/>
+            В свою рекламную кампанию
+          </h2>
         </div>
       </section>
     )

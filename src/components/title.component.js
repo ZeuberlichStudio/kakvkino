@@ -20,9 +20,9 @@ export default class Title extends Component{
             с вашей рекламой в 1й год по<br/>
             цене <span className="marked">6 копеек</span> за контакт
           </h2>
-          <div className="links-container bebas-20 m-bebas-14 light">
+          <div className="links-container bebas-20 m-bebas-20 light">
             <a href="#about">Почему в кино</a>
-            <a href="#stats">Как это работает</a>
+            <a href="#stats--article-2">Как это работает</a>
           </div>
         </article>
         <div className="title--aside-wrapper">

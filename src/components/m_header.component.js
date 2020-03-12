@@ -23,7 +23,7 @@ export default class MobileHeader extends Component{
           <nav className="m-bebas-20">
             <h2 className="m-bebas-30">Меню</h2>
             <ul>
-              <li className="nav-link"><a href="#stats--article-2">Как это работает</a></li>
+              <li className="nav-link"><a href="#stats--article-2-anchor">Как это работает</a></li>
               <li className="nav-link"><a href="#service">Что снимаем</a></li>
               <li className="nav-link"><a href="#about-us">Кто мы</a></li>
               <li className="nav-link"><a href="#stats">Статистика</a></li>
@@ -35,8 +35,8 @@ export default class MobileHeader extends Component{
             <div className="person">
               <h2 className="m-bebas-20">Ирина ларцева</h2>
               <h3 className="m-helvetica-12-bold opacity-075">Основатель проекта</h3>
-              <span href="/" className="m-bebas-20">+7 (903) 161 55-33</span>
-              <span href="/" className="m-bebas-20">IL<span className="opacity-05">@Kakvkino.Group</span></span>
+              <span className="m-bebas-20">+7 (903) 161 55-33</span>
+              <span className="m-bebas-20">IL<span className="opacity-05">@Kakvkino.Group</span></span>
             </div>
             <div className="person">
               <h2 className="m-bebas-20">Юрий лешок</h2>
@@ -53,9 +53,9 @@ export default class MobileHeader extends Component{
             <a href="mailto: SalesManager@Kakvkino.Group" className="m-bebas-20">
               Написать
             </a>
-            <a href="/"></a>
-            <a href="/"></a>
-            <a href="/"></a>
+            <a href="/" target="_blank"></a>
+            <a href="/" target="_blank"></a>
+            <a href="/" target="_blank"></a>
           </div>
         </div>
       </header>

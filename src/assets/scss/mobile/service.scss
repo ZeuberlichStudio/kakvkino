@@ -42,11 +42,11 @@ section#service{
   }
   /*still in production^*/
 
-  ul:nth-child(2){
+  ul:nth-child(3){
     line-height: get-m-vw(18px);
   }
-  p:nth-child(3){ letter-spacing: get-m-vw(0.1px); }
-  ul:nth-child(4){
+  p:nth-child(4){ letter-spacing: get-m-vw(0.1px); }
+  ul:nth-child(5){
     display: grid;
     grid-auto-flow: row;
     grid-row-gap: get-m-vw(12px);
@@ -152,9 +152,12 @@ section#service{
       pointer-events: none;
       transition: 0.25s;
 
-      & :nth-child(1){
+      & > :nth-child(1){
         top: get-m-vw(18px);
         position: absolute;
+      }
+      & > :nth-child(n+2){
+        opacity: 0.75;
       }
 
     }
@@ -179,12 +182,12 @@ section#service{
 
     border-right: $sand solid get-m-vw(2px);
 
-    & :nth-child(1){
+    & > :nth-child(1){
       margin-bottom: get-m-vw(5px);
     }
-    & :last-child i{
-        width: get-m-vw(15px);
-        height: get-m-vw(15px);
+    & > :last-child i{
+        width: get-m-vw(12px);
+        height: get-m-vw(12px);
         margin-right: get-m-vw(2.5px);
         margin-bottom: get-m-vw(-2.5px);
 
@@ -218,14 +221,14 @@ section#service{
       pointer-events: none;
       transition: 0.25s;
 
-      & :nth-child(1){
+      & > :nth-child(1){
         top: get-m-vw(18px);
         position: absolute;
       }
-      & :nth-child(2){
+      & > :nth-child(2){
         margin-bottom: get-m-vw(5px);
       }
-      & :nth-child(n+3){
+      & > :nth-child(n+3){
         color: #7AD188;
       }
     }
@@ -285,8 +288,8 @@ section#service{
       pointer-events: none;
       transition: 0.25s;
 
-      & :nth-child(2){
-        margin-top: get-m-vw(5px);
+      & > :nth-child(2){
+        margin-top: get-m-vw(2px);
       }
     }
     .slide.active{
@@ -433,7 +436,7 @@ button.next-slide{
   grid-auto-flow: row;
   grid-row-gap: get-m-vw(15px);
 
-  & :nth-child(1){
+  & > :nth-child(1){
     margin-bottom: get-m-vw(5px);
   }
 
@@ -446,7 +449,7 @@ button.next-slide{
   width: get-m-vw(280.5px);
   padding: get-m-vw(10px);
   left: 0; right: 0;
-  top: get-m-vw(220px);
+  top: 35vw;
   margin: auto;
 
   position: absolute;
@@ -504,8 +507,8 @@ button.next-slide{
     position: absolute;
     display: block;
 
-    border-left: transparent solid get-m-vw(15px);
-    border-right: transparent solid get-m-vw(15px);
+    border-left: transparent solid get-m-vw(11px);
+    border-right: transparent solid get-m-vw(11px);
     border-top: $sand solid get-m-vw(12px);
 
     content: '';

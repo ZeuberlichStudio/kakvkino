@@ -61,6 +61,7 @@ section#about-us{
 
   .text-right-container{
     margin-top: get-m-vw(34px);
+    position: relative;
 
     & > :nth-child(1){
       display: none;
@@ -76,9 +77,33 @@ section#about-us{
         margin-top: get-m-vw(20px);
       }
     }
+
+    &:before{
+      width: 100vw;
+      height: 200%;
+      left: get-m-vw(-20px); top: get-m-vw(-20px);
+
+      position: absolute;
+
+      background-color: $sand;
+      content: '';
+      z-index: -1;
+    }
+    z-index: 1;
   }
 
   p{
     text-align: left;
   }
+}
+
+#pre-footer{
+  padding-top: get-m-vw(55px);
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  z-index: 1;
 }
