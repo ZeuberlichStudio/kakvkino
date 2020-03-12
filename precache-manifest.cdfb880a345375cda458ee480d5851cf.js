@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "827beb665e9ef21a13b66f1750cae39c",
+    "revision": "4a117b31179f07d38bf4db29c1de1ec0",
     "url": "/kakvkino/index.html"
   },
   {
-    "revision": "2960f05177594f8c0522",
-    "url": "/kakvkino/static/css/main.b6005890.chunk.css"
+    "revision": "2f09351b7ead0640bef2",
+    "url": "/kakvkino/static/css/main.47e4b3bf.chunk.css"
   },
   {
     "revision": "ee21d2c4e177d8ffa21e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/js/2.ffa80e73.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2960f05177594f8c0522",
-    "url": "/kakvkino/static/js/main.e5c04e6e.chunk.js"
+    "revision": "2f09351b7ead0640bef2",
+    "url": "/kakvkino/static/js/main.bbeaa521.chunk.js"
   },
   {
     "revision": "901c51991995dbdfcd56",
@@ -140,8 +140,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/media/service_bg.7084084e.jpg"
   },
   {
-    "revision": "3581ae34508dbc80872817a18643bd69",
-    "url": "/kakvkino/static/media/stats_graph.3581ae34.svg"
+    "revision": "a26f770b3fa41426144839f7bf2f26aa",
+    "url": "/kakvkino/static/media/stats_graph.a26f770b.svg"
   },
   {
     "revision": "e05475718ef968cfa016f8217c7538ae",
