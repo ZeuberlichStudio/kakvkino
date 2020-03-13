@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2d95452f35061c9cd42fc657ef8643c",
+    "revision": "19d4b8c04bbba9dc84ba006208e1180d",
     "url": "/kakvkino/index.html"
   },
   {
-    "revision": "250db16167132be5423d",
-    "url": "/kakvkino/static/css/main.3481bb51.chunk.css"
+    "revision": "656b01938bbf3e3ee924",
+    "url": "/kakvkino/static/css/main.6613a675.chunk.css"
   },
   {
     "revision": "3c68350556ad657c23a6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/js/2.c8598bff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "250db16167132be5423d",
-    "url": "/kakvkino/static/js/main.ba0c6ec1.chunk.js"
+    "revision": "656b01938bbf3e3ee924",
+    "url": "/kakvkino/static/js/main.e7de3bac.chunk.js"
   },
   {
     "revision": "901c51991995dbdfcd56",
@@ -60,10 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/media/arrow_r.5e819f15.svg"
   },
   {
-    "revision": "8d82fdd60deaccd2c59d87b3e74d5a14",
-    "url": "/kakvkino/static/media/charity_button.8d82fdd6.svg"
-  },
-  {
     "revision": "e2df32a301a75282636acab7cd002d32",
     "url": "/kakvkino/static/media/close.e2df32a3.svg"
   },
@@ -96,8 +92,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/media/figure_border.be90a0c3.svg"
   },
   {
-    "revision": "2a54634c5d22993ec5b228585281e71e",
-    "url": "/kakvkino/static/media/forbes_button.2a54634c.svg"
+    "revision": "3c17dff49f2cf927bf08bb8b99ad8c61",
+    "url": "/kakvkino/static/media/forbes_logo.3c17dff4.svg"
   },
   {
     "revision": "dc2d603a99864e6ff146620daec4f355",
