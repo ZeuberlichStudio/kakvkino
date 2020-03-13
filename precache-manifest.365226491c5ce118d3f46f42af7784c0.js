@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a2cd7bc6cb51753ec61be909207632fb",
+    "revision": "e2d95452f35061c9cd42fc657ef8643c",
     "url": "/kakvkino/index.html"
   },
   {
-    "revision": "9d18e0aed75ef5bf49e5",
-    "url": "/kakvkino/static/css/main.d3d67edf.chunk.css"
+    "revision": "250db16167132be5423d",
+    "url": "/kakvkino/static/css/main.3481bb51.chunk.css"
   },
   {
-    "revision": "9d703e2e3cf0835c0eef",
-    "url": "/kakvkino/static/js/2.80ea4a4c.chunk.js"
+    "revision": "3c68350556ad657c23a6",
+    "url": "/kakvkino/static/js/2.c8598bff.chunk.js"
   },
   {
     "revision": "5356fa2f66e46e6c05e4cbe319ac7f1d",
-    "url": "/kakvkino/static/js/2.80ea4a4c.chunk.js.LICENSE.txt"
+    "url": "/kakvkino/static/js/2.c8598bff.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9d18e0aed75ef5bf49e5",
-    "url": "/kakvkino/static/js/main.3f1d83b2.chunk.js"
+    "revision": "250db16167132be5423d",
+    "url": "/kakvkino/static/js/main.ba0c6ec1.chunk.js"
   },
   {
     "revision": "901c51991995dbdfcd56",
