@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kakvkino/static/css/main.adb7d839.chunk.css",
-    "main.js": "/kakvkino/static/js/main.053ae597.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.053ae597.chunk.js.map",
+    "main.js": "/kakvkino/static/js/main.7925bc1f.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.7925bc1f.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.52ee6f4c.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.52ee6f4c.js.map",
     "static/js/2.c8598bff.chunk.js": "/kakvkino/static/js/2.c8598bff.chunk.js",
     "static/js/2.c8598bff.chunk.js.map": "/kakvkino/static/js/2.c8598bff.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.8c68418eebea1afc38c317647c0ec786.js": "/kakvkino/precache-manifest.8c68418eebea1afc38c317647c0ec786.js",
+    "precache-manifest.8f9c9e29a6f8a5f7de4e3c7c9311d0ea.js": "/kakvkino/precache-manifest.8f9c9e29a6f8a5f7de4e3c7c9311d0ea.js",
     "service-worker.js": "/kakvkino/service-worker.js",
     "static/css/main.adb7d839.chunk.css.map": "/kakvkino/static/css/main.adb7d839.chunk.css.map",
     "static/js/2.c8598bff.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.c8598bff.chunk.js.LICENSE.txt",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.52ee6f4c.js",
     "static/js/2.c8598bff.chunk.js",
     "static/css/main.adb7d839.chunk.css",
-    "static/js/main.053ae597.chunk.js"
+    "static/js/main.7925bc1f.chunk.js"
   ]
 }
