@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.6613a675.chunk.css",
-    "main.js": "/kakvkino/static/js/main.e7de3bac.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.e7de3bac.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.adb7d839.chunk.css",
+    "main.js": "/kakvkino/static/js/main.053ae597.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.053ae597.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.52ee6f4c.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.52ee6f4c.js.map",
     "static/js/2.c8598bff.chunk.js": "/kakvkino/static/js/2.c8598bff.chunk.js",
     "static/js/2.c8598bff.chunk.js.map": "/kakvkino/static/js/2.c8598bff.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.27c68537f7cc29f29ab4685c2e19c503.js": "/kakvkino/precache-manifest.27c68537f7cc29f29ab4685c2e19c503.js",
+    "precache-manifest.8c68418eebea1afc38c317647c0ec786.js": "/kakvkino/precache-manifest.8c68418eebea1afc38c317647c0ec786.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.6613a675.chunk.css.map": "/kakvkino/static/css/main.6613a675.chunk.css.map",
+    "static/css/main.adb7d839.chunk.css.map": "/kakvkino/static/css/main.adb7d839.chunk.css.map",
     "static/js/2.c8598bff.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.c8598bff.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
@@ -18,7 +18,7 @@
     "static/media/origoLogo.svg": "/kakvkino/static/media/origoLogo.7c9f4100.svg",
     "static/media/paragraphLogo.svg": "/kakvkino/static/media/paragraphLogo.9983fdd9.svg",
     "static/media/planLogo.svg": "/kakvkino/static/media/planLogo.d1568043.svg",
-    "static/media/stats_pic_1.svg": "/kakvkino/static/media/stats_pic_1.1a0ad887.svg",
+    "static/media/stats_pic_1.svg": "/kakvkino/static/media/stats_pic_1.671977f9.svg",
     "static/media/stats_pic_2.svg": "/kakvkino/static/media/stats_pic_2.868c37e3.svg",
     "static/media/stats_stages.svg": "/kakvkino/static/media/stats_stages.642db180.svg",
     "static/media/tabs_1.svg": "/kakvkino/static/media/tabs_1.ec87554f.svg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.52ee6f4c.js",
     "static/js/2.c8598bff.chunk.js",
-    "static/css/main.6613a675.chunk.css",
-    "static/js/main.e7de3bac.chunk.js"
+    "static/css/main.adb7d839.chunk.css",
+    "static/js/main.053ae597.chunk.js"
   ]
 }
