@@ -9,7 +9,6 @@ export default class StatsArticle2 extends Component{
   render() {
     return(
       <article id="stats--article-2" className="stats--article-2 stats--article">
-        <div id="stats--article-2-anchor"></div>
         <div className="text-left-container">
           <h1 className="bebas-64 m-bebas-30">Как это работает?</h1>
           <p className="helvetica-14-bold m-helvetica-12-bold">

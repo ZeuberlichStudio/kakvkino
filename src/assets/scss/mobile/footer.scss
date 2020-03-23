@@ -1,3 +1,30 @@
+#pre-footer{
+  width: 100vw;
+  height: max-content;
+  padding: get-m-vw(20px);
+  margin-bottom: get-m-vw(-1px);
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  background-color: $black;
+  color: $sand;
+  z-index: 2;
+
+  &::before{
+    height: get-m-vw(2px);
+    left: get-m-vw(35px); right: get-m-vw(35px);
+    bottom: 0;
+
+    position: absolute;
+
+    background-color: $sand;
+    content: '';
+  }
+}
+
 footer{
     width: 100vw;
     height: max-content;
@@ -55,7 +82,7 @@ footer{
 
       display: grid;
       grid-auto-flow: column;
-      grid-auto-columns: get-m-vw(108px);
+      grid-auto-columns: get-m-vw(103px);
       grid-column-gap: get-m-vw(10px);
 
       a{
@@ -70,21 +97,25 @@ footer{
   }
 
   .contacts-container-2{
-    margin-top: get-m-vw(20px);
+
+    margin-top: get-m-vw(-30px);
 
     .social-links{
+      width: 100%;
+
       display: grid;
       grid-template:
       get-m-vw(30px) /
       repeat(3, get-m-vw(30px));
       grid-column-gap: get-m-vw(10px);
+      justify-content: flex-end;
 
       a{
         width: 100%;
         height: 100%;
         display: block;
 
-        background-size: 100% auto;
+        background-size: auto 100%;
         background-position: center;
         background-repeat: no-repeat;
       }

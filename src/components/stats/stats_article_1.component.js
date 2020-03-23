@@ -15,7 +15,7 @@ export default class StatsArticle1 extends Component{
             <span>Длительный  охват</span> <br/>
             <span>в<span className="orange marked"> 3х </span>медиа каналах</span>
           </h2>
-          <h1 className="helvetica-14-bold m-helvetica-12-bold">Жизненный цикл кино за 1й год</h1>
+          <h1 className="helvetica-14-bold m-helvetica-12-bold opacity-075">Жизненный цикл кино за 1й год</h1>
           <div className="profit">
             <h3 className="no-before bebas-30 m-bebas-30">
               <span className="marked">14 000 000 </span>
@@ -23,7 +23,7 @@ export default class StatsArticle1 extends Component{
               контактов<br/> По
               <span className="orange marked"> 6 копеек</span>
             </h3>
-            <p className="helvetica-14-bold m-helvetica-12-bold">Кинопрокат + онлайн с учётом инвестиционной доходности</p>
+            <p className="helvetica-12-bold m-helvetica-12-bold">Кинотеатры + интернет с учётом<br/> инвестиционной доходности</p>
           </div>
           <div className="stage-2">
             <h3 className="bebas-30 m-bebas-25 orange-before">Этап 2|интернет</h3>
@@ -58,7 +58,7 @@ export default class StatsArticle1 extends Component{
             <sup>4</sup> Для сохранения рекламы в ТВ версии требуются отдельные договорённости
             </p>
           </div>
-          <p className="helvetica-14-bold m-helvetica-12-bold">
+          <p className="helvetica-14-bold m-bebas-25">
           Цена 1 киноконтакта в интернете<br/>
           в 3 раза ниже, чем в видео на Youtube
           </p>

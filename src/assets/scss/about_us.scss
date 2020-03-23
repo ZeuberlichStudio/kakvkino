@@ -4,7 +4,7 @@ section#about-us{
   position: relative;
   display: grid;
   grid-template:
-  get-vw(800px) max-content /
+  get-vw(800px) /
   max-content 1fr;
 
   background-color: $sand;
@@ -108,18 +108,4 @@ section#about-us{
       margin-top: get-vw(28px);
     }
   }
-}
-
-#pre-footer{
-  grid-column: 1/2;
-  width: get-vw(960px);
-  height: max-content;
-  padding: get-vw(38px) 0;
-  padding-left: get-vw(115px);
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-
-  br:first-child{ display: none; }
 }

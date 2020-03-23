@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 
 export default class Header extends Component{
 
+  goToAnchor = e => {
+    e.preventDefault();
+    let id = e.currentTarget.dataset.link;
+    let anchor = document.getElementById(id).offsetTop + document.getElementById(id).parentElement.offsetTop;
+
+    window.scrollTo(0, anchor);
+  }
+
   render() {
     return(
       <header id="header" className={ this.props.color === 'light' ? 'light' : null }>
@@ -9,11 +17,11 @@ export default class Header extends Component{
         <div className="nav-wrapper">
           <nav>
             <ul>
-              <li className="nav-link"><a href="#stats--article-2">Как это работает</a></li>
-              <li className="nav-link"><a href="#service">Что снимаем</a></li>
-              <li className="nav-link"><a href="#about-us">Кто мы</a></li>
-              <li className="nav-link"><a href="#stats">Статистика</a></li>
-              <li className="nav-link" onClick={ this.props.onClick }>Контакты</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="stats--article-2-anchor" className="nav-link">Как это работает</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="service" className="nav-link">Что снимаем</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="about-us" className="nav-link">Кто мы</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="stats" className="nav-link">Статистика</li>
+              <li onClick={ e => this.goToAnchor(e) } className="nav-link" onClick={ this.props.onClick }>Контакты</li>
             </ul>
           </nav>
         </div>

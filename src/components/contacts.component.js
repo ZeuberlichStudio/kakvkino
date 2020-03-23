@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 export default class Contacts extends Component{
 
@@ -60,6 +61,11 @@ export default class Contacts extends Component{
           <span className="vh-bebas-20 address">125080 Москва<br/> Волоколамское ш., д.1., стр.1, офис 709А</span>
 
           <div className="map">
+            <YMaps>
+              <Map width="100%" height="100%" defaultState={{ center: [55.806525, 37.504681], zoom: 15 }}>
+                <Placemark geometry={[55.806525, 37.504681]} />
+              </Map>
+            </YMaps>
           </div>
         </div>
       </aside>

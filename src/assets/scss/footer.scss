@@ -1,3 +1,29 @@
+#pre-footer{
+  width: 100vw;
+  height: max-content;
+  padding: get-vw(34px);
+  margin-bottom: get-vw(-1px);
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  background-color: $black;
+  color: $sand;
+  br:first-child{ display: none; }
+  &::before{
+    width: get-vw(456px);
+    height: get-vw(2px);
+    left: get-vw(44px); bottom: 0;
+
+    position: absolute;
+
+    background-color: $sand;
+    content: '';
+  }
+}
+
 footer{
   width: 100vw;
   height: get-vw(355px);

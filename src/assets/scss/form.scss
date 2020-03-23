@@ -10,7 +10,7 @@
   opacity: 0;
   backdrop-filter: blur(8px);
   border: get-vw(2px) solid $sand;
-  transition: opacity 0.1s;
+  transition: opacity 0.3s;
 
   z-index: 2;
   &::before{

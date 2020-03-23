@@ -8,6 +8,15 @@ import stats3 from '../assets/images/title/title_stats_3.svg';
 import stats4 from '../assets/images/title/title_stats_4.svg';
 
 export default class Title extends Component{
+
+  goToAnchor = e => {
+    e.preventDefault();
+    let id = e.currentTarget.dataset.link;
+    let anchor = document.getElementById(id).offsetTop + document.getElementById(id).parentElement.offsetTop;
+
+    window.scrollTo(0, anchor);
+  }
+
   render() {
     return(
       <section id="title">
@@ -21,8 +30,8 @@ export default class Title extends Component{
             цене <span className="marked">6 копеек</span> за контакт
           </h2>
           <div className="links-container bebas-20 m-bebas-20 light">
-            <a href="#about">Почему в кино</a>
-            <a href="#stats--article-2">Как это работает</a>
+            <div onClick={ e => this.goToAnchor(e) } data-link="about">Почему в кино</div>
+            <div onClick={ e => this.goToAnchor(e) } data-link="stats--article-2-anchor">Как это работает</div>
           </div>
         </article>
         <div className="title--aside-wrapper">
@@ -44,7 +53,19 @@ export default class Title extends Component{
             </span>
           </article>
         </div>
+        <Forbes/>
       </section>
+    )
+  }
+}
+
+class Forbes extends Component{
+  render() {
+    return(
+      <div id="forbes">
+        <span className="helvetica-14-bold m-helvetica-12-bold">О нас пишут: </span>
+        <a href="https://www.forbes.ru/biznes/374651-vzrosloe-kino-kak-zarabotat-na-rossiyskih-filmah" rel="noopener noreferrer" target="_blank" className="forbes"></a>
+      </div>
     )
   }
 }

@@ -7,6 +7,18 @@ import tabs3 from '../../assets/images/tabs_3.svg';
 
 export default class Tabs extends Component{
 
+  componentDidMount() {
+    let brand_tracking = document.getElementsByClassName('brand-tracking')[0];
+    let brand_tracking_notice = document.getElementsByClassName('brand-tracking--notice')[0];
+
+    brand_tracking.addEventListener('mouseover', () => {
+      brand_tracking_notice.style.opacity = 1;
+    });
+    brand_tracking.addEventListener('mouseout', () => {
+      brand_tracking_notice.style.opacity = 0;
+    });
+  }
+
   render() {
     const{
       tab,
@@ -43,6 +55,12 @@ export default class Tabs extends Component{
           { tab === 2 ? <TabContent2/> : null }
           { tab === 3 ? <TabContent3/> : null }
         </div>
+        <div className="brand-tracking--notice">
+          <h3 className="bebas-30">Бренд-­трекинг</h3>
+          <p className="helvetica-14-bold">
+            длительное маркетинговое исследование, применяемое для получения в динамике информации о состоянии бренда на рынке (известность, использование, имидж, характерис-тика потребителей бренда, здоровье бренда и т.п.).
+          </p>
+        </div>
       </div>
     )
   }
@@ -61,7 +79,9 @@ class TabContent0 extends Component{
           <span>Участие главных героев</span>
           <span>Кол-во эпизодов с присутствием бренда</span>
           <span>Хронометраж эпизодов с присутствием бренда</span>
-          <span>Бренд-трекинг</span>
+          <span className="brand-tracking">
+            <u>Бренд-трекинг</u>
+          </span>
           <span>VIP-приглашение на премьеру</span>
         </div>
 

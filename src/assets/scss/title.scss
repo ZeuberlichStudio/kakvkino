@@ -1,5 +1,6 @@
 section#title{
   width: 100vw;
+  min-height: get-vw(645px);
   height:100vh;
 
   position: relative;
@@ -14,7 +15,6 @@ section#title{
 
   article:not(.title--aside){
     padding: get-vw(216px) get-vw(678px) 0 get-vw(115px);
-
     flex-grow: 1;
 
 
@@ -31,7 +31,7 @@ section#title{
     }
 
     .links-container{
-      height: get-vw(32px);
+      height: get-vw(38px);
       margin-top: get-vw(18px);
 
       display: grid;
@@ -39,11 +39,12 @@ section#title{
       grid-auto-columns: max-content;
       grid-column-gap: get-vw(12px);
 
-      a{
+      div{
         padding: 0 get-vw(18px);
-        padding-top: get-vw(8px);
+        padding-top: get-vw(12px);
 
         background-color: $black;
+        cursor: pointer;
       }
     }
   }
@@ -108,5 +109,64 @@ section#title{
         display: inline-block;
       }
     }
+  }
+}
+
+#forbes{
+  width: max-content;
+  height: get-vw(26px);
+  left: get-vw(120px); bottom: get-vw(20px);
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  color: $black;
+
+  span{
+    height: get-vw(12px);
+  }
+  a{
+    width: get-vw(67px);
+    height: get-vw(26px);
+
+    display: inline-block;
+
+    background-image: url('../images/forbes_logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+#charity{
+  width: get-vw(450px);
+  padding: get-vw(20px);
+  right: get-vw(0px); left: get-vw(410px);
+  bottom: get-vw(190px);
+
+  position: absolute;
+
+  border: get-vw(2px) solid $black;
+  backdrop-filter: blur(8px);
+  transition: opacity 0.1s;
+
+  display: none;
+  opacity: 0;
+
+  &::before{
+    width: 0;
+    height: 0;
+    right: 0; left: 0;
+    bottom: get-vw(-12px);
+    margin: auto;
+
+    position: absolute;
+    display: block;
+
+    border-left: transparent solid get-vw(3.5px);
+    border-right: transparent solid get-vw(3.5px);
+    border-top: $black solid get-vw(3.5px);
+    content: '';
   }
 }

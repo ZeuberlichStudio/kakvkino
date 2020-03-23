@@ -1,3 +1,5 @@
+.pc-hide{ display: none; }
+
 #about{
   width: 100vw;
   min-height: get-vw(640px);
@@ -134,33 +136,44 @@
   }
 }
 
-.animated ul{
-  li{
+//controls highlight
+
+.about--controls ul.animated{
+  li:not(.active){
     animation-name: blink;
-    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 7s;
+  }
+
+  li.active{
+    animation-name: active_blink;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 7s;
   }
 
   li:nth-child(1){
-    animation-delay: 3s;
+    animation-delay: 0s;
   }
   li:nth-child(2){
-    animation-delay: 3.75s;
+    animation-delay: 0.75s;
   }
   li:nth-child(3){
-    animation-delay: 4.5s;
+    animation-delay: 1.5s;
   }
 }
 
 @keyframes blink{
   0%  { background-color: rgba(255, 250, 236, 0); color: $sand; }
-  50% { background-color: rgba(255, 250, 236, 0.5); color: $sand; }
+  15% { background-color: rgba(255, 250, 236, 0.5); color: $sand; }
+  30%{ background-color: rgba(255, 250, 236, 0); color: $sand; }
   100%{ background-color: rgba(255, 250, 236, 0); color: $sand; }
 }
 
-@keyframes blinkActive{
-  0%  { background-color: rgba(255, 250, 236, 1); color: $black; }
-  10%  { background-color: rgba(255, 250, 236, 0); color: $sand; }
-  50% { background-color: rgba(255, 250, 236, 0.5); color: $sand; }
-  75%{ background-color: rgba(255, 250, 236, 0); color: $sand; }
+@keyframes active_blink{
+  0%  { background-color: rgba(255, 250, 236, 0); color: $sand; }
+  15% { background-color: rgba(255, 250, 236, 0.5); color: $sand; }
+  30%{ background-color: rgba(255, 250, 236, 1); color: $black; }
   100%{ background-color: rgba(255, 250, 236, 1); color: $black; }
 }

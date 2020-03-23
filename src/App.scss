@@ -9,6 +9,7 @@ html{
   width: 100vw;
   height: auto;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -16,7 +17,6 @@ body{
   height: auto;
   margin: 0;
   background-color: $sand;
-  overflow-x: hidden;
 }
 
 #root{

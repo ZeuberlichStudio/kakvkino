@@ -20,14 +20,14 @@ export default class AboutUs extends Component{
           </div>
 
           <div>
-            <a href="https://planagency.ru" target="_blank"><img alt="" src={planLogo}/></a>
+            <a href="https://planagency.ru" rel="noopener noreferrer" target="_blank"><img alt="" src={planLogo}/></a>
             <h2 className="bebas-20 m-bebas-20">Коммуникационное агентство</h2>
             <p className="helvetica-12-bold m-helvetica-12-bold">
               Команда экспертов с опытом в маркетинге и рекламе свыше 15 лет разрабатывает стратегические решения по развитию бизнеса и реализует комплекс коммуникационных решений.
             </p>
           </div>
           <div>
-            <a href="http://paragraphfilm.ru" target="_blank">
+            <a href="http://paragraphfilm.ru" rel="noopener noreferrer" target="_blank">
               <img alt="" src={paragraphLogo}/>
             </a>
             <h2 className="bebas-20 m-bebas-20">Кинокомпания</h2>
@@ -36,10 +36,10 @@ export default class AboutUs extends Component{
             </p>
           </div>
           <div>
-            <a href="http://origostudios.com" target="_blank">
+            <a href="http://origostudios.com" rel="noopener noreferrer" target="_blank">
               <img alt="" src={origoLogo}/>
             </a>
-            <a href="http://eurasianfilms.com" target="_blank">
+            <a href="http://eurasianfilms.com" rel="noopener noreferrer" target="_blank">
               <img alt="" src={eurasianLogo}/>
             </a>
             <h2 className="bebas-20 m-bebas-20">Кинокомпания</h2>
@@ -80,12 +80,6 @@ export default class AboutUs extends Component{
               </p>
             </div>
           </div>
-        </div>
-        <div id="pre-footer">
-          <h2 className="bebas-64 m-bebas-30 dark">
-            Пришло время<br/> включить магию кино<br/>
-            В свою рекламную кампанию
-          </h2>
         </div>
       </section>
     )

@@ -10,7 +10,7 @@
   position: absolute;
   left: 0;
   top: unset!important;
-  bottom: 27.73438vw!important;
+  bottom: get-vw(549px)!important;
 }
 
 #timeline-container{
@@ -27,14 +27,35 @@
 #timeline{
   width: get-vw(12000px);
   height: get-vw(49px);
+  margin-left: -2.65625vw;
 
-  background-image: url('../images/timeline.svg');
-  background-size: auto get-vw(37px);
-  background-position: right top 0px;
+  background-image:
+  url('../images/dark_rect.svg'),
+  url('../images/light_rect.svg'),
+  url('../images/dark_rect.svg'),
+  url('../images/light_rect.svg'),
+  url('../images/dark_rect.svg');
+  background-size:
+  100vh 100%,
+  100vh 100%,
+  get-vw(800px * 2) 100%,
+  get-vw(1356px) 100%,
+  get-vw(800px) 100%;
+  background-position:
+  left 0 top 0,
+  left 100vh top 0,
+  left 200vh top 0,
+  left calc(200vh + 125vw) top 0,
+  left calc(200vh + 125vw + 105.9375vw);
   background-repeat: no-repeat;
 
+  mask-image: url('../images/timeline.svg');
+  mask-size: auto get-vw(37px);
+  mask-position: right top 0px;
+  mask-repeat: no-repeat;
+
   transform-origin: left center;
-  will-change: transform;
+  will-change: transform background-position;
 }
 
 #counter-container{

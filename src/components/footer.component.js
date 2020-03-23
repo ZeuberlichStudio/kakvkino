@@ -1,9 +1,16 @@
 import React, { Component, Fragment } from 'react';
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 export default class Footer extends Component{
   render() {
     return(
       <Fragment>
+        <div id="pre-footer">
+          <h2 className="bebas-64 m-bebas-30">
+            Пришло время<br/> включить магию кино<br/>
+            В свою рекламную кампанию
+          </h2>
+        </div>
         <footer id="footer">
           <div className="contacts-container-1 contacts-container">
             <h2 className="bebas-30 m-bebas-30">Контакты:</h2>
@@ -34,10 +41,15 @@ export default class Footer extends Component{
           <div className="contacts-container-2 contacts-container">
             {/*social*/}
             <div className="social-links">
-              <a href="/" target="_blank"></a><a href="/" target="_blank"></a><a href="/" target="_blank"></a>
+              <a href="/" rel="noopener noreferrer" target="_blank"></a><a href="/" rel="noopener noreferrer" target="_blank"></a><a href="/" rel="noopener noreferrer" target="_blank"></a>
             </div>
             {/*map*/}
             <div className="map-container">
+              <YMaps>
+                <Map width="100%" height="100%" defaultState={{ center: [55.806525, 37.504681], zoom: 15 }}>
+                  <Placemark geometry={[55.806525, 37.504681]} />
+                </Map>
+              </YMaps>
             </div>
             {/*address*/}
             <span className="bebas-20 address">125080 Москва<br/> Волоколамское ш., д.1., стр.1, офис 709А</span>

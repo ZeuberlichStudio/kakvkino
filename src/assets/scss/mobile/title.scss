@@ -2,6 +2,8 @@ section#title{
   width: 100vw;
   padding: 0 get-m-vw(20px);
 
+  position: relative;
+
   background-color: $sand;
   background-image: url('../../images/Pattern_1.svg');
 }
@@ -21,7 +23,7 @@ article{
     grid-auto-columns: max-content;
     grid-column-gap: get-m-vw(5px);
 
-    a{
+    div{
       width: max-content;
       height: get-m-vw(32px);
       padding: 0 get-m-vw(10px);
@@ -48,3 +50,32 @@ article.title--aside{
     display: block;
   }
 }
+
+#forbes{
+  width: max-content;
+  height: get-m-vw(26px);
+  left: get-m-vw(20px); top: get-m-vw(520px);
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  color: $black;
+
+  span{
+    height: get-m-vw(10px);
+  }
+  a{
+    width: get-m-vw(67px);
+    height: get-m-vw(26px);
+
+    display: inline-block;
+
+    background-image: url('../../images/forbes_logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+#charity{ display: none; }

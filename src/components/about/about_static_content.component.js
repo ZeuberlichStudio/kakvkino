@@ -16,6 +16,9 @@ export default class AboutStaticContent extends Component{
     setTimeout( (text) => text.style.opacity = 1, 1000, text );
 
     document.getElementById('about').style.setProperty('--bg-offset', `${100*goTo}vw`);
+
+    document.getElementById('about--buttons').classList.remove('animated');
+    setTimeout( () => document.getElementById('about--buttons').classList.add('animated'), 100 );
   }
 
   render() {
@@ -34,16 +37,16 @@ export default class AboutStaticContent extends Component{
           }>
           <TextIntro/>
           <div className="about--controls">
-            <h3 className="bebas-30 m-bebas-30">Кино формирует:</h3>
-            <ul className="bebas-20 m-bebas-14">
+            <h3 className="bebas-30 m-bebas-30">Потому что кино формирует:</h3>
+            <ul id="about--buttons" className="bebas-20 m-bebas-14 animated">
               <li onClick={ e => this.slideChange(e) }
-              data-goTo="0"
+              data-goto="0"
               className={ activeSlide === 0 ? 'active' : null }>Паттерн потребления</li>
               <li onClick={ e => this.slideChange(e) }
-              data-goTo="1"
+              data-goto="1"
               className={ activeSlide === 1 ? 'active' : null }>Предпочтение выбора</li>
               <li onClick={ e => this.slideChange(e) }
-              data-goTo="2"
+              data-goto="2"
               className={ activeSlide === 2 ? 'active' : null }>Желание попробовать</li>
             </ul>
           </div>
@@ -65,7 +68,7 @@ class TextIntro extends Component{
         <h2 className="bebas-64 m-bebas-30">Одна хорошая роль в кино</h2>
         <p className="helvetica-14-bold m-helvetica-12-bold">
           может сделать неизвестного человека Звездой.<br/>
-          Так и бренд может стать звездой, благодаря одной интеграции в КИНО, потому <br/> что КИНО вызывает сильные чувства.
+          Так и бренд может стать звездой, благодаря одной интеграции в КИНО, потому <br className="m-hide"/> что КИНО вызывает сильные чувства.
           <br/>
           <br/>
           <span className="m-hide opacity-075">

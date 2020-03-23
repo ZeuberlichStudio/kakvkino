@@ -31,7 +31,7 @@ export default class Counter extends Component{
 
         let moveParallax = () => {
 
-          let footer = document.getElementById('footer');
+          let footer = document.getElementById('pre-footer');
           let footerBound = footer.getBoundingClientRect();
           let parallax = document.getElementById('parallax');
           let clientHeight = document.documentElement.clientHeight;
@@ -40,6 +40,7 @@ export default class Counter extends Component{
 
           let counter = document.getElementById('counter-wrapper');
           let timeline = document.getElementById('timeline');
+          //let lightTimeline = document.getElementById('light-timeline');
 
           if( footerBound.top >= clientHeight){
             parallax.classList.remove('fixed');
@@ -50,8 +51,19 @@ export default class Counter extends Component{
             let timelineOffset = (parallax.offsetHeight - timeline.offsetWidth) * scrollY/(footer.offsetTop - clientHeight);
             changeCount(counterOffset, (parallax.offsetHeight - counter.offsetWidth) );
 
-            counter.style.transform = `translate3d(${ counterOffset }px, 0, 0)`
-            timeline.style.transform = `translate3d(${ timelineOffset }px, 0, 0)`
+            counter.style.transform =
+            `translate3d(${ counterOffset }px, 0, 0)`;
+            timeline.style.transform =
+            `translate3d(${ timelineOffset }px, 0, 0)`;
+            timeline.style.backgroundPosition =
+            `left ${ -timelineOffset - scrollY }px top 0,
+             left calc(100vh + ${ -timelineOffset - scrollY }px) top 0,
+             left calc(200vh + ${ -timelineOffset - scrollY }px) top 0,
+             left calc(200vh + 125vw + ${ -timelineOffset - scrollY }px) top 0,
+             left calc(200vh + 125vw + 105.9375vw + ${ -timelineOffset - scrollY }px) top 0
+            `;
+
+
           }else{
             let counterOffset = (parallax.offsetHeight - counter.offsetWidth);
             let timelineOffset = (parallax.offsetHeight - timeline.offsetWidth);
@@ -88,6 +100,7 @@ export default class Counter extends Component{
 
         <div id="timeline-container">
           <div id="timeline"></div>
+          { /*<div id="light-timeline"></div>*/ }
         </div>
       </div>
     )

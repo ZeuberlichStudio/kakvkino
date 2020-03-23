@@ -10,7 +10,7 @@
 #about--article{
   width: 100%;
   height: var(--vh);
-  padding: get-m-vw(48px) get-m-vw(20px) get-m-vw(25px) get-m-vw(20px);
+  padding: get-m-vw(60px) get-m-vw(20px) get-m-vw(40px) get-m-vw(20px);
 
   display: grid;
   grid-auto-flow: row;
@@ -25,7 +25,8 @@
    url('../../images/about_bg_1.jpg'),
    url('../../images/about_bg_2.jpg'),
    url('../../images/about_bg_3.jpg');
-  background-size: auto, auto var(--vh), auto var(--vh), auto var(--vh);
+  background-size: auto, auto get-m-vw(735px), auto get-m-vw(735px),
+   auto get-m-vw(735px);
   background-repeat:
     repeat,
     no-repeat,
@@ -75,7 +76,10 @@
 .about--controls{
   align-self: flex-end;
 
-  h3{ margin-left: get-m-vw(2px); }
+  h3{
+    opacity: 0.5;
+    margin-left: get-m-vw(2px);
+  }
 
   ul{
     margin-top: get-m-vw(17px);
@@ -113,6 +117,7 @@
   width: 100vw;
   height: max-content;
   padding: get-m-vw(20px);
+  padding-top: get-m-vw(80px);
 
   display: grid;
   grid-auto-flow: row;
@@ -129,4 +134,46 @@
   p{
     margin-top: get-m-vw(2px);
   }
+}
+
+//controls highlight
+
+.about--controls ul.animated{
+  li:not(.active){
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 7s;
+  }
+
+  li.active{
+    animation-name: active_blink;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 7s;
+  }
+
+  li:nth-child(1){
+    animation-delay: 0s;
+  }
+  li:nth-child(2){
+    animation-delay: 0.75s;
+  }
+  li:nth-child(3){
+    animation-delay: 1.5s;
+  }
+}
+
+@keyframes blink{
+  0%  { background-color: rgba(255, 250, 236, 0); color: $sand; }
+  15% { background-color: rgba(255, 250, 236, 0.5); color: $sand; }
+  30%{ background-color: rgba(255, 250, 236, 0); color: $sand; }
+  100%{ background-color: rgba(255, 250, 236, 0); color: $sand; }
+}
+
+@keyframes active_blink{
+  0%  { background-color: rgba(255, 250, 236, 0); color: $sand; }
+  15% { background-color: rgba(255, 250, 236, 0.5); color: $sand; }
+  30%{ background-color: rgba(255, 250, 236, 1); color: $black; }
+  100%{ background-color: rgba(255, 250, 236, 1); color: $black; }
 }

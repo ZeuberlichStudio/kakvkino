@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 
 export default class MobileTabs extends Component{
 
+  componenspanidMount() {
+    let brand_tracking = document.getElementsByClassName('brand-tracking')[0];
+    let brand_tracking_notice = document.getElementsByClassName('brand-tracking--notice')[0];
+
+    brand_tracking.addEventListener('mouseover', () => {
+      brand_tracking_notice.style.opacity =
+      brand_tracking_notice.style.getPropertyValue('opacity') ?
+      1 : 0;
+    });
+    brand_tracking.addEventListener('mouseout', () => {
+      brand_tracking_notice.style.opacity = 0;
+    });
+  }
+
   state = {
     tab: 0
   }
@@ -13,13 +27,19 @@ export default class MobileTabs extends Component{
     this.setState({ tab });
   }
 
+  brandTrackingClose = () => {
+    let brand_tracking_notice = document.getElementsByClassName('brand-tracking--notice')[0];
+    brand_tracking_notice.style.opacity = 0;
+  }
+
   render() {
     const{
       tab
     } = this.state;
 
     const{
-      onClick
+      onClick,
+      brandTrackingClose
     } = this;
 
     return(
@@ -39,7 +59,7 @@ export default class MobileTabs extends Component{
             data-tab="1"
             onClick={ (e) => onClick(e) }
             className="m-bebas-20">
-              Прогноз эффективности
+              Прогноз доходности
             </a>
             <TabContent1/>
           </li>
@@ -48,7 +68,7 @@ export default class MobileTabs extends Component{
             data-tab="2"
             onClick={ (e) => onClick(e) }
             className="m-bebas-20">
-              Прогноз доходности
+              Прогноз эффективности
             </a>
             <TabContent2/>
           </li>
@@ -62,6 +82,13 @@ export default class MobileTabs extends Component{
             <TabContent3/>
           </li>
         </ul>
+        <div className="brand-tracking--notice">
+          <div onClick={brandTrackingClose} id="brand-tracking--notice-close"></div>
+          <h3 className="bebas-30 m-bebas-20">Бренд-­трекинг</h3>
+          <p className="helvetica-14-bold m-helvetica-12-bold">
+            длительное маркетинговое исследование, применяемое для получения в динамике информации о состоянии бренда на рынке (известность, использование, имидж, характерис-тика потребителей бренда, здоровье бренда и т.п.).
+          </p>
+        </div>
       </div>
     )
   }
@@ -112,48 +139,48 @@ class TabContent0 extends Component{
           <span>Участие главных героев</span>
           <span>Кол-во эпизодов с присутствием бренда</span>
           <span>Хронометраж эпизодов с присутствием бренда</span>
-          <span>Бренд-трекинг</span>
+          <span className="brand-tracking"><u>Бренд-трекинг</u></span>
           <span>VIP-приглашение на премьеру</span>
         </div>
         <div className="right-column m-bebas-20">
           <div className={ slide === 0 ? "active " + "slide-0 " + "slide" : "slide-0 " + "slide"}>
-            <th className="m-bebas-20">Эпизодическая<br/>роль</th>
-            <td>3 500 000</td>
-            <td className="m-bebas-14">
+            <h3 className="m-bebas-20">Эпизодическая<br/>роль</h3>
+            <span>3 500 000</span>
+            <span className="m-bebas-14">
               Демонстрация <span className="m-bebas-20">или</span> упоминание
-            </td>
-            <td>Нет</td>
-            <td>&nbsp;&nbsp;Нет*</td>
-            <td>1</td>
-            <td>30 сек</td>
-            <td>НЕТ</td>
-            <td>2</td>
+            </span>
+            <span>Нет</span>
+            <span>&nbsp;&nbsp;Нет*</span>
+            <span>1</span>
+            <span>30 сек</span>
+            <span>НЕТ</span>
+            <span>2</span>
           </div>
           <div className={ slide === 1 ? "active " + "slide-1 " + "slide" : "slide-1 " + "slide"}>
-            <th className="m-bebas-20">Роль второго<br/>плана</th>
-            <td>7 000 000</td>
-            <td className="m-bebas-14">
+            <h3 className="m-bebas-20">Роль второго<br/>плана</h3>
+            <span>7 000 000</span>
+            <span className="m-bebas-14">
               Демонстрация <span className="m-bebas-20">и</span> упоминание
-            </td>
-            <td>ДА</td>
-            <td>≥ 50% сцен</td>
-            <td>2</td>
-            <td>60 сек</td>
-            <td>ДА</td>
-            <td>6</td>
+            </span>
+            <span>ДА</span>
+            <span>≥ 50% сцен</span>
+            <span>2</span>
+            <span>60 сек</span>
+            <span>ДА</span>
+            <span>6</span>
           </div>
           <div className={ slide === 2 ? "active " + "slide-2 " + "slide" : "slide-2 " + "slide"}>
-            <th className="m-bebas-20">Главная<br/>роль</th>
-            <td>21 000 000</td>
-            <td className="m-bebas-14">
+            <h3 className="m-bebas-20">Главная<br/>роль</h3>
+            <span>21 000 000</span>
+            <span className="m-bebas-14">
               Демонстрация <span className="m-bebas-20">и</span> упоминание
-            </td>
-            <td>ДА</td>
-            <td>≥ 50% сцен</td>
-            <td>6</td>
-            <td>180 сек</td>
-            <td>ДА</td>
-            <td>20</td>
+            </span>
+            <span>ДА</span>
+            <span>≥ 50% сцен</span>
+            <span>6</span>
+            <span>180 сек</span>
+            <span>ДА</span>
+            <span>20</span>
           </div>
           <button
            className="prev-slide" style={{ opacity: 0 }}
@@ -230,8 +257,8 @@ class TabContent1 extends Component{
         </div>
         <div className="right-column m-bebas-20">
           <div className={ slide === 0 ? "active " + "slide-0 " + "slide" : "slide-0 " + "slide"}>
-            <th className="m-bebas-20">Эпизодическая<br/>роль</th>
-            <td className="opacity-075">3 500 000</td>
+            <h3 className="m-bebas-20">Эпизодическая<br/>роль</h3>
+            <span className="opacity-075">3 500 000</span>
             <span>700 000</span>
             <span>1 750 000</span>
             <span>2 625 000</span>
@@ -243,8 +270,8 @@ class TabContent1 extends Component{
             <span>9 100 000</span>
           </div>
           <div className={ slide === 1 ? "active " + "slide-1 " + "slide" : "slide-1 " + "slide"}>
-            <th className="m-bebas-20">Роль второго<br/>плана</th>
-            <td className="opacity-075">7 000 000</td>
+            <h3 className="m-bebas-20">Роль второго<br/>плана</h3>
+            <span className="opacity-075">7 000 000</span>
             <span>1 400 000</span>
             <span>3 500 000</span>
             <span>5 250 000</span>
@@ -256,8 +283,8 @@ class TabContent1 extends Component{
             <span>18 200 000</span>
           </div>
           <div className={ slide === 2 ? "active " + "slide-2 " + "slide" : "slide-2 " + "slide"}>
-            <th className="m-bebas-20">Главная<br/>роль</th>
-            <td className="opacity-075">21 000 000</td>
+            <h3 className="m-bebas-20">Главная<br/>роль</h3>
+            <span className="opacity-075">21 000 000</span>
             <span>4 200 000</span>
             <span>10 500 000</span>
             <span>15 750 000</span>
@@ -329,7 +356,7 @@ class TabContent2 extends Component{
           </span>
           <span>
             Интернет<br/>
-            <span className="m-helvetica-12-bold opacity-075">(Минимальный уровень)</span>
+            <span className="m-helvetica-12-bold opacity-075">(минимальный уровень)</span>
           </span>
           <span>тв (Один выход)<br/>
             <span className="m-helvetica-12-bold opacity-075">(средний уровень,
@@ -338,22 +365,22 @@ class TabContent2 extends Component{
         </div>
         <div className="right-column m-bebas-20">
           <div className={ slide === 0 ? "active " + "slide-0 " + "slide" : "slide-0 " + "slide"}>
-            <th className="m-bebas-20">Эпизодическая<br/>роль</th>
-            <td className="opacity-075">3 500 000</td>
+            <h3 className="m-bebas-20">Эпизодическая<br/>роль</h3>
+            <span className="opacity-075">3 500 000</span>
             <span>1.5 млн</span>
             <span>12.5 МЛН</span>
             <span>7 Млн</span>
           </div>
           <div className={ slide === 1 ? "active " + "slide-1 " + "slide" : "slide-1 " + "slide"}>
-            <th className="m-bebas-20">Роль второго<br/>плана</th>
-            <td className="opacity-075">7 000 000</td>
+            <h3 className="m-bebas-20">Роль второго<br/>плана</h3>
+            <span className="opacity-075">7 000 000</span>
             <span>3 МЛн</span>
             <span>25 млн</span>
             <span>14 млн</span>
           </div>
           <div className={ slide === 2 ? "active " + "slide-2 " + "slide" : "slide-2 " + "slide"}>
-            <th className="m-bebas-20">Главная<br/>роль</th>
-            <td className="opacity-075">21 000 000</td>
+            <h3 className="m-bebas-20">Главная<br/>роль</h3>
+            <span className="opacity-075">21 000 000</span>
             <span>7.5 млн</span>
             <span>62.5 млн</span>
             <span>35 млн</span>

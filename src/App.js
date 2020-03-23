@@ -35,7 +35,7 @@ class App extends React.Component {
       let headerRect =
       document.getElementById('header').getBoundingClientRect();
       let footerRect =
-      document.getElementById('footer').getBoundingClientRect();
+      document.getElementById('pre-footer').getBoundingClientRect();
       let uiColor;
 
       if( aboutRect.top <= headerRect.bottom/2 && aboutRect.bottom > headerRect.bottom/2 && aboutRect2.top > headerRect.bottom/2 ){
@@ -80,7 +80,7 @@ class App extends React.Component {
       <Fragment>
 
         { this.state.device !== 'mobile' ?
-        <Animation/> : null }
+        null : null }
 
         { this.state.device === 'mobile' ?
         <MobileHeader color={ this.state.uiColor }/> :
@@ -91,7 +91,7 @@ class App extends React.Component {
         <main id="content">
             <Title device={ this.state.device }/>
             <About/>
-            <Stats/>
+            <Stats device={ this.state.device }/>
             <Service/>
             <AboutUs/>
         </main>

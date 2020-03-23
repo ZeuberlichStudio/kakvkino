@@ -13,6 +13,15 @@ export default class MobileHeader extends Component{
     this.setState({ active: true })
   }
 
+  goToAnchor = e => {
+    e.preventDefault();
+    let id = e.currentTarget.dataset.link;
+    let anchor = document.getElementById(id).offsetTop + document.getElementById(id).parentElement.offsetTop;
+
+    window.scrollTo(0, anchor);
+    this.setState({ active: false });
+  }
+
   render() {
     return(
       <header id="header" className={ (this.props.color === 'light' ? 'light' : null) + " " + (this.isSamsungBrowser ? 'samsung' : null)  }>
@@ -23,10 +32,10 @@ export default class MobileHeader extends Component{
           <nav className="m-bebas-20">
             <h2 className="m-bebas-30">Меню</h2>
             <ul>
-              <li className="nav-link"><a href="#stats--article-2-anchor">Как это работает</a></li>
-              <li className="nav-link"><a href="#service">Что снимаем</a></li>
-              <li className="nav-link"><a href="#about-us">Кто мы</a></li>
-              <li className="nav-link"><a href="#stats">Статистика</a></li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="stats--article-2-anchor" className="nav-link">Как это работает</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="service" className="nav-link">Что снимаем</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="about-us" className="nav-link">Кто мы</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="stats" className="nav-link">Статистика</li>
             </ul>
           </nav>
           <div className="contacts-container">
@@ -53,9 +62,9 @@ export default class MobileHeader extends Component{
             <a href="mailto: SalesManager@Kakvkino.Group" className="m-bebas-20">
               Написать
             </a>
-            <a href="/" target="_blank"></a>
-            <a href="/" target="_blank"></a>
-            <a href="/" target="_blank"></a>
+            <a href="/" rel="noopener noreferrer" target="_blank"></a>
+            <a href="/" rel="noopener noreferrer" target="_blank"></a>
+            <a href="/" rel="noopener noreferrer" target="_blank"></a>
           </div>
         </div>
       </header>

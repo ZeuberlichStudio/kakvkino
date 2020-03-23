@@ -3,6 +3,7 @@ section#service{
   height: max-content;
   padding: get-m-vw(20px);
   padding-top: get-m-vw(276px);
+  padding-bottom: get-m-vw(40px);
 
   position: relative;
 
@@ -10,7 +11,7 @@ section#service{
 
   &::before{
     width: 100%;
-    height: var(--vh);
+    height: get-m-vw(735px);
     left: 0; top: 0;
 
     position: fixed;
@@ -18,7 +19,7 @@ section#service{
     background-image: url('../../images/service_bg.jpg'),
     url('../../images/Pattern_1.svg');
     background-blend-mode: darken;
-    background-size: auto var(--vh), auto;
+    background-size: auto get-m-vw(735px), auto;
     background-position: left 20% top, left top;
 
     z-index: -1;
@@ -68,8 +69,6 @@ section#service{
 
   border: $sand solid get-m-vw(2px);
   overflow: hidden;
-
-  backdrop-filter: blur(8px);
 }
 
 #tabs-container.samsung{
@@ -77,6 +76,7 @@ section#service{
 }
 
 #tabs{
+  backdrop-filter: blur(8px);
   li{
     height: max-content;
     width: 100%;
@@ -430,7 +430,7 @@ button.next-slide{
 }
 
 .service--aside-2{
-  margin-top: get-m-vw(30px);
+  margin-top: get-m-vw(40px);
 
   display: grid;
   grid-auto-flow: row;
@@ -459,7 +459,7 @@ button.next-slide{
   grid-row-gap: get-m-vw(20px);
 
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.3s;
   backdrop-filter: blur(16px);
   border: $sand solid get-m-vw(2px);
 
@@ -517,4 +517,51 @@ button.next-slide{
 .form-wrapper,
 .service--aside-1{
   display: none;
+}
+
+.brand-tracking--notice{
+  width: get-m-vw(323px);
+  height: get-m-vw(120px);
+  padding: get-m-vw(10px);
+  left: 0; right: 0;
+  bottom: get-m-vw(185px);
+  margin: auto;
+
+  position: absolute;
+  pointer-events: none;
+
+  opacity: 0;
+  border: get-m-vw(2px) solid $sand;
+  backdrop-filter: blur(16px);
+  text-align: left;
+  transition: opacity 0.3s;
+  z-index: 20;
+
+  #brand-tracking--notice-close{
+    width: get-m-vw(14px);
+    height: get-m-vw(14px);
+    right: get-m-vw(8px);
+    top: get-m-vw(8px);
+
+    position: absolute;
+
+    background-image: url('../../images/close.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::before{
+    width: 0;
+    height: 0;
+    left: get-m-vw(40px); bottom: get-m-vw(-12px);
+
+    position: absolute;
+
+    border-left: get-m-vw(11px) solid transparent;
+    border-right: get-m-vw(11px) solid transparent;
+    border-top: get-m-vw(12px) solid rgba(255, 251, 236, 1);
+    content: '';
+    z-index: 0;
+  }
 }
