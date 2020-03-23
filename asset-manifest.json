@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.3cd5c2fd.chunk.css",
-    "main.js": "/kakvkino/static/js/main.e47dda76.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.e47dda76.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.fc01a417.chunk.css",
+    "main.js": "/kakvkino/static/js/main.b6bb6fcc.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.b6bb6fcc.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.52ee6f4c.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.52ee6f4c.js.map",
     "static/js/2.bb25a378.chunk.js": "/kakvkino/static/js/2.bb25a378.chunk.js",
     "static/js/2.bb25a378.chunk.js.map": "/kakvkino/static/js/2.bb25a378.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.b5052751a52b3d4c4b2ac7c76517069a.js": "/kakvkino/precache-manifest.b5052751a52b3d4c4b2ac7c76517069a.js",
+    "precache-manifest.377286da58d39bb44b7d35c4a8c43618.js": "/kakvkino/precache-manifest.377286da58d39bb44b7d35c4a8c43618.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.3cd5c2fd.chunk.css.map": "/kakvkino/static/css/main.3cd5c2fd.chunk.css.map",
+    "static/css/main.fc01a417.chunk.css.map": "/kakvkino/static/css/main.fc01a417.chunk.css.map",
     "static/js/2.bb25a378.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.bb25a378.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
@@ -19,12 +19,12 @@
     "static/media/graph_1_1.svg": "/kakvkino/static/media/graph_1_1.dfc42412.svg",
     "static/media/graph_1_2.svg": "/kakvkino/static/media/graph_1_2.e6533222.svg",
     "static/media/graph_2_1.svg": "/kakvkino/static/media/graph_2_1.c5736cfc.svg",
-    "static/media/graph_2_2.svg": "/kakvkino/static/media/graph_2_2.a39ede6c.svg",
+    "static/media/graph_2_2.svg": "/kakvkino/static/media/graph_2_2.297b8408.svg",
     "static/media/movie_1.svg": "/kakvkino/static/media/movie_1.c6d21790.svg",
     "static/media/origoLogo.svg": "/kakvkino/static/media/origoLogo.7c9f4100.svg",
     "static/media/paragraphLogo.svg": "/kakvkino/static/media/paragraphLogo.9983fdd9.svg",
     "static/media/planLogo.svg": "/kakvkino/static/media/planLogo.d1568043.svg",
-    "static/media/poll.svg": "/kakvkino/static/media/poll.ffc581e1.svg",
+    "static/media/poll.svg": "/kakvkino/static/media/poll.f75ab830.svg",
     "static/media/stats_pic_1.svg": "/kakvkino/static/media/stats_pic_1.671977f9.svg",
     "static/media/stats_pic_2.svg": "/kakvkino/static/media/stats_pic_2.868c37e3.svg",
     "static/media/stats_stages.svg": "/kakvkino/static/media/stats_stages.642db180.svg",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.52ee6f4c.js",
     "static/js/2.bb25a378.chunk.js",
-    "static/css/main.3cd5c2fd.chunk.css",
-    "static/js/main.e47dda76.chunk.js"
+    "static/css/main.fc01a417.chunk.css",
+    "static/js/main.b6bb6fcc.chunk.js"
   ]
 }
