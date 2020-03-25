@@ -25,12 +25,35 @@ export default class StatsArticle3 extends Component{
             this.props.device === 'desktop' ?
             <img src={ graph }/> :
             <Fragment>
-              <GraphSlider id="GraphSlider-1"
-              header="Аудитория кинотеатров в сравнении с прошлым годом"
-              slides={[ m_graph_1_1, m_graph_1_2 ]}/>
-              <GraphSlider id="GraphSlider-2"
-              header="Портрет аудитории кинотеатров в 2019 году"
-              slides={[ m_graph_2_1, m_graph_2_2 ]}/>
+              <h3 className="m-bebas-25">
+                Аудитория кинотеатров<br/> в сравнении с прошлым годом
+              </h3>
+              <Slider
+              id="mobile-stats-slider-1"
+              slideWidthVw={88}
+              buttonText = {[
+                'Июль — Декабрь 2019',
+                'Январь — Июнь 2020',
+              ]}
+              content={[
+                <img src={ m_graph_1_1 } />,
+                <img src={ m_graph_1_2 } />,
+              ]}/>
+
+              <h3 className="m-bebas-25">
+                Портрет аудитории кинотеатров<br/> в 2019 году
+              </h3>
+              <Slider
+              id="mobile-stats-slider-2"
+              slideWidthVw={88}
+              buttonText = {[
+                'Состав посещения',
+                'Возраст аудитории',
+              ]}
+              content={[
+                <img src={ m_graph_2_1 } />,
+                <img src={ m_graph_2_2 } />,
+              ]}/>
             </Fragment>
           }
           <p className="helvetica-12-bold m-helvetica-12-bold">
@@ -51,10 +74,13 @@ export default class StatsArticle3 extends Component{
             Доля семейной аудитории составляет в среднем 30,1%, в период школьных каникул достигает 42%. С детьми приходят преимущественно зрители старше 35-ти лет.
             <br/><br/>
             5% кинозрителей приходят на фильм вообще без спутников.
+            <br/><br/><br/>
+            <span className="helvetica-14-bold m-helvetica-14-bold">
+              Источник: <a href="/"><u>Фонд Кино</u></a>
+            </span>
           </p>
         </div>
-        <div className="text-right-wrapper">
-          <div className="text-right-container helvetica-12-bold m-helvetica-12-bold">
+        <div className="text-right-container helvetica-12-bold m-helvetica-12-bold">
             <div>
               <h3 className="bebas-25 m-bebas-30">Все больше россиян</h3>
               <p>
@@ -75,6 +101,7 @@ export default class StatsArticle3 extends Component{
                 <Slider
                 id="movie-slider"
                 slideWidthVw={14.921875}
+                visible="true"
                 content={[
                   <img src={ movie_1 } />,
                   <img src={ movie_1 } />,
@@ -91,57 +118,8 @@ export default class StatsArticle3 extends Component{
                 <u><a href>kinometro</a></u>
               </span>
             </div>
-          </div>
         </div>
       </article>
-    )
-  }
-}
-
-class GraphSlider extends Component{
-
-  state = {
-    slide: 0,
-    slides: this.props.slides,
-  }
-
-  changeSlide = e => {
-    let slideWrapper =
-    document.getElementById( this.props.id ).
-    getElementsByClassName( 'slide-wrapper' )[0];
-    let button = e.currentTarget;
-    let slide =
-    this.state.slide ? 0 : 1;
-
-    slideWrapper.style.opacity = 0;
-    button.style.opacity = 0;
-    setTimeout( () => this.setState({ slide }), 300 );
-    setTimeout( () => {
-      slideWrapper.style.opacity = 1;
-      button.style.opacity = 1;
-    } , 400 );
-  }
-
-  render() {
-    return(
-      <div id={ this.props.id } className="GraphSlider">
-        <h3 className="m-bebas-25">{ this.props.header }</h3>
-        <div className="slide-wrapper">
-          <img className="slide"
-          src=
-          { this.state.slides ?
-            (this.state.slide ?
-            this.state.slides[1] :
-            this.state.slides[0]) : null
-          } />
-        </div>
-        <button onClick={ this.changeSlide }
-        className={
-          this.state.slide ?
-          'bg-1' :
-          'bg-2'
-        }/>
-      </div>
     )
   }
 }

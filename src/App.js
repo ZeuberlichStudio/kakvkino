@@ -80,7 +80,7 @@ class App extends React.Component {
       <Fragment>
 
         { this.state.device !== 'mobile' ?
-        null : null }
+        <Animation /> : null }
 
         { this.state.device === 'mobile' ?
         <MobileHeader color={ this.state.uiColor }/> :

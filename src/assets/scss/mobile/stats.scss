@@ -128,7 +128,7 @@ section#stats{
 
     ::before{
       width: 100vw;
-      height: calc(100%);
+      height: calc(100% + 22vw);
       left: get-m-vw(-20px); top: get-m-vw(-65px);
 
       position: absolute;
@@ -147,7 +147,9 @@ section#stats{
   z-index: 2;
 
   .text-left-container{
-    h3{ display: none; }
+    h3:nth-child(2){ display: none; }
+    h3:nth-child(3){ margin-top: get-m-vw(20px); }
+    h3:nth-child(5){ margin-top: get-m-vw(24px); }
     p{ margin-top: get-m-vw(16px); }
   }
 
@@ -174,55 +176,69 @@ section#stats{
     }
   }
 
-  .GraphSlider{
-    margin-top: get-m-vw(24px);
+  .slider{
+    width: get-m-vw(320px);
+    margin-top: get-m-vw(20px);
+    position: relative;
 
-    display: grid;
-    grid-auto-flow: row;
-
-    h3{
-      grid-column: 1/3;
-      display: block;
-    }
-
-    .slide-wrapper{
-      margin-top: get-m-vw(16px);
-      transition: opacity 0.3s;
-    }
-    .slide{
+    .wrapper{
       width: get-m-vw(288px);
-      height: auto;
+      overflow: hidden;
     }
+
+    .container{
+      display: grid;
+      grid-auto-flow: column;
+      grid-column-gap: get-m-vw(42px);
+
+      &.transition{
+        transition: 0.3s;
+      }
+    }
+
+    &.transition button{ color: transparent!important; }
 
     button{
-      width: get-m-vw(26px);
+      width: get-m-vw(18px);
       height: get-m-vw(180px);
+      right: get-m-vw(12px); top: get-m-vw(24px);
 
-      background-size: 100% auto;
-      background-position: center;
-      transition: opacity 0.3s;
-    }
-  }
+      position: absolute;
+      display: inline-block;
 
-  #GraphSlider-1{
-    button{ margin-top: get-m-vw(36px); }
-    button.bg-2{
-      background-image: url('../../images/mobile/GraphSliderButton_1_1.svg');
-    }
-    button.bg-1{
-      background-image: url('../../images/mobile/GraphSliderButton_1_2.svg');
-    }
-  }
-  #GraphSlider-2{
+      background-color: $black;
+      color: $sand;
+      transition: 0.3s;
 
-    .slide{ min-height: get-m-vw(273px); }
+      span{
+        width: 100%;
+        display: block;
+        padding-right: get-m-vw(4px);
 
-    button{ margin-top: get-m-vw(48px); }
-    button.bg-2{
-      background-image: url('../../images/mobile/GraphSliderButton_2_1.svg');
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        text-align: center;
+      }
+
+      &::before{
+        width: 0; height: 0;
+        display: block;
+        position: absolute;
+        right: get-m-vw(-11.5px);
+        top: 0; bottom: 0;
+        margin: auto;
+
+        border-left: get-m-vw(12px) solid $black;
+        border-top: get-m-vw(12px) solid transparent;
+        border-bottom: get-m-vw(12px) solid transparent;
+        content: '';
+      }
     }
-    button.bg-1{
-      background-image: url('../../images/mobile/GraphSliderButton_2_2.svg');
+
+    .slide{
+      width: get-m-vw(288px);
+
+      img{ width: 100%; }
     }
   }
 }

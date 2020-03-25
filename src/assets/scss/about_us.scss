@@ -107,5 +107,7 @@ section#about-us{
     h3{
       margin-top: get-vw(28px);
     }
+
+    h3 + p{ margin-top: get-vw(14px); }
   }
 }

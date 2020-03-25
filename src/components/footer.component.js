@@ -63,12 +63,12 @@ export default class Footer extends Component{
               <li><a href="/#about">Почему в кино</a></li>
               <li><a href="/#stats--article-1">Жизненный цикл кино</a></li>
               <li><a href="/#stats--article-2">Как это работает</a></li>
-              <li><a href="/#stats">Статистика</a></li>
+              <li><a href="/#stats--article-3">Статистика</a></li>
               <li><a href="/#about-us">Кто мы</a></li>
             </ul>
             <ul className="helvetica-13-regular">
               <h3 className="bebas-20">Что снимаем</h3>
-              <li>Фильмы в разработке</li>
+              <li><a href="/#service">Фильмы в разработке</a></li>
             </ul>
             <ul className="helvetica-13-regular">
               <h3 className="bebas-20">Статистика</h3>

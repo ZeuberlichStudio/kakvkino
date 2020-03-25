@@ -108,7 +108,7 @@ class TabContent0 extends Component{
       setTimeout(() => {
         this.setState({ slide: nextSlide });
         currentSlide.style = null;
-      }, 250);
+      }, 300);
     }
 
     if( nextSlide <= 0 ){
@@ -208,7 +208,7 @@ class TabContent1 extends Component{
       setTimeout(() => {
         this.setState({ slide: nextSlide });
         currentSlide.style = null;
-      }, 250);
+      }, 300);
     }
 
     if( nextSlide <= 0 ){
@@ -321,7 +321,7 @@ class TabContent2 extends Component{
       setTimeout(() => {
         this.setState({ slide: nextSlide });
         currentSlide.style = null;
-      }, 250);
+      }, 300);
     }
 
     if( nextSlide <= 0 ){

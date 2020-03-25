@@ -40,7 +40,6 @@ export default class Counter extends Component{
 
           let counter = document.getElementById('counter-wrapper');
           let timeline = document.getElementById('timeline');
-          //let lightTimeline = document.getElementById('light-timeline');
 
           if( footerBound.top >= clientHeight){
             parallax.classList.remove('fixed');
@@ -55,13 +54,6 @@ export default class Counter extends Component{
             `translate3d(${ counterOffset }px, 0, 0)`;
             timeline.style.transform =
             `translate3d(${ timelineOffset }px, 0, 0)`;
-            timeline.style.backgroundPosition =
-            `left ${ -timelineOffset - scrollY }px top 0,
-             left calc(100vh + ${ -timelineOffset - scrollY }px) top 0,
-             left calc(200vh + ${ -timelineOffset - scrollY }px) top 0,
-             left calc(200vh + 125vw + ${ -timelineOffset - scrollY }px) top 0,
-             left calc(200vh + 125vw + 105.9375vw + ${ -timelineOffset - scrollY }px) top 0
-            `;
 
 
           }else{

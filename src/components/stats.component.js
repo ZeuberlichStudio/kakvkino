@@ -47,7 +47,21 @@ class PopcornAnimation extends Component{
 
       if( animation_rect.top < clientHeight/2 &&
           animation_rect.bottom > 0 ){
-        animation.play();
+          animation.play();
+      }
+    });
+
+    animation.addEventListener( 'enterFrame', () => {
+      let stages = document.getElementsByClassName('stage');
+
+      if( animation.currentFrame >= 80 ){
+        stages[1].style.opacity = 1;
+      }
+      if( animation.currentFrame >= 255 ){
+        stages[0].style.opacity = 1;
+      }
+      if( animation.currentFrame >= 450 ){
+        stages[2].style.opacity = 1;
       }
     });
 

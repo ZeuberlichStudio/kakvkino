@@ -25,7 +25,7 @@ export default class StatsArticle1 extends Component{
             </h3>
             <p className="helvetica-12-bold m-helvetica-12-bold">Кинотеатры + интернет с учётом<br/> инвестиционной доходности</p>
           </div>
-          <div className="stage-2">
+          <div id="stats--stage-2" className="stage-2 stage">
             <h3 className="bebas-30 m-bebas-25 orange-before">Этап 2|интернет</h3>
             <p className="helvetica-14-bold m-helvetica-12-bold">
               <span className="opacity-075">
@@ -36,7 +36,7 @@ export default class StatsArticle1 extends Component{
               <sup>2</sup> Средняя аудитория российского фильма состовляет 12.5 - 20 млн. чел.
             </p>
           </div>
-          <div className="stage-1">
+          <div id="stats--stage-1" className="stage-1 stage">
             <h3 className="bebas-30 m-bebas-25 blue-before">Этап 1|кинотеатры</h3>
             <p className="helvetica-10-medium m-helvetica-10-medium">
               <sup>1</sup> Средний уровень кинопроката в России<br/> в 2018-2019 году
@@ -45,7 +45,7 @@ export default class StatsArticle1 extends Component{
         </div>
 
         <div className="text-right-container">
-          <div className="stage-3">
+          <div id="stats--stage-3" className="stage-3 stage">
             <h3 className="bebas-30 m-bebas-25 red-before">Этап 3|тв <sup>4</sup></h3>
             <p className="helvetica-14-bold m-helvetica-12-bold opacity-075">
             48% россиян используют ТВ для просмотра кино (Mediascope, 2019)
