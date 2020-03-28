@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.269b64d9.chunk.css",
-    "main.js": "/kakvkino/static/js/main.efdf9086.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.efdf9086.chunk.js.map",
-    "runtime-main.js": "/kakvkino/static/js/runtime-main.52ee6f4c.js",
-    "runtime-main.js.map": "/kakvkino/static/js/runtime-main.52ee6f4c.js.map",
-    "static/js/2.bb25a378.chunk.js": "/kakvkino/static/js/2.bb25a378.chunk.js",
-    "static/js/2.bb25a378.chunk.js.map": "/kakvkino/static/js/2.bb25a378.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.ca094695.chunk.css",
+    "main.js": "/kakvkino/static/js/main.33194fef.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.33194fef.chunk.js.map",
+    "runtime-main.js": "/kakvkino/static/js/runtime-main.d41ba491.js",
+    "runtime-main.js.map": "/kakvkino/static/js/runtime-main.d41ba491.js.map",
+    "static/js/2.da121c74.chunk.js": "/kakvkino/static/js/2.da121c74.chunk.js",
+    "static/js/2.da121c74.chunk.js.map": "/kakvkino/static/js/2.da121c74.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.235b85305284e89c184ebc12785aa26b.js": "/kakvkino/precache-manifest.235b85305284e89c184ebc12785aa26b.js",
+    "precache-manifest.e7479ffddca4bcea38c8c12d632eba56.js": "/kakvkino/precache-manifest.e7479ffddca4bcea38c8c12d632eba56.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.269b64d9.chunk.css.map": "/kakvkino/static/css/main.269b64d9.chunk.css.map",
-    "static/js/2.bb25a378.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.bb25a378.chunk.js.LICENSE.txt",
+    "static/css/main.ca094695.chunk.css.map": "/kakvkino/static/css/main.ca094695.chunk.css.map",
+    "static/js/2.da121c74.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.da121c74.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
     "static/media/eurasianLogo.svg": "/kakvkino/static/media/eurasianLogo.77752253.svg",
-    "static/media/graph_1.svg": "/kakvkino/static/media/graph_1.d48814fc.svg",
+    "static/media/graph_1.svg": "/kakvkino/static/media/graph_1.f99ca38c.svg",
     "static/media/graph_1_1.svg": "/kakvkino/static/media/graph_1_1.dfc42412.svg",
     "static/media/graph_1_2.svg": "/kakvkino/static/media/graph_1_2.e6533222.svg",
     "static/media/graph_2_1.svg": "/kakvkino/static/media/graph_2_1.c5736cfc.svg",
@@ -24,7 +24,7 @@
     "static/media/origoLogo.svg": "/kakvkino/static/media/origoLogo.7c9f4100.svg",
     "static/media/paragraphLogo.svg": "/kakvkino/static/media/paragraphLogo.9983fdd9.svg",
     "static/media/planLogo.svg": "/kakvkino/static/media/planLogo.d1568043.svg",
-    "static/media/poll.svg": "/kakvkino/static/media/poll.f75ab830.svg",
+    "static/media/poll.svg": "/kakvkino/static/media/poll.72cc46cc.svg",
     "static/media/stats_pic_1.svg": "/kakvkino/static/media/stats_pic_1.671977f9.svg",
     "static/media/stats_pic_2.svg": "/kakvkino/static/media/stats_pic_2.868c37e3.svg",
     "static/media/stats_stages.svg": "/kakvkino/static/media/stats_stages.642db180.svg",
@@ -37,9 +37,9 @@
     "static/media/title_stats_4.svg": "/kakvkino/static/media/title_stats_4.df4ab639.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.52ee6f4c.js",
-    "static/js/2.bb25a378.chunk.js",
-    "static/css/main.269b64d9.chunk.css",
-    "static/js/main.efdf9086.chunk.js"
+    "static/js/runtime-main.d41ba491.js",
+    "static/js/2.da121c74.chunk.js",
+    "static/css/main.ca094695.chunk.css",
+    "static/js/main.33194fef.chunk.js"
   ]
 }
