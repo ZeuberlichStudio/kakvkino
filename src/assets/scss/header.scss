@@ -1,0 +1,99 @@
+header#header{
+  width: 100vw;
+  height: get-vw(34px);
+  padding-left: get-vw(5px);
+  left: 0; top: 0;
+
+  position: fixed;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  transform: translateZ(0);
+  backdrop-filter: blur(8px);
+
+  border-bottom: get-vw(2px) solid $black;
+
+  .logo{
+    width: get-vw(146px);
+    height: get-vw(26px);
+
+    mask-image: url('../images/logo.svg');
+    mask-size: 100% auto;
+    mask-position: center;
+    mask-repeat: no-repeat;
+
+    background-color: $black;
+  }
+
+  nav ul{
+    height: stretch;
+
+    display: grid;
+
+    align-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    grid-template-rows: get-vw(32px);
+
+    li{
+      width: max-content;
+      padding: 0 get-vw(10px);
+      padding-top: get-vw(3px);
+      cursor: pointer;
+    }
+
+    li:last-child{
+      padding-right: get-vw(20px);
+    }
+
+    font-family: 'Bebas Neue';
+    font-size: get-vw(20px);
+    line-height: get-vw(32px);
+    color: $black;
+  }
+}
+
+/*nav interactions*/
+
+.nav-link.active{
+  background-color: $black;
+  color: $sand;
+}
+
+.nav-link:hover{
+  background-color: $black!important;
+  color: $sand!important;
+}
+
+nav:hover .nav-link{
+    background-color: transparent;
+    color: $black;
+}
+
+/*light*/
+
+header#header.light{
+  .logo{ background-color: $sand; }
+  .nav-link{ color: $sand }
+}
+
+header#header.light{
+  border-color: $sand;
+}
+
+header#header.light .nav-link.active{
+  background-color: $sand;
+  color: $black;
+}
+
+header#header.light .nav-link:hover{
+  background-color: $sand!important;
+  color: $black!important;
+}
+
+header#header.light nav:hover .nav-link{
+    background-color: transparent;
+    color: $sand;
+}

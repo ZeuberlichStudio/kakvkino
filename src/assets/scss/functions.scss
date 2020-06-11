@@ -1,0 +1,20 @@
+$vw-viewport: 1280;
+@function get-vw($size){
+  $vw-context: $vw-viewport * 0.01 * 1px;
+  @return $size / $vw-context * 1vw;
+  @return $size;
+}
+
+$m-vw-viewport: 375;
+@function get-m-vw($size){
+  $vw-context: $m-vw-viewport * 0.01 * 1px;
+  @return $size / $vw-context * 1vw;
+  @return $size;
+}
+
+$vh-viewport: 800;
+@function get-vh($size){
+  $vh-context: $vh-viewport * 0.01 * 1px;
+  @return $size / $vh-context * 1vh;
+  @return $size;
+}

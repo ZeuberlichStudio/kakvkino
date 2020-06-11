@@ -1,0 +1,236 @@
+a{
+  text-decoration: none;
+}
+
+.opacity-075{
+  opacity: 0.75;
+}
+.opacity-05{
+  opacity: 0.5;
+}
+
+.light{
+  color: $sand;
+}
+.dark{
+  color: $black;
+}
+.marked{
+  color: $orange;
+}
+
+
+/*mobile*/
+@media screen and (max-width: 1024px){
+  .m-bebas-30{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-m-vw(30px);
+    line-height: get-m-vw(30px);
+  }
+
+  .m-bebas-25{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-m-vw(25px);
+    line-height: get-m-vw(25px);
+  }
+
+  .m-bebas-20{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-m-vw(20px)!important;
+    line-height: get-m-vw(20px)!important;
+  }
+
+  .m-bebas-14{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-m-vw(14px);
+    line-height: get-m-vw(14px);
+  }
+
+  .m-bebas-14-bold{
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-size: get-m-vw(14px);
+    line-height: get-m-vw(15px);
+  }
+
+  .m-helvetica-16-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-m-vw(16px);
+    line-height: get-m-vw(20px);
+  }
+
+  .m-helvetica-12-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-m-vw(12px);
+    line-height: get-m-vw(14px);
+  }
+
+  .m-helvetica-10-medium{
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: get-m-vw(10px);
+    line-height: get-m-vw(11px);
+  }
+
+  .m-helvetica-10-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-m-vw(10px);
+    line-height: get-m-vw(11px);
+  }
+}
+
+/*pc*/
+
+@media screen and (min-width: 1025px){
+  .bebas-64{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(64px);
+    line-height: get-vw(64px);
+    letter-spacing: get-vw(-1px);
+  }
+
+  .bebas-30{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(30px);
+    line-height: get-vw(32px);
+  }
+
+  .bebas-25{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(25px);
+    line-height: get-vw(25px);
+  }
+
+  .bebas-20{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+  }
+
+  .bebas-14{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(14px);
+    line-height: get-vw(20px);
+  }
+
+  .helvetica-16-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(16px);
+    line-height: get-vw(20px);
+  }
+
+  .helvetica-14-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(14px);
+    line-height: get-vw(16px);
+  }
+
+  .helvetica-14-medium{
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: get-vw(14px);
+    line-height: get-vw(16px);
+  }
+
+  .helvetica-13-regular{
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: get-vw(13px);
+    line-height: get-vw(15px);
+  }
+
+  .helvetica-12-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(12px);
+    line-height: get-vw(14px);
+  }
+
+  .helvetica-10-medium{
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: get-vw(10px);
+    line-height: get-vw(11px);
+  }
+
+  .helvetica-10-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vw(10px);
+    line-height: get-vw(11px);
+  }
+
+  /*vh*/
+
+  .vh-bebas-30{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vh(30px);
+    line-height: get-vh(32px);
+  }
+
+  .vh-bebas-20{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vh(20px);
+    line-height: get-vh(20px);
+  }
+
+  .vh-helvetica-14-bold{
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: get-vh(14px);
+    line-height: get-vh(16px);
+  }
+}
+
+/*title*/
+@media screen and (min-width: 1025px){
+
+/*form*/
+
+section#service .form-wrapper{
+  h2{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(30px);
+    line-height: get-vw(30px);
+  }
+  p{
+    font-family: 'Helvetica Neue';
+    font-size: get-vw(14px);
+    line-height: get-vw(16px);
+  }
+}
+
+#form{
+  input, button{
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: get-vw(20px);
+    line-height: get-vw(20px);
+
+    text-align: left;
+    color: $sand;
+  }
+  ::placeholder{
+    color: $sand;
+  }
+  button{color: $black;}
+}
+
+}
