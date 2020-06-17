@@ -58,7 +58,7 @@ export default class Tabs extends Component{
         <div className="brand-tracking--notice">
           <h3 className="bebas-30">Бренд-­трекинг</h3>
           <p className="helvetica-14-bold">
-            длительное маркетинговое исследование, применяемое для получения в динамике информации о состоянии бренда на рынке (известность, использование, имидж, характерис-тика потребителей бренда, здоровье бренда и т.п.).
+            Мониторинг эмоциональной близости бренда, узнаваемость и запоминаемость рекламы, побуждение к действию до и в течение кинопроката.
           </p>
         </div>
       </div>
@@ -149,7 +149,7 @@ class TabContent1 extends Component{
 
           <div className="bebas-20 columns">
             <div className="bebas-20">
-              <span className="opacity-075">
+              <span className="opacity-075 helvetica-14-bold">
                   Бюджет,<span className="helvetica-16-bold"> ₽ </span>
                  (без НДС)
               </span>
@@ -224,7 +224,7 @@ class TabContent2 extends Component{
             Зрители  в кинотеатре:
             <span className="opacity-075">(Доход в процентах)</span>
           </span>
-          <span className="opacity-075">
+          <span className="opacity-075 helvetica-14-bold">
             Бюджет,<span className="helvetica-16-bold"> ₽ </span>
            (без НДС)
           </span>

@@ -47,7 +47,7 @@ export default class Title extends Component{
               <li><img alt="" src={stats3}/></li>
               <li><img alt="" src={stats4}/></li>
             </ul>
-            <span className="notice helvetica-12-bold m-helvetica-12-bold">
+            <span className="notice helvetica-10-medium m-helvetica-10-medium">
               *средний уровень кинопроката в
               России в 2018-2019гг.
             </span>

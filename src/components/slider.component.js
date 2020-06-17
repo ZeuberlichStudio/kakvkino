@@ -129,7 +129,7 @@ export default class Slider extends Component{
             this.props.buttonText ?
             this.props.buttonText.map( (text, i) =>
               this.state.currentSlide === i ?
-              <span key={i} className="m-helvetica-12-bold">{ text }</span> : null
+              <span key={i} className="m-helvetica-12-bold helvetica-12-bold">{ text }</span> : null
             ) : null
           }
         </button>

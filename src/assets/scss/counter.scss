@@ -15,7 +15,7 @@
 
 #timeline-container{
   width: calc(100vh - 2.65625vw);
-  height: get-vw(49px);
+  height: get-vw(86px);
   left: 0; top: 0;
   position: absolute;
 
@@ -25,12 +25,12 @@
 }
 
 #timeline{
-  width: get-vw(12000px);
-  height: get-vw(49px);
+  width: get-vw(14979px);
+  height: get-vw(86px);
 
   background-image: url('../images/timeline.svg');
-  background-size: auto get-vw(37px);
-  background-position: right get-vw(100px) top 0;
+  background-size: get-vw(14979px) auto;
+  background-position: left get-vw(-145px) top 0;
   background-repeat: no-repeat;
 
   transform-origin: left center;

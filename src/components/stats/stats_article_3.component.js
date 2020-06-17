@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import Slider from '../slider.component';
 
 //images
-import graph from '../../assets/images/graph_1.svg';
+import graph_1_1 from '../../assets/images/graph_1_1.svg';
+import graph_1_2 from '../../assets/images/graph_1_2.svg';
+import graph_2 from '../../assets/images/graph_2.svg';
 import m_graph_1_1 from '../../assets/images/mobile/graph_1_1.svg';
 import m_graph_1_2 from '../../assets/images/mobile/graph_1_2.svg';
 import m_graph_2_1 from '../../assets/images/mobile/graph_2_1.svg';
@@ -19,44 +21,10 @@ export default class StatsArticle3 extends Component{
       <article id="stats--article-3" className="stats--article-3 stats--article">
         <div className="text-left-container">
           <h1 className="bebas-64 m-bebas-30">Статистика</h1>
-          <h3 className="helvetica-14-bold  m-helvetica-12-bold">
-            В 2019 год наблюдается рост зрителей. Средний возраст кинозрителя 29 лет.
-          </h3>
           {
             this.props.device === 'desktop' ?
-            <img src={ graph }/> :
-            <Fragment>
-              <h3 className="m-bebas-25">
-                Аудитория кинотеатров<br/>
-                <span className="opacity-05">(Зрители, млн. Чел.)</span>
-              </h3>
-              <Slider
-              id="mobile-stats-slider-1"
-              slideWidthVw={88}
-              buttonText = {[
-                'Июль — Декабрь 2019',
-                'Январь — Июнь 2020',
-              ]}
-              content={[
-                <img src={ m_graph_1_1 } />,
-                <img src={ m_graph_1_2 } />,
-              ]}/>
-
-              <h3 className="m-bebas-25">
-                Портрет аудитории кинотеатров<br/> в 2019 году
-              </h3>
-              <Slider
-              id="mobile-stats-slider-2"
-              slideWidthVw={88}
-              buttonText = {[
-                'Состав посещения',
-                'Возраст аудитории',
-              ]}
-              content={[
-                <img src={ m_graph_2_1 } />,
-                <img src={ m_graph_2_2 } />,
-              ]}/>
-            </Fragment>
+            <DesktopGraphs/> :
+            <MobileGraphs/>
           }
           <p className="helvetica-12-bold m-helvetica-12-bold">
             Кинозрители в возрасте 25-34 лет – самая многочисленная аудитория (31%).
@@ -113,11 +81,11 @@ export default class StatsArticle3 extends Component{
               }
               <span>
                 Российские фильмы, собравшие<br/>
-                <Link to="/movies"><u>свыше 500 тыс. зритлей</u></Link>
+              <Link to="/movies"><u>свыше 500 тыс. зрителей</u></Link>
               </span>
               <span className="helvetica-14-bold m-helvetica-14-bold">
                 Источник:
-                <u><a href="http://www.kinometro.ru/kino/analitika" target="_blank">kinometro</a></u>
+                <u><a href="http://www.kinometro.ru/kino/analitika" target="_blank"> kinometro</a></u>
               </span>
             </div>
         </div>
@@ -125,3 +93,55 @@ export default class StatsArticle3 extends Component{
     )
   }
 }
+const DesktopGraphs = () => (
+  <Fragment>
+    <Slider
+      id="desktop-stats-slider"
+      slideWidthVw={39.453125}
+      buttonText = {[
+        '2020',
+        '2019',
+      ]}
+      content={[
+        <img src={graph_1_1} />,
+        <img src={graph_1_2} />
+      ]}
+    />
+    <img src={ graph_2 }/>
+  </Fragment>
+);
+
+const MobileGraphs = () => (
+  <Fragment>
+    <h3 className="m-bebas-25">
+      Аудитория кинотеатров<br/>
+      <span className="opacity-05">(Зрители, млн. Чел.)</span>
+    </h3>
+    <Slider
+    id="mobile-stats-slider-1"
+    slideWidthVw={88}
+    buttonText = {[
+      'Июль — Декабрь 2019',
+      'Январь — Июнь 2020',
+    ]}
+    content={[
+      <img src={ m_graph_1_1 } />,
+      <img src={ m_graph_1_2 } />,
+    ]}/>
+
+    <h3 className="m-bebas-25">
+      Портрет аудитории кинотеатров<br/> в 2019 году
+    </h3>
+    <Slider
+    id="mobile-stats-slider-2"
+    slideWidthVw={88}
+    buttonText = {[
+      'Состав посещения',
+      'Возраст аудитории',
+    ]}
+    content={[
+      <img src={ m_graph_2_1 } />,
+      <img src={ m_graph_2_2 } />,
+    ]}/>
+  </Fragment>
+);

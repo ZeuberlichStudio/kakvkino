@@ -117,6 +117,8 @@ class ServiceArticle1 extends Component{
         <div id="empty-blocks"></div>
         <h2 className="bebas-64 m-bebas-30">Любовь в большом городе</h2>
         <ul className="helvetica-14-bold m-helvetica-12-bold">
+          <li><span className="opacity-05">Сценарист:</span> Алиса Лунина<br/> (современная российская писательница,<br/>
+          сценарист и драматург)</li>
           <li><span className="opacity-05">Жанр:</span> Комедия, мелодрама</li>
           <li><span className="opacity-05">Статус:</span> В подготовке</li>
           <li><span className="opacity-05">Прогноз кинопроката:</span> 1.5 млн зрителей</li>

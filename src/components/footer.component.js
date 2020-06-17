@@ -70,11 +70,6 @@ export default class Footer extends Component{
               <h3 className="bebas-20">Что снимаем</h3>
               <li><a href="/#service">Фильмы в разработке</a></li>
             </ul>
-            <ul className="helvetica-13-regular">
-              <h3 className="bebas-20">Статистика</h3>
-              <li>Аудитория кинотеатров</li>
-              <li>Статистика фильмов</li>
-            </ul>
           </div>
         </footer>
       </Fragment>

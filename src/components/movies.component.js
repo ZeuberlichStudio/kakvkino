@@ -50,7 +50,7 @@ export default class Movies extends Component{
   }
 
   fetchMovies = () => {
-    let url = 'https://kino.zeuberlich.com/post';
+    let url = 'https://kino.z-test.online/post';
 
     let body = {}
 

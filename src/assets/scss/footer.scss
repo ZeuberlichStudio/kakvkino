@@ -154,6 +154,7 @@ footer{
     position: relative;
     display: grid;
     grid-auto-flow: row;
+    grid-auto-rows: max-content;
     grid-row-gap: get-vw(14px);
 
     li{ opacity: 0.75; }
@@ -161,6 +162,7 @@ footer{
     & > :nth-child(n+2){
       display: grid;
       grid-auto-flow: row;
+      grid-auto-rows: max-content;
       grid-row-gap: get-vw(3px);
     }
 

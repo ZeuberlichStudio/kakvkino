@@ -81,7 +81,7 @@ section#title{
         letter-spacing: get-vw(-0.3px);
       }
       & > :nth-child(2){
-        width: get-vw(204px);
+        width: get-vw(240px);
         margin-top: get-vw(5px);
       }
 
@@ -119,12 +119,13 @@ section#title{
 
   position: absolute;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   color: $black;
 
   span{
     height: get-vw(12px);
+    margin-top: get-vw(8.5px);
   }
   a{
     width: get-vw(67px);

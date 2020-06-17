@@ -45,7 +45,7 @@ export default class MobileMovies extends Component{
 
 
     fetchMovies = () => {
-      let url = 'https://kino.zeuberlich.com/post';
+      let url = 'https://kino.z-test.online/post';
 
       let body = {}
 
