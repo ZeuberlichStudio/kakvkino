@@ -1,0 +1,69 @@
+@mixin bebas-64-bold{
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-vw(64px);
+  line-height: get-vw(64px);
+}
+
+@mixin bebas-30-bold{
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-vw(30px);
+  line-height: get-vw(30px);
+}
+
+@mixin bebas-22-bold{
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-vw(22px);
+  line-height: get-vw(22px);
+}
+
+@mixin bebas-20-bold{
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-vw(20px);
+  line-height: get-vw(20px);
+}
+
+@mixin bebas-18-bold{
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-vw(18px);
+  line-height: get-vw(18px);
+}
+
+@mixin bebas-14-bold{
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-vw(14px);
+  line-height: get-vw(14px);
+}
+
+@mixin helvetica-14-bold{
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: get-vw(14px);
+  line-height: get-vw(16px);
+}
+
+@mixin helvetica-14-medium{
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-size: get-vw(14px);
+  line-height: get-vw(16px);
+}
+
+@mixin helvetica-12-bold{
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: get-vw(12px);
+  line-height: get-vw(14px);
+}
+
+@mixin helvetica-12-medium{
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-size: get-vw(12px);
+  line-height: get-vw(14px);
+}

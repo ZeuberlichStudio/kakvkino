@@ -1,0 +1,22 @@
+#modal-wrapper{
+  width: 100vw;
+  height: 100vh;
+  padding: get-vw(134px) get-vw(140px);
+  left: 0; top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background: rgba($black, 0.5);
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+#modal-wrapper_close{
+  width: get-vw(16px);
+  height: get-vw(16px);
+  right: get-vw(116px); top: get-vw(106px);
+  display: block;
+  position: fixed;
+  mask: url('~assets/images/close.svg') center / cover no-repeat;
+  background: $sand;
+}

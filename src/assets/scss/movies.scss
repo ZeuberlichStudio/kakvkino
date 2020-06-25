@@ -1,33 +1,15 @@
 section#movies{
-  width: 100vw;
-  height: 100vh;
-  padding: 0 get-vw(160px);
-  padding-top: get-vw(135px);
-  padding-bottom: get-vw(80px);
+  width: calc(100vw - #{get-vw(320px)});
+  height: 100%;
   left: 0; top: 0;
+  position: relative;
 
-  position: fixed;
-
-  background-color: rgba(29, 32, 56, 0.84);
   color: $black;
   z-index: 10;
 
-  #close-movies{
-    width: get-vw(16px);
-    height: get-vw(16px);
-    right: get-vw(120px); top: get-vw(90px);
-
-    position: absolute;
-
-    background-image: url('../images/close.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   h1{
-    left: get-vw(160px);
-    top: get-vw(82px);
+    left: 0;
+    top: get-vw(-52px);
 
     position: absolute;
   }
@@ -36,7 +18,7 @@ section#movies{
 .movies-filters-switch{
   width:max-content;
   height: max-content;
-  left: get-vw(120px); top: get-vw(215px);
+  left: get-vw(-50px); top: get-vw(50px);
 
   position: absolute;
   display: grid;
@@ -88,7 +70,7 @@ section#movies{
   width: auto;
   height: max-content;
   padding: get-vw(10px);
-  left: get-vw(145px); top: get-vw(215px);
+  left: get-vw(-25px); top: get-vw(50px);
 
   position: absolute;
 
@@ -172,16 +154,18 @@ section#movies{
 
   border-bottom: get-vw(2px) solid $black;
 
-  & span,
-  button{
+  & > span,
+  & > button{
     width:100%;
     height: 100%;
     padding-left: get-vw(5px);
     position: relative;
     display: block;
     text-align: left;
-    line-height: get-vw(26px);
   }
+
+  & > span{ line-height: get-vw(36px); }
+  & > button{ line-height: get-vw(26px); }
 
   &.asc button.active::before{
     width: 0;
@@ -226,8 +210,8 @@ section#movies{
   button span:nth-child(2){
     padding: 0;
     position: absolute;
-    left: get-vw(10px);
-    top: get-vw(11px);
+    left: get-vw(5px);
+    top: get-vw(20px);
     opacity: 0.5;
     font-size: get-vw(9px);
   }

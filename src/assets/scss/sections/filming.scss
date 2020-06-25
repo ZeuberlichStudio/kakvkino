@@ -1,0 +1,193 @@
+@import './filming_table.scss';
+
+.filming-section{
+  height: get-vw(1202px);
+  padding: get-vw(32px) get-vw(100px);
+  position: relative;
+
+  background-color: $sand;
+  background-image: url('~assets/images/Pattern_1.svg');
+  background-size: get-vw(320px) get-vw(200px);
+  background-position: top right 100px;
+  background-repeat: round;
+
+  & > h2{ @include bebas-64-bold; }
+  & > span{ @include helvetica-12-bold; }
+}
+
+.filming-section_projects{
+  width: get-vw(362px * 2 + 40px);
+  margin-top: get-vw(18px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: max-content;
+  grid-gap: get-vw(40px);
+
+  &_project{
+    width: get-vw(362px);
+    display: grid;
+    grid-template:
+    repeat(4, max-content)/
+    max-content 1fr;
+    grid-gap: get-vw(10px);
+
+    img{
+      grid-row: 1/3;
+      width: get-vw(110px);
+      height: get-vw(156px);
+      display: block;
+    }
+
+    h3{
+      padding-top: get-vw(5px);
+      @include bebas-22-bold;
+    }
+
+    ul{
+      margin-top: get-vw(-20px);
+      @include helvetica-12-bold;
+      display: grid;
+      grid-auto-rows: max-content;
+      grid-row-gap: get-vw(6px);
+    }
+
+    p{
+      grid-column: 1/3;
+      @include helvetica-12-medium;
+    }
+
+    a{
+      grid-column: 1/3;
+      width: max-content;
+      height: get-vw(30px);
+      padding: 0 get-vw(10px);
+      padding-top: get-vw(6px);
+      display: block;
+      @include bebas-22-bold;
+      background-color: $black;
+      color: $sand;
+    }
+  }
+}
+
+.filming-section_aside-wrapper{
+  width: get-vw(320px);
+  height: 100%;
+  right: 0; top: 0;
+  position: absolute;
+
+  &::before{
+    width: get-vw(2px);
+    height: calc( 100vh - 5.07812vw * 2 );
+    margin-top: get-vw(65px);
+    margin-bottom: get-vw(65px);
+    left: get-vw(0px);
+    top: get-vw(65px);
+
+    position: sticky;
+    display: block;
+
+    background-color: $black;
+    content: '';
+    z-index: 2;
+  }
+}
+
+.filming-section_aside{
+  width: get-vw(320px);
+  height: max-content;
+  padding: get-vw(53px) get-vw(18px);
+  left: 0; top: 0;
+  position: absolute;
+  background: $sand;
+
+  &_reference{
+
+    h3{ @include bebas-30-bold; }
+
+    &_movies{
+      margin-top: get-vw(18px);
+      display: grid;
+      grid-auto-rows: max-content;
+      grid-row-gap: get-vw(20px);
+
+      span{ @include bebas-22-bold; }
+
+      ul{
+        margin-top: get-vw(5px);
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: get-vw(42px);
+        grid-column-gap: get-vw(20px);
+        text-align: center;
+      }
+
+      ul:nth-child(2){ @include helvetica-14-bold; }
+      ul:nth-child(3){ @include bebas-22-bold; }
+    }
+  }
+
+  & > h3{
+    margin-top: get-vw(46px);
+    @include bebas-30-bold;
+  }
+
+  &_projects{
+    width: 100%;
+    margin-top: get-vw(18px);
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-row-gap: get-vw(32px);
+
+    &_project{
+      width: 100%;
+      display: grid;
+      grid-template:
+      repeat(4, max-content)/
+      max-content 1fr;
+      grid-gap: get-vw(10px);
+
+      img{
+        grid-row: 1/3;
+        width: get-vw(61px);
+        height: get-vw(87px);
+        display: block;
+      }
+
+      h3{
+        @include bebas-22-bold;
+      }
+
+      ul{
+        margin-top: get-vw(-4px);
+        @include helvetica-12-bold;
+        display: grid;
+        grid-auto-rows: max-content;
+        grid-row-gap: get-vw(2px);
+
+        li:nth-last-child(2),
+        li:nth-last-child(3){
+          display: none;
+        }
+      }
+
+      p{
+        grid-column: 1/3;
+        margin-top: get-vw(-4px);
+        @include helvetica-12-medium;
+      }
+
+      a{
+        grid-column: 1/3;
+        width: max-content;
+        height: get-vw(30px);
+        padding: 0 get-vw(10px);
+        padding-top: get-vw(6px);
+        display: block;
+        @include bebas-22-bold;
+        background-color: $black;
+        color: $sand;
+      }
+    }
+  }
+}

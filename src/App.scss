@@ -45,6 +45,8 @@ input, button{
 }
 
 @media screen and (min-width: 1025px){
+  @import './assets/scss/mixins/typography.scss';
+
   @import './assets/scss/header.scss';
   @import './assets/scss/contacts.scss';
   @import './assets/scss/footer.scss';
@@ -53,7 +55,7 @@ input, button{
   @import './assets/scss/title.scss';
   @import './assets/scss/stats.scss';
   @import './assets/scss/about_us.scss';
-  @import './assets/scss/service.scss';
+  @import './assets/scss/sections/filming.scss';
   @import './assets/scss/tabs.scss';
 
   @import './assets/scss/counter.scss';
@@ -61,6 +63,9 @@ input, button{
 
   @import './assets/scss/form.scss';
   @import './assets/scss/movies.scss';
+
+  @import './assets/scss/modal.scss';
+  @import './assets/scss/projectPage.scss';
 }
 
 @media screen and (max-width: 1024px){

@@ -1,0 +1,90 @@
+#project-section{
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  background: $sand;
+  color: $black;
+}
+
+.project-section_text-left{
+  width: get-vw(680px);
+  padding: get-vw(16px);
+
+  h1{ @include bebas-64-bold; }
+  img{ margin-top: get-vw(12px); }
+  h2{
+    margin-top: get-vw(26px);
+    @include bebas-30-bold;
+  }
+  p{
+    margin-top: get-vw(8px);
+    @include helvetica-14-medium;
+  }
+}
+
+.project-section_text-right{
+  width: get-vw(320px);
+  padding: get-vw(16px);
+
+  &_movie-info{
+    h2{ @include bebas-30-bold; }
+    ul{
+      margin-top: get-vw(8px);
+      display: grid;
+      grid-auto-rows: max-content;
+      grid-row-gap: get-vw(6px);
+      @include helvetica-14-bold;
+      span{ color: rgba($black, 0.5); }
+    }
+  }
+
+  &_development-schedule{
+    margin-top: get-vw(58px);
+    position: relative;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-row-gap: get-vw(12px);
+
+    h2{
+      margin-bottom: get-vw(-12px);
+      @include bebas-30-bold;
+    }
+
+    div{
+      position: relative;
+
+      h3{
+        margin-top: get-vw(10px);
+        @include bebas-18-bold;
+      }
+      p{
+        margin-top: get-vw(5px);
+        @include helvetica-12-medium;
+        span{
+          display: block;
+          @include helvetica-12-bold;
+          color: rgba($black, 0.5);
+        }
+      }
+
+      &:not(:last-child)::before{
+        width: 100%;
+        height: get-vw(16.5px);
+        left: 0; bottom: get-vw(-26px);
+        position: absolute;
+        background: url('~assets/images/broken_line.svg') right top / 100% auto no-repeat;
+        content: '';
+      }
+    }
+
+    &::before{
+      width: get-vw(2px);
+      top: get-vw(68px);
+      bottom: 0;
+      left: get-vw(-16px);
+      position: absolute;
+      background: $black;
+      content: '';
+    }
+  }
+}
