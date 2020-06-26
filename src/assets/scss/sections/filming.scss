@@ -49,6 +49,8 @@
       display: grid;
       grid-auto-rows: max-content;
       grid-row-gap: get-vw(6px);
+
+      span{ color: rgba($black, 0.7); }
     }
 
     p{
@@ -122,7 +124,10 @@
         text-align: center;
       }
 
-      ul:nth-child(2){ @include helvetica-14-bold; }
+      ul:nth-child(2){
+        @include helvetica-14-bold;
+        color: rgba($black, 0.7);
+      }
       ul:nth-child(3){ @include bebas-22-bold; }
     }
   }
@@ -169,6 +174,8 @@
         li:nth-last-child(3){
           display: none;
         }
+
+        span{ color: rgba($black, 0.7); }
       }
 
       p{

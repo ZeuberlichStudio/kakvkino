@@ -2,7 +2,7 @@ import React, {Fragment, useEffect} from 'react'
 import {Link, useHistory} from 'react-router-dom'
 import Background from 'pages/main'
 
-const ModalWrapper = ({children}) => {
+const ModalWrapper = ({children, device}) => {
 
   const history = useHistory();
 
@@ -12,7 +12,6 @@ const ModalWrapper = ({children}) => {
 
   function close(e) {
     if ( e.target !== e.currentTarget ) return;
-    document.documentElement.style.overflow = null;
     history.push('/');
   }
 
@@ -26,7 +25,7 @@ const ModalWrapper = ({children}) => {
         />
         {children}
       </div>
-      {<Background/>}
+      {<Background device={device}/>}
     </Fragment>
   );
 }

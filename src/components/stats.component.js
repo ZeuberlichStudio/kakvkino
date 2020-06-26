@@ -30,6 +30,8 @@ class PopcornAnimation extends Component{
 
   componentDidMount() {
 
+    if ( !window.lotti ) return;
+
     let container = document.getElementById('popcorn-container');
 
     let animation = window.lottie.loadAnimation({

@@ -20,26 +20,17 @@ import Filming from 'components/filming.component';
 class MainPage extends Component {
 
   componentDidMount() {
-    this.getDevice();
-    window.addEventListener('resize', this.getDevice);
     window.addEventListener('scroll', this.getUIColor);
   }
 
   state = {
     uiColor: 'dark',
-    device: 'mobile'
   }
 
   contactsElement = React.createRef();
 
   openContacts = () => {
     this.contactsElement.current.openContacts()
-  }
-
-  getDevice = () => {
-    this.setState({ device: document.documentElement.clientWidth <= 1024 ? 'mobile' : 'desktop' });
-    let vh = document.documentElement.clientHeight;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 
   getUIColor = () => {
@@ -55,7 +46,7 @@ class MainPage extends Component {
       uiColor = 'light';
       this.setState({ uiColor });
     }
-    else if( aboutRect.top <= headerRect.bottom/2 && aboutRect.bottom > headerRect.bottom/2 && this.state.device !== 'mobile' ){
+    else if( aboutRect.top <= headerRect.bottom/2 && aboutRect.bottom > headerRect.bottom/2 && this.props.device !== 'mobile' ){
       uiColor = 'light';
       this.setState({ uiColor });
     }
@@ -72,23 +63,23 @@ class MainPage extends Component {
   render() {
     return(
       <Fragment>
-        { /*this.state.device !== 'mobile' ? <Animation/> : null*/ }
-        { this.state.device !== 'mobile' ? <Counter/> : null }
+        { /*this.props.device !== 'mobile' ? <Animation/> : null*/ }
+        { this.props.device !== 'mobile' ? <Counter/> : null }
         {
-          this.state.device === 'mobile' ?
+          this.props.device === 'mobile' ?
           <MobileHeader color={ this.state.uiColor }/> :
           <Header onClick={ this.openContacts } color={ this.state.uiColor }/>
         }
         <main id="content">
-          <Title device={ this.state.device }/>
+          <Title device={ this.props.device }/>
           <About/>
-          <Stats device={ this.state.device }/>
+          <Stats device={ this.props.device }/>
           <Filming/>
           <AboutUs/>
         </main>
         <Footer/>
         {
-          this.state.device !== 'mobile' ?
+          this.props.device !== 'mobile' ?
           <Contacts ref={ this.contactsElement } active=""/> : null
         }
       </Fragment>
