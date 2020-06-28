@@ -3,39 +3,12 @@ import React, { Component } from 'react';
 export default class Slider extends Component{
 
   componentDidMount() {
-    let slides =
-    document.getElementById(this.props.id + "--slides-container").
-    getElementsByClassName('slide');
+    this.initiateSlider();
+  }
 
-    this.setState({ slidesCount: slides.length - 1 });
-    const offset = this.props.visible ? 1 : 0;
-    this.setState({ offset });
-
-    if( this.props.visible ){
-      let cloneFirst = slides[0].cloneNode(true),
-          cloneLast = slides[slides.length - 1].cloneNode(true),
-          cloneSecond = slides[1].cloneNode(true),
-          cloneLastSecond = slides[slides.length - 2].cloneNode(true);
-
-          document.getElementById(this.props.id + "--slides-container").
-          appendChild(cloneFirst);
-          document.getElementById(this.props.id + "--slides-container").
-          appendChild(cloneSecond);
-          document.getElementById(this.props.id + "--slides-container").
-          insertBefore(cloneLastSecond, slides[0]);
-          document.getElementById(this.props.id + "--slides-container").
-          insertBefore(cloneLast, slides[0]);
-    }else{
-      let cloneFirst = slides[0].cloneNode(true),
-          cloneLast = slides[slides.length - 1].cloneNode(true);
-
-          document.getElementById(this.props.id + "--slides-container").
-          appendChild(cloneFirst);
-          document.getElementById(this.props.id + "--slides-container").
-          insertBefore(cloneLast, slides[0]);
-    }
-
-    slides[1 + offset].classList.add('active');
+  componentDidUpdate(prevProps, prevState) {
+    if ( prevState.slidesCount || !this.state.slidesCount ) return;
+    this.changeSlide(0);
   }
 
   state = {
@@ -44,22 +17,51 @@ export default class Slider extends Component{
     offset: 0,
   }
 
-  changeSlide = e => {
+  initiateSlider = () => {
+    const container =
+    document.getElementById(this.props.id + "--slides-container");
+    let slides = container.getElementsByClassName('slide');
+
+    const offset = this.props.visible ? 2 : 1;
+
+    this.setState({ slidesCount: slides.length });
+    this.setState({ offset });
+
+    if( this.props.visible ){
+      let cloneFirst = slides[0].cloneNode(true),
+          cloneLast = slides[slides.length - 1].cloneNode(true),
+          cloneSecond = slides[1].cloneNode(true),
+          cloneSecondLast = slides[slides.length - 2].cloneNode(true);
+
+          container.appendChild(cloneFirst);
+          container.appendChild(cloneSecond);
+          container.insertBefore(cloneSecondLast, slides[0]);
+          container.insertBefore(cloneLast, slides[0]);
+    }else{
+      let cloneFirst = slides[0].cloneNode(true),
+          cloneLast = slides[slides.length - 1].cloneNode(true);
+
+          container.appendChild(cloneFirst);
+          container.insertBefore(cloneLast, slides[0]);
+    }
+  }
+
+  changeSlide = (goTo) => {
     let slider = document.getElementById(this.props.id),
         slideWidth = this.props.slideWidthVw,
         slidesCount = this.state.slidesCount,
         currentSlide = this.state.currentSlide,
-        goTo = parseInt(e.currentTarget.dataset.goto),
-        sliderWrapper =
+        offset = this.state.offset,
+        container =
         document.getElementById(this.props.id + "--slides-container"),
-        slides = sliderWrapper.getElementsByClassName('slide');
+        slides = container.getElementsByClassName('slide');
 
     //add transition class
     slider.classList.add('transition');
-    sliderWrapper.classList.add('transition');
+    container.classList.add('transition');
     //move slider
-    sliderWrapper.style.transform =
-    `translate3d(${ -slideWidth * goTo }vw, 0px, 0px )`;
+    container.style.transform =
+    `translate3d(${ -slideWidth * ( goTo + this.state.offset ) }vw, 0px, 0px )`;
     //remove scaling from the previous slide
     slides[currentSlide + this.state.offset].
     classList.remove('active');
@@ -67,15 +69,15 @@ export default class Slider extends Component{
     slides[goTo + this.state.offset].
     classList.add('active');
 
-    if( goTo > this.state.slidesCount ){
+    if( goTo > this.state.slidesCount - 1 ){
       setTimeout( () => {
         slider.classList.remove('transition');
-        sliderWrapper.classList.remove('transition');
-        sliderWrapper.style.transform =
-        `translate3d(0px, 0px, 0px )`;
+        container.classList.remove('transition');
+        container.style.transform =
+        `translate3d(${-slideWidth}vw, 0px, 0px )`;
 
         //remove scaling from the previous slide
-        sliderWrapper.getElementsByClassName('active')[0].
+        container.getElementsByClassName('active')[0].
         classList.remove('active');
         //add scaling to the next slide
         slides[0 + this.state.offset].
@@ -86,24 +88,24 @@ export default class Slider extends Component{
     }else if( goTo < 0 ){
       setTimeout( () => {
         slider.classList.remove('transition');
-        sliderWrapper.classList.remove('transition');
-        sliderWrapper.style.transform =
-        `translate3d(${ -slideWidth * slidesCount }vw, 0px, 0px )`;
+        container.classList.remove('transition');
+        container.style.transform =
+        `translate3d(${-slideWidth * (slidesCount - 1 + offset)}vw, 0px, 0px )`;
 
         //remove scaling from the previous slide
-        sliderWrapper.getElementsByClassName('active')[0].
+        container.getElementsByClassName('active')[0].
         classList.remove('active');
         //add scaling to the next slide
-        sliderWrapper.getElementsByClassName('slide')[slides.length - 3].
+        container.getElementsByClassName('slide')[slides.length - 1 - offset].
         classList.add('active');
 
-        this.setState({ currentSlide: slidesCount });
+        this.setState({ currentSlide: slidesCount - 1 });
       }, 300 )
     }
     else{
       setTimeout( () => {
         slider.classList.remove('transition');
-        sliderWrapper.classList.remove('transition');
+        container.classList.remove('transition');
         this.setState({ currentSlide: goTo });
       }, 300 )
     }
@@ -128,8 +130,8 @@ export default class Slider extends Component{
             }
           </div>
         </div>
-        <button onClick={ this.changeSlide } data-goto={ this.state.currentSlide - 1 } className="prev"/>
-        <button onClick={ this.changeSlide } data-goto={ this.state.currentSlide + 1 } className="next">
+        <button onClick={ () => this.changeSlide(this.state.currentSlide - 1) } className="prev"/>
+        <button onClick={ () => this.changeSlide(this.state.currentSlide + 1) } className="next">
           {
             this.props.buttonText ?
             this.props.buttonText.map( (text, i) =>
