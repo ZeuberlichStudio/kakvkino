@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import DialogWindow from 'components/dialogWindow.component'
 
 import poster_1 from 'assets/images/poster_1.svg'
 import poster_2 from 'assets/images/poster_2.svg'
@@ -71,12 +72,18 @@ const Project =
     <img src={poster} alt=""/>
     <h3>{title}</h3>
     <ul>
-      <li><span>Жанр:</span>{genre}</li>
-      <li><span>Хронометраж:</span>{length}</li>
-      <li><span>Статус:</span>{status}</li>
-      <li><span>Прогноз кинопроката:</span>{forecast}</li>
-      <li><span>Дистрибьютор:</span>{publisher}</li>
-      <li><span>Сценарист:</span>{writer}</li>
+      <li><span>Жанр:&nbsp;</span>{genre}</li>
+      <li><span>Хронометраж:&nbsp;</span>{length}</li>
+      <li><span>Статус:&nbsp;</span>{status}</li>
+      <li><span>Прогноз кинопроката:&nbsp;</span>{forecast}</li>
+      <li><span>Дистрибьютор:&nbsp;</span>{publisher}</li>
+      <li>
+        <span>Сценарист:&nbsp;</span>
+        <DialogWindow text={writer}>
+          <h4>Алиса Лунина</h4>
+          <p>современная российская писательница, сценарист и драматург</p>
+        </DialogWindow>
+      </li>
     </ul>
     <p>{description}</p>
     <Link to={link}>Подробнее о проекте</Link>

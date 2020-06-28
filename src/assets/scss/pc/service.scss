@@ -7,7 +7,7 @@ section#service{
   grid-template: repeat(2, max-content) / max-content 1fr;
 
   background-blend-mode: darken;
-  background-image: url('../images/service_bg.jpg'), url('../images/Pattern_1.svg');
+  background-image: url('~assets/images/service_bg.jpg'), url('~assets/images/Pattern_1.svg');
   background-size: cover, get-vw(320px) auto;
 
   color: $sand;
@@ -34,7 +34,7 @@ section#service{
 
     position: absolute;
 
-    background-image: url('../images/empty_blocks.svg');
+    background-image: url('~assets/images/empty_blocks.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@ section#service{
 
   background-blend-mode: darken;
   background-color: lightgrey;
-  background-image: url('../images/service_bg.jpg');
+  background-image: url('~assets/images/service_bg.jpg');
   background-size: auto get-vw(1308px);
   background-position: left get-vw(-960px) top;
   background-repeat: no-repeat;

@@ -1,0 +1,18 @@
+#modal-wrapper{
+  width: 100vw;
+  height: calc(var(--vh) - #{get-m-vw(36px)});
+  left: 0; top: get-m-vw(36px);
+  position: fixed;
+  z-index: 10;
+}
+
+#modal-wrapper_close{
+  width: get-m-vw(16px);
+  height: get-m-vw(16px);
+  right: get-m-vw(16px); top: get-m-vw(54px);
+  display: block;
+  position: fixed;
+  mask: url('~assets/images/close.svg') center / cover no-repeat;
+  background: $sand;
+  z-index: 11;
+}

@@ -2,9 +2,8 @@
   width: 100vw;
   height: var(--vh);
   left: 0; top: 0;
-  padding-top: get-m-vw(36px);
 
-  position: fixed;
+  position: absolute;
   display: grid;
   grid-template-rows:
   max-content 1fr;
@@ -17,19 +16,6 @@
     margin-left: get-m-vw(20px);
     margin-top: get-m-vw(20px);
   }
-}
-
-#close-movies{
-  width: get-m-vw(16px);
-  height: get-m-vw(16px);
-  right: get-m-vw(20px); top: get-m-vw(54px);
-
-  position: absolute;
-
-  background-image: url('../../images/close.svg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .movies-table-container{

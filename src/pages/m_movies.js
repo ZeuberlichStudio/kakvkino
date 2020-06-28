@@ -241,8 +241,6 @@ export default class MobileMovies extends Component{
 
     return(
       <section id="movies">
-        <Link to="/" id="close-movies"/>
-
         <h1 className="m-bebas-20 light">Российские фильмы, собравшие свыше 500 тыс. зритлей за последние 6 лет</h1>
 
         <div className="movies-table-container">

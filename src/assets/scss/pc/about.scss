@@ -12,10 +12,10 @@
   background-color: $black;
 
   background-image:
-   url('../images/Pattern_1.svg'),
-   url('../images/about_bg_1.jpg'),
-   url('../images/about_bg_2.jpg'),
-   url('../images/about_bg_3.jpg');
+   url('~assets/images/Pattern_1.svg'),
+   url('~assets/images/about_bg_1.jpg'),
+   url('~assets/images/about_bg_2.jpg'),
+   url('~assets/images/about_bg_3.jpg');
   background-size: get-vw(320px) auto, 100vw auto, 100vw auto, 100vw auto;
   background-position:
    left top,

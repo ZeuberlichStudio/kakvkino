@@ -16,7 +16,7 @@
 
     position: absolute;
 
-    background-image: url('../images/service_bg.jpg');
+    background-image: url('~assets/images/service_bg.jpg');
     background-size: auto get-vw(1308px);
     background-position: left get-vw(-110px) bottom get-vw(-1310px + 1266px);
     background-repeat: no-repeat;
@@ -404,7 +404,7 @@
 
       position: absolute;
 
-      background-image: url('../images/figure_border.svg');
+      background-image: url('~assets/images/figure_border.svg');
       background-size: 100% auto;
       background-position: left top;
       background-repeat: no-repeat;
@@ -418,7 +418,7 @@
 
     position: absolute;
 
-    background-image: url('../images/tabs_gradient.svg');
+    background-image: url('~assets/images/tabs_gradient.svg');
     background-size: 100% auto;
     background-position: left bottom;
     background-repeat: no-repeat;

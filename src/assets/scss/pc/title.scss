@@ -8,7 +8,7 @@ section#title{
 
   overflow: hidden;
 
-  background: url('../images/title.png');
+  background: url('~assets/images/title.png');
   background-size: 100vw auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@ section#title{
 
     display: inline-block;
 
-    background-image: url('../images/forbes_logo.svg');
+    background-image: url('~assets/images/forbes_logo.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

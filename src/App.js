@@ -3,8 +3,9 @@ import { withRouter, Route } from 'react-router-dom';
 import './App.scss';
 
 import MainPage from 'pages/main'
-import ProjectPage from 'pages/project'
 import ModalWrapper from 'components/modal.component'
+import ProjectPage from 'pages/project'
+import MobileProjectPage from 'pages/m_project'
 import Movies from 'pages/movies'
 import MobileMovies from 'pages/m_movies'
 
@@ -46,7 +47,15 @@ class App extends React.Component {
         />
         <Route
           exact path="/projects/:title"
-          children={<ModalWrapper children={<ProjectPage/>}/>}
+          children={
+            <ModalWrapper
+              device={device}
+              children={
+                device === 'mobile' ?
+                <MobileProjectPage/> : <ProjectPage/>
+              }
+            />
+          }
         />
         <Route
           exact path="/movies"

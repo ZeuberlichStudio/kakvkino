@@ -1,0 +1,41 @@
+u.dialod-trigger{
+  width: max-content;
+  position: relative;
+  cursor: default;
+}
+
+u:hover > .dialog-window{ opacity: 1; }
+
+.dialog-window{
+  width: get-vw(264px);
+  height: max-content;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + #{get-vw(10px)});
+  position: absolute;
+  backdrop-filter: blur(8px);
+  color: $black;
+  border: get-vw(2px) solid $black;
+  opacity: 0;
+  transition: 0.2s;
+
+  &_content{
+    padding: get-vw(10px);
+
+    h4{ @include bebas-22-bold; }
+    p{ @include helvetica-12-medium; }
+  }
+
+  &::after{
+    width: 0; height: 0;
+    left: 0; right: 0;
+    margin: auto;
+    bottom: get-vw(-10px);
+    position: absolute;
+    border-top: get-vw(10px) solid $black;
+    border-left: get-vw(10px) solid transparent;
+    border-right: get-vw(10px) solid transparent;
+    content: '';
+  }
+}

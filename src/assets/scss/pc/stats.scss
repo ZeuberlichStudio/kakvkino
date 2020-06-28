@@ -5,7 +5,7 @@ section#stats{
 
   position: relative;
 
-  background-image: url('../images/Pattern_1.svg');
+  background-image: url('~assets/images/Pattern_1.svg');
   background-size: get-vw(320px) get-vw(200px);
   background-position: top right 100px;
   background-repeat: round;
@@ -208,7 +208,7 @@ section#stats .stats--article-1{
 section#stats .stats--article-2{
   display: flex;
   background: $sand;
-  background-image: url('../images/Pattern_1.svg');
+  background-image: url('~assets/images/Pattern_1.svg');
   background-size: get-vw(320px) get-vw(200px);
   background-position: top right 100px;
   background-repeat: round;
@@ -238,7 +238,7 @@ section#stats .stats--article-2{
       margin-left: get-vw(65px);
       margin-top: get-vw(22px);
 
-      background-image: url('../images/stats_graph.svg');
+      background-image: url('~assets/images/stats_graph.svg');
       background-size: 100% auto;
       background-repeat: no-repeat;
     }
@@ -498,11 +498,11 @@ section#stats .stats--article-2{
 
     &.prev{
       left: get-vw(14px);
-      background-image: url('../images/movie-slider/prev.svg');
+      background-image: url('~assets/images/movie-slider/prev.svg');
     }
     &.next{
       right: get-vw(14px);
-      background-image: url('../images/movie-slider/next.svg');
+      background-image: url('~assets/images/movie-slider/next.svg');
     }
   }
 }

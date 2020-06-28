@@ -74,7 +74,7 @@ class MainPage extends Component {
           <Title device={ this.props.device }/>
           <About/>
           <Stats device={ this.props.device }/>
-          <Filming/>
+          <Filming device={ this.props.device }/>
           <AboutUs/>
         </main>
         <Footer/>

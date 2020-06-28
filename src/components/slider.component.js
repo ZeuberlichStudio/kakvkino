@@ -8,7 +8,8 @@ export default class Slider extends Component{
     getElementsByClassName('slide');
 
     this.setState({ slidesCount: slides.length - 1 });
-    this.setState({ offset: this.props.visible ? 2 : 1 });
+    const offset = this.props.visible ? 1 : 0;
+    this.setState({ offset });
 
     if( this.props.visible ){
       let cloneFirst = slides[0].cloneNode(true),
@@ -34,13 +35,13 @@ export default class Slider extends Component{
           insertBefore(cloneLast, slides[0]);
     }
 
-    slides[1 + this.state.offset].classList.add('active');
+    slides[1 + offset].classList.add('active');
   }
 
   state = {
     currentSlide: 0,
     slidesCount: 0,
-    offset: 1,
+    offset: 0,
   }
 
   changeSlide = e => {
@@ -117,6 +118,10 @@ export default class Slider extends Component{
             {
               this.props.content ?
               this.props.content.map(
+                (slide, i) => <span key={ i } className="slide">{ slide }</span>
+              ) :
+              this.props.children ?
+              this.props.children.map(
                 (slide, i) => <span key={ i } className="slide">{ slide }</span>
               ) :
               null
