@@ -72,7 +72,7 @@ const Tab1 = () => (
       </div>
 
       <div className="filming-section_table_reference_movies_block">
-        <span>Холоп</span>
+        <span>Ёлки последние</span>
         <ul>
           <li>12-17</li>
           <li>18-24</li>
@@ -82,15 +82,15 @@ const Tab1 = () => (
         </ul>
         <ul>
           <li>8%</li>
-          <li>28%</li>
-          <li>29%</li>
-          <li>16%</li>
-          <li>19%</li>
+          <li>21%</li>
+          <li>37%</li>
+          <li>20%</li>
+          <li>14%</li>
         </ul>
       </div>
 
       <div className="filming-section_table_reference_movies_block">
-        <span>Холоп</span>
+        <span>Громкая связь</span>
         <ul>
           <li>12-17</li>
           <li>18-24</li>
@@ -99,16 +99,16 @@ const Tab1 = () => (
           <li>44+</li>
         </ul>
         <ul>
-          <li>8%</li>
-          <li>28%</li>
-          <li>29%</li>
-          <li>16%</li>
+          <li>10%</li>
+          <li>25%</li>
+          <li>32%</li>
           <li>19%</li>
+          <li>14%</li>
         </ul>
       </div>
 
       <div className="filming-section_table_reference_movies_block">
-        <span>Холоп</span>
+        <span>Любовницы</span>
         <ul>
           <li>12-17</li>
           <li>18-24</li>
@@ -117,11 +117,11 @@ const Tab1 = () => (
           <li>44+</li>
         </ul>
         <ul>
-          <li>8%</li>
-          <li>28%</li>
-          <li>29%</li>
-          <li>16%</li>
           <li>19%</li>
+          <li>22%</li>
+          <li>23%</li>
+          <li>22%</li>
+          <li>14%</li>
         </ul>
       </div>
     </div>
