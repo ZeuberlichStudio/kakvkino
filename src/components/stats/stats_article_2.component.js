@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 //images
 
+import graph from 'assets/images/stats_graph.svg';
 import stages from '../../assets/images/stats_stages.svg';
 
 export default class StatsArticle2 extends Component{
@@ -17,7 +18,7 @@ export default class StatsArticle2 extends Component{
             процент дохода согласно финансовой модели.
           </p>
           <h2 className="helvetica-14-bold m-bebas-25">Финансовая модель</h2>
-          <div className="graph"></div>
+          <img src={graph} alt=""/>
         </div>
         <div className="text-right-wrapper">
           <div className="text-right-container">

@@ -63,7 +63,7 @@ class MainPage extends Component {
   render() {
     return(
       <Fragment>
-        { /*this.props.device !== 'mobile' ? <Animation/> : null*/ }
+        { this.props.device !== 'mobile' ? <Animation/> : null }
         { this.props.device !== 'mobile' ? <Counter/> : null }
         {
           this.props.device === 'mobile' ?

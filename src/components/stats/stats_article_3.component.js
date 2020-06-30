@@ -12,7 +12,20 @@ import m_graph_2_1 from '../../assets/images/mobile/graph_2_1.svg';
 import m_graph_2_2 from '../../assets/images/mobile/graph_2_2.svg';
 import poll from '../../assets/images/poll.svg';
 import m_poll from '../../assets/images/mobile/poll.svg';
-import movie_1 from '../../assets/images/movie-slider/movie_1.svg';
+
+import movie_0 from 'assets/images/movie_0.png'
+import movie_1 from 'assets/images/movie_1.png'
+import movie_2 from 'assets/images/movie_2.png'
+import movie_4 from 'assets/images/movie_4.png'
+import movie_5 from 'assets/images/movie_5.png'
+import movie_6 from 'assets/images/movie_6.png'
+import movie_7 from 'assets/images/movie_7.png'
+import movie_8 from 'assets/images/movie_8.png'
+import movie_9 from 'assets/images/movie_9.png'
+import movie_10 from 'assets/images/movie_10.png'
+
+import audience_2019 from 'assets/images/audience_2019.svg'
+import audience_2020 from 'assets/images/audience_2020.svg'
 
 export default class StatsArticle3 extends Component{
 
@@ -73,10 +86,16 @@ export default class StatsArticle3 extends Component{
                 slideWidthVw={14.921875}
                 visible="true"
                 content={[
+                  <img src={ movie_0 } />,
                   <img src={ movie_1 } />,
-                  <img src={ movie_1 } />,
-                  <img src={ movie_1 } />,
-                  <img src={ movie_1 } />,
+                  <img src={ movie_2 } />,
+                  <img src={ movie_4 } />,
+                  <img src={ movie_5 } />,
+                  <img src={ movie_6 } />,
+                  <img src={ movie_7 } />,
+                  <img src={ movie_8 } />,
+                  <img src={ movie_9 } />,
+                  <img src={ movie_10 } />,
                 ]}/> : null
               }
               <span>
@@ -93,6 +112,7 @@ export default class StatsArticle3 extends Component{
     )
   }
 }
+
 const DesktopGraphs = () => (
   <Fragment>
     <Slider
@@ -102,11 +122,22 @@ const DesktopGraphs = () => (
         '2020',
         '2019',
       ]}
-      content={[
-        <img src={graph_1_1} />,
-        <img src={graph_1_2} />
-      ]}
-    />
+    >
+      <div>
+        <h3>
+          В 2019 год наблюдается рост зрителей. <br/>
+          Средний возраст кинозрителя 29 лет.
+        </h3>
+        <img src={audience_2019}/>
+      </div>
+      <div>
+        <h3>
+          Начало 2020 года показывает растущий тренд зрителей <br/>
+          до введения ограничительных мер в связи с COVID-19.
+        </h3>
+        <img src={audience_2020}/>
+      </div>
+    </Slider>
     <img src={ graph_2 }/>
   </Fragment>
 );

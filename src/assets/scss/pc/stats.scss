@@ -230,17 +230,13 @@ section#stats .stats--article-2{
     & > :nth-child(3){
       width: get-vw(385px);
       margin-left: get-vw(115px);
-      margin-top: get-vw(70px);
+      margin-top: get-vw(23px);
     }
     & > :nth-child(4){
       width: get-vw(800px);
       height: get-vw(412px);
       margin-left: get-vw(65px);
       margin-top: get-vw(22px);
-
-      background-image: url('~assets/images/stats_graph.svg');
-      background-size: 100% auto;
-      background-repeat: no-repeat;
     }
   }
 
@@ -293,7 +289,6 @@ section#stats .stats--article-2{
     .slider{
       width: get-vw(505px);
       height: max-content;
-      margin-top: get-vw(45px);
       position: relative;
 
       .wrapper{
@@ -314,7 +309,7 @@ section#stats .stats--article-2{
       button{
         width: get-vw(40px);
         height: get-vw(18px);
-        right: get-vw(0px); bottom: get-vw(0px);
+        right: get-vw(4px); bottom: get-vw(-2px);
 
         position: absolute;
         display: inline-block;
@@ -344,9 +339,18 @@ section#stats .stats--article-2{
         flex-shrink: 0;
         width: get-vw(505px);
 
-        img{
+        div{
           width: 100%;
-          display: block;
+          display: grid;
+          grid-auto-rows: max-content;
+          grid-row-gap: get-vw(32px);
+
+          h3{ @include helvetica-14-bold; }
+
+          img{
+            width: get-vw(505px);
+            display: block;
+          }
         }
       }
     }
@@ -360,7 +364,7 @@ section#stats .stats--article-2{
     p{
       grid-row: 2/4;
       grid-column: 2/3;
-      margin-top: get-vw(45px);
+      padding-top: get-vw(64px);
     }
   }
 

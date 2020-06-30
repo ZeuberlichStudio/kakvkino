@@ -2,6 +2,7 @@
 @import './assets/scss/functions.scss';
 @import './assets/scss/z-index.scss';
 @import './assets/scss/typography.scss';
+
 *{ box-sizing: border-box; }
 
 html{
@@ -66,6 +67,7 @@ input, button{
   @import './assets/scss/pc/movies.scss';
 
   @import './assets/scss/pc/modal.scss';
+  @import './assets/scss/pc/toggle.scss';
   @import './assets/scss/pc/projectPage.scss';
 }
 

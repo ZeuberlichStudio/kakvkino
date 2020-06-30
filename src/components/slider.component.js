@@ -35,8 +35,8 @@ export default class Slider extends Component{
 
           container.appendChild(cloneFirst);
           container.appendChild(cloneSecond);
-          container.insertBefore(cloneSecondLast, slides[0]);
           container.insertBefore(cloneLast, slides[0]);
+          container.insertBefore(cloneSecondLast, slides[0]);
     }else{
       let cloneFirst = slides[0].cloneNode(true),
           cloneLast = slides[slides.length - 1].cloneNode(true);
@@ -74,7 +74,9 @@ export default class Slider extends Component{
         slider.classList.remove('transition');
         container.classList.remove('transition');
         container.style.transform =
-        `translate3d(${-slideWidth}vw, 0px, 0px )`;
+        `translate3d(
+          ${this.props.visible ? -slideWidth * 2 : -slideWidth}vw,
+         0px, 0px )`;
 
         //remove scaling from the previous slide
         container.getElementsByClassName('active')[0].

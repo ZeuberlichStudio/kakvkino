@@ -1,0 +1,38 @@
+.toggle-container{
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: max-content;
+  grid-column-gap: get-vw(10px);
+  align-items: center;
+}
+
+label.toggle{
+  width: get-vw(36px);
+  height: get-vw(22px);
+  position: relative;
+  display: block;
+  border: get-vw(2px) solid $black;
+
+  input{
+    width: 0;
+    height: 0;
+    position: absolute;
+    -webkit-appearance: none;
+  }
+
+  span{
+    width: get-vw(15px);
+    height: get-vw(15px);
+    top: get-vw(1.4px);
+    left: get-vw(1.4px);
+    display: block;
+    position: absolute;
+    background-color: $black;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  input:checked ~ span{ left: get-vw(15.6px); }
+}
+
+.toggle-container span{ @include bebas-20-bold; cursor: pointer; }
