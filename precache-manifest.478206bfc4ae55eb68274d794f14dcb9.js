@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "304ba9307bca1af3d89092f0f1fc5fc7",
+    "revision": "0b2969feffc89e163b7ca80b8cdfa936",
     "url": "/kakvkino/index.html"
   },
   {
-    "revision": "32fe2ebff77a5e7f7073",
-    "url": "/kakvkino/static/css/main.4d322e6c.chunk.css"
+    "revision": "4f2f6eecfb1cc47cb2b0",
+    "url": "/kakvkino/static/css/main.e5381b2e.chunk.css"
   },
   {
     "revision": "c543c5fe3a48cd60e201",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/js/2.ea1da80e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "32fe2ebff77a5e7f7073",
+    "revision": "4f2f6eecfb1cc47cb2b0",
     "url": "/kakvkino/static/js/main.1e4fd0e9.chunk.js"
   },
   {
@@ -284,8 +284,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/media/tabs_gradient.6881d60c.svg"
   },
   {
-    "revision": "e25f00305a1b5d8143741f505749b6a2",
-    "url": "/kakvkino/static/media/timeline2.2.e25f0030.svg"
+    "revision": "420a6d0e21af3c8a833bcf93c948931a",
+    "url": "/kakvkino/static/media/timeline2.2.420a6d0e.svg"
   },
   {
     "revision": "a6085382e386f209bde8149d15fd40ca",
