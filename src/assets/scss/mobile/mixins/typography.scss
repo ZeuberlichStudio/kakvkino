@@ -32,3 +32,10 @@
   font-size: get-m-vw(12px);
   line-height: get-m-vw(14px);
 }
+
+@mixin m-helvetica-12-medium {
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-size: get-m-vw(12px);
+  line-height: get-m-vw(14px);
+}

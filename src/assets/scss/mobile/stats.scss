@@ -107,15 +107,11 @@ section#stats{
   .text-left-container h2{
     display: none;
   }
-  .text-left-container .graph{
+  .text-left-container img{
     width: get-m-vw(375px);
-    height: get-m-vw(524px);
+    height: auto;
     margin-left: get-m-vw(-20px);
     margin-top: get-m-vw(36px);
-
-    background-image: url('../../images/mobile/stats_graph.svg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
   }
   .text-right-container{
     margin-top: get-m-vw(60px);
@@ -147,9 +143,7 @@ section#stats{
   z-index: 2;
 
   .text-left-container{
-    h3:nth-child(2){ display: none; }
-    h3:nth-child(3){ margin-top: get-m-vw(20px); }
-    h3:nth-child(4){ margin-top: get-m-vw(24px); }
+    h3:nth-child(3){ margin-top: get-m-vw(32px); }
     p{ margin-top: get-m-vw(16px); }
   }
 
@@ -178,7 +172,6 @@ section#stats{
 
   .slider{
     width: get-m-vw(320px);
-    margin-top: get-m-vw(20px);
     position: relative;
 
     .wrapper{
@@ -201,7 +194,7 @@ section#stats{
     button{
       width: get-m-vw(24px);
       height: get-m-vw(180px);
-      right: get-m-vw(6px); top: get-m-vw(24px);
+      right: get-m-vw(6px); bottom: get-m-vw(62px);
 
       position: absolute;
       display: inline-block;
@@ -238,7 +231,19 @@ section#stats{
     .slide{
       width: get-m-vw(288px);
 
-      img{ width: 100%; }
+      p{
+        height: get-m-vw(54px);
+        @include m-helvetica-12-bold;
+      }
+
+      h3{ @include m-bebas-22-bold; span{ color: rgba($black, 0.5); }}
+
+      img{
+        width: get-m-vw(288px);
+        height: auto;
+        margin-top: get-m-vw(18px);
+        display: block;
+      }
     }
   }
 }

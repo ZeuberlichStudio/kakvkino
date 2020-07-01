@@ -16,19 +16,30 @@ const MobileTable = () => {
 
 const Spoilers = ({children}) => {
 
+  const containerRef = React.useRef();
+
   const updateChildren = React.Children.map(
     children,
-    (child, i) => React.cloneElement(child, {buttonId: `spoiler-${i}`})
+    (child, i) => React.cloneElement(child, {buttonId: `spoiler-${i}`, onClick: closeOther})
   );
 
+  function closeOther(e) {
+    const spoilers = containerRef.current.children;
+
+    Array.from(spoilers).forEach((spoiler) => {
+      if( spoiler === e.currentTarget.parentElement ) return;
+      spoiler.getElementsByTagName('input')[0].checked = false;
+    });
+  }
+
   return(
-    <div className="filming-section_table">
+    <div ref={containerRef} className="filming-section_table">
       { updateChildren }
     </div>
   );
 }
 
-const Spoiler = ({checked ,title, buttonId, children}) => {
+const Spoiler = ({checked ,title, buttonId, children, onClick}) => {
 
   useEffect(() => {
     if (!checked) return;
@@ -38,7 +49,7 @@ const Spoiler = ({checked ,title, buttonId, children}) => {
   return(
     <div className="filming-section_table_spoiler">
       <input id={buttonId} type="checkbox"/>
-      <label for={buttonId} className="filming-section_table_spoiler_button">
+      <label onClick={onClick} for={buttonId} className="filming-section_table_spoiler_button">
         {title}
       </label>
 

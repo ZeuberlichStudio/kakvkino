@@ -1,1 +1,41 @@
-.dialog-window{ display: none; }
+u.dialod-trigger{
+  width: max-content;
+  position: relative;
+  cursor: default;
+}
+
+u:hover > .dialog-window{ opacity: 1; }
+
+.dialog-window{
+  width: get-m-vw(280px);
+  height: max-content;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + #{get-m-vw(10px)});
+  position: absolute;
+  backdrop-filter: blur(8px);
+  color: $black;
+  border: get-m-vw(2px) solid $black;
+  opacity: 0;
+  transition: 0.2s;
+
+  &_content{
+    padding: get-m-vw(10px);
+
+    h4{ @include m-bebas-22-bold; }
+    p{ @include m-helvetica-12-medium; }
+  }
+
+  &::after{
+    width: 0; height: 0;
+    left: 0; right: 0;
+    margin: auto;
+    bottom: get-m-vw(-10px);
+    position: absolute;
+    border-top: get-m-vw(10px) solid $black;
+    border-left: get-m-vw(10px) solid transparent;
+    border-right: get-m-vw(10px) solid transparent;
+    content: '';
+  }
+}

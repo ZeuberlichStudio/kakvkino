@@ -1,9 +1,5 @@
 import React, {Component, Fragment} from 'react'
 
-/*animation*/
-import Animation from 'components/animation.component';
-import Counter from 'components/counter.component';
-
 /*universal elements*/
 import Header from 'components/header.component';
 import MobileHeader from 'components/m_header.component';
@@ -63,8 +59,6 @@ class MainPage extends Component {
   render() {
     return(
       <Fragment>
-        { this.props.device !== 'mobile' ? <Animation/> : null }
-        { this.props.device !== 'mobile' ? <Counter/> : null }
         {
           this.props.device === 'mobile' ?
           <MobileHeader color={ this.state.uiColor }/> :

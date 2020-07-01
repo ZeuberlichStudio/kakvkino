@@ -75,7 +75,6 @@ input, button{
 
   body{ -webkit-text-size-adjust: none; }
   #root{overflow: hidden;}
-  .dialog-window{display: none;}
 
   @import './assets/scss/mobile/mixins/typography.scss';
   @import './assets/scss/mobile/header.scss';

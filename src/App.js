@@ -2,6 +2,11 @@ import React, { Fragment } from 'react';
 import { withRouter, Route } from 'react-router-dom';
 import './App.scss';
 
+//animation
+import Counter from 'components/counter.component';
+import Animation from 'components/animation.component';
+
+//pages
 import MainPage from 'pages/main'
 import ModalWrapper from 'components/modal.component'
 import ProjectPage from 'pages/project'
@@ -40,32 +45,24 @@ class App extends React.Component {
 
     return (
       <Fragment>
-        <Route
-          exact
-          path="/"
-          children={<MainPage device={device}/>}
-        />
-        <Route
-          exact path="/projects/:title"
-          children={
-            <ModalWrapper
-              device={device}
-              children={
-                device === 'mobile' ?
-                <MobileProjectPage/> : <ProjectPage/>
-              }
-            />
-          }
-        />
-        <Route
-          exact path="/movies"
-          children={
-            <ModalWrapper
-              device={device}
-              children={ device === 'mobile' ? <MobileMovies/> : <Movies/> }
-            />
-          }
-        />
+        { this.props.device !== 'mobile' ? <Counter/> : null }
+        { device !== 'mobile' ? <Animation/> : null }
+
+        <Route path="/">
+          <MainPage device={device}/>
+        </Route>
+
+        <Route exact path="/projects/:title">
+          <ModalWrapper device={device}>
+            { device === 'mobile' ? <MobileProjectPage/> : <ProjectPage/> }
+          </ModalWrapper>
+        </Route>
+
+        <Route exact path="/movies">
+          <ModalWrapper device={device}>
+            { device === 'mobile' ? <MobileMovies/> : <Movies/> }
+          </ModalWrapper>
+        </Route>
       </Fragment>
     );
   }

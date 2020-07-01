@@ -7,7 +7,7 @@ import graph_1_1 from '../../assets/images/graph_1_1.svg';
 import graph_1_2 from '../../assets/images/graph_1_2.svg';
 import graph_2 from '../../assets/images/graph_2.svg';
 import m_graph_1_1 from '../../assets/images/mobile/graph_1_1.svg';
-import m_graph_1_2 from '../../assets/images/mobile/graph_1_2.svg';
+import m_graph_1_2 from '../../assets/images/mobile/m_graph_1_2.svg';
 import m_graph_2_1 from '../../assets/images/mobile/graph_2_1.svg';
 import m_graph_2_2 from '../../assets/images/mobile/graph_2_2.svg';
 import poll from '../../assets/images/poll.svg';
@@ -144,21 +144,39 @@ const DesktopGraphs = () => (
 
 const MobileGraphs = () => (
   <Fragment>
-    <h3 className="m-bebas-25">
-      Аудитория кинотеатров<br/>
-      <span className="opacity-05">(Зрители, млн. Чел.)</span>
-    </h3>
+
     <Slider
-    id="mobile-stats-slider-1"
-    slideWidthVw={88}
-    buttonText = {[
-      'Июль — Декабрь 2019',
-      'Январь — Июнь 2020',
-    ]}
-    content={[
-      <img src={ m_graph_1_1 } />,
-      <img src={ m_graph_1_2 } />,
-    ]}/>
+      id="mobile-stats-slider-1"
+      slideWidthVw={88}
+      buttonText = {[
+        'Июль — Декабрь 2019',
+        'Январь — Июнь 2020',
+      ]}
+    >
+      <div>
+        <p>
+          В 2019 год наблюдается рост зрителей. <br/>
+          Средний возраст кинозрителя 29 лет.
+        </p>
+        <h3>
+          Аудитория кинотеатров в 2019 <br/>
+          <span>(Зрители, млн. Чел.)</span>
+        </h3>
+        <img src={ m_graph_1_1 } />
+      </div>
+      <div>
+        <p>
+          Начало 2020 года показывает растущий тренд <br/>
+          зрителей до введения ограничительных мер  <br/>
+          в связи с COVID-19.
+        </p>
+        <h3>
+          Аудитория кинотеатров в 2019 <br/>
+          <span>(Зрители, млн. Чел.)</span>
+        </h3>
+        <img src={ m_graph_1_2 } />
+      </div>
+    </Slider>
 
     <h3 className="m-bebas-25">
       Портрет аудитории кинотеатров<br/> в 2019 году

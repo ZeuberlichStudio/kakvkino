@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 //images
 
 import graph from 'assets/images/stats_graph.svg';
+import m_graph from 'assets/images/mobile/graph.svg';
 import stages from '../../assets/images/stats_stages.svg';
 
-export default class StatsArticle2 extends Component{
+const StatsArticle2 = ({device}) => {
 
-  render() {
     return(
       <article id="stats--article-2" className="stats--article-2 stats--article">
         <div className="text-left-container">
@@ -18,7 +18,7 @@ export default class StatsArticle2 extends Component{
             процент дохода согласно финансовой модели.
           </p>
           <h2 className="helvetica-14-bold m-bebas-25">Финансовая модель</h2>
-          <img src={graph} alt=""/>
+          <img src={device === 'mobile' ? m_graph : graph} alt=""/>
         </div>
         <div className="text-right-wrapper">
           <div className="text-right-container">
@@ -27,6 +27,7 @@ export default class StatsArticle2 extends Component{
           </div>
         </div>
       </article>
-    )
-  }
+    );
 }
+
+export default StatsArticle2;

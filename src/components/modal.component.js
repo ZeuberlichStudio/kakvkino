@@ -1,6 +1,5 @@
 import React, {Fragment, useEffect} from 'react'
 import {Link, useHistory} from 'react-router-dom'
-import Background from 'pages/main'
 
 const ModalWrapper = ({children, device}) => {
 
@@ -25,7 +24,6 @@ const ModalWrapper = ({children, device}) => {
         />
         {children}
       </div>
-      {<Background device={device}/>}
     </Fragment>
   );
 }
