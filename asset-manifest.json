@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.29516b13.chunk.css",
-    "main.js": "/kakvkino/static/js/main.b849c51d.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.b849c51d.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.be15a92a.chunk.css",
+    "main.js": "/kakvkino/static/js/main.0d6abdae.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.0d6abdae.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.d41ba491.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.d41ba491.js.map",
     "static/js/2.ea1da80e.chunk.js": "/kakvkino/static/js/2.ea1da80e.chunk.js",
     "static/js/2.ea1da80e.chunk.js.map": "/kakvkino/static/js/2.ea1da80e.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.6b72a13cf2a63d886f976bd4776f7cd7.js": "/kakvkino/precache-manifest.6b72a13cf2a63d886f976bd4776f7cd7.js",
+    "precache-manifest.233e14077ecbdeee4139e983091b89ea.js": "/kakvkino/precache-manifest.233e14077ecbdeee4139e983091b89ea.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.29516b13.chunk.css.map": "/kakvkino/static/css/main.29516b13.chunk.css.map",
+    "static/css/main.be15a92a.chunk.css.map": "/kakvkino/static/css/main.be15a92a.chunk.css.map",
     "static/js/2.ea1da80e.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.ea1da80e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
-    "static/media/audience_2019.svg": "/kakvkino/static/media/audience_2019.0e2bb9d7.svg",
-    "static/media/audience_2020.svg": "/kakvkino/static/media/audience_2020.c08d4c64.svg",
+    "static/media/audience_2019.svg": "/kakvkino/static/media/audience_2019.c96e6566.svg",
+    "static/media/audience_2020.svg": "/kakvkino/static/media/audience_2020.3e136416.svg",
     "static/media/eurasianLogo.svg": "/kakvkino/static/media/eurasianLogo.77752253.svg",
     "static/media/filming_table_pricing_1.svg": "/kakvkino/static/media/filming_table_pricing_1.41bc9831.svg",
     "static/media/filming_table_pricing_2.svg": "/kakvkino/static/media/filming_table_pricing_2.68487498.svg",
@@ -56,7 +56,7 @@
   "entrypoints": [
     "static/js/runtime-main.d41ba491.js",
     "static/js/2.ea1da80e.chunk.js",
-    "static/css/main.29516b13.chunk.css",
-    "static/js/main.b849c51d.chunk.js"
+    "static/css/main.be15a92a.chunk.css",
+    "static/js/main.0d6abdae.chunk.js"
   ]
 }
