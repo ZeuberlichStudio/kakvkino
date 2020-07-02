@@ -46,7 +46,7 @@ class App extends React.Component {
     return (
       <Fragment>
         { device !== 'mobile' ? <Counter/> : null }
-        { /*device !== 'mobile' ? <Animation/> : null*/ }
+        { device !== 'mobile' ? <Animation/> : null }
 
         <Route path="/">
           <MainPage device={device}/>
