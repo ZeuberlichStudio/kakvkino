@@ -50,6 +50,7 @@
 #animation.scaled{
   background-size: get-vw(320px) auto;
   background-position: left get-vw(640px) top get-vw(400px);
+  background-repeat: repeat;
 
   svg{
     width: get-vw(160px)!important;

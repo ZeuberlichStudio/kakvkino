@@ -3,6 +3,8 @@
   height: calc(var(--vh) - #{get-m-vw(36px)});
   left: 0; top: get-m-vw(36px);
   position: fixed;
+  backdrop-filter: blur(8px);
+  background-color: rgba($black, 0.75);
   z-index: 10;
 }
 

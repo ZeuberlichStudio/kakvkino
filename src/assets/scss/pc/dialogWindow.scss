@@ -1,15 +1,28 @@
+.dialog-window{
+  display: inline-block;
+  position: relative;
+}
+
+.dialog-window_close{
+  width: get-vw(16px);
+  height: get-vw(16px);
+  right: get-vw(5px); top: get-vw(5px);
+  display: block;
+  position: absolute;
+  mask: url('~assets/images/close.svg') center / cover no-repeat;
+  background: $sand;
+  z-index: 2;
+}
+
 u.dialod-trigger{
   width: max-content;
-  position: relative;
   cursor: default;
 }
 
-u:hover > .dialog-window{ opacity: 1; }
-
-.dialog-window{
-  width: get-vw(264px);
+.dialog-window_content-wrapper{
+  max-width: get-vw(264px);
+  width: max-content;
   height: max-content;
-
   left: 50%;
   transform: translateX(-50%);
   bottom: calc(100% + #{get-vw(10px)});
@@ -18,10 +31,12 @@ u:hover > .dialog-window{ opacity: 1; }
   color: $black;
   border: get-vw(2px) solid $black;
   opacity: 0;
-  transition: 0.2s;
+  pointer-events: none;
+  transition: 0.3s;
 
-  &_content{
+  .dialog-window_content{
     padding: get-vw(10px);
+    overflow: hidden;
 
     h4{ @include bebas-22-bold; }
     p{ @include helvetica-12-medium; }
@@ -38,4 +53,14 @@ u:hover > .dialog-window{ opacity: 1; }
     border-right: get-vw(10px) solid transparent;
     content: '';
   }
+}
+
+.dialog-window.hover{
+  u.dialod-trigger:hover ~ .dialog-window_content-wrapper{ opacity: 1; }
+}
+
+.dialog-window.click{
+
+  u.dialod-trigger{ cursor: pointer; }
+  &.active .dialog-window_content-wrapper{ opacity: 1; pointer-events: all; }
 }

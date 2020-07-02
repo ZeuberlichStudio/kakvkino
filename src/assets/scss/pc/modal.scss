@@ -6,7 +6,8 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  background: rgba($black, 0.5);
+  backdrop-filter: blur(8px);
+  background: rgba($black, 0.75);
   z-index: 10;
   overflow-y: scroll;
 }

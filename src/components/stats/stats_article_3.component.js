@@ -148,9 +148,9 @@ const MobileGraphs = () => (
     <Slider
       id="mobile-stats-slider-1"
       slideWidthVw={88}
-      buttonText = {[
-        'Июль — Декабрь 2019',
+      buttonText = {[    
         'Январь — Июнь 2020',
+        'Июль — Декабрь 2019',
       ]}
     >
       <div>
@@ -171,7 +171,7 @@ const MobileGraphs = () => (
           в связи с COVID-19.
         </p>
         <h3>
-          Аудитория кинотеатров в 2019 <br/>
+          Аудитория кинотеатров в 2020 <br/>
           <span>(Зрители, млн. Чел.)</span>
         </h3>
         <img src={ m_graph_1_2 } />

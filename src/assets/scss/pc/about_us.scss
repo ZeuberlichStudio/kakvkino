@@ -94,7 +94,7 @@ section#about-us{
   div.text-right-container{
     height: 100%;
     margin-top: -100vh;
-    padding: get-vw(123px) get-vw(22px) 0 get-vw(14px);
+    padding: get-vw(123px) get-vw(8px) 0 get-vw(14px);
 
     position: relative;
     display: grid;
@@ -104,10 +104,14 @@ section#about-us{
 
     background-color: $sand;
 
+    div:nth-child(1) p { @include helvetica-14-bold; }
+
     h3{
       margin-top: get-vw(28px);
     }
 
     h3 + p{ margin-top: get-vw(14px); }
+
+    p{ @include helvetica-12-medium; }
   }
 }

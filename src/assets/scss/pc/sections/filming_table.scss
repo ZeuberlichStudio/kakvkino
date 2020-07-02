@@ -185,6 +185,12 @@
     }
   }
 
+  &.mode-1 .notice{
+    &::before{
+      background: #FF6C57;
+    }
+  }
+
   table, tbody{ display: block; }
 
   tbody{
@@ -264,6 +270,7 @@
   }
 
   td:not(:first-child){ color: #3FAC50; }
+  &.mode-1 td:not(:first-child){ color: #FF6C57; }
 }
 
 .filming-section_table_content_tab-2{

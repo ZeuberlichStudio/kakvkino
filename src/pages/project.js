@@ -1,5 +1,7 @@
 import React, {Fragment} from 'react'
 import {useParams} from 'react-router-dom'
+import DialogWindow from 'components/dialogWindow.component'
+import Form from 'components/form.component'
 import moodboard from 'assets/images/moodboard.svg'
 
 const ProjectPage = () => {
@@ -39,8 +41,19 @@ const Project1 = () => (
           <li><span>Прогноз кинопроката:</span> 1.5 млн зрителей</li>
           <li><span>Дистрибьютор:</span> Стадия переговоров</li>
           <li><span>Целевая аудитория:</span> 20-45 лет, МЖ</li>
-          <li><span>Сценарист:</span> Алиса Лунина</li>
-          <li><span>Дримкаст:</span> по запросу</li>
+          <li>
+            <span>Сценарист:&nbsp;</span>
+            <DialogWindow text="Алиса Лунина">
+              <h4>Алиса Лунина</h4>
+              <p>современная российская писательница, сценарист и драматург</p>
+            </DialogWindow>
+          </li>
+          <li>
+            <span>Дримкаст:&nbsp;</span>
+            <DialogWindow click={true} text="по запросу">
+              <Form/>
+            </DialogWindow>
+          </li>
         </ul>
       </div>
       <div className="project-section_text-right_development-schedule">
@@ -82,7 +95,7 @@ const Project1 = () => (
         <div>
           <h3>
             Декабрь 2021 <br/>
-            (канун Нового года)
+            <span>(канун Нового года)</span>
           </h3>
           <p><span>Кинопрокат.</span></p>
         </div>
@@ -119,8 +132,19 @@ const Project2 = () => (
           <li><span>Прогноз кинопроката:</span> 1.5 млн зрителей</li>
           <li><span>Дистрибьютор:</span> Стадия переговоров</li>
           <li><span>Целевая аудитория:</span> 20-45 лет, МЖ</li>
-          <li><span>Сценарист:</span> Алиса Лунина</li>
-          <li><span>Дримкаст:</span> по запросу</li>
+          <li>
+            <span>Сценарист:&nbsp;</span>
+            <DialogWindow text="Алиса Лунина">
+              <h4>Алиса Лунина</h4>
+              <p>современная российская писательница, сценарист и драматург</p>
+            </DialogWindow>
+          </li>
+          <li>
+            <span>Дримкаст:&nbsp;</span>
+            <DialogWindow click={true} text="по запросу">
+              <Form/>
+            </DialogWindow>
+          </li>
         </ul>
       </div>
       <div className="project-section_text-right_development-schedule">
@@ -162,7 +186,7 @@ const Project2 = () => (
         <div>
           <h3>
             Ноябрь 2021 <br/>
-            (праздничный уикенд с 4-го ноября)
+            <span>(праздничный уикенд с 4-го ноября)</span>
           </h3>
           <p><span>Кинопрокат.</span></p>
         </div>

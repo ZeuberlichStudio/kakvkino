@@ -33,7 +33,7 @@ header#header{
 
     background-color: $black;
     mask-image: url('../../images/mobile/open_menu.svg');
-    mask-size: 98% auto;
+    mask-size: auto 100%;
     mask-position: center;
     mask-repeat: no-repeat;
     justify-self: flex-end;

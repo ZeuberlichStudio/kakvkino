@@ -13,7 +13,6 @@ export default class Stats extends Component{
         <StatsArticle1 />
         <div id="stats--article-2-anchor"></div>
         <StatsArticle2 device={ this.props.device }/>
-        <StatsArticle3 device={ this.props.device }/>
         <div id="stats--divider"></div>
 
         {

@@ -1,6 +1,7 @@
 .m-hide{ display: none; }
 
-section#stats{
+section#stats,
+section#stats-2-section{
   width: 100vw;
   height: max-content;
   padding: get-m-vw(20px);
@@ -14,6 +15,8 @@ section#stats{
 
   color: $black;
 }
+
+section#stats-2-section{ padding-top: get-m-vw(40px); }
 
 .stats--article-1{
   .stage-3{
@@ -137,7 +140,6 @@ section#stats{
 }
 
 #stats--article-3{
-  padding-top: get-m-vw(80px);
 
   color: $black;
   z-index: 2;
@@ -192,7 +194,7 @@ section#stats{
     &.transition button{ color: transparent!important; }
 
     button{
-      width: get-m-vw(24px);
+      width: get-m-vw(18px);
       height: get-m-vw(180px);
       right: get-m-vw(6px); bottom: get-m-vw(62px);
 
@@ -206,7 +208,7 @@ section#stats{
       span{
         width: 100%;
         display: block;
-        padding-right: get-m-vw(4px);
+        padding-right: get-m-vw(1px);
 
         writing-mode: vertical-rl;
         text-orientation: mixed;
@@ -217,13 +219,13 @@ section#stats{
         width: 0; height: 0;
         display: block;
         position: absolute;
-        right: get-m-vw(-11.5px);
+        right: get-m-vw(-8px);
         top: 0; bottom: 0;
         margin: auto;
 
-        border-left: get-m-vw(12px) solid $black;
-        border-top: get-m-vw(12px) solid transparent;
-        border-bottom: get-m-vw(12px) solid transparent;
+        border-left: get-m-vw(8px) solid $black;
+        border-top: get-m-vw(8px) solid transparent;
+        border-bottom: get-m-vw(8px) solid transparent;
         content: '';
       }
     }
@@ -245,6 +247,10 @@ section#stats{
         display: block;
       }
     }
+  }
+
+  #mobile-stats-slider-2{
+    button{ bottom: get-m-vw(44px); }
   }
 }
 

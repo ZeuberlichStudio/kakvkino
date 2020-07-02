@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Slider from 'components/slider.component'
 import Reference from 'components/filming/reference.component'
+import DialogWindow from 'components/dialogWindow.component'
 
 const MobileTable = () => {
   return(
@@ -151,7 +152,19 @@ const Tab2 = () => (
           <tr><td>Участие главных героев</td></tr>
           <tr><td>Кол-во эпизодов с присутствием бренда</td></tr>
           <tr><td>Хронометраж эпизодов с присутствием бренда</td></tr>
-          <tr><td>Бренд-трекинг</td></tr>
+          <tr>
+            <td>
+              <DialogWindow text="Бренд-трекинг">
+                <h4>Бренд-трекинг</h4>
+                <p>
+                  Мониторинг эмоциональной близости бренда,
+                  узнаваемость и запоминаемость рекламы, побуждение к
+                  действию до <br/>
+                  и в течение кинопроката
+                </p>
+              </DialogWindow>
+            </td>
+          </tr>
           <tr><td>VIP-приглашение на премьеру</td></tr>
         </tbody>
       </table>

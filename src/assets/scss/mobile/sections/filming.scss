@@ -100,7 +100,7 @@
       margin-top: get-m-vw(-2px);
       max-height: 0px;
       position: relative;
-      overflow: hidden;
+      overflow-y: hidden;
       transition: max-height 0.3s;
       background: $sand;
       z-index: 0;
@@ -124,6 +124,11 @@
 }
 
 .filming-section_table{
+
+  .dialog-window_content-wrapper{
+    transform: translateX(-17%);
+    &::after{ left: get-m-vw(50px); right: unset; }
+  }
 
   &_reference{
     padding: get-m-vw(24px) get-m-vw(16px);
@@ -174,6 +179,7 @@
 
     &_right{
       width: 50%;
+      overflow-x: hidden;
 
       table, tbody{ display: block; }
 
@@ -226,6 +232,7 @@
 
     &_right{
       width: 50%;
+      overflow-x: hidden;
 
       table, tbody{ display: block; }
 
@@ -305,6 +312,7 @@
 
     &_right{
       width: 50%;
+      overflow-x: hidden;
 
       tbody{
         padding: get-m-vw(20px) get-m-vw(4px);

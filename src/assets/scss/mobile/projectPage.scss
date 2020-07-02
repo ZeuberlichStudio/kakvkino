@@ -65,6 +65,7 @@
     h3{
       margin-top: get-m-vw(10px);
       @include m-bebas-20-bold;
+      span{ opacity: 0.5; }
     }
     p{
       margin-top: get-m-vw(5px);

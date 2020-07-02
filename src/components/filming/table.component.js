@@ -164,9 +164,11 @@ const Tab1 = () => {
   }
 
   return(
-  <div className="filming-section_table_content_tab filming-section_table_content_tab-1">
+  <div
+    className={`filming-section_table_content_tab filming-section_table_content_tab-1 ${!mode ? "mode-0" : "mode-1"}`}
+  >
     <table>
-      <tbody className={ !mode ? "mode-0" : "mode-1" }>
+      <tbody>
         <tr>
           <th>Зрители  в кинотеатре: <br/><span>(Доход в процентах)</span></th>
           <td></td>
@@ -268,9 +270,15 @@ const Tab1 = () => {
         </tr>
       </tbody>
     </table>
-    <span className="notice">
-        Доход по тарифу, в соответствии с <a href="#stats"><u>финансовой моделью</u></a>
-    </span>
+      {
+        !mode ?
+        <span className="notice">
+          Доход по тарифу, в соответствии с <a href="#stats"><u>финансовой моделью</u></a>
+        </span> :
+        <span className="notice">
+          Бюджет по тарифу, в соответствии с <a href="#stats"><u>финансовой моделью</u></a>
+        </span>
+      }
     <Toggle toggleFunction={toggleFunction} options={["Доход", "Рекламный бюджет"]}/>
   </div>)
 }
@@ -323,7 +331,7 @@ const Tab2 = () => (
           <td>35 МЛН</td>
         </tr>
         <tr>
-          <th>Бюджет тарифа: <span>(В рублях, без НДС)<sup>1</sup></span></th>
+          <th>Бюджет тарифа: <span>(В рублях, без НДС)</span></th>
           <td></td>
           <th>3 500 000</th>
           <td></td>

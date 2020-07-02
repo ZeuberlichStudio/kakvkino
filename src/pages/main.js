@@ -11,6 +11,7 @@ import Title from 'components/title.component';
 import About from 'components/about.component';
 import AboutUs from 'components/about_us.component';
 import Stats from 'components/stats.component';
+import Stats2 from 'components/stats-2';
 import Filming from 'components/filming.component';
 
 class MainPage extends Component {
@@ -70,6 +71,7 @@ class MainPage extends Component {
           <Stats device={ this.props.device }/>
           <Filming device={ this.props.device }/>
           <AboutUs/>
+          <Stats2 device={ this.props.device }/>
         </main>
         <Footer/>
         {
