@@ -10,7 +10,7 @@
   display: block;
   position: absolute;
   mask: url('~assets/images/close.svg') center / cover no-repeat;
-  background: $sand;
+  background: $black;
   z-index: 2;
 }
 
@@ -30,8 +30,10 @@ u.dialod-trigger{
   backdrop-filter: blur(8px);
   color: $black;
   border: get-vw(2px) solid $black;
+  border-radius: get-vw(6px);
   opacity: 0;
   pointer-events: none;
+  z-index: 2;
   transition: 0.3s;
 
   .dialog-window_content{
@@ -52,6 +54,17 @@ u.dialod-trigger{
     border-left: get-vw(10px) solid transparent;
     border-right: get-vw(10px) solid transparent;
     content: '';
+  }
+}
+
+.dialog-window_content-wrapper.bottom{
+  top: calc(100% + #{get-vw(10px)});
+  bottom: unset;
+
+  &::after{
+    top: get-vw(-10px);
+    bottom: unset;
+    transform: rotate(180deg);
   }
 }
 

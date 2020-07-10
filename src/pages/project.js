@@ -50,7 +50,7 @@ const Project1 = () => (
           </li>
           <li>
             <span>Дримкаст:&nbsp;</span>
-            <DialogWindow click={true} text="по запросу">
+            <DialogWindow bottom={true} click={true} text="по запросу">
               <Form/>
             </DialogWindow>
           </li>

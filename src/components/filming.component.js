@@ -7,7 +7,7 @@ import MobileTable from './filming/m_table.component'
 const Filming = ({device}) => {
   return(
     <section id="filming-section" className="filming-section">
-
+      <span id="filming-anchor"></span>
       <h2>Что снимаем?</h2>
       <p>Кинокартины, которые уже можно выбрать для интеграции с вашим брендом</p>
 

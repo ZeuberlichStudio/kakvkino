@@ -145,7 +145,7 @@ const Tab2 = () => (
     <div className="filming-section_table_tariff-plan_left">
       <table>
         <tbody>
-          <tr><td>Бюджет</td></tr>
+          <tr><th>Тариф включает:</th></tr>
           <tr><td>Демонстрация бренда</td></tr>
           <tr><td>Упоминание бренда</td></tr>
           <tr><td>Отражение преимуществ</td></tr>
@@ -166,6 +166,7 @@ const Tab2 = () => (
             </td>
           </tr>
           <tr><td>VIP-приглашение на премьеру</td></tr>
+          <tr><td>Бюджет<span>&nbsp;(руб)</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -173,22 +174,22 @@ const Tab2 = () => (
       <Slider id="filming-section_table_tariff-plan" slideWidthVw="44.26667">
         <table>
           <tbody>
-            <tr><th>Эпизодическая <br/> роль</th></tr>
-            <tr><td><span>3 500 000 руб</span></td></tr>
-            <tr><td>Или</td></tr>
-            <tr><td>Или</td></tr>
-            <tr><td>Нет</td></tr>
-            <tr><td>Нет*</td></tr>
-            <tr><td>1</td></tr>
-            <tr><td>30 сек</td></tr>
-            <tr><td>Нет</td></tr>
-            <tr><td>2</td></tr>
+            <tr><th>Главная роль</th></tr>
+            <tr><td><span>21 000 000 руб</span></td></tr>
+            <tr><td>Да</td></tr>
+            <tr><td>Да</td></tr>
+            <tr><td>Да</td></tr>
+            <tr><td>≥50% сцен</td></tr>
+            <tr><td>6</td></tr>
+            <tr><td>180 сек</td></tr>
+            <tr><td>Да</td></tr>
+            <tr><td>20</td></tr>
           </tbody>
         </table>
 
         <table>
           <tbody>
-            <tr><th>Роль второго <br/> плана</th></tr>
+            <tr><th>Роль второго плана</th></tr>
             <tr><td><span>7 000 000 руб</span></td></tr>
             <tr><td>Да</td></tr>
             <tr><td>Да</td></tr>
@@ -203,16 +204,16 @@ const Tab2 = () => (
 
         <table>
           <tbody>
-            <tr><th>Главная <br/> роль</th></tr>
-            <tr><td><span>21 000 000 руб</span></td></tr>
-            <tr><td>Да</td></tr>
-            <tr><td>Да</td></tr>
-            <tr><td>Да</td></tr>
-            <tr><td>≥50% сцен</td></tr>
-            <tr><td>6</td></tr>
-            <tr><td>180 сек</td></tr>
-            <tr><td>Да</td></tr>
-            <tr><td>20</td></tr>
+            <tr><th>Эпизодическая роль</th></tr>
+            <tr><td><span>3 500 000 руб</span></td></tr>
+            <tr><td>Или</td></tr>
+            <tr><td>Или</td></tr>
+            <tr><td>Нет</td></tr>
+            <tr><td>Нет*</td></tr>
+            <tr><td>1</td></tr>
+            <tr><td>30 сек</td></tr>
+            <tr><td>Нет</td></tr>
+            <tr><td>2</td></tr>
           </tbody>
         </table>
       </Slider>
@@ -224,13 +225,13 @@ const Tab3 = () => (
   <div className="filming-section_table_profit-forecast">
     <span className="notice">
       Доход по тарифу, <br/>
-      в соответствии с финансовой моделью (МЛН РУБ)
+    в соответствии с финансовой моделью <span>(МЛН РУБ)</span>
     </span>
     <div className="filming-section_table_profit-forecast_left">
       <table>
         <tbody>
-          <tr><td>Бюджет</td></tr>
-          <tr><td>500 000&nbsp;&nbsp;&nbsp; <span>(20%)</span></td></tr>
+          <tr><th>Зрители  в кинотеатре: <span>(Доход в процентах)</span></th></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;500 000 <span>(20%)</span></td></tr>
           <tr><td>1 000 000 <span>(50%)</span></td></tr>
           <tr><td>1 500 000 <span>(75%)</span></td></tr>
           <tr><td>2 000 000 <span>(100%)</span></td></tr>
@@ -246,49 +247,49 @@ const Tab3 = () => (
       <Slider id="filming-section_table_profit-forecast" slideWidthVw="44.26667">
         <table>
           <tbody>
-            <tr><th>Эпизодическая <br/> роль</th></tr>
-            <tr><td><span>3 500 000 руб</span></td></tr>
-            <tr><td>0.84</td></tr>
-            <tr><td>1.75</td></tr>
-            <tr><td>2.63</td></tr>
-            <tr><td>3.50</td></tr>
-            <tr><td>4.02</td></tr>
-            <tr><td>5.43</td></tr>
-            <tr><td>6.30</td></tr>
-            <tr><td>7.70</td></tr>
-            <tr><td>9.80</td></tr>
+            <tr><th>Главная роль</th></tr>
+            <tr><td>4 200 000</td></tr>
+            <tr><td>10 500 000</td></tr>
+            <tr><td>15 750 000</td></tr>
+            <tr><td>21 000 000</td></tr>
+            <tr><td>25 200 000</td></tr>
+            <tr><td>29 400 000</td></tr>
+            <tr><td>37 800 000</td></tr>
+            <tr><td>46 200 000</td></tr>
+            <tr><td>54 600 000</td></tr>
+            <tr><td>21 000 000</td></tr>
           </tbody>
         </table>
 
         <table>
           <tbody>
-            <tr><th>Эпизодическая <br/> роль</th></tr>
-            <tr><td><span>7 000 000 руб</span></td></tr>
-            <tr><td>0.84</td></tr>
-            <tr><td>1.75</td></tr>
-            <tr><td>2.63</td></tr>
-            <tr><td>3.50</td></tr>
-            <tr><td>4.02</td></tr>
-            <tr><td>5.43</td></tr>
-            <tr><td>6.30</td></tr>
-            <tr><td>7.70</td></tr>
-            <tr><td>9.80</td></tr>
+            <tr><th>Роль второго плана</th></tr>
+            <tr><td>1 400 000</td></tr>
+            <tr><td>3 500 000</td></tr>
+            <tr><td>5 250 000</td></tr>
+            <tr><td>7 000 000</td></tr>
+            <tr><td>8 400 000</td></tr>
+            <tr><td>9 800 000</td></tr>
+            <tr><td>12 600 000</td></tr>
+            <tr><td>15 400 000</td></tr>
+            <tr><td>18 200 000</td></tr>
+            <tr><td>7 000 000</td></tr>
           </tbody>
         </table>
 
         <table>
           <tbody>
-            <tr><th>Эпизодическая <br/> роль</th></tr>
-            <tr><td><span>21 000 000 руб</span></td></tr>
-            <tr><td>0.84</td></tr>
-            <tr><td>1.75</td></tr>
-            <tr><td>2.63</td></tr>
-            <tr><td>3.50</td></tr>
-            <tr><td>4.02</td></tr>
-            <tr><td>5.43</td></tr>
-            <tr><td>6.30</td></tr>
-            <tr><td>7.70</td></tr>
-            <tr><td>9.80</td></tr>
+            <tr><th>Эпизодическая роль</th></tr>
+            <tr><td>700 000</td></tr>
+            <tr><td>1 750 000</td></tr>
+            <tr><td>2 625 000</td></tr>
+            <tr><td>3 500 000</td></tr>
+            <tr><td>4 200 000</td></tr>
+            <tr><td>5 900 000</td></tr>
+            <tr><td>6 300 000</td></tr>
+            <tr><td>7 700 000</td></tr>
+            <tr><td>9 100 000</td></tr>
+            <tr><td>3 500 000</td></tr>
           </tbody>
         </table>
       </Slider>
@@ -305,18 +306,18 @@ const Tab4 = () => (
     <div className="filming-section_table_efficiency-forecast_left">
       <table>
         <tbody>
-          <tr><th>Кол-во контактов <br/> с рекламой за первый год</th></tr>
-          <tr><td><span>Бюджет</span></td></tr>
+          <tr><th>Кол-во контактов <br/> с рекламой за <br/> первый год</th></tr>
           <tr><td>Кинопрокат<span>(прогнозный уровень)</span></td></tr>
           <tr><td>Онлайн<span>(Минимальный уровень)</span></td></tr>
           <tr>
             <td>
               1 эфир на тв
               <span>
-                (Средний уровень, приведённый На 30 сек)
+                (Средний уровень,<br/> приведённый На 30 сек)
               </span>
             </td>
           </tr>
+          <tr><td>Бюджет<span>&nbsp;(Руб)</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -324,29 +325,31 @@ const Tab4 = () => (
       <Slider id="filming-section_table_efficiency-forecast" slideWidthVw="44.26667">
         <table>
           <tbody>
-            <tr><th>Эпизодическая <br/> роль</th></tr>
-            <tr><td><span>3 500 000 руб</span></td></tr>
-            <tr><td>1.5 млн</td></tr>
-            <tr><td>12.5 млн</td></tr>
-            <tr><td>7 млн</td></tr>
-          </tbody>
-        </table>
-        <table>
-          <tbody>
-            <tr><th>Роль второго <br/> плана</th></tr>
-            <tr><td><span>7 000 000 руб</span></td></tr>
-            <tr><td>3 млн</td></tr>
-            <tr><td>25 млн</td></tr>
-            <tr><td>14 млн</td></tr>
-          </tbody>
-        </table>
-        <table>
-          <tbody>
-            <tr><th>Главная <br/> роль</th></tr>
-            <tr><td><span>21 000 000 руб</span></td></tr>
+            <tr><th>Главная роль</th></tr>
             <tr><td>7.5 млн</td></tr>
             <tr><td>62.5 млн</td></tr>
             <tr><td>35 млн</td></tr>
+            <tr><td>21 000 000</td></tr>
+          </tbody>
+        </table>
+
+        <table>
+          <tbody>
+            <tr><th>Роль второго плана</th></tr>
+            <tr><td>3 млн</td></tr>
+            <tr><td>25 млн</td></tr>
+            <tr><td>14 млн</td></tr>
+            <tr><td>7 000 000</td></tr>
+          </tbody>
+        </table>
+
+        <table>
+          <tbody>
+            <tr><th>Эпизодическая роль</th></tr>
+            <tr><td>1.5 млн</td></tr>
+            <tr><td>12.5 млн</td></tr>
+            <tr><td>7 млн</td></tr>
+            <tr><td>3 500 000</td></tr>
           </tbody>
         </table>
       </Slider>

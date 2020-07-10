@@ -23,6 +23,9 @@ import movie_7 from 'assets/images/movie_7.png'
 import movie_8 from 'assets/images/movie_8.png'
 import movie_9 from 'assets/images/movie_9.png'
 import movie_10 from 'assets/images/movie_10.png'
+import movie_11 from 'assets/images/movie_11.png'
+import movie_12 from 'assets/images/movie_12.png'
+import movie_13 from 'assets/images/movie_13.png'
 
 import audience_2019 from 'assets/images/audience_2019.svg'
 import audience_2020 from 'assets/images/audience_2020.svg'
@@ -33,7 +36,7 @@ export default class StatsArticle3 extends Component{
     return(
       <article id="stats--article-3" className="stats--article-3 stats--article">
         <div className="text-left-container">
-          <h1 className="bebas-64 m-bebas-30">Статистика</h1>
+          <h1 className="bebas-64 m-bebas-30">Статистика: кинотеатры</h1>
           {
             this.props.device === 'desktop' ?
             <DesktopGraphs/> :
@@ -96,6 +99,9 @@ export default class StatsArticle3 extends Component{
                   <img src={ movie_8 } />,
                   <img src={ movie_9 } />,
                   <img src={ movie_10 } />,
+                  <img src={ movie_11 } />,
+                  <img src={ movie_12 } />,
+                  <img src={ movie_13 } />,
                 ]}/> : null
               }
               <span>
@@ -148,7 +154,7 @@ const MobileGraphs = () => (
     <Slider
       id="mobile-stats-slider-1"
       slideWidthVw={88}
-      buttonText = {[    
+      buttonText = {[
         'Январь — Июнь 2020',
         'Июль — Декабрь 2019',
       ]}

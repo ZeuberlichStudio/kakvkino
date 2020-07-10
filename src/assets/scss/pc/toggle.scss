@@ -12,6 +12,7 @@ label.toggle{
   position: relative;
   display: block;
   border: get-vw(2px) solid $black;
+  border-radius: get-vw(6px);
 
   input{
     width: 0;
@@ -28,6 +29,7 @@ label.toggle{
     display: block;
     position: absolute;
     background-color: $black;
+    border-radius: get-vw(3px);
     transition: 0.3s;
     cursor: pointer;
   }

@@ -14,6 +14,13 @@
 
   & > h2{ @include bebas-64-bold; }
   & > p{ @include helvetica-12-bold; }
+
+  #filming-anchor{
+    height: 100vh;
+    min-height: get-vw(540px);
+    bottom: get-vw(580px);
+    position: absolute;
+  }
 }
 
 .filming-section_projects{

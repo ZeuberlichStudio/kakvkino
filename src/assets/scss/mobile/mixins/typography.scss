@@ -39,3 +39,10 @@
   font-size: get-m-vw(12px);
   line-height: get-m-vw(14px);
 }
+
+@mixin m-helvetica-10-bold {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: get-m-vw(10px);
+  line-height: get-m-vw(12px);
+}

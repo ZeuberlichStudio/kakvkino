@@ -1,34 +1,48 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 
-const DialogWindow = ({children, text, click}) => {
+const DialogWindow = ({children, text, click, bottom}) => {
 
-  const [active, setActive] = React.useState(0);
-  const refWrapper = React.useRef();
-  const refContent = React.useRef();
+  const [active, _setActive] = React.useState(0);
+  const windowRef = React.useRef();
+  const handlerRef = React.useRef(toggleWindow);
+  const activeRef = React.useRef(active);
+  const setActive = data => {
+    activeRef.current = data;
+    _setActive(data);
+  }
 
-  function toggleWindow(e) {
-    setActive( active === 0 ? 1 : 0 );
-    if (refContent.current.offsetHeight >= e.currentTarget.getBoundingClientRect().top) {
-      refWrapper.current.classList.add('bottom');
+  React.useEffect(() => {
+    if( !click ) return;
+    if( active ){
+      document.removeEventListener('click', handlerRef.current );
+      document.addEventListener('click', handlerRef.current );
     }else{
-      refWrapper.current.classList.remove('bottom');
+      document.removeEventListener('click', handlerRef.current );
     }
+  }, [active, click])
+
+  function toggleWindow(e, skip) {
+    if(
+      windowRef.current.contains(e.target) &&
+      !skip
+    ) return;
+    setActive( activeRef.current === 0 ? 1 : 0 );
   }
 
   return(
-    <div className={`dialog-window ${click ? "click" : "hover"} ${active ? "active" : ""}`}>
+    <div ref={windowRef} className={`dialog-window ${click ? "click" : "hover"} ${active ? "active" : ""}`}>
       {
         click ?
-        <u className="dialod-trigger" onClick={toggleWindow}>
+        <u className="dialod-trigger" onClick={(e) => toggleWindow(e, true)}>
           {text}
         </u> :
         <u className="dialod-trigger" >
           {text}
         </u>
       }
-      <div ref={refWrapper} className="dialog-window_content-wrapper">
-        { click ? <button onClick={toggleWindow} className="dialog-window_close"/> : null }
-        <div ref={refContent} className="dialog-window_content">
+      <div className={`dialog-window_content-wrapper ${bottom ? 'bottom' : null}`}>
+        { click ? <button onClick={(e) => toggleWindow(e, true)} className="dialog-window_close"/> : null }
+        <div className="dialog-window_content">
           {children}
         </div>
       </div>
