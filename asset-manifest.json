@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.85a88a03.chunk.css",
-    "main.js": "/kakvkino/static/js/main.b2bfea1c.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.b2bfea1c.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.c2b5b4d6.chunk.css",
+    "main.js": "/kakvkino/static/js/main.6bf48a1c.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.6bf48a1c.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.d41ba491.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.d41ba491.js.map",
-    "static/js/2.ea1da80e.chunk.js": "/kakvkino/static/js/2.ea1da80e.chunk.js",
-    "static/js/2.ea1da80e.chunk.js.map": "/kakvkino/static/js/2.ea1da80e.chunk.js.map",
+    "static/js/2.69807ecb.chunk.js": "/kakvkino/static/js/2.69807ecb.chunk.js",
+    "static/js/2.69807ecb.chunk.js.map": "/kakvkino/static/js/2.69807ecb.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.ff51c8d037e23f928fba74bcecd83e14.js": "/kakvkino/precache-manifest.ff51c8d037e23f928fba74bcecd83e14.js",
+    "precache-manifest.dd5b544e389c93ff7adc3c7196727b69.js": "/kakvkino/precache-manifest.dd5b544e389c93ff7adc3c7196727b69.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.85a88a03.chunk.css.map": "/kakvkino/static/css/main.85a88a03.chunk.css.map",
-    "static/js/2.ea1da80e.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.ea1da80e.chunk.js.LICENSE.txt",
+    "static/css/main.c2b5b4d6.chunk.css.map": "/kakvkino/static/css/main.c2b5b4d6.chunk.css.map",
+    "static/js/2.69807ecb.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.69807ecb.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
     "static/media/audience_2019.svg": "/kakvkino/static/media/audience_2019.c96e6566.svg",
@@ -29,8 +29,11 @@
     "static/media/m_graph_1_2.svg": "/kakvkino/static/media/m_graph_1_2.4842578c.svg",
     "static/media/moodboard.svg": "/kakvkino/static/media/moodboard.1f3d9b2b.svg",
     "static/media/movie_0.png": "/kakvkino/static/media/movie_0.a7e12cd0.png",
-    "static/media/movie_1.png": "/kakvkino/static/media/movie_1.d7776494.png",
+    "static/media/movie_1.png": "/kakvkino/static/media/movie_1.53024bc3.png",
     "static/media/movie_10.png": "/kakvkino/static/media/movie_10.fe93e32e.png",
+    "static/media/movie_11.png": "/kakvkino/static/media/movie_11.1b1113c2.png",
+    "static/media/movie_12.png": "/kakvkino/static/media/movie_12.62f5e0f7.png",
+    "static/media/movie_13.png": "/kakvkino/static/media/movie_13.8be9329f.png",
     "static/media/movie_2.png": "/kakvkino/static/media/movie_2.5ff63da3.png",
     "static/media/movie_4.png": "/kakvkino/static/media/movie_4.2d75725d.png",
     "static/media/movie_5.png": "/kakvkino/static/media/movie_5.ccf9a368.png",
@@ -55,8 +58,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d41ba491.js",
-    "static/js/2.ea1da80e.chunk.js",
-    "static/css/main.85a88a03.chunk.css",
-    "static/js/main.b2bfea1c.chunk.js"
+    "static/js/2.69807ecb.chunk.js",
+    "static/css/main.c2b5b4d6.chunk.css",
+    "static/js/main.6bf48a1c.chunk.js"
   ]
 }
