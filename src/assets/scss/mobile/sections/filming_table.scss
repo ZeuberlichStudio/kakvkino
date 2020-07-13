@@ -2,6 +2,8 @@
   width: 100%;
   margin-top: get-m-vw(90px);
 
+  th{ font-weight: normal; }
+
   &_spoiler{
     width: 100%;
     height: max-content;
@@ -30,7 +32,6 @@
       position: relative;
       overflow-y: hidden;
       transition: max-height 0.3s;
-      background: $sand;
       z-index: 0;
     }
 
@@ -47,6 +48,17 @@
     input:checked ~ label{
       background: $black;
       color: $sand;
+      &::after{
+        width: 0;
+        height: 0;
+        left: get-m-vw(40px);
+        bottom: get-m-vw(-12px);
+        position: absolute;
+        border-top: get-m-vw(12px) solid $black;
+        border-left: get-m-vw(12px) solid transparent;
+        border-right: get-m-vw(12px) solid transparent;
+        content: '';
+      }
     }
   }
 }
@@ -93,6 +105,7 @@
       padding-left: get-m-vw(4px);
       width: 50%;
       border-right: get-m-vw(2px) solid $black;
+      background: $sand;
 
       tbody{
         display: grid;
@@ -122,19 +135,33 @@
       width: 50%;
       overflow-x: hidden;
 
-      .slide:nth-child(2) table{
+      .slide-0 table{
         border-color: #FF6969;
+        background: rgba(#FF6969, 0.1);
         tr:nth-child(1){ background: #FF6969; }
         tr:last-child{ background: rgba(#FF6969, 0.2); }
       }
-      .slide:nth-child(3) table{
+      .slide-1 table{
         border-color: #FFB858;
+        background: rgba(#FFB858, 0.1);
         tr:nth-child(1){ background: #FFB858; }
         tr:last-child{ background: rgba(#FFB858, 0.2); }
       }
-      .slide:nth-child(4) table{
+      .slide-2 table{
         border-color: #9D9AAD;
+        background: rgba(#9D9AAD, 0.1);
         tr:nth-child(1){ background: #9D9AAD; }
+        tr:nth-child(2)::after{
+          width: get-m-vw(42px);
+          height: get-m-vw(74px);
+          margin: auto;
+          left: 0; right: 0;
+          top: get-m-vw(-8px);
+          position: absolute;
+          border: get-m-vw(2px) solid #FF6969;
+          border-radius: get-m-vw(6px);
+          content: '';
+        }
         tr:last-child{ background: rgba(#9D9AAD, 0.2); }
       }
 
@@ -158,6 +185,7 @@
         tr{
           width: 100%;
           height: get-m-vw(24px);
+          position: relative;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -179,6 +207,7 @@
       padding-left: get-m-vw(4px);
       width: 50%;
       border-right: get-m-vw(2px) solid $black;
+      background: $sand;
 
       tbody{
         display: grid;
@@ -198,6 +227,7 @@
 
         th{
           position: relative;
+          letter-spacing: get-m-vw(-0.4px);
           span{
             bottom: get-m-vw(-8px);
             left: 0;
@@ -213,18 +243,21 @@
       width: 50%;
       overflow-x: hidden;
 
-      .slide:nth-child(2) table{
+      .slide-0 table{
         border-color: #FF6969;
+        background: rgba(#FF6969, 0.1);
         tr:nth-child(1){ background: #FF6969; }
         tr:last-child{ background: rgba(#FF6969, 0.2); }
       }
-      .slide:nth-child(3) table{
+      .slide-1 table{
         border-color: #FFB858;
+        background: rgba(#FFB858, 0.1);
         tr:nth-child(1){ background: #FFB858; }
         tr:last-child{ background: rgba(#FFB858, 0.2); }
       }
-      .slide:nth-child(4) table{
+      .slide-2 table{
         border-color: #9D9AAD;
+        background: rgba(#9D9AAD, 0.1);
         tr:nth-child(1){ background: #9D9AAD; }
         tr:last-child{ background: rgba(#9D9AAD, 0.2); }
       }
@@ -298,6 +331,7 @@
       padding-left: get-m-vw(4px);
       width: 50%;
       border-right: get-m-vw(2px) solid $black;
+      background: $sand;
       text-align: left;
 
       tbody{
@@ -338,18 +372,21 @@
       width: 50%;
       overflow-x: hidden;
 
-      .slide:nth-child(2) table{
+      .slide-0 table{
         border-color: #FF6969;
+        background: rgba(#FF6969, 0.1);
         tr:nth-child(1){ background: #FF6969; }
         tr:last-child{ background: rgba(#FF6969, 0.2); }
       }
-      .slide:nth-child(3) table{
+      .slide-1 table{
         border-color: #FFB858;
+        background: rgba(#FFB858, 0.1);
         tr:nth-child(1){ background: #FFB858; }
         tr:last-child{ background: rgba(#FFB858, 0.2); }
       }
-      .slide:nth-child(4) table{
+      .slide-2 table{
         border-color: #9D9AAD;
+        background: rgba(#9D9AAD, 0.1);
         tr:nth-child(1){ background: #9D9AAD; }
         tr:last-child{ background: rgba(#9D9AAD, 0.2); }
       }
@@ -400,6 +437,7 @@
     &_bottom{
       width: 100%;
       border-top: get-m-vw(2px) solid $black;
+      background: $sand;
 
       tbody{
         padding: get-m-vw(20px) 0 get-m-vw(32px) get-m-vw(4px);
@@ -428,6 +466,7 @@
     display: grid;
     grid-auto-rows: max-content;
     grid-row-gap: get-m-vw(20px);
+    background: $sand;
 
     h2{ @include m-bebas-30-bold; }
     h3{ @include m-bebas-20-bold; }

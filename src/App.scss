@@ -53,10 +53,12 @@ input, button{
   @import './assets/scss/pc/contacts.scss';
   @import './assets/scss/pc/footer.scss';
 
-  @import './assets/scss/pc/about.scss';
-  @import './assets/scss/pc/title.scss';
-  @import './assets/scss/pc/stats.scss';
-  @import './assets/scss/pc/about_us.scss';
+  @import './assets/scss/pc/sections/title.scss';
+  @import './assets/scss/pc/sections/about.scss';
+  @import './assets/scss/pc/sections/popcorn.scss';
+  @import './assets/scss/pc/sections/statistics.scss';
+  @import './assets/scss/pc/sections/how_it_works.scss';
+  @import './assets/scss/pc/sections/about_us.scss';
   @import './assets/scss/pc/sections/filming.scss';
   @import './assets/scss/pc/tabs.scss';
 
@@ -64,11 +66,14 @@ input, button{
   @import './assets/scss/pc/animation.scss';
 
   @import './assets/scss/pc/form.scss';
-  @import './assets/scss/pc/movies.scss';
+  @import './assets/scss/pc/pages/movies.scss';
 
   @import './assets/scss/pc/modal.scss';
   @import './assets/scss/pc/toggle.scss';
-  @import './assets/scss/pc/projectPage.scss';
+  @import './assets/scss/pc/pages/projectPage.scss';
+
+  @import './assets/scss/pc/pages/make_appointment.scss';
+  @import './assets/scss/pc/pages/main.scss';
 }
 
 @media screen and (max-width: 1024px){
@@ -81,16 +86,18 @@ input, button{
   @import './assets/scss/mobile/footer.scss';
   @import './assets/scss/mobile/dialogWindow.scss';
 
-  @import './assets/scss/mobile/title.scss';
-  @import './assets/scss/mobile/about.scss';
-  @import './assets/scss/mobile/stats.scss';
+  @import './assets/scss/mobile/sections/title.scss';
+  @import './assets/scss/mobile/sections/about.scss';
+  @import './assets/scss/mobile/sections/movies_lifespan.scss';
+  @import './assets/scss/mobile/sections/how_it_works.scss';
+  @import './assets/scss/mobile/sections/statistics.scss';
   @import './assets/scss/mobile/sections/filming.scss';
   @import './assets/scss/mobile/sections/filming_table.scss';
-  @import './assets/scss/mobile/aaa.scss';
+  @import './assets/scss/mobile/sections/about_us.scss';
 
   @import './assets/scss/mobile/form.scss';
-  @import './assets/scss/mobile/movies.scss';
+  @import './assets/scss/mobile/pages/movies.scss';
 
   @import './assets/scss/mobile/modal.scss';
-  @import './assets/scss/mobile/projectPage.scss';
+  @import './assets/scss/mobile/pages/projectPage.scss';
 }

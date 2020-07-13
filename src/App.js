@@ -7,12 +7,13 @@ import Counter from 'components/counter.component';
 import Animation from 'components/animation.component';
 
 //pages
-import MainPage from 'pages/main'
-import ModalWrapper from 'components/modal.component'
-import ProjectPage from 'pages/project'
-import MobileProjectPage from 'pages/m_project'
-import Movies from 'pages/movies'
-import MobileMovies from 'pages/m_movies'
+import MainPage from 'pages/main';
+import ModalWrapper from 'components/modal.component';
+import ProjectPage from 'pages/project';
+import MobileProjectPage from 'pages/m_project';
+import Movies from 'pages/movies';
+import MobileMovies from 'pages/m_movies';
+import MakeAppointment from 'pages/make_appointment';
 
 class App extends React.Component {
 
@@ -46,7 +47,7 @@ class App extends React.Component {
     return (
       <Fragment>
         { device !== 'mobile' ? <Counter/> : null }
-        { device !== 'mobile' ? <Animation/> : null }
+        { device !== 'mobile' ? null : null }
 
         <Route path="/">
           <MainPage device={device}/>
@@ -61,6 +62,12 @@ class App extends React.Component {
         <Route exact path="/movies">
           <ModalWrapper device={device}>
             { device === 'mobile' ? <MobileMovies/> : <Movies/> }
+          </ModalWrapper>
+        </Route>
+
+        <Route exact path="/make-appointment">
+          <ModalWrapper>
+            <MakeAppointment/>
           </ModalWrapper>
         </Route>
       </Fragment>

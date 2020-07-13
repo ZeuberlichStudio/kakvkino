@@ -25,7 +25,7 @@ export default class MobileHeader extends Component{
   render() {
     return(
       <header id="header" className={ (this.props.color === 'light' ? 'light' : null) + " " + (this.isSamsungBrowser ? 'samsung' : null)  }>
-        <div className="logo"></div>
+        <div onClick={ e => this.goToAnchor(e) } data-link="title" className="logo"></div>
         <button onClick={ this.handleClick }></button>
         <div className={ this.state.active ? 'active nav-container' :
          'nav-container' }>
@@ -33,9 +33,9 @@ export default class MobileHeader extends Component{
             <h2 className="m-bebas-30">Меню</h2>
             <ul>
               <li onClick={ e => this.goToAnchor(e) } data-link="stats--article-2-anchor" className="nav-link">Как это работает</li>
-              <li onClick={ e => this.goToAnchor(e) } data-link="filming-section" className="nav-link">Что снимаем</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="filming-anchor" className="nav-link">Что снимаем</li>
               <li onClick={ e => this.goToAnchor(e) } data-link="about-us" className="nav-link">Кто мы</li>
-              <li onClick={ e => this.goToAnchor(e) } data-link="stats--article-3" className="nav-link">Статистика</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="stats--anchor" className="nav-link">Статистика</li>
             </ul>
           </nav>
           <div className="contacts-container">

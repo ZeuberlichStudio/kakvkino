@@ -6,13 +6,14 @@ import MobileHeader from 'components/m_header.component';
 import Contacts from 'components/contacts.component';
 import Footer from 'components/footer.component';
 
-/*content sections*/
-import Title from 'components/title.component';
-import About from 'components/about.component';
-import AboutUs from 'components/about_us.component';
-import Stats from 'components/stats.component';
-import Stats2 from 'components/stats-2';
-import Filming from 'components/filming.component';
+/*sections*/
+import Title from 'pages/mainPageSections/title';
+import About from 'pages/mainPageSections/about';
+import AboutUs from 'pages/mainPageSections/about_us';
+import Popcorn from 'pages/mainPageSections/popcorn';
+import HowItWorks from 'pages/mainPageSections/how_it_works';
+import Filming from 'pages/mainPageSections/filming';
+import Statistics from 'pages/mainPageSections/statistics';
 
 class MainPage extends Component {
 
@@ -61,6 +62,7 @@ class MainPage extends Component {
     return(
       <Fragment>
         {
+          //Header
           this.props.device === 'mobile' ?
           <MobileHeader color={ this.state.uiColor }/> :
           <Header onClick={ this.openContacts } color={ this.state.uiColor }/>
@@ -68,16 +70,19 @@ class MainPage extends Component {
         <main id="content">
           <Title device={ this.props.device }/>
           <About/>
-          <Stats device={ this.props.device }/>
+          <Popcorn device={ this.props.device }/>
+          <HowItWorks device={ this.props.device }/>
           <Filming device={ this.props.device }/>
           <AboutUs/>
-          <Stats2 device={ this.props.device }/>
+          <Statistics device={ this.props.device }/>
+          <div id="divider"></div>
         </main>
-        <Footer/>
         {
+          //Contacts
           this.props.device !== 'mobile' ?
           <Contacts ref={ this.contactsElement } active=""/> : null
         }
+        <Footer/>
       </Fragment>
     );
   }

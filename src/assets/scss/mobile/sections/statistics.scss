@@ -1,0 +1,132 @@
+.m-hide{ display: none; }
+
+section#statistics{
+  width: 100vw;
+  height: max-content;
+  padding: get-m-vw(20px);
+  padding-top: get-m-vw(100px);
+  padding-bottom: get-m-vw(40px);
+
+  position: relative;
+
+  background-color: $sand;
+  background-image: url('~assets/images/Pattern_1.svg');
+
+  color: $black;
+}
+
+
+#stats--article-3{
+
+  color: $black;
+  z-index: 2;
+
+  .text-left-container{
+    h3:nth-child(3){ margin-top: get-m-vw(32px); }
+    p{ margin-top: get-m-vw(16px); }
+  }
+
+  .text-right-container{
+    margin-top: get-m-vw(60px);
+
+    img, span{ display: block; }
+
+    //first block
+    div:nth-child(1){
+      padding: get-m-vw(10px);
+      padding-bottom: get-m-vw(20px);
+
+      background-color: $sand;
+      box-shadow: 0px get-m-vw(2px) get-m-vw(6px) 0px rgba(0,0,0,0.18);
+
+      img{ margin-top: get-m-vw(10px); }
+    }
+
+    div:nth-child(2){
+      margin-top: get-m-vw(16px);
+
+      span{ margin-top: get-m-vw(8px); }
+    }
+  }
+
+  .slider{
+    width: get-m-vw(320px);
+    position: relative;
+
+    .wrapper{
+      width: get-m-vw(288px);
+      overflow: hidden;
+    }
+
+    .container{
+      display: grid;
+      grid-auto-flow: column;
+      grid-column-gap: get-m-vw(42px);
+
+      &.transition{
+        transition: 0.3s;
+      }
+    }
+
+    &.transition button{ color: transparent!important; }
+
+    button{
+      width: get-m-vw(18px);
+      height: get-m-vw(180px);
+      right: get-m-vw(6px); bottom: get-m-vw(62px);
+
+      position: absolute;
+      display: inline-block;
+
+      background-color: $black;
+      color: $sand;
+      transition: 0.3s;
+
+      span{
+        width: 100%;
+        display: block;
+        padding-right: get-m-vw(1px);
+
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        text-align: center;
+      }
+
+      &::before{
+        width: 0; height: 0;
+        display: block;
+        position: absolute;
+        right: get-m-vw(-8px);
+        top: 0; bottom: 0;
+        margin: auto;
+
+        border-left: get-m-vw(8px) solid $black;
+        border-top: get-m-vw(8px) solid transparent;
+        border-bottom: get-m-vw(8px) solid transparent;
+        content: '';
+      }
+    }
+
+    .slide{
+      width: get-m-vw(288px);
+
+      p{
+        height: get-m-vw(54px);
+        @include m-helvetica-12-bold;
+      }
+
+      h3{ @include m-bebas-22-bold; span{ color: rgba($black, 0.5); }}
+
+      img{
+        width: get-m-vw(288px);
+        height: auto;
+        margin-top: get-m-vw(18px);
+        display: block;
+      }
+    }
+  }
+
+  #mobile-stats-slider-2{
+    button{ bottom: get-m-vw(44px); }
+  }
+}

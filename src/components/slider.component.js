@@ -69,6 +69,21 @@ export default class Slider extends Component{
     slides[goTo + this.state.offset].
     classList.add('active');
 
+    if( this.props.finite ){
+      if (goTo === 0) {
+        slider.classList.add('prev-hide');
+        slider.classList.remove('next-hide');
+      }
+      else if (goTo === slidesCount - 1) {
+        slider.classList.add('next-hide');
+        slider.classList.remove('prev-hide');
+      }
+      else{
+        slider.classList.remove('prev-hide');
+        slider.classList.remove('next-hide');
+      }
+    }
+
     if( goTo > this.state.slidesCount - 1 ){
       setTimeout( () => {
         slider.classList.remove('transition');
@@ -115,6 +130,10 @@ export default class Slider extends Component{
 
   render() {
 
+    const {
+      slideNames
+    } = this.props;
+
     return(
       <div id={ this.props.id } className="slider">
         <div className="wrapper">
@@ -122,25 +141,21 @@ export default class Slider extends Component{
             {
               this.props.content ?
               this.props.content.map(
-                (slide, i) => <span key={ i } className="slide">{ slide }</span>
+                (slide, i) => <span key={ i } className={`slide slide-${i}`}>{ slide }</span>
               ) :
               this.props.children ?
               this.props.children.map(
-                (slide, i) => <span key={ i } className="slide">{ slide }</span>
+                (slide, i) => <span key={ i } className={`slide slide-${i}`}>{ slide }</span>
               ) :
               null
             }
           </div>
         </div>
-        <button onClick={ () => this.changeSlide(this.state.currentSlide - 1) } className="prev"/>
+        <button onClick={ () => this.changeSlide(this.state.currentSlide - 1) } className="prev">
+          <span>{ slideNames ? slideNames[this.state.currentSlide - 1] : null }</span>
+        </button>
         <button onClick={ () => this.changeSlide(this.state.currentSlide + 1) } className="next">
-          {
-            this.props.buttonText ?
-            this.props.buttonText.map( (text, i) =>
-              this.state.currentSlide === i ?
-              <span key={i} className="m-helvetica-12-bold helvetica-12-bold">{ text }</span> : null
-            ) : null
-          }
+          <span>{ slideNames ? slideNames[this.state.currentSlide + 1] : null }</span>
         </button>
       </div>
     )

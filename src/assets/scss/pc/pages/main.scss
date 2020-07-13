@@ -1,0 +1,31 @@
+main{
+  position: relative;
+  background-image: url('~assets/images/Pattern_1.svg');
+  background-size: get-vw(320px) get-vw(200px);
+  background-position: top right 100px;
+  color: $black;
+}
+
+#divider{
+  width: get-vw(320px);
+  height: get-vw(3980px);
+  right: 0; bottom: 0;
+  position: absolute;
+  pointer-events: none;
+
+  &::before{
+    width: get-vw(2px);
+    height: calc( 100vh - 5.07812vw * 2 );
+    margin-top: get-vw(65px);
+    margin-bottom: get-vw(65px);
+    left: get-vw(0px);
+    top: get-vw(65px);
+
+    position: sticky;
+    display: block;
+
+    background-color: $black;
+    content: '';
+    z-index: 2;
+  }
+}

@@ -5,11 +5,6 @@
   padding: get-vw(32px) get-vw(100px);
   position: relative;
 
-  background-image: url('~assets/images/Pattern_1.svg');
-  background-size: get-vw(320px) get-vw(200px);
-  background-position: top right 100px;
-  background-repeat: unset;
-
   color: $black;
 
   & > h2{ @include bebas-64-bold; }
@@ -75,6 +70,7 @@
       display: block;
       @include bebas-20-bold;
       background-color: $black;
+      border-radius: get-vw(3px);
       color: $sand;
     }
   }
@@ -86,7 +82,7 @@
   right: 0; top: 0;
   position: absolute;
 
-  &::before{
+  /*&::before{
     width: get-vw(2px);
     height: calc( 100vh - 5.07812vw * 2 );
     margin-top: get-vw(65px);
@@ -100,7 +96,7 @@
     background-color: $black;
     content: '';
     z-index: 2;
-  }
+  }*/
 }
 
 .filming-section_aside{
@@ -201,6 +197,7 @@
         display: block;
         @include bebas-20-bold;
         background-color: $black;
+        border-radius: get-vw(3px);
         color: $sand;
       }
     }

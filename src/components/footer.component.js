@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
+import {Link} from 'react-router-dom';
+//Images
+import footer_form_link from 'assets/images/footer_form_link.svg';
 
 export default class Footer extends Component{
   render() {
@@ -39,6 +42,12 @@ export default class Footer extends Component{
           </div>
 
           <div className="contacts-container-2 contacts-container">
+            <Link to="/make-appointment">
+              <img src={footer_form_link} alt=""/>
+            </Link>
+          </div>
+
+          <div className="contacts-container-3 contacts-container">
             {/*social*/}
             <div className="social-links">
               <a href="/" rel="noopener noreferrer" target="_blank"></a><a href="/" rel="noopener noreferrer" target="_blank"></a><a href="/" rel="noopener noreferrer" target="_blank"></a>

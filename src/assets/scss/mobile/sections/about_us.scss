@@ -1,0 +1,124 @@
+section#about-us{
+  width: 100vw;
+  height: max-content;
+  padding: get-m-vw(20px);
+  padding-top: get-m-vw(80px);
+  padding-bottom: get-m-vw(40px);
+
+  background-color: $sand;
+  background-image: url('~assets/images/Pattern_1.svg');
+  color: $black;
+
+  .text-left-container{
+    width: 100%;
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: get-m-vw(30px);
+
+    &_blocks{
+      display: grid;
+      grid-auto-flow: row;
+      grid-auto-rows: max-content;
+      grid-row-gap: get-m-vw(20px);
+
+      &_block{
+        width: 100%;
+        height: get-m-vw(400px);
+        padding: get-m-vw(32px) get-m-vw(10px) get-m-vw(210px) get-m-vw(10px);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: get-m-vw(2px) solid $black;
+        border-radius: get-m-vw(10px);
+        background: orange;
+        color: $sand;
+        overflow: hidden;
+
+        & > img{
+          margin: auto;
+          top: get-m-vw(34px);
+          left: 0; right: 0;
+          position: absolute;
+        }
+        img{ display: block; }
+        h3{
+          @include m-bebas-22-bold;
+          letter-spacing: get-m-vw(-0.4px);
+        }
+        p{
+          @include m-helvetica-12-medium;
+          letter-spacing: get-m-vw(-0.4px);
+        }
+        & > div{
+          width: 100%;
+          height: get-m-vw(200px);
+          padding: get-m-vw(12px);
+          padding-bottom: get-m-vw(20px);
+          left: 0; bottom: 0;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          backdrop-filter: blur(8px);
+          border-radius: get-m-vw(10px);
+        }
+      }
+
+      &_block:nth-child(1){
+        background: url('~assets/images/origo_bg.png') center / cover no-repeat;
+        & > img{
+          width: get-m-vw(172px);
+          height: auto;
+        }
+        & > div > :nth-child(1) img{
+          width: get-m-vw(82px);
+          height: auto;
+          margin-bottom: get-m-vw(4px);
+        }
+        & > div > :nth-child(2) img{
+          width: get-m-vw(152px);
+          height: auto;
+          margin-bottom: get-m-vw(4px);
+        }
+      }
+
+      &_block:nth-child(2){
+        background: url('~assets/images/plan_bg.png') center / cover no-repeat;
+        & > img{
+          width: get-m-vw(168px);
+          height: auto;
+        }
+        & > div > img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .text-right-container{
+    margin-top: get-m-vw(52px);
+    position: relative;
+
+    & > :nth-child(1){
+      p{
+        margin-top: get-m-vw(20px);
+        br{ display: none; }
+      }
+    }
+
+    & > :nth-child(2){
+      margin-top: get-m-vw(52px);
+
+      h3{
+        margin-top: get-m-vw(20px);
+      }
+    }
+  }
+
+  p{
+    text-align: left;
+  }
+}

@@ -1,0 +1,180 @@
+.pc-hide{ display: none; }
+
+#about{
+  width: 100vw;
+  min-height: get-vw(640px);
+  max-height: get-vw(800px);
+  height: 100vh;
+
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: $black;
+
+  background-image:
+   url('~assets/images/Pattern_1.svg'),
+   url('~assets/images/about_bg_1.jpg'),
+   url('~assets/images/about_bg_2.jpg'),
+   url('~assets/images/about_bg_3.jpg');
+  background-size: get-vw(320px) auto, 100vw auto, 100vw auto, 100vw auto;
+  background-position:
+   left top,
+   left calc(0vw - var(--bg-offset, 0vw)) top,
+   left calc(100vw - var(--bg-offset, 0vw)) top,
+   left calc(200vw - var(--bg-offset, 0vw)) top;
+  background-repeat:
+    repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+  transition: background-position 1s;
+}
+
+.about--article-wrapper{
+  flex-grow: 1;
+}
+
+#about--article{
+  width: 100%;
+  height: 100%;
+  padding: get-vw(66px) get-vw(14px) get-vw(86px) get-vw(112px);
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows:
+  max-content 1fr
+  max-content;
+  grid-template-columns: 1fr;
+  justify-content: flex-start;
+
+  .text-intro{
+    width: get-vw(578px);
+    justify-self: flex-end;
+    text-align: right;
+
+    p{ margin-top: get-vw(-6px);}
+  }
+  .text-main-wrapper{
+    transition: 0.5s;
+  }
+  .text-main{
+    max-width: get-vw(624px);
+    margin-top: get-vw(2px);
+
+    h2{ margin-left: get-vw(3px); }
+    p{
+      min-height: get-vw(87px);
+      margin-top: get-vw(2px);
+     }
+  }
+}
+
+#about--aside{
+  width: get-vw(320px);
+  height: 100%;
+  padding: 0 get-vw(14px);
+
+  position: relative;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: max-content;
+  grid-row-gap: get-vw(44px);
+  align-content: center;
+
+  &::before{
+    width: get-vw(2px);
+    height: calc(100vh - 5.07812vw * 2);
+    left: 0;
+    top: 0; bottom: 0;
+    margin: auto;
+
+    position: absolute;
+
+    background-color: $sand;
+
+    content: '';
+  }
+}
+
+.about--controls{
+  margin-left: get-vw(8px);
+  align-self: flex-end;
+
+  h3{ margin-left: get-vw(2px); }
+
+  ul{
+    margin-top: get-vw(24px);
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    grid-column-gap: get-vw(4px);
+
+    li{
+      height: get-vw(31.5px);
+      padding: 0 get-vw(6px);
+      padding-top: get-vw(6px);
+      border-radius: get-vw(3px);
+
+      cursor: pointer;
+      transition: 0.15s;
+    }
+
+    li.active{
+      background-color: $sand;
+      color: $black;
+    }
+
+    &:hover li.active:not(li.active:hover){
+      background-color: transparent;
+      color: $sand;
+    }
+    li:hover{
+      background-color: $sand;
+      color: $black;
+    }
+  }
+}
+
+//controls highlight
+
+.about--controls ul.animated{
+  li:not(.active){
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 7s;
+  }
+
+  li.active{
+    animation-name: active_blink;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 7s;
+  }
+
+  li:nth-child(1){
+    animation-delay: 0s;
+  }
+  li:nth-child(2){
+    animation-delay: 0.75s;
+  }
+  li:nth-child(3){
+    animation-delay: 1.5s;
+  }
+}
+
+@keyframes blink{
+  0%  { background-color: rgba(255, 250, 236, 0); color: $sand; }
+  15% { background-color: rgba(255, 250, 236, 0.5); color: $sand; }
+  30%{ background-color: rgba(255, 250, 236, 0); color: $sand; }
+  100%{ background-color: rgba(255, 250, 236, 0); color: $sand; }
+}
+
+@keyframes active_blink{
+  0%  { background-color: rgba(255, 250, 236, 0); color: $sand; }
+  15% { background-color: rgba(255, 250, 236, 0.5); color: $sand; }
+  30%{ background-color: rgba(255, 250, 236, 1); color: $black; }
+  100%{ background-color: rgba(255, 250, 236, 1); color: $black; }
+}

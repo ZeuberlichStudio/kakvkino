@@ -30,6 +30,7 @@ u.dialod-trigger{
   backdrop-filter: blur(8px);
   color: $black;
   border: get-m-vw(2px) solid $black;
+  border-radius: get-m-vw(10px);
   opacity: 0;
   pointer-events: none;
   z-index: 2;

@@ -40,7 +40,7 @@ const DialogWindow = ({children, text, click, bottom}) => {
           {text}
         </u>
       }
-      <div className={`dialog-window_content-wrapper ${bottom ? 'bottom' : null}`}>
+      <div className={`dialog-window_content-wrapper ${bottom ? 'bottom' : ''}`}>
         { click ? <button onClick={(e) => toggleWindow(e, true)} className="dialog-window_close"/> : null }
         <div className="dialog-window_content">
           {children}

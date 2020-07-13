@@ -1,0 +1,64 @@
+.modal-wrapper-make-appointment #modal-wrapper_close{
+  left: get-vw(920px);
+  top: get-vw(150px);
+}
+
+.section-make-appointment{
+  width: get-vw(536px);
+  height: max-content;
+  position: relative;
+  padding: get-vw(20px);
+  border-radius: get-vw(8px);
+  border: get-vw(2px) solid $black;
+  color: $black;
+
+  h1{ @include bebas-47-bold; }
+
+  p{
+    @include helvetica-14-bold;
+    opacity: 0.75;
+  }
+
+  &_form{
+    width: 100%;
+    margin-top: get-vw(32px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: max-content;
+    grid-gap: get-vw(14px) get-vw(20px);
+
+    input{
+      width: 100%;
+      padding-left: get-vw(4px);
+      @include bebas-30-bold;
+      line-height: get-vw(34px);
+      border-bottom: get-vw(2px) solid $black;
+    }
+
+    ::placeholder{
+      opacity: 0.5;
+    }
+
+    button{
+      grid-column: 1/2;
+      margin-top: get-vw(10px);
+      width: max-content;
+      height: get-vw(32px);
+      padding: 0 get-vw(15px);
+      border-radius: get-vw(3px);
+      background: $black;
+      color: $sand;
+      @include bebas-20-bold;
+    }
+  }
+
+  &_policy{
+    left: get-vw(130px);
+    bottom: get-vw(24px);
+    position: absolute;
+    @include helvetica-12-bold;
+    opacity: 0.75;
+  }
+
+  background: $sand;
+}
