@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.74bd887a.chunk.css",
-    "main.js": "/kakvkino/static/js/main.2cc07fb8.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.2cc07fb8.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.231e9d3f.chunk.css",
+    "main.js": "/kakvkino/static/js/main.637fd527.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.637fd527.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.d41ba491.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.d41ba491.js.map",
     "static/js/2.1b342126.chunk.js": "/kakvkino/static/js/2.1b342126.chunk.js",
     "static/js/2.1b342126.chunk.js.map": "/kakvkino/static/js/2.1b342126.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.cd025267bd67b3856639ce203e40dcb3.js": "/kakvkino/precache-manifest.cd025267bd67b3856639ce203e40dcb3.js",
+    "precache-manifest.3a619bc4a8993a3ae8aced7bcc36e13b.js": "/kakvkino/precache-manifest.3a619bc4a8993a3ae8aced7bcc36e13b.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.74bd887a.chunk.css.map": "/kakvkino/static/css/main.74bd887a.chunk.css.map",
+    "static/css/main.231e9d3f.chunk.css.map": "/kakvkino/static/css/main.231e9d3f.chunk.css.map",
     "static/js/2.1b342126.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.1b342126.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
@@ -57,7 +57,7 @@
     "static/media/poster_2.svg": "/kakvkino/static/media/poster_2.c5fbde6c.svg",
     "static/media/stats_stages.svg": "/kakvkino/static/media/stats_stages.642db180.svg",
     "static/media/status_love_poster.png": "/kakvkino/static/media/status_love_poster.31cad6e1.png",
-    "static/media/title_stats_1.svg": "/kakvkino/static/media/title_stats_1.70881f07.svg",
+    "static/media/title_stats_1.svg": "/kakvkino/static/media/title_stats_1.44513683.svg",
     "static/media/title_stats_2.svg": "/kakvkino/static/media/title_stats_2.6cdc901b.svg",
     "static/media/title_stats_3.svg": "/kakvkino/static/media/title_stats_3.b3eb5bbe.svg",
     "static/media/title_stats_4.svg": "/kakvkino/static/media/title_stats_4.df4ab639.svg"
@@ -65,7 +65,7 @@
   "entrypoints": [
     "static/js/runtime-main.d41ba491.js",
     "static/js/2.1b342126.chunk.js",
-    "static/css/main.74bd887a.chunk.css",
-    "static/js/main.2cc07fb8.chunk.js"
+    "static/css/main.231e9d3f.chunk.css",
+    "static/js/main.637fd527.chunk.js"
   ]
 }
