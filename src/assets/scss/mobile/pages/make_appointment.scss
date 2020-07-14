@@ -1,0 +1,73 @@
+section#make-appointment{
+  width: 100vw;
+  height: max-content;
+  bottom: 0;
+  position: absolute;
+  padding: get-m-vw(20px);
+  border-top: get-m-vw(2px) solid $black;
+  background: rgba($sand, 0.15);
+  backdrop-filter: blur(8px);
+
+  /*h1{
+    width: 100%;
+    height: get-m-vw(52px);
+    padding: 0 get-m-vw(20px);
+    left: 0; top: 0;
+    position: fixed;
+
+    background: $black;
+    color: $sand;
+    z-index: 1;
+    @include m-bebas-30-bold;
+    line-height: get-m-vw(52px);
+  }*/
+
+  h1{
+    @include m-bebas-30-bold;
+  }
+
+  p{
+    @include m-helvetica-12-bold;
+  }
+}
+
+.modal-wrapper-make-appointment{
+  backdrop-filter: none!important;
+  background: none!important;
+
+  #modal-wrapper_close{
+    top: unset;
+    bottom: get-m-vw(330px);
+    background: $black;
+  }
+}
+
+.section-make-appointment_form{
+  margin-top: get-m-vw(14px);
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-row-gap: get-m-vw(8px);
+
+  input{
+    height: get-m-vw(28px);
+    padding-left: get-m-vw(4px);
+    border-bottom: get-m-vw(2px) solid $black;
+    @include m-bebas-20-bold;
+  }
+
+  button{
+    height: get-m-vw(28px);
+    margin-top: get-m-vw(14px);
+    padding: 0 get-m-vw(10px);
+    background: $black;
+    color: $sand;
+    border-radius: get-m-vw(4px);
+    @include m-bebas-20-bold;
+  }
+}
+
+.section-make-appointment_policy{
+  margin-top: get-m-vw(20px);
+  display: block;
+  @include m-helvetica-10-bold;
+}

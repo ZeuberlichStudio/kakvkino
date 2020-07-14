@@ -32,8 +32,13 @@ import audience_2020 from 'assets/images/audience_2020.svg'
 import audience_age from 'assets/images/audience_age.svg'
 import audience_groups from 'assets/images/audience_groups.svg'
 
-export default class StatsArticle3 extends Component{
+import m_audience_2019_1 from 'assets/images/mobile/audience_2019_1.svg'
+import m_audience_2019_2 from 'assets/images/mobile/audience_2019_2.svg'
+import m_audience_2020 from 'assets/images/mobile/audience_2020.svg'
+import m_audience_age from 'assets/images/mobile/audience_age.svg'
+import m_audience_groups from 'assets/images/mobile/audience_groups.svg'
 
+export default class StatsArticle3 extends Component{
   render() {
     return(
       <article id="stats--article-3" className="stats--article-3 stats--article">
@@ -155,55 +160,76 @@ const DesktopGraphs = () => (
   </Fragment>
 );
 
-const MobileGraphs = () => (
-  <Fragment>
+const MobileGraphs = () => {
 
-    <Slider
-      id="mobile-stats-slider-1"
-      slideWidthVw={88}
-      buttonText = {[
-        'Январь — Июнь 2020',
-        'Июль — Декабрь 2019',
-      ]}
-    >
-      <div>
+  const [slide, setSlide] = React.useState(0);
+  const onSlideChange = slide => {
+    setSlide(slide);
+  };
+
+  return(
+    <Fragment>
+      {
+        slide < 2 ?
         <p>
-          В 2019 год наблюдается рост зрителей. <br/>
+          В 2019 год наблюдается рост зрителей.<br/>
           Средний возраст кинозрителя 29 лет.
-        </p>
-        <h3>
-          Аудитория кинотеатров в 2019 <br/>
-          <span>(Зрители, млн. Чел.)</span>
-        </h3>
-        <img src={ m_graph_1_1 } />
-      </div>
-      <div>
+        </p> : 
         <p>
-          Начало 2020 года показывает растущий тренд <br/>
-          зрителей до введения ограничительных мер  <br/>
+          Начало 2020 года показывает растущий тренд<br/>
+          зрителей до введения ограничительных мер<br/>
           в связи с COVID-19.
         </p>
-        <h3>
-          Аудитория кинотеатров в 2020 <br/>
-          <span>(Зрители, млн. Чел.)</span>
-        </h3>
-        <img src={ m_graph_1_2 } />
-      </div>
-    </Slider>
+      }
+      <Slider
+        onSlideChange={onSlideChange}
+        id="mobile-stats-slider-1"
+        slideWidthVw={375/3.75}
+        slideNames={[
+          'Январь — Июнь 2019',
+          'Июль — Декабрь 2019',
+          'Январь — Июнь 2020',
+        ]}
+      >
+        <div>
+          <h3>
+            Аудитория кинотеатров в 2019 <br/>
+            <span>(Зрители, млн. Чел.)</span>
+          </h3>
+          <img src={ m_audience_2019_1 } />
+        </div>
 
-    <h3 className="m-bebas-25">
-      Портрет аудитории кинотеатров<br/> в 2019 году
-    </h3>
-    <Slider
-    id="mobile-stats-slider-2"
-    slideWidthVw={88}
-    buttonText = {[
-      'Состав посещения',
-      'Возраст аудитории',
-    ]}
-    content={[
-      <img src={ m_graph_2_1 } />,
-      <img src={ m_graph_2_2 } />,
-    ]}/>
-  </Fragment>
-);
+        <div>
+          <h3>
+            Аудитория кинотеатров в 2019 <br/>
+            <span>(Зрители, млн. Чел.)</span>
+          </h3>
+          <img src={ m_audience_2019_2 } />
+        </div>
+
+        <div>
+          <h3>
+            Аудитория кинотеатров в 2020 <br/>
+            <span>(Зрители, млн. Чел.)</span>
+          </h3>
+          <img src={ m_audience_2020 } />
+        </div>
+      </Slider>
+
+      <h3 className="m-bebas-25">
+        Портрет аудитории кинотеатров<br/> в 2019 году
+      </h3>
+      <Slider
+        id="mobile-stats-slider-2"
+        slideWidthVw={375/3.75}
+        slideNames = {[
+          'Возраст аудитории',
+          'Состав посещения',
+        ]}
+      >
+        <img src={ m_audience_age } />
+        <img src={ m_audience_groups } />
+      </Slider>
+    </Fragment>
+  );
+}

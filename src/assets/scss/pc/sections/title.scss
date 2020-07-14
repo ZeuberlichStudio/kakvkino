@@ -41,9 +41,10 @@ section#title{
 
       div{
         padding: 0 get-vw(18px);
-        padding-top: get-vw(12px);
+        padding-top: get-vw(10px);
 
         background-color: $black;
+        border-radius: get-vw(3px);
         cursor: pointer;
       }
     }

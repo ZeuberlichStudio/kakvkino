@@ -68,16 +68,16 @@ export default class Footer extends Component{
             <h2 className="bebas-20">Карта сайта:</h2>
             <ul className="helvetica-13-regular">
               <h3 className="bebas-20">Главная</h3>
-              <li><a href="/#title">О проекте</a></li>
-              <li><a href="/#about">Почему в кино</a></li>
-              <li><a href="/#stats--article-1">Жизненный цикл кино</a></li>
-              <li><a href="/#stats--article-2">Как это работает</a></li>
-              <li><a href="/#stats--article-3">Статистика</a></li>
-              <li><a href="/#about-us">Кто мы</a></li>
+              <li><a href="#title">О проекте</a></li>
+              <li><a href="#about">Почему в кино</a></li>
+              <li><a href="#cinema-lifespan">Жизненный цикл кино</a></li>
+              <li><a href="#how-it-works">Как это работает</a></li>
+              <li><a href="#statistics">Статистика</a></li>
+              <li><a href="#about-us">Кто мы</a></li>
             </ul>
             <ul className="helvetica-13-regular">
               <h3 className="bebas-20">Что снимаем</h3>
-              <li><a href="/#service">Фильмы в разработке</a></li>
+              <li><a href="#filming">Фильмы в разработке</a></li>
             </ul>
           </div>
         </footer>

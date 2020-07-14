@@ -25,7 +25,7 @@ export default class Title extends Component{
           <p className="helvetica-14-bold m-helvetica-12-bold">Рекламодатели становятся соинвесторами фильма и
             получают доход от будущего кинопроката</p>
           <h2 className="bebas-30 m-bebas-25">
-            <a href="#stats">
+            <a href="#cinema-lifespan">
               получите свыше <span className="marked">14 000 000</span> контактов<br/>
               с вашей рекламой в 1й год по<br/>
               цене <span className="marked">6 копеек</span> за контакт
@@ -33,7 +33,7 @@ export default class Title extends Component{
           </h2>
           <div className="links-container bebas-20 m-bebas-20 light">
             <div onClick={ e => this.goToAnchor(e) } data-link="about">Почему в кино</div>
-            <div onClick={ e => this.goToAnchor(e) } data-link="stats--article-2-anchor">Как это работает</div>
+            <div onClick={ e => this.goToAnchor(e) } data-link="how-it-works">Как это работает</div>
           </div>
         </article>
         <div className="title--aside-wrapper">

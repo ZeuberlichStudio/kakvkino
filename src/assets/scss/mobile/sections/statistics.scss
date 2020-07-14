@@ -4,14 +4,9 @@ section#statistics{
   width: 100vw;
   height: max-content;
   padding: get-m-vw(20px);
-  padding-top: get-m-vw(100px);
+  padding-top: get-m-vw(52px);
   padding-bottom: get-m-vw(40px);
-
   position: relative;
-
-  background-color: $sand;
-  background-image: url('~assets/images/Pattern_1.svg');
-
   color: $black;
 }
 
@@ -23,7 +18,11 @@ section#statistics{
 
   .text-left-container{
     h3:nth-child(3){ margin-top: get-m-vw(32px); }
-    p{ margin-top: get-m-vw(16px); }
+    p{
+      @include m-helvetica-12-bold;
+      margin-top: get-m-vw(16px);
+      height: get-m-vw(42px);
+    }
   }
 
   .text-right-container{
@@ -50,19 +49,21 @@ section#statistics{
   }
 
   .slider{
-    width: get-m-vw(320px);
+    width: get-m-vw(375px);
+    margin-left: get-m-vw(-20px);
     position: relative;
 
     .wrapper{
-      width: get-m-vw(288px);
+      width: get-m-vw(375px);
+      height: max-content;
+      padding: get-m-vw(10px) 0;
+      display: flex;
+      align-items: center;
       overflow: hidden;
     }
 
     .container{
-      display: grid;
-      grid-auto-flow: column;
-      grid-column-gap: get-m-vw(42px);
-
+      display: flex;
       &.transition{
         transition: 0.3s;
       }
@@ -71,13 +72,13 @@ section#statistics{
     &.transition button{ color: transparent!important; }
 
     button{
-      width: get-m-vw(18px);
-      height: get-m-vw(180px);
-      right: get-m-vw(6px); bottom: get-m-vw(62px);
+      width: get-m-vw(24px);
+      height: get-m-vw(250px);
+      right: get-m-vw(30px); bottom: get-m-vw(20px);
 
       position: absolute;
       display: inline-block;
-
+      border-radius: get-m-vw(4px);
       background-color: $black;
       color: $sand;
       transition: 0.3s;
@@ -85,11 +86,11 @@ section#statistics{
       span{
         width: 100%;
         display: block;
-        padding-right: get-m-vw(1px);
-
         writing-mode: vertical-rl;
         text-orientation: mixed;
         text-align: center;
+        @include m-helvetica-12-bold;
+        line-height: get-m-vw(24px);
       }
 
       &::before{
@@ -108,25 +109,21 @@ section#statistics{
     }
 
     .slide{
-      width: get-m-vw(288px);
-
-      p{
-        height: get-m-vw(54px);
-        @include m-helvetica-12-bold;
-      }
+      width: get-m-vw(355px);
+      height: max-content;
+      margin: 0 get-m-vw(10px);
+      padding: get-m-vw(10px);
+      border-radius: get-m-vw(10px);
+      background: $sand;
+      box-shadow: get-m-vw(1px) get-m-vw(3px) get-m-vw(6px) rgba(black, 0.15);
 
       h3{ @include m-bebas-22-bold; span{ color: rgba($black, 0.5); }}
 
       img{
-        width: get-m-vw(288px);
-        height: auto;
-        margin-top: get-m-vw(18px);
+        width: get-m-vw(290px);
+        margin-top: get-m-vw(10px);
         display: block;
       }
     }
-  }
-
-  #mobile-stats-slider-2{
-    button{ bottom: get-m-vw(44px); }
   }
 }

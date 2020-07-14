@@ -32,10 +32,10 @@ export default class MobileHeader extends Component{
           <nav className="m-bebas-20">
             <h2 className="m-bebas-30">Меню</h2>
             <ul>
-              <li onClick={ e => this.goToAnchor(e) } data-link="stats--article-2-anchor" className="nav-link">Как это работает</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="how-it-works" className="nav-link">Как это работает</li>
               <li onClick={ e => this.goToAnchor(e) } data-link="filming-anchor" className="nav-link">Что снимаем</li>
               <li onClick={ e => this.goToAnchor(e) } data-link="about-us" className="nav-link">Кто мы</li>
-              <li onClick={ e => this.goToAnchor(e) } data-link="stats--anchor" className="nav-link">Статистика</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="statistics" className="nav-link">Статистика</li>
             </ul>
           </nav>
           <div className="contacts-container">

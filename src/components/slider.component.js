@@ -7,13 +7,17 @@ export default class Slider extends Component{
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if ( prevState.slidesCount || !this.state.slidesCount ) return;
+    if (
+          prevState.currentSlide !== this.state.currentSlide &&
+          this.props.onSlideChange
+        ) this.props.onSlideChange(this.state.currentSlide);
+    if ( prevState.slideCount || !this.state.slideCount ) return;
     this.changeSlide(0);
   }
 
   state = {
     currentSlide: 0,
-    slidesCount: 0,
+    slideCount: 0,
     offset: 0,
   }
 
@@ -24,7 +28,7 @@ export default class Slider extends Component{
 
     const offset = this.props.visible ? 2 : 1;
 
-    this.setState({ slidesCount: slides.length });
+    this.setState({ slideCount: slides.length });
     this.setState({ offset });
 
     if( this.props.visible ){
@@ -49,7 +53,7 @@ export default class Slider extends Component{
   changeSlide = (goTo) => {
     let slider = document.getElementById(this.props.id),
         slideWidth = this.props.slideWidthVw,
-        slidesCount = this.state.slidesCount,
+        slideCount = this.state.slideCount,
         currentSlide = this.state.currentSlide,
         offset = this.state.offset,
         container =
@@ -74,7 +78,7 @@ export default class Slider extends Component{
         slider.classList.add('prev-hide');
         slider.classList.remove('next-hide');
       }
-      else if (goTo === slidesCount - 1) {
+      else if (goTo === slideCount - 1) {
         slider.classList.add('next-hide');
         slider.classList.remove('prev-hide');
       }
@@ -84,7 +88,7 @@ export default class Slider extends Component{
       }
     }
 
-    if( goTo > this.state.slidesCount - 1 ){
+    if( goTo > this.state.slideCount - 1 ){
       setTimeout( () => {
         slider.classList.remove('transition');
         container.classList.remove('transition');
@@ -107,7 +111,7 @@ export default class Slider extends Component{
         slider.classList.remove('transition');
         container.classList.remove('transition');
         container.style.transform =
-        `translate3d(${-slideWidth * (slidesCount - 1 + offset)}vw, 0px, 0px )`;
+        `translate3d(${-slideWidth * (slideCount - 1 + offset)}vw, 0px, 0px )`;
 
         //remove scaling from the previous slide
         container.getElementsByClassName('active')[0].
@@ -116,7 +120,7 @@ export default class Slider extends Component{
         container.getElementsByClassName('slide')[slides.length - 1 - offset].
         classList.add('active');
 
-        this.setState({ currentSlide: slidesCount - 1 });
+        this.setState({ currentSlide: slideCount - 1 });
       }, 300 )
     }
     else{
@@ -129,6 +133,11 @@ export default class Slider extends Component{
   }
 
   render() {
+
+    const {
+      slideCount,
+      currentSlide,
+    } = this.state;
 
     const {
       slideNames
@@ -151,11 +160,30 @@ export default class Slider extends Component{
             }
           </div>
         </div>
-        <button onClick={ () => this.changeSlide(this.state.currentSlide - 1) } className="prev">
-          <span>{ slideNames ? slideNames[this.state.currentSlide - 1] : null }</span>
+        <button
+          onClick={ () => this.changeSlide(this.state.currentSlide - 1) }
+          className="prev"
+        >
+          <span>
+            {
+              slideNames ?
+              currentSlide > 0 ?
+              slideNames[currentSlide + 1] :
+              slideNames[slideCount - 1] :
+              null
+            }
+          </span>
         </button>
         <button onClick={ () => this.changeSlide(this.state.currentSlide + 1) } className="next">
-          <span>{ slideNames ? slideNames[this.state.currentSlide + 1] : null }</span>
+          <span>
+            {
+              slideNames ?
+              currentSlide < slideCount - 1 ?
+              slideNames[currentSlide + 1] :
+              slideNames[0] :
+              null
+            }
+          </span>
         </button>
       </div>
     )

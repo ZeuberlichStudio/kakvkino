@@ -4,14 +4,14 @@
   left: 0; top: get-m-vw(36px);
   position: fixed;
   backdrop-filter: blur(8px);
-  background-color: rgba($black, 0.75);
+  background: rgba($black, 0.75);
   z-index: 10;
 }
 
 #modal-wrapper_close{
   width: get-m-vw(16px);
   height: get-m-vw(16px);
-  right: get-m-vw(16px); top: get-m-vw(18px);
+  right: get-m-vw(16px); top: get-m-vw(15px);
   display: block;
   position: fixed;
   mask: url('~assets/images/close.svg') center / cover no-repeat;
