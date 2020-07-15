@@ -12,39 +12,55 @@ section#statistics{
 
 
 #stats--article-3{
-
   color: $black;
   z-index: 2;
 
   .text-left-container{
-    h3:nth-child(3){ margin-top: get-m-vw(32px); }
-    p{
-      @include m-helvetica-12-bold;
+    p{ @include m-helvetica-12-bold; }
+
+    p:nth-child(2){
       margin-top: get-m-vw(16px);
       height: get-m-vw(42px);
+    }
+
+    .slider:nth-child(4){ margin-top: get-m-vw(32px); }
+
+    p:nth-child(5){
+      margin-top: get-m-vw(42px);
+      span{ @include m-helvetica-14-bold; }
     }
   }
 
   .text-right-container{
-    margin-top: get-m-vw(60px);
+    margin-top: get-m-vw(20px);
 
-    img, span{ display: block; }
-
-    //first block
     div:nth-child(1){
+      width: get-m-vw(355px);
+      margin-left: get-m-vw(-10px);
       padding: get-m-vw(10px);
-      padding-bottom: get-m-vw(20px);
+      background: $sand;
+      border-radius: get-m-vw(10px);
+      box-shadow: get-m-vw(1px) get-m-vw(3px) get-m-vw(6px) rgba(black, 0.15);
 
-      background-color: $sand;
-      box-shadow: 0px get-m-vw(2px) get-m-vw(6px) 0px rgba(0,0,0,0.18);
-
+      h3{ @include m-bebas-30-bold; }
+      p{ @include m-helvetica-12-bold; }
       img{ margin-top: get-m-vw(10px); }
     }
 
     div:nth-child(2){
-      margin-top: get-m-vw(16px);
+      margin-top: get-m-vw(14px);
+      h3{ @include m-bebas-22-bold; }
+    }
 
-      span{ margin-top: get-m-vw(8px); }
+    span:nth-last-child(2){
+      display: block;
+      margin-top: get-m-vw(10px);
+      @include m-helvetica-12-bold;
+    }
+    span:nth-last-child(1){
+      display: block;
+      margin-top: get-m-vw(14px);
+      @include m-helvetica-14-bold;
     }
   }
 

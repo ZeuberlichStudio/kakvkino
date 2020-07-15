@@ -292,7 +292,7 @@
 
   td:not(:first-child){ color: #3FAC50; }
   &.mode-1{
-    td:not(:first-child){ color: #FF6C57; }
+    td:not(:first-child){ color: #7360FF; }
     tr:nth-child(n+5):not(:last-child) td:not(:first-child){
       opacity: 0.5;
     }
@@ -362,7 +362,7 @@
 
   &.mode-1 .notice{
     &::before{
-      background: #FF6C57;
+      background: #7360FF;
     }
   }
 }
@@ -499,7 +499,7 @@
 
 .filming-section_table_content_tab-3{
   padding: 0 get-vw(12px);
-  padding-top: get-vw(46px);
+  padding-top: get-vw(65px);
   display: grid;
   grid-template:
   repeat(3, max-content) /

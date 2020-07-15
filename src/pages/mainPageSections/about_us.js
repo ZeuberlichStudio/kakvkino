@@ -22,7 +22,7 @@ export default class AboutUs extends Component{
 
           <div className="text-left-container_blocks">
             <div className="text-left-container_blocks_block">
-              <img src={origo} alt=""/>
+              <a href="http://origostudios.com/"><img src={origo} alt=""/></a>
               <h3>КРУПНЕЙШАЯ КИНОСТУДИЯ В ЕВРОПЕ</h3>
               <p>
                 Партнер в киносъемках для мэйджоров мировой<br/>
@@ -31,11 +31,11 @@ export default class AboutUs extends Component{
               </p>
               <div>
                 <div>
-                  <img src={eurasian_films} alt=""/>
+                  <a href="http://eurasianfilms.com/"><img src={eurasian_films} alt=""/></a>
                   <p>Продакшн компания в холдинге Origo Studios.</p>
                 </div>
                 <div>
-                  <img src={paragraph} alt=""/>
+                  <a href="http://paragraphfilm.ru/"><img src={paragraph} alt=""/></a>
                   <p>
                     Дочерняя компания Origo Studios для работы на Территории
                     России и стран СНГ. Больше 10 лет производит
@@ -49,7 +49,7 @@ export default class AboutUs extends Component{
             </div>
 
             <div className="text-left-container_blocks_block">
-              <img src={plan} alt=""/>
+              <a href="https://planagency.ru/"><img src={plan} alt=""/></a>
               <h3>Российское КОММУНИКАЦИОННОЕ АГЕНТСТВО</h3>
               <p>
                 Команда экспертов с опытом в маркетинге и рекламе

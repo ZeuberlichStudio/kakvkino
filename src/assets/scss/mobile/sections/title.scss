@@ -33,9 +33,10 @@ article{
     div{
       width: max-content;
       height: get-m-vw(32px);
-      padding: 0 get-m-vw(10px);
+      padding: 0 get-m-vw(14px);
       padding-top: get-m-vw(8px);
       background-color: $black;
+      border-radius: get-m-vw(5px);
     }
   }
 }
@@ -52,9 +53,10 @@ article.title--aside{
   }
   .notice{
     width: get-m-vw(198px);
-    margin-left: get-m-vw(32px);
+    margin-left: get-m-vw(20px);
     margin-top: get-m-vw(30px);
     display: block;
+    @include m-helvetica-12-bold;
   }
 }
 

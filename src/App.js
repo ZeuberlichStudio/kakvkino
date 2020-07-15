@@ -34,7 +34,7 @@ class App extends React.Component {
 
   getDevice = () => {
     this.setState({ device: document.documentElement.clientWidth <= 1024 ? 'mobile' : 'desktop' });
-    let vh = document.documentElement.clientHeight;
+    let vh = window.innerHeight;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 
@@ -49,9 +49,10 @@ class App extends React.Component {
         { device !== 'mobile' ? <Counter/> : null }
         { device !== 'mobile' ? null : null }
 
+
         <Route path="/">
           <MainPage device={device}/>
-        </Route>
+        </Route> 
 
         <Route exact path="/projects/:title">
           <ModalWrapper device={device}>

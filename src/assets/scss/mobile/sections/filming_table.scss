@@ -448,7 +448,7 @@
         tr:nth-child(2){ margin-top: get-m-vw(8px); }
       }
 
-      th{ @include m-bebas-22-bold; }
+      th{ @include m-bebas-22-bold; sup{ @include m-helvetica-12-medium; }}
       td{ @include m-bebas-20-bold; color: rgba($black, 0.8); }
     }
 

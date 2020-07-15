@@ -28,6 +28,7 @@ section.popcorn-section{
     h3, p{ padding-left: get-m-vw(5px); }
     h3{
       @include m-bebas-25-bold;
+      sup{ @include m-helvetica-12-medium; }
       &::before{
         width: get-m-vw(10px);
         height: get-m-vw(10px);
@@ -63,6 +64,7 @@ section.popcorn-section{
     padding-top: get-m-vw(50px);
     mask: url('~assets/images/mobile/stage_blue_bg.svg') left / auto 100% no-repeat;
     background: rgba(#A99AF5, 0.35);
+    letter-spacing: get-m-vw(-0.2px);
     h3::before{ background: #A99AF5;  }
     p{ width: get-m-vw(194px); }
     span{ width: get-m-vw(210px); }
@@ -71,7 +73,7 @@ section.popcorn-section{
     mask: url('~assets/images/mobile/stage_yellow_bg.svg') left / auto 100% no-repeat;
     background: rgba(#FFBE00, 0.35);
     h3::before{ background: #FFBE00;  }
-    span{ width: get-m-vw(160px); }
+    span{ width: get-m-vw(170px); }
   }
 }
 
@@ -125,6 +127,7 @@ section.popcorn-section{
     margin-top: get-m-vw(500px);
     background: rgba(#A99AF5, 0.35);
   }
+
   &_block:nth-child(3){
     margin-top: get-m-vw(24px);
     background: rgba(#FFBE00, 0.35);
@@ -143,7 +146,7 @@ section.popcorn-section{
 #popcorn-static{
  width: 100%;
  height: get-m-vw(558px);
- left: 0; top: get-m-vw(120px);
+ left: 0; top: get-m-vw(110px);
  position: absolute;
  background: url('~assets/images/mobile/popcorn.svg') center / 100% auto no-repeat;
 }

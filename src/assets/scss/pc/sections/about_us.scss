@@ -47,7 +47,8 @@ section#about-us{
         color: $sand;
         overflow: hidden;
 
-        & > img{
+        & > a{
+          width: max-content;
           margin: auto;
           top: get-vw(34px);
           left: 0; right: 0;

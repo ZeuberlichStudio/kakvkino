@@ -75,7 +75,7 @@ export default class StatsArticle3 extends Component{
         </div>
         <div className="text-right-container helvetica-12-bold m-helvetica-12-bold">
             <div>
-              <h3 className="bebas-25 m-bebas-30">Все больше россиян</h3>
+              <h3 className="bebas-25">Все больше россиян</h3>
               <p>
                 отмечают улучшение качества<br/>
                 российского кино в течение последних лет
@@ -84,10 +84,10 @@ export default class StatsArticle3 extends Component{
             </div>
 
             <div>
-              <h3 className="bebas-25 m-bebas-25">
-                Ежегодно с 2014 года более<br/>
-                17 российских фильмов собирает<br/>
-                аудиторию свыше 500 тыс. чел.
+              <h3 className="bebas-25">
+                Ежегодно с 2014 года более 17 российских<br/>
+                фильмов собирает аудиторию<br/>
+                свыше 500 тыс. чел.
               </h3>
               {
                 this.props.device === 'desktop' ?
@@ -115,7 +115,7 @@ export default class StatsArticle3 extends Component{
                 Российские фильмы, собравшие<br/>
               <Link to="/movies"><u>свыше 500 тыс. зрителей</u></Link>
               </span>
-              <span className="helvetica-14-bold m-helvetica-14-bold">
+              <span className="helvetica-14-bold">
                 Источник:
                 <u><a href="http://www.kinometro.ru/kino/analitika" target="_blank"> kinometro</a></u>
               </span>
@@ -174,7 +174,7 @@ const MobileGraphs = () => {
         <p>
           В 2019 год наблюдается рост зрителей.<br/>
           Средний возраст кинозрителя 29 лет.
-        </p> : 
+        </p> :
         <p>
           Начало 2020 года показывает растущий тренд<br/>
           зрителей до введения ограничительных мер<br/>
@@ -216,9 +216,6 @@ const MobileGraphs = () => {
         </div>
       </Slider>
 
-      <h3 className="m-bebas-25">
-        Портрет аудитории кинотеатров<br/> в 2019 году
-      </h3>
       <Slider
         id="mobile-stats-slider-2"
         slideWidthVw={375/3.75}
@@ -227,8 +224,14 @@ const MobileGraphs = () => {
           'Состав посещения',
         ]}
       >
-        <img src={ m_audience_age } />
-        <img src={ m_audience_groups } />
+        <div>
+          <h3>Портрет аудитории кинотеатров <br/> в 2019 году</h3>
+          <img src={ m_audience_age } />
+        </div>
+        <div>
+          <h3>Портрет аудитории кинотеатров <br/> в 2019 году</h3>
+          <img src={ m_audience_groups } />
+        </div>
       </Slider>
     </Fragment>
   );

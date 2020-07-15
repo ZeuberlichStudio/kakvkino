@@ -168,7 +168,7 @@ export default class Slider extends Component{
             {
               slideNames ?
               currentSlide > 0 ?
-              slideNames[currentSlide + 1] :
+              slideNames[currentSlide - 1] :
               slideNames[slideCount - 1] :
               null
             }

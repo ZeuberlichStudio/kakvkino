@@ -78,7 +78,7 @@ const Popcorn = ({device}) => (
       <div className="popcorn-section_text-right_block stage">
         <h3>Этап 1|кинотеатры</h3>
         <span>
-          <sup>1</sup>Средний уровень кинопроката в<br className="pc-br"/>
+          <sup>1</sup>Средний уровень кинопроката в<br/>
           &nbsp;&nbsp;России в 2018-2019 году
         </span>
       </div>

@@ -81,3 +81,11 @@
   font-size: get-vw(12px);
   line-height: get-vw(14px);
 }
+
+
+@mixin helvetica-12-regular{
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-size: get-vw(12px);
+  line-height: get-vw(14px);
+}

@@ -26,7 +26,7 @@ const ModalWrapper = ({children, device}) => {
           id="modal-wrapper_close"
           className="modal-wrapper_close"
           onClick={close}
-        />
+      />
         {children}
       </div>
     </Fragment>

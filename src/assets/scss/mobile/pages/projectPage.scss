@@ -1,22 +1,25 @@
 #project-section{
   width: 100%;
-  height: 100%;
-  padding: get-m-vw(18px);
-  padding-top: get-m-vw(52px + 18px);
+  height: var(--vh);
+  padding: 0 get-m-vw(18px);
+  padding-bottom: get-m-vw(52px);
   background: $sand;
   overflow-y: scroll;
 
   & > h1{
-    width: 100%;
+    display: none;
+    width: 100vw;
+    margin-left: get-m-vw(-18px);
     height: get-m-vw(52px);
-    padding: get-m-vw(14px) get-m-vw(20px);
+    padding: 0 get-m-vw(20px);
     left: 0; top: 0;
-    position: fixed;
+    position: sticky;
 
     background: $black;
     color: $sand;
     z-index: 1;
     @include m-bebas-30-bold;
+    line-height: get-m-vw(52px);
   }
 }
 

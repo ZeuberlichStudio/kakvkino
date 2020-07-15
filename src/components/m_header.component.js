@@ -56,15 +56,12 @@ export default class MobileHeader extends Component{
           </div>
           <div className="sales-dep-container">
             <h2 className="m-bebas-30">Отдел продаж</h2>
-            <a href="tel: +7 (909) 323 44-43" className="m-bebas-20">
+            <a href="tel: +7 (909) 323 44-43">
               Позвонить
             </a>
-            <a href="mailto: SalesManager@Kakvkino.Group" className="m-bebas-20">
+            <a href="mailto: SalesManager@Kakvkino.Group">
               Написать
             </a>
-            <a href="/" rel="noopener noreferrer" target="_blank"></a>
-            <a href="/" rel="noopener noreferrer" target="_blank"></a>
-            <a href="/" rel="noopener noreferrer" target="_blank"></a>
           </div>
         </div>
       </header>
