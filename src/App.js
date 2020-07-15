@@ -40,19 +40,17 @@ class App extends React.Component {
 
   render(){
 
-    const {
-      device
-    } = this.state;
+    const { device } = this.state;
 
     return (
       <Fragment>
         { device !== 'mobile' ? <Counter/> : null }
-        { device !== 'mobile' ? null : null }
+        { device !== 'mobile' ? <Animation/> : null }
 
 
         <Route path="/">
           <MainPage device={device}/>
-        </Route> 
+        </Route>
 
         <Route exact path="/projects/:title">
           <ModalWrapper device={device}>

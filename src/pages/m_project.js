@@ -23,7 +23,8 @@ const MobileProjectPage = () => {
 
 const Project1 = () => (
   <Fragment>
-    <h1>Статус – любовь</h1>
+  <h1>Статус – любовь</h1>
+  <div className="project-section_content">
     <div className="project-section_movie-info">
       <img src={poster_1} alt=""/>
       <ul>
@@ -97,12 +98,14 @@ const Project1 = () => (
         <h3>Кинопрокат</h3>
       </div>
     </div>
+  </div>
   </Fragment>
 )
 
 const Project2 = () => (
   <Fragment>
-    <h1>Шоколад с морской солью</h1>
+  <h1>Шоколад с морской солью</h1>
+  <div className="project-section_content">
     <div className="project-section_movie-info">
       <img src={poster_2} alt=""/>
       <ul>
@@ -182,6 +185,7 @@ const Project2 = () => (
         <h3>Кинопрокат</h3>
       </div>
     </div>
+  </div>
   </Fragment>
 )
 

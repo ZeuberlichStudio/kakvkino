@@ -16,7 +16,9 @@ const ModalWrapper = ({children, device}) => {
     if ( e.type === 'click' && e.target !== e.currentTarget ) return;
     if( e.type === 'keyup' && e.key !== 'Escape' ) return;
     document.removeEventListener('keyup', closeRef);
-    history.push('/');
+    history.push({
+      pathname: '/',
+    });
   }
 
   return(
