@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.cca23c89.chunk.css",
-    "main.js": "/kakvkino/static/js/main.73351df3.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.73351df3.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.51ef3c4f.chunk.css",
+    "main.js": "/kakvkino/static/js/main.454edc58.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.454edc58.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.d41ba491.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.d41ba491.js.map",
-    "static/js/2.2c86ad8e.chunk.js": "/kakvkino/static/js/2.2c86ad8e.chunk.js",
-    "static/js/2.2c86ad8e.chunk.js.map": "/kakvkino/static/js/2.2c86ad8e.chunk.js.map",
+    "static/js/2.6586b765.chunk.js": "/kakvkino/static/js/2.6586b765.chunk.js",
+    "static/js/2.6586b765.chunk.js.map": "/kakvkino/static/js/2.6586b765.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.6e2f3cfd2ead30c6b30b2e4483172659.js": "/kakvkino/precache-manifest.6e2f3cfd2ead30c6b30b2e4483172659.js",
+    "precache-manifest.cbfa073349b5c8ec248ecbf3d98e105a.js": "/kakvkino/precache-manifest.cbfa073349b5c8ec248ecbf3d98e105a.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.cca23c89.chunk.css.map": "/kakvkino/static/css/main.cca23c89.chunk.css.map",
-    "static/js/2.2c86ad8e.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.2c86ad8e.chunk.js.LICENSE.txt",
+    "static/css/main.51ef3c4f.chunk.css.map": "/kakvkino/static/css/main.51ef3c4f.chunk.css.map",
+    "static/js/2.6586b765.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.6586b765.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
     "static/media/audience_2019.svg": "/kakvkino/static/media/audience_2019.564642e8.svg",
@@ -33,7 +33,8 @@
     "static/media/graph_2_1.svg": "/kakvkino/static/media/graph_2_1.c5736cfc.svg",
     "static/media/graph_2_2.svg": "/kakvkino/static/media/graph_2_2.297b8408.svg",
     "static/media/m_graph_1_2.svg": "/kakvkino/static/media/m_graph_1_2.4842578c.svg",
-    "static/media/make_appointment.svg": "/kakvkino/static/media/make_appointment.f36616a6.svg",
+    "static/media/make_appointment.svg": "/kakvkino/static/media/make_appointment.ab163442.svg",
+    "static/media/make_appointment_blink.svg": "/kakvkino/static/media/make_appointment_blink.60d89963.svg",
     "static/media/moodboard_1.png": "/kakvkino/static/media/moodboard_1.03557206.png",
     "static/media/moodboard_2.png": "/kakvkino/static/media/moodboard_2.fcf0172b.png",
     "static/media/movie_0.png": "/kakvkino/static/media/movie_0.a7e12cd0.png",
@@ -65,8 +66,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d41ba491.js",
-    "static/js/2.2c86ad8e.chunk.js",
-    "static/css/main.cca23c89.chunk.css",
-    "static/js/main.73351df3.chunk.js"
+    "static/js/2.6586b765.chunk.js",
+    "static/css/main.51ef3c4f.chunk.css",
+    "static/js/main.454edc58.chunk.js"
   ]
 }
