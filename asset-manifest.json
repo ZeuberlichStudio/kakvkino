@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.48ac2c03.chunk.css",
-    "main.js": "/kakvkino/static/js/main.61685ecc.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.61685ecc.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.728b49a4.chunk.css",
+    "main.js": "/kakvkino/static/js/main.1e64d57d.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.1e64d57d.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.d41ba491.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.d41ba491.js.map",
-    "static/js/2.ce97fda2.chunk.js": "/kakvkino/static/js/2.ce97fda2.chunk.js",
-    "static/js/2.ce97fda2.chunk.js.map": "/kakvkino/static/js/2.ce97fda2.chunk.js.map",
+    "static/js/2.c98c79e4.chunk.js": "/kakvkino/static/js/2.c98c79e4.chunk.js",
+    "static/js/2.c98c79e4.chunk.js.map": "/kakvkino/static/js/2.c98c79e4.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.8522747906401243f64c7e11e41ce877.js": "/kakvkino/precache-manifest.8522747906401243f64c7e11e41ce877.js",
+    "precache-manifest.1c7154eddcaf89f4031b41a6b14fbb3f.js": "/kakvkino/precache-manifest.1c7154eddcaf89f4031b41a6b14fbb3f.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.48ac2c03.chunk.css.map": "/kakvkino/static/css/main.48ac2c03.chunk.css.map",
-    "static/js/2.ce97fda2.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.ce97fda2.chunk.js.LICENSE.txt",
+    "static/css/main.728b49a4.chunk.css.map": "/kakvkino/static/css/main.728b49a4.chunk.css.map",
+    "static/js/2.c98c79e4.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.c98c79e4.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
     "static/media/audience_2019.svg": "/kakvkino/static/media/audience_2019.564642e8.svg",
@@ -20,6 +20,7 @@
     "static/media/audience_2020.svg": "/kakvkino/static/media/audience_2020.dfc1b72e.svg",
     "static/media/audience_age.svg": "/kakvkino/static/media/audience_age.e03789cd.svg",
     "static/media/audience_groups.svg": "/kakvkino/static/media/audience_groups.e9520cd5.svg",
+    "static/media/chocolate_with_sea_salt_moodboard.jpg": "/kakvkino/static/media/chocolate_with_sea_salt_moodboard.91b0095d.jpg",
     "static/media/chocolate_with_sea_salt_poster.png": "/kakvkino/static/media/chocolate_with_sea_salt_poster.83e22b44.png",
     "static/media/clients.svg": "/kakvkino/static/media/clients.0dd725e3.svg",
     "static/media/eurasian_films.svg": "/kakvkino/static/media/eurasian_films.0ecbdf33.svg",
@@ -35,8 +36,6 @@
     "static/media/m_graph_1_2.svg": "/kakvkino/static/media/m_graph_1_2.4842578c.svg",
     "static/media/make_appointment.svg": "/kakvkino/static/media/make_appointment.ab163442.svg",
     "static/media/make_appointment_blink.svg": "/kakvkino/static/media/make_appointment_blink.60d89963.svg",
-    "static/media/moodboard_1.png": "/kakvkino/static/media/moodboard_1.27e922b6.png",
-    "static/media/moodboard_2.png": "/kakvkino/static/media/moodboard_2.f9986738.png",
     "static/media/movie_0.png": "/kakvkino/static/media/movie_0.a7e12cd0.png",
     "static/media/movie_1.png": "/kakvkino/static/media/movie_1.53024bc3.png",
     "static/media/movie_10.png": "/kakvkino/static/media/movie_10.fe93e32e.png",
@@ -56,6 +55,7 @@
     "static/media/plan.svg": "/kakvkino/static/media/plan.61e5adc2.svg",
     "static/media/poll.svg": "/kakvkino/static/media/poll.8684133a.svg",
     "static/media/stats_stages.svg": "/kakvkino/static/media/stats_stages.642db180.svg",
+    "static/media/status_love_moodboard.jpg": "/kakvkino/static/media/status_love_moodboard.d15d5f10.jpg",
     "static/media/status_love_poster.png": "/kakvkino/static/media/status_love_poster.d4316749.png",
     "static/media/title_stats_1.svg": "/kakvkino/static/media/title_stats_1.44513683.svg",
     "static/media/title_stats_2.svg": "/kakvkino/static/media/title_stats_2.6cdc901b.svg",
@@ -64,8 +64,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d41ba491.js",
-    "static/js/2.ce97fda2.chunk.js",
-    "static/css/main.48ac2c03.chunk.css",
-    "static/js/main.61685ecc.chunk.js"
+    "static/js/2.c98c79e4.chunk.js",
+    "static/css/main.728b49a4.chunk.css",
+    "static/js/main.1e64d57d.chunk.js"
   ]
 }
