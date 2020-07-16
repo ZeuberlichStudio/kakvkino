@@ -72,9 +72,6 @@ class MainPage extends Component {
           <About/>
           <Popcorn device={ this.props.device }/>
           <HowItWorks device={ this.props.device }/>
-          { this.props.vh }
-          <br/>
-          { this.props.vh2 }
           <Filming device={ this.props.device }/>
           <AboutUs/>
           <Statistics device={ this.props.device }/>

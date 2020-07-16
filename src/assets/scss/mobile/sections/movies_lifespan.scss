@@ -27,8 +27,14 @@ section.popcorn-section{
 
     h3, p{ padding-left: get-m-vw(5px); }
     h3{
+      position: relative;
       @include m-bebas-25-bold;
-      sup{ @include m-helvetica-12-medium; }
+      sup{
+        top: get-m-vw(-4px);
+        right: get-m-vw(-8px);
+        position: absolute;
+        @include m-helvetica-12-medium;
+      }
       &::before{
         width: get-m-vw(10px);
         height: get-m-vw(10px);
@@ -97,11 +103,20 @@ section.popcorn-section{
     border-radius: get-m-vw(8px);
     box-shadow: get-m-vw(1px) get-m-vw(3px) get-m-vw(6px) rgba(black, 0.15);
 
-    *:not(sup){ @include m-bebas-25-bold; }
+    *:not(sup){
+      position: relative;
+      @include m-bebas-25-bold;
+      letter-spacing: get-m-vw(-0.4px);
+    }
 
     h3 span{ color: #FF5B43; }
 
-    sup{ @include m-helvetica-12-medium; }
+    sup{
+      top: get-m-vw(-4px);
+      right: get-m-vw(-8px);
+      position: absolute;
+      @include m-helvetica-12-medium;
+    }
 
     img{
       width: 100%;

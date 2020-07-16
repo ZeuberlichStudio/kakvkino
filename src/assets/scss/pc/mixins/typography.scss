@@ -82,6 +82,12 @@
   line-height: get-vw(14px);
 }
 
+@mixin helvetica-10-medium{
+  font-family: 'Helvetica Neue';
+  font-weight: 500;
+  font-size: get-vw(10px);
+  line-height: get-vw(12px);
+}
 
 @mixin helvetica-12-regular{
   font-family: 'Helvetica Neue';

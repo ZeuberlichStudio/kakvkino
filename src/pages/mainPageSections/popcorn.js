@@ -33,15 +33,16 @@ const Popcorn = ({device}) => (
         <h3>
           Цена одного киноконтакта в <br className="pc-br"/>
           кинотеатре <span>на 40% ниже</span>, чем <br className="pc-br"/>
-          в ролике перед сеансом
+          в ролике <br className="m-br"/>
+          перед сеансом
         </h3>
         <div><span>Реклама в кино</span><span></span><span>343 коп<sup>2</sup></span></div>
-        <div><span>Ролик перед сеансом</span><span></span><span>483 коп</span>&nbsp;</div>
+        <div><span>Ролик перед сеансом</span><span></span><span>483 коп</span></div>
       </div>
 
       <div className="popcorn-section_text-left_notice">
         <span><sup>2</sup>До вычета инвестиционной доходности</span>
-        <span><sup>4</sup>Кинотеатры + интернет с учётом инвестиционной доходности</span>
+        <span><sup>3</sup>Кинотеатры + интернет с учётом инвестиционной доходности</span>
       </div>
     </div>
 
@@ -70,7 +71,7 @@ const Popcorn = ({device}) => (
           Интернете <span>(Mediascope, 2019)</span>
         </p>
         <span>
-          <sup>3</sup>Средняя аудитория российского фильма <br className="pc-br"/>
+          <sup>4</sup>Средняя аудитория российского фильма <br className="pc-br"/>
           &nbsp;&nbsp;состовляет 12.5 - 20 млн. чел.
         </span>
       </div>

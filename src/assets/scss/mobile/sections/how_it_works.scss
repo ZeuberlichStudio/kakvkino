@@ -4,9 +4,16 @@
   h1{ @include m-bebas-30-bold; }
   p{ @include m-helvetica-12-bold; }
   h1, p{ padding: 0 get-m-vw(20px); }
+  h2{
+    padding-left: get-m-vw(32px);
+    margin-top: get-m-vw(42px);
+    margin-bottom: get-m-vw(-26px);
+    @include m-bebas-22-bold;
+    position: relative;
+    z-index: 2;
+  }
 
   img{
-    margin-top: get-m-vw(42px);
     width: 100%;
     display: block;
   }

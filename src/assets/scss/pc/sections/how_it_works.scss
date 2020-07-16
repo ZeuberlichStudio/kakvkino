@@ -7,29 +7,31 @@ section#how-it-works{
 .section-how-it-works_text-left{
   flex-shrink: 0;
   width: get-vw(960px);
+  padding-left: get-vw(120px);
 
   h1{
     width: get-vw(412px);
-    margin-left: get-vw(115px);
     margin-top: get-vw(80px);
   }
   p{
-    width: get-vw(418px);
-    margin-left: get-vw(115px);
+    width: max-content;
     margin-top: get-vw(-5px);
+  }
+  h2{
+    margin-top: get-vw(36px);
+    @include bebas-20-bold;
   }
   img{
     width: get-vw(729px);
     height: auto;
-    margin-left: get-vw(90px);
-    margin-top: get-vw(20px);
+    margin-top: get-vw(14px);
   }
 }
 
 .section-how-it-works_text-right{
   flex-grow: 1;
   padding-left: get-vw(30px);
-  padding-top: get-vw(180px);
+  padding-top: get-vw(120px);
   background-color: $sand;
 
   img{

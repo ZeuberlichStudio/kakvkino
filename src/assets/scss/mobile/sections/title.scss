@@ -10,8 +10,9 @@ article{
   padding-bottom: get-m-vw(142px);
 
   h1{
-    width: get-m-vw(230px);
+    width: get-m-vw(280px);
     letter-spacing: get-m-vw(-0.6px);
+    @include m-bebas-35-bold;
   }
 
   p{

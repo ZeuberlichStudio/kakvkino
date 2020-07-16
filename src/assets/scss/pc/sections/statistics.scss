@@ -49,18 +49,18 @@ section#statistics .divider{
     flex-shrink: 0;
     width: get-vw(960px);
     height: 100%;
-    padding: get-vw(90px) get-vw(24px) 0 get-vw(100px);
+    padding: get-vw(90px) get-vw(24px) 0 get-vw(111px);
 
     display: grid;
     grid-template:
     repeat(3, max-content) /
     max-content 1fr;
-    grid-column-gap: get-vw(16px);
+    grid-column-gap: get-vw(10px);
     grid-row-gap: get-vw(10px);
 
     h1{
+      padding-left: get-vw(9px);
       grid-column: 1/3;
-      padding-left: get-vw(18px);
     }
 
     .slider{
@@ -143,7 +143,7 @@ section#statistics .divider{
           grid-row-gap: get-vw(10px);
 
           p{
-            padding-left: get-vw(18px);
+            padding-left: get-vw(9px);
             @include helvetica-14-bold;
           }
 

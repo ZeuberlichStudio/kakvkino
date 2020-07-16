@@ -3,8 +3,8 @@ import {useParams} from 'react-router-dom'
 import DialogWindow from 'components/dialogWindow.component'
 import Form from 'components/form.component'
 
-import poster_1 from 'assets/images/poster_1.svg'
-import poster_2 from 'assets/images/poster_2.svg'
+import chocolate_with_sea_salt_poster from 'assets/images/chocolate_with_sea_salt_poster.png'
+import status_love_poster from 'assets/images/status_love_poster.png'
 
 const MobileProjectPage = () => {
 
@@ -26,10 +26,10 @@ const Project1 = () => (
   <h1>Статус – любовь</h1>
   <div className="project-section_content">
     <div className="project-section_movie-info">
-      <img src={poster_1} alt=""/>
+      <img src={status_love_poster} alt=""/>
       <ul>
-        <li><span>Жанр:</span> Лирическая комедия</li>
-        <li><span>Хронометраж:</span> 100 мин</li>
+        <li><span>Жанр:</span> Новогодняя комедия</li>
+        <li><span>Хронометраж:</span> 90 мин</li>
         <li><span>Статус:</span> В подготовке</li>
         <li><span>Прогноз кинопроката:</span> 1.5 млн зрителей</li>
         <li><span>Дистрибьютор:</span> Стадия переговоров</li>
@@ -107,7 +107,7 @@ const Project2 = () => (
   <h1>Шоколад с морской солью</h1>
   <div className="project-section_content">
     <div className="project-section_movie-info">
-      <img src={poster_2} alt=""/>
+      <img src={chocolate_with_sea_salt_poster} alt=""/>
       <ul>
         <li><span>Жанр:</span> Лирическая комедия</li>
         <li><span>Хронометраж:</span> 100 мин</li>

@@ -10,9 +10,11 @@ const HowItWorks = ({device}) => (
       <h1 className="bebas-64 m-bebas-30">Как это работает?</h1>
       <p className="helvetica-14-bold m-helvetica-12-bold">
         Бюджеты рекламодателей формируют производственный
-        бюджет фильма. По итогам кинопроката начисляется
+        бюджет фильма. <br/>
+        По итогам кинопроката начисляется
         процент дохода согласно финансовой модели.
       </p>
+      <h2>Финансовая модель</h2>
       <img src={device === 'mobile' ? m_finance_model : finance_model} alt=""/>
     </div>
     <div className="section-how-it-works_text-right">

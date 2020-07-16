@@ -158,7 +158,7 @@
           left: 0; right: 0;
           top: get-m-vw(-8px);
           position: absolute;
-          border: get-m-vw(2px) solid #FF6969;
+          border: get-m-vw(2px) dashed #9D9AAD;
           border-radius: get-m-vw(6px);
           content: '';
         }

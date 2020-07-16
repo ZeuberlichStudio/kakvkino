@@ -274,10 +274,10 @@ const Tab1 = () => {
       {
         !mode ?
         <span className="notice">
-          Доход по тарифу, в соответствии с <a href="#stats"><u>финансовой моделью</u></a>
+          Доход по тарифу, в соответствии с <a href="#how-it-works"><u>финансовой моделью</u></a>
         </span> :
         <span className="notice">
-          Бюджет по тарифу, в соответствии с <a href="#stats"><u>финансовой моделью</u></a>
+          Бюджет по тарифу, в соответствии с <a href="#how-it-works"><u>финансовой моделью</u></a>
         </span>
       }
     <Toggle toggleFunction={toggleFunction} options={["Доход", "Рекламный бюджет"]}/>
@@ -308,6 +308,7 @@ const Tab2 = () => (
     </span>
     <table>
       <tbody>
+        <tr><th>Количество контактов с рекламой за первый год</th></tr>
         <tr>
           <th>По медиа каналам:</th>
           <th>Главная роль</th>

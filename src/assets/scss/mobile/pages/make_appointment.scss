@@ -5,7 +5,8 @@ section#make-appointment{
   position: absolute;
   padding: get-m-vw(20px);
   border-top: get-m-vw(2px) solid $black;
-  background: rgba($sand, 0.15);
+  background: rgba($sand, 0.5);
+  color: $black;
   backdrop-filter: blur(8px);
 
   /*h1{
@@ -49,20 +50,26 @@ section#make-appointment{
   grid-row-gap: get-m-vw(8px);
 
   input{
+    -webkit-appearance: none;
     height: get-m-vw(28px);
     padding-left: get-m-vw(4px);
     border-bottom: get-m-vw(2px) solid $black;
     @include m-bebas-20-bold;
   }
 
+  ::placeholder{
+    color: $black;
+  }
+
   button{
-    height: get-m-vw(28px);
+    height: get-m-vw(30px);
     margin-top: get-m-vw(14px);
     padding: 0 get-m-vw(10px);
     background: $black;
     color: $sand;
     border-radius: get-m-vw(4px);
     @include m-bebas-20-bold;
+    line-height: get-m-vw(30px);
   }
 }
 
