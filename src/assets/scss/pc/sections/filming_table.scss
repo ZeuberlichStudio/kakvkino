@@ -145,11 +145,12 @@
         &::after{
           width: get-vw(42px);
           height: get-vw(66px);
-          left: get-vw(-7px);
-          top: get-vw(-6.5px);
+          left: get-vw(-9px);
+          top: get-vw(-7.5px);
           position: absolute;
           display: block;
-          background: url('~assets/images/dashed_border.svg') center / contain no-repeat;
+          border: get-vw(2px) dashed #9D9AAD;
+          border-radius: get-vw(10px);
           content: '';
         }
       }

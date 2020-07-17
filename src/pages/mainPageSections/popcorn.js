@@ -42,7 +42,7 @@ const Popcorn = ({device}) => (
 
       <div className="popcorn-section_text-left_notice">
         <span><sup>2</sup>До вычета инвестиционной доходности</span>
-        <span><sup>3</sup>Кинотеатры + интернет с учётом инвестиционной доходности</span>
+        <span><sup>4</sup>Кинотеатры + интернет с учётом инвестиционной доходности</span>
       </div>
     </div>
 
@@ -71,7 +71,7 @@ const Popcorn = ({device}) => (
           Интернете <span>(Mediascope, 2019)</span>
         </p>
         <span>
-          <sup>4</sup>Средняя аудитория российского фильма <br className="pc-br"/>
+          <sup>3</sup>Средняя аудитория российского фильма <br className="pc-br"/>
           &nbsp;&nbsp;состовляет 12.5 - 20 млн. чел.
         </span>
       </div>

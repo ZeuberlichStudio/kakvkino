@@ -8,6 +8,7 @@
 #about--article{
   width: 100%;
   height: var(--vh);
+  max-height: get-m-vw(735px);
   padding: get-m-vw(60px) get-m-vw(20px) get-m-vw(40px) get-m-vw(20px);
 
   display: grid;
@@ -68,7 +69,7 @@
    left top,
    right 200vw top,
    right 100vw top,
-   right get-m-vw(-36px) top!important;
+   right get-m-vw(-710px) top!important;
 }
 
 .about--controls{

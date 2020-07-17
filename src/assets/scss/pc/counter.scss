@@ -15,24 +15,24 @@
 
 #timeline-container{
   width: calc(100vh - 2.65625vw);
-  height: get-vw(66px);
-  left: 0; top: 0;
+  height: get-vw(48px);
+  left: get-vw(10px); top: get-vw(-2px);
   position: absolute;
 
   overflow: hidden;
-  transform-origin: get-vw(30px);
+  transform-origin: get-vw(22px);
   transform: rotate(90deg);
 }
 
 #timeline{
-  width: get-vw(14979px);
-  height: get-vw(42px);
+  width: get-vw(29838px + 68px);
+  height: get-vw(33px);
 
-  background-image: url('~assets/images/timeline2.3.svg');
-  background-size: get-vw(14979px) auto;
-  background-position: left get-vw(-104px) bottom get-vw(0px);
+  background-image: url('~assets/images/timeline.svg');
+  background-size: get-vw(29838px) auto;
+  background-position: left get-vw(34px) top get-vw(0px);
   background-repeat: no-repeat;
-
+  opacity: 0.75;
   transform-origin: left center;
   will-change: transform background-position;
 }
