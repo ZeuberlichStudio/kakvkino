@@ -11,11 +11,38 @@
   padding: get-vw(16px);
 
   h1{ @include bebas-64-bold; }
-  img{
-    width: 100%;
-    display: block;
+
+  &_images{
     margin-top: get-vw(12px);
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-column-gap: get-vw(20px);
+
+    &::before{
+      width: get-vw(2px);
+      height: get-vw(228px);
+      left: get-vw(185px);
+      top: get-vw(10px);
+      position: absolute;
+      background: $black;
+      content: '';
+    }
+
+    &_poster{
+      width: get-vw(175px);
+      display: inline-block;
+      border-radius: get-vw(8px);
+    }
+
+    &_moodboard{
+      width: get-vw(437px);
+      display: inline-block;
+    }
   }
+
   h2{
     margin-top: get-vw(26px);
     @include bebas-30-bold;
@@ -29,6 +56,8 @@
 .project-section_text-right{
   width: get-vw(320px);
   padding: get-vw(16px);
+  padding-top: get-vw(82px);
+  position: relative;
 
   &_movie-info{
     h2{ @include bebas-30-bold; }
@@ -43,7 +72,7 @@
   }
 
   &_development-schedule{
-    margin-top: get-vw(58px);
+    margin-top: get-vw(110px);
     position: relative;
     display: grid;
     grid-auto-rows: max-content;
@@ -85,15 +114,15 @@
         content: '';
       }
     }
+  }
 
-    &::before{
-      width: get-vw(2px);
-      top: get-vw(68px);
-      bottom: 0;
-      left: get-vw(-16px);
-      position: absolute;
-      background: $black;
-      content: '';
-    }
+  &::before{
+    width: get-vw(2px);
+    top: get-vw(100px);
+    bottom: get-vw(24px);
+    left: 0;
+    position: absolute;
+    background: $black;
+    content: '';
   }
 }

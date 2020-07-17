@@ -37,18 +37,19 @@
     }
 
     h3{
+      height: max-content;
       padding-top: get-m-vw(2px);
       @include m-bebas-20-bold;
     }
 
     ul{
       @include m-helvetica-12-bold;
-      margin-top: get-m-vw(5px);
       display: grid;
       grid-auto-rows: max-content;
       grid-row-gap: get-m-vw(4px);
 
       span{ color: rgba($black, 0.7); }
+      & > :last-child { display: none; }
     }
 
     & > p{

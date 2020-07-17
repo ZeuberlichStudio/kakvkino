@@ -3,8 +3,10 @@ import {useParams} from 'react-router-dom'
 import DialogWindow from 'components/dialogWindow.component'
 import Form from 'components/form.component'
 //Images
-import moodboard_1 from 'assets/images/moodboard_1.png'
-import moodboard_2 from 'assets/images/moodboard_2.png'
+import chocolate_with_sea_salt_poster from 'assets/images/chocolate_with_sea_salt_poster.png'
+import status_love_poster from 'assets/images/status_love_poster.png'
+import chocolate_with_sea_salt_moodboard from 'assets/images/chocolate_with_sea_salt_moodboard.png'
+import status_love_moodboard from 'assets/images/status_love_moodboard.png'
 
 const ProjectPage = () => {
 
@@ -25,7 +27,10 @@ const Project1 = () => (
   <Fragment>
     <div className="project-section_text-left">
       <h1>Статус – любовь</h1>
-      <img src={moodboard_1} alt=""/>
+        <div className="project-section_text-left_images">
+          <img src={status_love_poster} alt="" className="project-section_text-left_images_poster"/>
+          <img src={status_love_moodboard} alt="" className="project-section_text-left_images_moodboard"/>
+        </div>
       <h2>Синопсис:</h2>
       <p>
         Жизнь тридцатилетнего биолога Игоря Белкина – работа в московском зоопарке и искренняя привязанность к животным, жизнь двадцатисемилетней популярной блогерши Насти Даниловой – погоня за славой и рекламными контрактами. Он живёт в мире настоящем, она – в эфемерном виртуальном. Невозможно представить двух более разных людей, чем звезда инстаграма Настя с ее девизом «все напоказ», и серьезный Игорь, в принципе не имеющий аккаунта в социальных сетях; общее у них только одно – взаимное притяжение друг к другу. Кажется, что весь мир против их любви, да и друзья Насти уверяют, что Игорь ей не пара, однако судьба вновь и вновь сводит наших героев.
@@ -35,7 +40,6 @@ const Project1 = () => (
     </div>
     <div className="project-section_text-right">
       <div className="project-section_text-right_movie-info">
-        <h2>Информация о фильме:</h2>
         <ul>
           <li><span>Жанр:</span> Новогодняя комедия</li>
           <li><span>Хронометраж:</span> 90 мин</li>
@@ -110,7 +114,10 @@ const Project2 = () => (
   <Fragment>
     <div className="project-section_text-left">
       <h1>Шоколад с морской солью</h1>
-      <img src={moodboard_2} alt=""/>
+      <div className="project-section_text-left_images">
+        <img src={chocolate_with_sea_salt_poster} alt="" className="project-section_text-left_images_poster"/>
+        <img src={chocolate_with_sea_salt_moodboard} alt="" className="project-section_text-left_images_moodboard"/>
+      </div>
       <h2>Синопсис:</h2>
       <p>
         Благополучная жизнь талантливого московского кондитера Евгения Сяпкина, после развода с женой в одиночку воспитывающего десятилетнюю дочь Сашу, меняется после того как суровая директриса кондитерской фабрики Натэлла Климова - просит Евгения сыграть роль ее жениха, чтобы отвести от неё подозрения в возобновлении романа с её бывшим возлюбленным - Максом. 
@@ -126,7 +133,6 @@ const Project2 = () => (
     </div>
     <div className="project-section_text-right">
       <div className="project-section_text-right_movie-info">
-        <h2>Информация о фильме:</h2>
         <ul>
           <li><span>Жанр:</span> Лирическая комедия</li>
           <li><span>Хронометраж:</span> 100 мин</li>

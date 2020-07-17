@@ -25,6 +25,7 @@ section#how-it-works{
     width: get-vw(729px);
     height: auto;
     margin-top: get-vw(14px);
+    filter: drop-shadow(get-vw(1px) get-vw(3px) get-vw(6px) rgba(black, 0.15));
   }
 }
 

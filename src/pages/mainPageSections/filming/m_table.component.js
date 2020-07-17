@@ -225,7 +225,7 @@ const Tab3 = () => (
   <div className="filming-section_table_profit-forecast">
     <span className="notice">
       Доход по тарифу, <br/>
-    в соответствии с <a href="#how-it-works">финансовой моделью</a>&nbsp;<span>(РУБ)</span>
+    в соответствии с <a href="#how-it-works"><u>финансовой моделью</u></a>&nbsp;<span>(РУБ)</span>
     </span>
     <div className="filming-section_table_profit-forecast_left">
       <table>

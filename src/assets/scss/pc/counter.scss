@@ -25,12 +25,12 @@
 }
 
 #timeline{
-  width: get-vw(14979px);
+  width: /*get-vw(14979px)*/ get-vw(8400px);
   height: get-vw(42px);
 
-  background-image: url('~assets/images/timeline2.3.svg');
-  background-size: get-vw(14979px) auto;
-  background-position: left get-vw(-104px) bottom get-vw(0px);
+  background-image: url('~assets/images/timeline_test.svg');
+  background-size: /*get-vw(14979px)*/ get-vw(8400px) auto;
+  background-position: left 0 /*get-vw(-104px)*/ bottom 0;
   background-repeat: no-repeat;
 
   transform-origin: left center;
