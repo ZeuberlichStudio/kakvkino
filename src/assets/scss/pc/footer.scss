@@ -1,7 +1,7 @@
 @keyframes play {
- 50%{ opacity: 0; }
- 75%{ opacity: 1; }
- 100%{ opacity: 0; }
+ 70%{ filter: drop-shadow(0 0 get-vw(7px) rgba(#9FBCFF, 0.85)); }
+ 85%{ filter: drop-shadow(0 0 get-vw(15px) rgba(#9FBCFF, 0.85)); }
+ 100%{ filter: drop-shadow(0 0 get-vw(7px) rgba(#9FBCFF, 0.85)); }
 }
 
 #pre-footer{
@@ -9,45 +9,45 @@
   height: max-content;
   padding: get-vw(48px) get-vw(130px) 0 get-vw(120px);
   margin-bottom: get-vw(-1px);
-
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   background-color: $black;
   color: $sand;
   z-index: 5;
 
   a{
-    display: block;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     img{
-      width: get-vw(206px);
+      width: get-vw(200px);
       display: block;
     }
-    img.blink{
+    &::before{
+      width: get-vw(48.5px);
+      height: get-vw(58px);
       position: absolute;
-      top: 0; left: 0;
-      opacity: 0;
+      top: get-vw(79px); left: get-vw(78px);
+      background: url('~assets/images/make_appointment_play.svg') center / contain no-repeat;
+      filter: drop-shadow(0 0 get-vw(7px) rgba(#9FBCFF, 0.85));
       animation-name: play;
       animation-play-state: running;
-      animation-duration: 2s;
-      animation-delay: 1s;
+      animation-duration: 2.5s;
       animation-iteration-count: infinite;
+      content: '';
+    }
+
+
+    h2{
+      text-align: right;
     }
   }
 
   a:hover{
-    img.blink{
-      opacity: 1!important;
+    &::before{
+      filter: drop-shadow(0 0 get-vw(20px) rgba(#9FBCFF, 1))!important;
       animation-play-state: paused;
     }
-  }
-
-  h2{
-    text-align: right;
   }
 
   br:first-child{ display: none; }

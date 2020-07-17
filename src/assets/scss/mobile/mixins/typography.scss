@@ -19,6 +19,13 @@
   line-height: get-m-vw(25px)!important;
 }
 
+@mixin m-bebas-24-bold {
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-m-vw(24px)!important;
+  line-height: get-m-vw(24px)!important;
+}
+
 @mixin m-bebas-22-bold {
   font-family: 'Bebas Neue';
   font-weight: normal;

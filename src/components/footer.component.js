@@ -12,12 +12,11 @@ export default class Footer extends Component{
         <div id="pre-footer">
           <Link to="/make-appointment">
             <img src={make_appointment} alt=""/>
-            <img className="blink" src={make_appointment_blink} alt=""/>
+            <h2 className="bebas-64">
+              Пришло время<br/> включить магию кино<br/>
+              В свою рекламную кампанию
+            </h2>
           </Link>
-          <h2 className="bebas-64 m-bebas-30">
-            Пришло время<br/> включить магию кино<br/>
-            В свою рекламную кампанию
-          </h2>
         </div>
         <footer id="footer" className="footer">
           <div className="footer_contact-info">
