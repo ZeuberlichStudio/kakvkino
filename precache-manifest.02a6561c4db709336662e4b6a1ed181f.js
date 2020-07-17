@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f827374b9a3bc1e1f4626b28608588e",
+    "revision": "02c0544cc628689ed6aa33cd72069187",
     "url": "/kakvkino/index.html"
   },
   {
-    "revision": "8ec65a2e2d8f98944873",
-    "url": "/kakvkino/static/css/main.677a8332.chunk.css"
+    "revision": "24025728482333d9c69e",
+    "url": "/kakvkino/static/css/main.e18587cf.chunk.css"
   },
   {
     "revision": "fd24311b2ba2e6a90080",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/js/2.c98c79e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ec65a2e2d8f98944873",
+    "revision": "24025728482333d9c69e",
     "url": "/kakvkino/static/js/main.298eca06.chunk.js"
   },
   {
@@ -110,10 +110,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e2df32a301a75282636acab7cd002d32",
     "url": "/kakvkino/static/media/close.e2df32a3.svg"
-  },
-  {
-    "revision": "d2acf56a87ec24775fbcf5938a972a5d",
-    "url": "/kakvkino/static/media/dashed_border.d2acf56a.svg"
   },
   {
     "revision": "0ecbdf33541884ba6141a068924de1fc",
