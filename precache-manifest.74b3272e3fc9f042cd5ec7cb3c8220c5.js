@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2a7358e778ae196ab3658487bf6a486",
+    "revision": "f7aea4f5c4028bed4f8dda0974d9c0a3",
     "url": "/kakvkino/index.html"
   },
   {
-    "revision": "107c6736a62dae0b45a3",
-    "url": "/kakvkino/static/css/main.69dd641f.chunk.css"
+    "revision": "6ae0c98452d9557047fe",
+    "url": "/kakvkino/static/css/main.ead8bb29.chunk.css"
   },
   {
     "revision": "2b23aedb8491c4fdd893",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakvkino/static/js/2.dbb525e5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "107c6736a62dae0b45a3",
+    "revision": "6ae0c98452d9557047fe",
     "url": "/kakvkino/static/js/main.ff826346.chunk.js"
   },
   {
