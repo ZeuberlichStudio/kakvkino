@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/kakvkino/static/css/main.269b0f25.chunk.css",
-    "main.js": "/kakvkino/static/js/main.20ce45ed.chunk.js",
-    "main.js.map": "/kakvkino/static/js/main.20ce45ed.chunk.js.map",
+    "main.css": "/kakvkino/static/css/main.f465ca84.chunk.css",
+    "main.js": "/kakvkino/static/js/main.28058936.chunk.js",
+    "main.js.map": "/kakvkino/static/js/main.28058936.chunk.js.map",
     "runtime-main.js": "/kakvkino/static/js/runtime-main.d41ba491.js",
     "runtime-main.js.map": "/kakvkino/static/js/runtime-main.d41ba491.js.map",
     "static/js/2.dbb525e5.chunk.js": "/kakvkino/static/js/2.dbb525e5.chunk.js",
     "static/js/2.dbb525e5.chunk.js.map": "/kakvkino/static/js/2.dbb525e5.chunk.js.map",
     "index.html": "/kakvkino/index.html",
-    "precache-manifest.49fa90589b4e646f4dbaede3e833bc84.js": "/kakvkino/precache-manifest.49fa90589b4e646f4dbaede3e833bc84.js",
+    "precache-manifest.4dcf0ebfb71e927062c995541e935cf0.js": "/kakvkino/precache-manifest.4dcf0ebfb71e927062c995541e935cf0.js",
     "service-worker.js": "/kakvkino/service-worker.js",
-    "static/css/main.269b0f25.chunk.css.map": "/kakvkino/static/css/main.269b0f25.chunk.css.map",
+    "static/css/main.f465ca84.chunk.css.map": "/kakvkino/static/css/main.f465ca84.chunk.css.map",
     "static/js/2.dbb525e5.chunk.js.LICENSE.txt": "/kakvkino/static/js/2.dbb525e5.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kakvkino/static/media/HelveticaNeue-Regular.88b7a427.woff",
     "static/media/App.scss": "/kakvkino/static/media/wa_icon.91c2df27.svg",
     "static/media/audience_2019.svg": "/kakvkino/static/media/audience_2019.564642e8.svg",
     "static/media/audience_2019_1.svg": "/kakvkino/static/media/audience_2019_1.6876dfd7.svg",
     "static/media/audience_2019_2.svg": "/kakvkino/static/media/audience_2019_2.5f8ea343.svg",
-    "static/media/audience_2020.svg": "/kakvkino/static/media/audience_2020.dfc1b72e.svg",
-    "static/media/audience_age.svg": "/kakvkino/static/media/audience_age.e03789cd.svg",
+    "static/media/audience_2020.svg": "/kakvkino/static/media/audience_2020.f24c18d4.svg",
+    "static/media/audience_age.svg": "/kakvkino/static/media/audience_age.63c23f1a.svg",
     "static/media/audience_groups.svg": "/kakvkino/static/media/audience_groups.e9520cd5.svg",
     "static/media/chocolate_with_sea_salt_moodboard.png": "/kakvkino/static/media/chocolate_with_sea_salt_moodboard.17b0ff82.png",
     "static/media/chocolate_with_sea_salt_poster.png": "/kakvkino/static/media/chocolate_with_sea_salt_poster.5cea1c0c.png",
@@ -65,7 +65,7 @@
   "entrypoints": [
     "static/js/runtime-main.d41ba491.js",
     "static/js/2.dbb525e5.chunk.js",
-    "static/css/main.269b0f25.chunk.css",
-    "static/js/main.20ce45ed.chunk.js"
+    "static/css/main.f465ca84.chunk.css",
+    "static/js/main.28058936.chunk.js"
   ]
 }
