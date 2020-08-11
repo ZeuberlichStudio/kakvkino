@@ -4,6 +4,8 @@
   justify-content: center;
   background: $sand;
   color: $black;
+  border-radius: get-vw(8px);
+  border: get-vw(2px) solid $black;
 }
 
 .project-section_text-left{
@@ -33,19 +35,22 @@
 
     &_poster{
       width: get-vw(175px);
-      display: inline-block;
+      height: get-vw(248px);
+      display: block;
       border-radius: get-vw(8px);
     }
 
     &_moodboard{
       width: get-vw(437px);
-      display: inline-block;
+      height: get-vw(248px);
+      display: block;
     }
   }
 
   h2{
     margin-top: get-vw(26px);
     @include bebas-30-bold;
+    position: relative;
   }
   p{
     margin-top: get-vw(8px);
@@ -72,7 +77,7 @@
   }
 
   &_development-schedule{
-    margin-top: get-vw(110px);
+    margin-top: get-vw(106px);
     position: relative;
     display: grid;
     grid-auto-rows: max-content;

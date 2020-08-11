@@ -49,7 +49,7 @@ section#statistics .divider{
     flex-shrink: 0;
     width: get-vw(960px);
     height: 100%;
-    padding: get-vw(90px) get-vw(24px) 0 get-vw(111px);
+    padding: get-vw(50px) get-vw(24px) 0 get-vw(111px);
 
     display: grid;
     grid-template:
@@ -184,7 +184,7 @@ section#statistics .divider{
     flex-grow: 1;
     height: 100%;
     padding: 0 get-vw(14px);
-    padding-top: get-vw(90px);
+    padding-top: get-vw(50px);
 
     position: relative;
     background-color: $sand;
@@ -194,12 +194,12 @@ section#statistics .divider{
     //first block
     & > div:nth-child(1){
       padding: get-vw(10px);
-
+      border-radius: get-vw(8px);
       background-color: $sand;
       box-shadow: 0px get-vw(2px) get-vw(6px) 0px rgba(0,0,0,0.18);
 
       img{
-        width: 100%;
+        width: 95%;
         height: auto;
         margin-top: get-vw(10px);
       }
@@ -215,7 +215,7 @@ section#statistics .divider{
         position: absolute;
       }
 
-      & > span:nth-child(3){ margin-top: get-vw(292px); }
+      & > span:nth-child(3){ margin-top: get-vw(16px); }
       & > span:nth-child(4){ margin-top: get-vw(10px); }
     }
   }
@@ -254,12 +254,8 @@ section#statistics .divider{
 #movie-slider{
   width: get-vw(320px);
   height: get-vw(267.95px);
-
-  left: 0;
-  bottom: get-vw(130px);
-
-  position: absolute;
-
+  margin-top: get-vw(24px);
+  position: relative;
   display: flex;
   align-items: center;
 

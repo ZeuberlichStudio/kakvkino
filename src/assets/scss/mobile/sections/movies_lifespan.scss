@@ -3,6 +3,8 @@ section.popcorn-section{
   position: relative;
   h1{ display: none; }
   br.pc-br{ display: none; }
+  background:
+  linear-gradient($sand 95%, rgba(255, 250, 236, 0) 100% );
 }
 
 .popcorn-section_text-right{
@@ -109,7 +111,10 @@ section.popcorn-section{
       letter-spacing: get-m-vw(-0.4px);
     }
 
-    h3 span{ color: #FF5B43; }
+    h3{
+      span{ color: #FF5B43; }
+      letter-spacing: get-m-vw(-0.7px);
+    }
 
     sup{
       top: get-m-vw(-4px);

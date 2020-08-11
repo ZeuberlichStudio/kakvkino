@@ -4,7 +4,8 @@ section.popcorn-section{
   position: relative;
   display: flex;
   justify-content: space-between;
-  background: $sand;
+  background:
+  linear-gradient($sand 90%, rgba(255, 250, 236, 0) 100% );
 
   h1{
     left: get-vw(536px);
@@ -96,6 +97,7 @@ section.popcorn-section{
   display: grid;
   grid-auto-rows: max-content;
   grid-row-gap: get-vw(14px);
+  background: $sand;
 
   &_block{
     width: get-vw(270px);

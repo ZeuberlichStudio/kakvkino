@@ -18,7 +18,7 @@ export default class Header extends Component{
           <nav>
             <ul>
               <li onClick={ e => this.goToAnchor(e) } data-link="how-it-works" className="nav-link">Как это работает</li>
-              <li onClick={ e => this.goToAnchor(e) } data-link="filming-anchor" className="nav-link">Что снимаем</li>
+              <li onClick={ e => this.goToAnchor(e) } data-link="filming" className="nav-link">Что снимаем</li>
               <li onClick={ e => this.goToAnchor(e) } data-link="about-us" className="nav-link">Кто мы</li>
               <li onClick={ e => this.goToAnchor(e) } data-link="statistics" className="nav-link">Статистика</li>
               <li onClick={ e => this.goToAnchor(e) } className="nav-link" onClick={ this.props.onClick }>Контакты</li>

@@ -43,7 +43,6 @@ article{
 }
 
 article.title--aside{
-
   padding-bottom: get-m-vw(82px);
   ul{
     margin-top: get-m-vw(50px);
@@ -51,6 +50,12 @@ article.title--aside{
     display: grid;
     grid-auto-flow: row;
     grid-row-gap: get-m-vw(16px);
+    justify-content: center;
+
+    img{
+      width: get-m-vw(288px);
+      display: block;
+    }
   }
   .notice{
     width: get-m-vw(198px);

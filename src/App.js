@@ -14,11 +14,11 @@ import MobileProjectPage from 'pages/m_project';
 import Movies from 'pages/movies';
 import MobileMovies from 'pages/m_movies';
 import MakeAppointment from 'pages/make_appointment';
+import Policy from 'pages/policy';
 
 class App extends React.Component {
 
   componentDidMount() {
-    this.getDevice();
     window.addEventListener('resize', this.getDevice);
   }
 
@@ -28,25 +28,30 @@ class App extends React.Component {
     }
   }
 
-  state = {
-    device: 'mobile'
+  includesAnchor = () => {
+    if( typeof window === "undefined" ) return;
+    return !!window.location.hash;
   }
 
   getDevice = () => {
-    this.setState({ device: document.documentElement.clientWidth <= 1024 ? 'mobile' : 'desktop' });
     let vh = window.innerHeight;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+    return window.innerWidth <= 1024 ? 'mobile' : 'desktop';
+  }
+
+  state = {
+    device: this.getDevice(),
+    pathIncludesAnchor: this.includesAnchor(),
   }
 
   render(){
 
-    const { device } = this.state;
+    const { device, pathIncludesAnchor } = this.state;
 
     return (
       <Fragment>
-        { device !== 'mobile' ? <Counter/> : null }
-        { device !== 'mobile' ? <Animation/> : null }
-
+        { device !== 'mobile' && <Counter/> }
+        { device !== 'mobile' && !pathIncludesAnchor && <Animation/> }
 
         <Route path="/">
           <MainPage device={device}/>
@@ -67,6 +72,12 @@ class App extends React.Component {
         <Route exact path="/make-appointment">
           <ModalWrapper>
             <MakeAppointment/>
+          </ModalWrapper>
+        </Route>
+
+        <Route exact path="/privacy-policy">
+          <ModalWrapper>
+            <Policy/>
           </ModalWrapper>
         </Route>
       </Fragment>

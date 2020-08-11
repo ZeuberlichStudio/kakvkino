@@ -4,7 +4,6 @@ export default class Form extends Component{
   render() {
     return(
       <div className="form-wrapper">
-        <button onClick={ this.props.closeForm } id="close-form"></button>
         <h2 className="m-bebas-20">Форма запроса</h2>
         <p className="m-helvetica-12-bold">Заполните форму и мы с вами свяжемся</p>
         <form id="form">

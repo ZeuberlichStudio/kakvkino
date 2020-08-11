@@ -1,43 +1,44 @@
 import React from 'react';
 //Images
-import online_price from 'assets/images/online_price.svg';
+import online_pricing from 'assets/images/online_pricing.svg';
 //Animation data
 import popcorn from 'assets/json/popcorn.json';
 
 //Section
 const Popcorn = ({device}) => (
   <section id="cinema-lifespan" className="popcorn-section">
-    <h1>Жизненный цикл кино за год</h1>
+    <h1>Жизненный цикл кино в 1й год</h1>
     <div className="popcorn-section_text-left">
       <h2>
         Кино обеспечивает<br/>
         Длительный охват<br/>
         <span>
           и более эффективную стоимость <br className="m-br"/>
-          контакта<br className="pc-br"/>
-        по сравнению <br className="m-br"/>
+          контакта <br className="pc-br"/>
+          по сравнению <br className="m-br"/>
           с аналогами
         </span>
       </h2>
 
       <div className="popcorn-section_text-left_block">
         <h3>
-          Цена одного киноконтакта в <br className="pc-br"/>
-          интернете <span>в 3 раза ниже</span>, чем <br className="pc-br"/>
-          в видео на Youtube
+          Цена одного киноконтакта <br className="pc-br"/>
+          в интернете <br className="m-br"/>
+          на <span>53% выгоднее</span>, <br className="pc-br"/>
+          чем в видео на Youtube
         </h3>
-        <img src={online_price} alt=""/>
+        <img src={online_pricing} alt=""/>
       </div>
 
       <div className="popcorn-section_text-left_block">
         <h3>
-          Цена одного киноконтакта в <br className="pc-br"/>
-          кинотеатре <span>на 40% ниже</span>, чем <br className="pc-br"/>
-          в ролике <br className="m-br"/>
+          Цена одного киноконтакта <br className="pc-br"/>
+          в кинотеатре на <span>20% выгоднее</span>, <br className="pc-br"/>
+          чем в ролике <br className="m-br"/>
           перед сеансом
         </h3>
-        <div><span>Реклама в кино</span><span></span><span>343 коп<sup>2</sup></span></div>
-        <div><span>Ролик перед сеансом</span><span></span><span>483 коп</span></div>
+        <div><span>Реклама в кино</span><span></span><span>3.89 руб.<sup>2</sup></span></div>
+        <div><span>Ролик перед сеансом</span><span></span><span>4.83 руб.</span></div>
       </div>
 
       <div className="popcorn-section_text-left_notice">

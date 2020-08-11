@@ -14,7 +14,7 @@ section#title{
   background-repeat: no-repeat;
 
   article:not(.title--aside){
-    padding: get-vw(216px) get-vw(678px) 0 get-vw(120px);
+    padding: get-vh(216px) get-vw(678px) 0 get-vw(120px);
     flex-grow: 1;
 
 
@@ -31,7 +31,7 @@ section#title{
     }
 
     .links-container{
-      height: get-vw(38px);
+      height: get-vw(32px);
       margin-top: get-vw(18px);
 
       display: grid;
@@ -40,8 +40,8 @@ section#title{
       grid-column-gap: get-vw(12px);
 
       div{
-        padding: 0 get-vw(18px);
-        padding-top: get-vw(10px);
+        padding: 0 get-vw(15px);
+        padding-top: get-vw(7px);
 
         background-color: $black;
         border-radius: get-vw(3px);
@@ -91,13 +91,11 @@ section#title{
 
         display: grid;
         grid-auto-flow: row;
-        grid-template-rows: get-vw(90px) get-vw(68.22px) get-vw(71.82px) get-vw(71.82px);
+        grid-template-rows: max-content;
         grid-row-gap: get-vw(10px);
 
         img{
-          width: auto;
-          height: 100%;
-
+          width: get-vw(244px);
           display: block;
         }
       }
@@ -106,7 +104,7 @@ section#title{
         width: get-vw(198px);
         margin-left: get-vw(16px);
         margin-top: get-vw(20px);
-
+        font-weight: bold;
         display: inline-block;
       }
     }

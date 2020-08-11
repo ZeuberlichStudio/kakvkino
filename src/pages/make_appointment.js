@@ -1,5 +1,6 @@
 import React from 'react';
 import From from 'components/form.component';
+import {Link} from 'react-router-dom';
 
 const MakeAppointment = () => {
   return(
@@ -16,7 +17,7 @@ const MakeAppointment = () => {
       </form>
       <span className="section-make-appointment_policy">
         Нажимая кнопку «Отправить» вы подтверждаете своё согласие с <br/>
-      <u>политикой обработки персональных данных</u>
+      <Link to="/privacy-policy"><u>политикой обработки персональных данных</u></Link>
       </span>
     </section>
   );

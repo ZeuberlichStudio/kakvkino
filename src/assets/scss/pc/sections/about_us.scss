@@ -15,7 +15,7 @@ section#about-us{
     flex-shrink: 0;
     width: get-vw(960px);
     height: 100%;
-    padding: get-vw(90px) 0 get-vw(40px) get-vw(120px);
+    padding: get-vw(50px) 0 get-vw(40px) get-vw(120px);
 
     display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@ section#about-us{
 
   div.text-right-container{
     height: 100%;
-    padding: get-vw(123px) get-vw(8px) 0 get-vw(14px);
+    padding: get-vw(50px) get-vw(8px) 0 get-vw(14px);
 
     position: relative;
     display: grid;

@@ -2,10 +2,11 @@
 
 .filming-section{
   height: max-content;
-  padding: get-vw(32px) 0;
+  padding: get-vw(50px) 0;
   padding-left: get-vw(120px);
+  padding-bottom: get-vw(90px);
   position: relative;
-
+  overflow: hidden;
   color: $black;
 
   & > h2{ @include bebas-64-bold; }
@@ -103,10 +104,14 @@
 
 .filming-section_aside{
   width: get-vw(320px);
-  height: max-content;
-  padding: get-vw(53px) get-vw(18px);
+  height: 100%;
+  padding: get-vw(90px) get-vw(16px);
+  padding-top: get-vw(148.8px);
   left: 0; top: 0;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: $sand;
 
   &_reference{
@@ -138,17 +143,16 @@
     }
   }
 
-  & > h3{
-    margin-top: get-vw(46px);
-    @include bebas-30-bold;
-  }
-
   &_projects{
     width: 100%;
-    margin-top: get-vw(18px);
     display: grid;
     grid-auto-rows: max-content;
-    grid-row-gap: get-vw(32px);
+    grid-row-gap: get-vw(46.8px);
+
+    & > h3{
+      margin-bottom: get-vw(-32.8px);
+      @include bebas-30-bold;
+    }
 
     &_project{
       width: 100%;

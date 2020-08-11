@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 //images
 
-import stats1 from 'assets/images/title/title_stats_1.svg';
-import stats2 from 'assets/images/title/title_stats_2.svg';
-import stats3 from 'assets/images/title/title_stats_3.svg';
-import stats4 from 'assets/images/title/title_stats_4.svg';
+import stats1 from 'assets/images/example_0.svg';
+import stats2 from 'assets/images/example_1.svg';
+import stats3 from 'assets/images/example_2.svg';
+import stats4 from 'assets/images/example_3.svg';
 
 export default class Title extends Component{
 
@@ -27,8 +27,8 @@ export default class Title extends Component{
           <h2 className="bebas-30 m-bebas-25">
             <a href="#cinema-lifespan">
               получите свыше <span className="marked">14 000 000</span> контактов<br/>
-              с вашей рекламой в 1й год по<br/>
-              цене <span className="marked">6 копеек</span> за контакт
+              с вашей рекламой в 1й год<br/>
+              по стоимости <span className="marked">0.21 руб.</span> за контакт
             </a>
           </h2>
           <div className="links-container bebas-20 m-bebas-20 light">

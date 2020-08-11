@@ -183,7 +183,7 @@ const Tab2 = () => (
             <tr><td>180 сек</td></tr>
             <tr><td>Да</td></tr>
             <tr><td>20</td></tr>
-            <tr><td>21 000 000</td></tr>
+            <tr><td>34 980 000</td></tr>
           </tbody>
         </table>
 
@@ -198,7 +198,7 @@ const Tab2 = () => (
             <tr><td>60 сек</td></tr>
             <tr><td>Да</td></tr>
             <tr><td>6</td></tr>
-            <tr><td>7 000 000</td></tr>
+            <tr><td>11 660 000</td></tr>
           </tbody>
         </table>
 
@@ -213,7 +213,7 @@ const Tab2 = () => (
             <tr><td>30 сек</td></tr>
             <tr><td>Нет</td></tr>
             <tr><td>2</td></tr>
-            <tr><td>3 500 000</td></tr>
+            <tr><td>5 830 000</td></tr>
           </tbody>
         </table>
       </Slider>
@@ -231,15 +231,15 @@ const Tab3 = () => (
       <table>
         <tbody>
           <tr><th>Зрители  в кинотеатре /<span>(Доход в процентах)</span></th></tr>
-          <tr><td>&nbsp;&nbsp;&nbsp;500 000 <span>(20%)</span></td></tr>
-          <tr><td>1 000 000 <span>(50%)</span></td></tr>
-          <tr><td>1 500 000 <span>(75%)</span></td></tr>
-          <tr><td>2 000 000 <span>(100%)</span></td></tr>
-          <tr><td>2 500 000 <span>(120%)</span></td></tr>
-          <tr><td>3 000 000 <span>(140%)</span></td></tr>
-          <tr><td>4 000 000 <span>(180%)</span></td></tr>
-          <tr><td>5 000 000 <span>(220%)</span></td></tr>
-          <tr><td>6 000 000 <span>(280%)</span></td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;500 000 <span>(15%)</span></td></tr>
+          <tr><td>1 000 000 <span>(30%)</span></td></tr>
+          <tr><td>1 500 000 <span>(50%)</span></td></tr>
+          <tr><td>2 000 000 <span>(70%)</span></td></tr>
+          <tr><td>2 500 000 <span>(85%)</span></td></tr>
+          <tr><td>3 000 000 <span>(100%)</span></td></tr>
+          <tr><td>4 000 000 <span>(120%)</span></td></tr>
+          <tr><td>5 000 000 <span>(140%)</span></td></tr>
+          <tr><td>6 000 000 <span>(160%)</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -248,48 +248,48 @@ const Tab3 = () => (
         <table>
           <tbody>
             <tr><th>Главная роль</th></tr>
-            <tr><td>4 200 000</td></tr>
-            <tr><td>10 500 000</td></tr>
-            <tr><td>15 750 000</td></tr>
-            <tr><td>21 000 000</td></tr>
-            <tr><td>25 200 000</td></tr>
-            <tr><td>29 400 000</td></tr>
-            <tr><td>37 800 000</td></tr>
-            <tr><td>46 200 000</td></tr>
-            <tr><td>54 600 000</td></tr>
-            <tr><td>21 000 000</td></tr>
+            <tr><td>5 247 000</td></tr>
+            <tr><td>10 494 000</td></tr>
+            <tr><td>17 490 000</td></tr>
+            <tr><td>24 486 000</td></tr>
+            <tr><td>29 733 000</td></tr>
+            <tr><td>34 980 000</td></tr>
+            <tr><td>41 976 000</td></tr>
+            <tr><td>48 972 000</td></tr>
+            <tr><td>55 968 000</td></tr>
+            <tr><td>34 980 000</td></tr>
           </tbody>
         </table>
 
         <table>
           <tbody>
             <tr><th>Роль второго плана</th></tr>
-            <tr><td>1 400 000</td></tr>
-            <tr><td>3 500 000</td></tr>
-            <tr><td>5 250 000</td></tr>
-            <tr><td>7 000 000</td></tr>
-            <tr><td>8 400 000</td></tr>
-            <tr><td>9 800 000</td></tr>
-            <tr><td>12 600 000</td></tr>
-            <tr><td>15 400 000</td></tr>
-            <tr><td>18 200 000</td></tr>
-            <tr><td>7 000 000</td></tr>
+            <tr><td>1 749 000</td></tr>
+            <tr><td>3 498 000</td></tr>
+            <tr><td>5 830 000</td></tr>
+            <tr><td>8 162 000</td></tr>
+            <tr><td>9 911 000</td></tr>
+            <tr><td>11 660 000</td></tr>
+            <tr><td>13 992 000</td></tr>
+            <tr><td>16 334 000</td></tr>
+            <tr><td>18 656 000</td></tr>
+            <tr><td>11 660 000</td></tr>
           </tbody>
         </table>
 
         <table>
           <tbody>
             <tr><th>Эпизодическая роль</th></tr>
-            <tr><td>700 000</td></tr>
-            <tr><td>1 750 000</td></tr>
-            <tr><td>2 625 000</td></tr>
-            <tr><td>3 500 000</td></tr>
-            <tr><td>4 200 000</td></tr>
-            <tr><td>5 900 000</td></tr>
-            <tr><td>6 300 000</td></tr>
-            <tr><td>7 700 000</td></tr>
-            <tr><td>9 100 000</td></tr>
-            <tr><td>3 500 000</td></tr>
+            <tr><td>874 000</td></tr>
+            <tr><td>1 749 000</td></tr>
+            <tr><td>2 915 000</td></tr>
+            <tr><td>4 081 000</td></tr>
+            <tr><td>4 955 000</td></tr>
+            <tr><td>5 830 000</td></tr>
+            <tr><td>6 996 000</td></tr>
+            <tr><td>8 162 000</td></tr>
+            <tr><td>9 328 000</td></tr>
+            <tr><td>5 830 000</td></tr>
           </tbody>
         </table>
       </Slider>
@@ -307,11 +307,11 @@ const Tab4 = () => (
       <table>
         <tbody>
           <tr><th>Кол-во контактов <br/> с рекламой за <br/> первый год</th></tr>
-          <tr><td>Кинопрокат<span>(прогнозный уровень)</span></td></tr>
-          <tr><td>Онлайн<span>(Минимальный уровень)</span></td></tr>
+          <tr><td>Кинотеатры<span>(прогнозный уровень)</span></td></tr>
+          <tr><td>Интернет<span>(Минимальный уровень)</span></td></tr>
           <tr>
             <td>
-              1 эфир на тв
+              тв (Один выход)
               <span>
                 (Средний уровень,<br/> приведённый На 30 сек)
               </span>
@@ -329,7 +329,7 @@ const Tab4 = () => (
             <tr><td>7.5 млн</td></tr>
             <tr><td>62.5 млн</td></tr>
             <tr><td>35 млн</td></tr>
-            <tr><td>21 000 000</td></tr>
+            <tr><td>34 980 000</td></tr>
           </tbody>
         </table>
 
@@ -339,7 +339,7 @@ const Tab4 = () => (
             <tr><td>3 млн</td></tr>
             <tr><td>25 млн</td></tr>
             <tr><td>14 млн</td></tr>
-            <tr><td>7 000 000</td></tr>
+            <tr><td>11 660 000</td></tr>
           </tbody>
         </table>
 
@@ -349,7 +349,7 @@ const Tab4 = () => (
             <tr><td>1.5 млн</td></tr>
             <tr><td>12.5 млн</td></tr>
             <tr><td>7 млн</td></tr>
-            <tr><td>3 500 000</td></tr>
+            <tr><td>5 830 000</td></tr>
           </tbody>
         </table>
       </Slider>
@@ -358,9 +358,9 @@ const Tab4 = () => (
       <table>
         <tbody>
           <tr><th>Цена за 1 контакт <sup>1</sup></th></tr>
-          <tr><td>Этап 1 – кино | 58 коп</td></tr>
-          <tr><td>Этап 2 – кино + онлайн| 6 коп</td></tr>
-          <tr><td>Этап 3 – кино + онлайн + тв| 4 коп</td></tr>
+          <tr><td>Этап 1 – кино | 1.94 руб.</td></tr>
+          <tr><td>Этап 2 – кино + онлайн| 0.21 руб.</td></tr>
+          <tr><td>Этап 3 – кино + онлайн + тв| 0.14 руб.</td></tr>
         </tbody>
       </table>
     </div>

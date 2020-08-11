@@ -4,8 +4,19 @@ import {Link} from 'react-router-dom';
 //Images
 import make_appointment from 'assets/images/make_appointment.svg';
 import make_appointment_blink from 'assets/images/make_appointment_blink.svg';
+import mapIcon from 'mapIcon.svg';
 
 export default class Footer extends Component{
+
+  mapIconOptions = {
+    iconLayout: "default#image",
+    iconImageHref: mapIcon,
+  }
+
+  mapIconProps = {
+    hintContent: "Plan",
+  }
+
   render() {
     return(
       <Fragment>
@@ -52,13 +63,20 @@ export default class Footer extends Component{
             {/*map*/}
             <div>
               <YMaps>
-                <Map width="100%" height="100%" defaultState={{ center: [55.806525, 37.504681], zoom: 15 }}>
-                  <Placemark geometry={[55.806525, 37.504681]} />
+                <Map
+                  width="100%" height="100%"
+                  defaultState={{ center: [55.806525, 37.504681], zoom: 16 }}
+                >
+                  <Placemark geometry={[55.806525, 37.504681]} properties={this.mapIconProps} options={this.mapIconOptions} modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}/>
                 </Map>
               </YMaps>
             </div>
             {/*address*/}
-            <span>125080 Москва<br/> Волоколамское ш., д.1., стр.1, офис 709А</span>
+            <span>
+              <a href="https://yandex.ru/maps/-/CCQpaOWiDB" target="_blank">
+                125080 Москва<br/> Волоколамское ш., д.1, стр.1, офис 709А
+              </a>
+            </span>
           </div>
 
           <div className="footer_site-map">
@@ -69,8 +87,8 @@ export default class Footer extends Component{
               <li><a href="#about">Почему в кино</a></li>
               <li><a href="#cinema-lifespan">Жизненный цикл кино</a></li>
               <li><a href="#how-it-works">Как это работает</a></li>
-              <li><a href="#statistics">Статистика</a></li>
               <li><a href="#about-us">Кто мы</a></li>
+              <li><a href="#statistics">Статистика</a></li>
             </ul>
             <ul>
               <h3>Что снимаем</h3>

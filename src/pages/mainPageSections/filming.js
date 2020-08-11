@@ -18,8 +18,9 @@ const Filming = ({device}) => {
       <div className="filming-section_aside-wrapper">
         <article className="filming-section_aside">
           <Reference/>
-          <h3>Что снимаем?</h3>
-          <Projects className="filming-section_aside_projects"/>
+          <Projects limit={250} className="filming-section_aside_projects">
+            <h3>Что снимаем?</h3>
+          </Projects>
         </article>
       </div>
     </section>

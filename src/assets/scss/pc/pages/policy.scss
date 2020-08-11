@@ -1,0 +1,14 @@
+#data-use-policy{
+  height: max-content;
+  padding: get-vw(18px);
+  background: $sand;
+  color: $black;
+  border-radius: get-vw(8px);
+  border: get-vw(2px) solid $black;
+
+  h1{ @include bebas-64-bold; }
+  p{
+    margin-top: get-vw(18px);
+    @include helvetica-12-medium;
+  }
+}

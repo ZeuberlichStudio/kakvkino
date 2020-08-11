@@ -85,9 +85,9 @@ export default class StatsArticle3 extends Component{
 
             <div>
               <h3 className="bebas-25">
-                Ежегодно с 2014 года более 17 российских<br/>
-                фильмов собирает аудиторию<br/>
-                свыше 500 тыс. чел.
+                Ежегодно с 2014 года более <br/>
+                17 российских фильмов собирает <br/>
+                аудиторию свыше 500 тыс. чел.
               </h3>
               {
                 this.props.device === 'desktop' ?

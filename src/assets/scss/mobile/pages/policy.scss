@@ -1,0 +1,28 @@
+#data-use-policy{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: $sand;
+  color: $black;
+
+  h1{
+    width: 100vw;
+    height: get-m-vw(52px);
+    padding: 0 get-m-vw(20px);
+
+    background: $black;
+    color: $sand;
+    z-index: 1;
+    @include m-bebas-30-bold;
+    line-height: get-m-vw(52px);
+    letter-spacing: get-m-vw(-0.8px);
+  }
+
+  .data-use-policy-section_content{
+    flex-grow: 1;
+    padding: get-m-vw(18px);
+    overflow-y: scroll;
+    p{ @include m-helvetica-12-bold; }
+  }
+}

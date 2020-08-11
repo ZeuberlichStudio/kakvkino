@@ -18,7 +18,11 @@ export default class Animation extends Component{
 
     animation.addEventListener('enterFrame', () => {
       if( animation.currentFrame >= 240  && !container.classList.contains('dots')){
-        window.scrollTo(0, 0)
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'instant'
+        });
         wrapper.style.backgroundColor = 'transparent';
         container.classList.add('dots');
         setTimeout( () => container.classList.add('scaled'), 0 );

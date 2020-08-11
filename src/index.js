@@ -6,7 +6,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Router basename="/kakvkino">
+  <Router>
     <App/>
   </Router>
   , document.getElementById('root'));

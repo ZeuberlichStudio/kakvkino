@@ -1,6 +1,6 @@
 @keyframes play {
- 70%{ filter: drop-shadow(0 0 get-vw(7px) rgba(#9FBCFF, 0.85)); }
- 85%{ filter: drop-shadow(0 0 get-vw(15px) rgba(#9FBCFF, 0.85)); }
+ 50%{ filter: drop-shadow(0 0 get-vw(7px) rgba(#9FBCFF, 0.85)); }
+ 75%{ filter: drop-shadow(0 0 get-vw(15px) rgba(#9FBCFF, 0.85)); }
  100%{ filter: drop-shadow(0 0 get-vw(7px) rgba(#9FBCFF, 0.85)); }
 }
 
@@ -30,10 +30,7 @@
       top: get-vw(79px); left: get-vw(78px);
       background: url('~assets/images/make_appointment_play.svg') center / contain no-repeat;
       filter: drop-shadow(0 0 get-vw(7px) rgba(#9FBCFF, 0.85));
-      animation-name: play;
-      animation-play-state: running;
-      animation-duration: 2.5s;
-      animation-iteration-count: infinite;
+      animation: play 2.5s infinite;
       content: '';
     }
 
@@ -46,7 +43,7 @@
   a:hover{
     &::before{
       filter: drop-shadow(0 0 get-vw(20px) rgba(#9FBCFF, 1))!important;
-      animation-play-state: paused;
+      animation: none;
     }
   }
 
@@ -91,8 +88,10 @@ footer{
   &_block:nth-child(4){
     padding-top: get-vw(28px);
     grid-column: 1/3;
-    span:last-child{
+    & > span{
       display: inline-block;
+    }
+    & > span:last-child{
       margin-left: get-vw(8px);
     }
   }
