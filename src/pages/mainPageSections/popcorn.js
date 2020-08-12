@@ -6,7 +6,7 @@ import popcorn from 'assets/json/popcorn.json';
 
 //Section
 const Popcorn = ({device}) => (
-  <section id="cinema-lifespan" className="popcorn-section">
+  <section id="movie-lifecycle" className="popcorn-section">
     <h1>Жизненный цикл кино в 1й год</h1>
     <div className="popcorn-section_text-left">
       <h2>

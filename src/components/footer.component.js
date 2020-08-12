@@ -85,7 +85,7 @@ export default class Footer extends Component{
               <h3>Главная</h3>
               <li><a href="#title">О проекте</a></li>
               <li><a href="#about">Почему в кино</a></li>
-              <li><a href="#cinema-lifespan">Жизненный цикл кино</a></li>
+              <li><a href="#movie-lifecycle">Жизненный цикл кино</a></li>
               <li><a href="#how-it-works">Как это работает</a></li>
               <li><a href="#about-us">Кто мы</a></li>
               <li><a href="#statistics">Статистика</a></li>

@@ -25,7 +25,7 @@ export default class Title extends Component{
           <p className="helvetica-14-bold m-helvetica-12-bold">Рекламодатели становятся соинвесторами фильма и
             получают доход от будущего кинопроката</p>
           <h2 className="bebas-30 m-bebas-25">
-            <a href="#cinema-lifespan">
+            <a href="#movie-lifecycle">
               получите свыше <span className="marked">14 000 000</span> контактов<br/>
               с вашей рекламой в 1й год<br/>
               по стоимости <span className="marked">0.21 руб.</span> за контакт

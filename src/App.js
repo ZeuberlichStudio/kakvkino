@@ -19,7 +19,7 @@ import Policy from 'pages/policy';
 class App extends React.Component {
 
   componentDidMount() {
-    window.addEventListener('resize', this.getDevice);
+    window.addEventListener('resize', () => this.setState({device: this.getDevice()}));
   }
 
   componentDidUpdate() {
