@@ -32,7 +32,8 @@ class MainPage extends Component {
   }
 
   getUIColor = () => {
-    let aboutRect = document.getElementById('about').getBoundingClientRect();
+    let cinemaEfficiency = document.getElementById('cinema-efficiency');
+    let aboutRect = document.getElementById('about--article').getBoundingClientRect();
     let aboutRect2 = document.getElementById('about--aside').getBoundingClientRect();
     let headerRect =
     document.getElementById('header').getBoundingClientRect();
@@ -40,11 +41,10 @@ class MainPage extends Component {
     document.getElementById('pre-footer').getBoundingClientRect();
     let uiColor;
 
-    if( aboutRect.top <= headerRect.bottom/2 && aboutRect.bottom > headerRect.bottom/2 && aboutRect2.top > headerRect.bottom/2 ){
-      uiColor = 'light';
-      this.setState({ uiColor });
-    }
-    else if( aboutRect.top <= headerRect.bottom/2 && aboutRect.bottom > headerRect.bottom/2 && this.props.device !== 'mobile' ){
+    if( 
+      aboutRect.top <= 0 &&
+      aboutRect.bottom > headerRect.bottom/2
+    ){
       uiColor = 'light';
       this.setState({ uiColor });
     }
@@ -69,7 +69,7 @@ class MainPage extends Component {
         }
         <main id="content">
           <Title device={ this.props.device }/>
-          <About/>
+          <About isMobile={ this.props.device === 'mobile' ? true : false }/>
           <Popcorn device={ this.props.device }/>
           <HowItWorks device={ this.props.device }/>
           <Filming device={ this.props.device }/>

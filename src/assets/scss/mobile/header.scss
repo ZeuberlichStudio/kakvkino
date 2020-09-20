@@ -13,16 +13,16 @@ header#header{
   align-items: center;
 
   backdrop-filter: blur(8px);
-
+  color: $black;
   border-bottom: $black solid get-m-vw(2px);
 
   .logo{
-    width: get-m-vw(100px);
+    width: get-m-vw(110px);
     height: 100%;
 
     background-color: $black;
     mask-image: url('../../images/logo.svg');
-    mask-size: 98% auto;
+    mask-size: 94% auto;
     mask-position: center;
     mask-repeat: no-repeat;
   }

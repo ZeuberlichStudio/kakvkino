@@ -1,22 +1,64 @@
+.cinema-efficiency-section{
+  padding-bottom: get-m-vw(490px);
+  position: relative;
+}
+
+.cinema-efficiency-anchor{
+  height: calc(#{get-m-vw(735px)} + #{get-m-vw(490px)});
+  max-height: #{get-m-vw(735px + 490px)};
+  bottom: 0;
+  position: absolute;
+}
+
+#subtitles-wrapper {
+  pointer-events: none;
+  z-index: 2;
+
+  #subtitles-animation {
+    top: 0;
+    height: max-content;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    svg{
+      width: 100%!important;
+      height: auto!important;
+    }
+  }
+}
+
+#about-wrapper{
+  width: 100%;
+  height: calc(#{get-m-vw(735px)} * 2.5 + #{get-m-vw(490px)});
+  bottom: 0; left: 0;
+  position: absolute;
+}
+
 #about{
   width: 100vw;
   height: max-content;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  top:0;
+  position: sticky;
 }
 
 #about--article{
   width: 100%;
-  height: var(--vh);
+  height: #{get-m-vw(735px)};
   max-height: get-m-vw(735px);
-  padding: get-m-vw(60px) get-m-vw(20px) get-m-vw(40px) get-m-vw(20px);
+  padding: get-m-vw(64px) get-m-vw(20px) get-m-vw(40px) get-m-vw(20px);
 
   display: grid;
   grid-auto-flow: row;
   grid-template-rows:
-  max-content 1fr max-content;
+  max-content max-content;
   grid-template-columns: 1fr;
   justify-content: flex-start;
+  align-content: space-between;
   background: $black;
 
   background-image:
@@ -75,13 +117,18 @@
 .about--controls{
   align-self: flex-end;
 
-  h3{
-    opacity: 0.5;
+  h2{
     margin-left: get-m-vw(2px);
+    @include m-bebas-35-bold;
+
+    span{
+      display: block;
+      @include m-bebas-20-bold;
+    }
   }
 
   ul{
-    margin-top: get-m-vw(17px);
+    margin-top: get-m-vw(14px);
 
     display: grid;
     grid-auto-flow: column;

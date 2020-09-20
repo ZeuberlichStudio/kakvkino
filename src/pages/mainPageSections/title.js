@@ -21,24 +21,35 @@ export default class Title extends Component{
     return(
       <section id="title">
         <article className="dark">
-          <h1 className="bebas-64 m-bebas-30">Первая реклама в кино на правах инвестиций</h1>
-          <p className="helvetica-14-bold m-helvetica-12-bold">Рекламодатели становятся соинвесторами фильма и
-            получают доход от будущего кинопроката</p>
-          <h2 className="bebas-30 m-bebas-25">
-            <a href="#movie-lifecycle">
-              получите свыше <span className="marked">14 000 000</span> контактов<br/>
-              с вашей рекламой в 1й год<br/>
-              по стоимости <span className="marked">0.21 руб.</span> за контакт
-            </a>
+          <h2>
+            ПЕРВАЯ В МИРЕ РЕКЛАМА <br/>
+            С ВОЗВРАТОМ БЮДЖЕТА
           </h2>
+          <h1>Реклама в КИНО на правах инвестиций</h1>
+
+          <p>
+            Рекламодатели становятся соинвесторами фильма и <br/>
+            получают возврат рекламного бюджета
+          </p>
+
+          <p>
+            <a href="#movie-lifecycle">
+              Влюбляйте в свой бренд <br className="br-m"/>
+              <span className="marked">14 000 000+</span> зрителей одного фильма <br/>
+              по цене за 1 контакт <span className="marked">0.26 руб. и менее</span>
+            </a>
+          </p>
+
           <div className="links-container bebas-20 m-bebas-20 light">
-            <div onClick={ e => this.goToAnchor(e) } data-link="about">Почему в кино</div>
-            <div onClick={ e => this.goToAnchor(e) } data-link="how-it-works">Как это работает</div>
+            <a href="#cinema-efficiency">эффективность кино</a>
+            <a href="#how-it-works">Как это работает</a>
           </div>
+
+          <Forbes/>
         </article>
         <div className="title--aside-wrapper">
           <article className="title--aside">
-            <h2 className="bebas-30 m-bebas-30">Чем Больше зрителей в кино, тем выше доходность</h2>
+            <h2 className="bebas-30 m-bebas-30">Чем Больше зрителей в кино, <br/> Тем выше возврат бюджета</h2>
             <p className="helvetica-14-bold m-helvetica-12-bold">
               Принцип финансовой модели
               на примере кинокартин:
@@ -55,7 +66,6 @@ export default class Title extends Component{
             </span>
           </article>
         </div>
-        <Forbes/>
       </section>
     )
   }

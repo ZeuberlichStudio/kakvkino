@@ -51,7 +51,7 @@ class App extends React.Component {
     return (
       <Fragment>
         { device !== 'mobile' && <Counter/> }
-        { device !== 'mobile' && !pathIncludesAnchor && <Animation/> }
+        { device !== 'mobile' && !pathIncludesAnchor && <Animation location={this.props.location}/> }
 
         <Route path="/">
           <MainPage device={device}/>

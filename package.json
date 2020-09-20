@@ -15,7 +15,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-yandex-maps": "^4.2.0",
-    "resolve-url-loader": "^3.1.1"
+    "resolve-url-loader": "^3.1.1",
+    "validator": "^13.1.1"
   },
   "scripts": {
     "predeploy": "npm run build",

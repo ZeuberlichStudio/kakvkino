@@ -1,37 +1,57 @@
+.br-pc{ display: none; }
+
 section#title{
   width: 100vw;
   padding: 0 get-m-vw(20px);
   position: relative;
+
+  &::after{
+    width: 100vw;
+    height: 10vw;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba($sand, 0) 0%, $sand 90%);
+    content: '';
+  }
 }
 
 section#title >
 article{
-  padding-top: get-m-vw(250px);
-  padding-bottom: get-m-vw(142px);
+  padding-top: get-m-vw(170px);
+  padding-bottom: get-m-vw(170px);
+  position: relative;
+  z-index: 3;
 
-  h1{
-    width: get-m-vw(280px);
-    letter-spacing: get-m-vw(-0.6px);
-    @include m-bebas-35-bold;
+  & > :nth-child(1){
+    width: max-content;
+    @include m-bebas-42-bold;
   }
 
-  p{
-    width: get-m-vw(234px);
-    letter-spacing: get-m-vw(-0.8px);
+  & > :nth-child(2){
+    margin-top: get-m-vw(4px);
+    width: max-content;
+    @include m-bebas-22-bold;
   }
 
-  h2{
-    margin-top: get-m-vw(35px);
+  & > :nth-child(3){
+    margin-top: get-m-vw(8px);
+    @include m-helvetica-12-bold;
+  }
+
+  & > :nth-child(4){
+    margin-top: get-m-vw(32px);
+    @include m-helvetica-12-bold;
   }
 
   .links-container{
-    margin-top: get-m-vw(10px);
+    margin-top: get-m-vw(34px);
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     grid-column-gap: get-m-vw(5px);
 
-    div{
+    a{
       width: max-content;
       height: get-m-vw(32px);
       padding: 0 get-m-vw(14px);
@@ -69,7 +89,7 @@ article.title--aside{
 #forbes{
   width: max-content;
   height: get-m-vw(26px);
-  left: get-m-vw(20px); top: get-m-vw(520px);
+  margin-top: get-m-vw(24px);
 
   position: absolute;
   display: flex;

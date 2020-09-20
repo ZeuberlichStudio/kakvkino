@@ -23,6 +23,7 @@ const DialogWindow = ({children, text, click, bottom}) => {
 
   function toggleWindow(e, skip) {
     if(
+      windowRef.current &&
       windowRef.current.contains(e.target) &&
       !skip
     ) return;

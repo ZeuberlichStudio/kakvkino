@@ -49,13 +49,13 @@ export default class Footer extends Component{
 
             <div className="footer_contact-info_block">
               <h2>Отдел продаж</h2>
-              <span>+7 (909) 323 44-43</span>
-              <span>Sales<span>@Kakvkino.Group</span></span>
+              <span>+7 (495) 147 47-75</span>
+              <span>kakvkino<span>@planagency.ru</span></span>
             </div>
 
             <div className="footer_contact-info_buttons">
-              <a href="tel: +7 (909) 323 44-43">Позвонить</a>
-              <a href="mailto: SalesManager@Kakvkino.Group">Написать</a>
+              <a href="tel: +7 (495) 147 47-75">Позвонить</a>
+              <a href="mailto: kakvkino@planagency.ru">Написать</a>
             </div>
           </div>
 
@@ -84,7 +84,7 @@ export default class Footer extends Component{
             <ul>
               <h3>Главная</h3>
               <li><a href="#title">О проекте</a></li>
-              <li><a href="#about">Почему в кино</a></li>
+              <li><a href="#cinema-efficiency">Эффективность кино</a></li>
               <li><a href="#movie-lifecycle">Жизненный цикл кино</a></li>
               <li><a href="#how-it-works">Как это работает</a></li>
               <li><a href="#about-us">Кто мы</a></li>
@@ -95,6 +95,11 @@ export default class Footer extends Component{
               <li><a href="#filming">Фильмы в разработке</a></li>
             </ul>
           </div>
+
+          <span id="copyright">
+            <span>© коммуникационное агентство ПЛАН, 2020</span>
+            <span>Использование материалов сайта допустимо только с разрешения правообладателя.</span>
+          </span>
         </footer>
       </Fragment>
     )

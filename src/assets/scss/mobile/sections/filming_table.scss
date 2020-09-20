@@ -65,11 +65,6 @@
 
 .filming-section_table{
 
-  .dialog-window_content-wrapper{
-    transform: translateX(-17%);
-    &::after{ left: get-m-vw(50px); right: unset; }
-  }
-
   &_reference{
     padding: get-m-vw(24px) get-m-vw(16px);
 
@@ -107,6 +102,11 @@
       border-right: get-m-vw(2px) solid $black;
       background: $sand;
 
+      .dialog-window_content-wrapper{
+        transform: translateX(-17%);
+        &::after{ left: get-m-vw(50px); right: unset; }
+      }
+
       tbody{
         display: grid;
         grid-auto-rows: max-content;
@@ -134,6 +134,12 @@
     &_right{
       width: 50%;
       overflow-x: hidden;
+
+      .dialog-window_content-wrapper{
+        max-width: get-m-vw(120px);
+        backdrop-filter: none;
+        background: #dfdcd7; 
+      }
 
       .slide-0 table{
         border-color: #FF6969;
@@ -236,6 +242,14 @@
             @include m-helvetica-10-bold;
           }
         }
+      }
+
+      .notice{
+        left: get-m-vw(8px);
+        bottom: get-m-vw(10px);
+        position: absolute;
+        @include m-helvetica-10-bold;
+        color: rgba($black, 0.75);
       }
     }
 

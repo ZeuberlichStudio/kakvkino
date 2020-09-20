@@ -61,6 +61,7 @@ input, button{
   @import './assets/scss/pc/sections/about_us.scss';
   @import './assets/scss/pc/sections/filming.scss';
   @import './assets/scss/pc/tabs.scss';
+  @import './assets/scss/pc/animate.scss';
 
   @import './assets/scss/pc/counter.scss';
   @import './assets/scss/pc/animation.scss';
@@ -79,7 +80,6 @@ input, button{
 @media screen and (max-width: 1024px){
 
   body{ -webkit-text-size-adjust: none; }
-  #root{overflow: hidden;}
 
   @import './assets/scss/mobile/mixins/typography.scss';
   @import './assets/scss/mobile/header.scss';
@@ -94,6 +94,7 @@ input, button{
   @import './assets/scss/mobile/sections/filming.scss';
   @import './assets/scss/mobile/sections/filming_table.scss';
   @import './assets/scss/mobile/sections/about_us.scss';
+  @import './assets/scss/mobile/animate.scss';
 
   @import './assets/scss/mobile/form.scss';
   @import './assets/scss/mobile/pages/movies.scss';

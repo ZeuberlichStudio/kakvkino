@@ -4,6 +4,19 @@
  100%{ filter: drop-shadow(0 0 get-vw(7px) rgba(#9FBCFF, 0.85)); }
 }
 
+#copyright{
+  position: absolute;
+  left: get-vw(10px);
+  bottom: get-vw(10px);
+
+  span{
+    @include bebas-20-bold;
+    opacity: .25;
+  }
+
+  span:nth-child(2){ margin-left: get-vw(42px); }
+}
+
 #pre-footer{
   width: 100vw;
   height: max-content;

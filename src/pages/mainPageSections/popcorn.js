@@ -2,6 +2,7 @@ import React from 'react';
 //Images
 import online_pricing from 'assets/images/online_pricing.svg';
 //Animation data
+import lottie from 'lottie-web';
 import popcorn from 'assets/json/popcorn.json';
 
 //Section
@@ -10,13 +11,12 @@ const Popcorn = ({device}) => (
     <h1>Жизненный цикл кино в 1й год</h1>
     <div className="popcorn-section_text-left">
       <h2>
-        Кино обеспечивает<br/>
-        Длительный охват<br/>
+        ЭФФЕКТИВНОСТЬ КИНО 
         <span>
-          и более эффективную стоимость <br className="m-br"/>
-          контакта <br className="pc-br"/>
-          по сравнению <br className="m-br"/>
-          с аналогами
+          длительный охват <br className="m-br"/>
+          и оптимизация стоимости <br className="pc-br"/>
+          контакта <br className="m-br"/>
+          по сравнению с аналогами
         </span>
       </h2>
 
@@ -24,7 +24,7 @@ const Popcorn = ({device}) => (
         <h3>
           Цена одного киноконтакта <br className="pc-br"/>
           в интернете <br className="m-br"/>
-          на <span>53% выгоднее</span>, <br className="pc-br"/>
+          на <span>53% выгоднее</span>, <br/>
           чем в видео на Youtube
         </h3>
         <img src={online_pricing} alt=""/>
@@ -33,17 +33,16 @@ const Popcorn = ({device}) => (
       <div className="popcorn-section_text-left_block">
         <h3>
           Цена одного киноконтакта <br className="pc-br"/>
-          в кинотеатре на <span>20% выгоднее</span>, <br className="pc-br"/>
-          чем в ролике <br className="m-br"/>
-          перед сеансом
+          в кинотеатре на <span>20% выгоднее</span>, <br/>
+          чем в ролике перед сеансом
         </h3>
         <div><span>Реклама в кино</span><span></span><span>3.89 руб.<sup>2</sup></span></div>
         <div><span>Ролик перед сеансом</span><span></span><span>4.83 руб.</span></div>
       </div>
 
       <div className="popcorn-section_text-left_notice">
-        <span><sup>2</sup>До вычета инвестиционной доходности</span>
-        <span><sup>4</sup>Кинотеатры + интернет с учётом инвестиционной доходности</span>
+        <span><sup>2</sup>Без учета возврата от кинопроката</span>
+        <span><sup>4</sup>С учетом возврата от кинопроката</span>
       </div>
     </div>
 
@@ -96,11 +95,11 @@ const PopcornAnimation = ({device}) => {
 
   React.useEffect(() => {
     const container = document.getElementById('popcorn-container');
-    const animation = window.lottie.loadAnimation({
+    const animation = lottie.loadAnimation({
       container: container,
       loop: false,
       autoplay: false,
-      renderer: 'svg',
+      renderer: 'canvas',
       animationData: popcorn,
     });
 

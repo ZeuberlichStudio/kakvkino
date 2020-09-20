@@ -4,6 +4,7 @@ import start from '../assets/json/start.json';
 export default class Animation extends Component{
 
   componentDidMount() {
+    console.log(this.props)
     document.documentElement.style.overflow = 'hidden';
     let wrapper = document.getElementById('animation-wrapper');
     let container = document.getElementById('animation');
@@ -28,7 +29,7 @@ export default class Animation extends Component{
         setTimeout( () => container.classList.add('scaled'), 0 );
         setTimeout( () => container.style.opacity = 0 , 2500 );
         setTimeout( () =>{
-          document.documentElement.style.overflowY = 'scroll';
+          if( !this.props.location.pathname.includes('movies') ) document.documentElement.style.overflowY = "scroll";
           wrapper.style.display = 'none';
         }, 4500 );
       }

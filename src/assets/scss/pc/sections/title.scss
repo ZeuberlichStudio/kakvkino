@@ -1,3 +1,5 @@
+.br-m{ display: none; }
+
 section#title{
   width: 100vw;
   min-height: get-vw(645px);
@@ -13,33 +15,49 @@ section#title{
   background-position: center;
   background-repeat: no-repeat;
 
+  &::after{
+    width: 100vw;
+    height: 3vw;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba($sand, 0) 0%, $sand 95%);
+    content: '';
+  }
+
   article:not(.title--aside){
     padding: get-vh(216px) get-vw(678px) 0 get-vw(120px);
     flex-grow: 1;
 
 
     & > :nth-child(1){
-      width: get-vw(487px);
+      width: max-content;
+      @include bebas-64-bold;
     }
     & > :nth-child(2){
-      width: get-vw(366px);
-      margin-top: get-vw(-8px);
+      margin-top: get-vw(-1px);
+      @include bebas-30-bold;
     }
     & > :nth-child(3){
-      width: get-vw(394px);
-      margin-top: get-vw(60px);
+      margin-top: get-vw(4px);
+      @include helvetica-14-bold;
     }
+    & > :nth-child(4){
+      margin-top: get-vw(54px);
+      @include helvetica-14-bold;
+    }
+
 
     .links-container{
       height: get-vw(32px);
-      margin-top: get-vw(18px);
+      margin-top: get-vw(54px);
 
       display: grid;
       grid-auto-flow: column;
       grid-auto-columns: max-content;
       grid-column-gap: get-vw(12px);
 
-      div{
+      a{
         padding: 0 get-vw(15px);
         padding-top: get-vw(7px);
 
@@ -114,9 +132,8 @@ section#title{
 #forbes{
   width: max-content;
   height: get-vw(26px);
-  left: get-vw(120px); bottom: get-vw(20px);
+  margin-top: get-vw(18px);
 
-  position: absolute;
   display: flex;
   align-items: flex-start;
 
@@ -143,7 +160,7 @@ section#title{
   width: get-vw(450px);
   padding: get-vw(20px);
   right: get-vw(0px); left: get-vw(410px);
-  bottom: get-vw(190px);
+  bottom: get-vw(210px);
 
   position: absolute;
 

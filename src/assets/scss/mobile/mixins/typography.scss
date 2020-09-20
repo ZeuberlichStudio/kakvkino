@@ -1,3 +1,17 @@
+@mixin m-bebas-58-bold {
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-m-vw(58px);
+  line-height: get-m-vw(58px);
+}
+
+@mixin m-bebas-42-bold {
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-m-vw(42px);
+  line-height: get-m-vw(42px);
+}
+
 @mixin m-bebas-35-bold {
   font-family: 'Bebas Neue';
   font-weight: normal;
@@ -45,6 +59,13 @@
   font-weight: normal;
   font-size: get-m-vw(14px);
   line-height: get-m-vw(14px);
+}
+
+@mixin m-helvetica-18-bold {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: get-m-vw(18px);
+  line-height: get-m-vw(20px);
 }
 
 @mixin m-helvetica-14-bold {

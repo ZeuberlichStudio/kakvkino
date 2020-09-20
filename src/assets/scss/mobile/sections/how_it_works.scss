@@ -1,22 +1,25 @@
-.section-how-it-works{ padding-top: get-m-vw(52px); }
+.section-how-it-works{ 
+  padding-top: get-m-vw(52px); 
+  background: linear-gradient($sand 0%, $sand 25%, rgba(255, 250, 236, 0) 100%);
+}
 
 .section-how-it-works_text-left{
+
   h1{ @include m-bebas-30-bold; }
   p{ @include m-helvetica-12-bold; }
   h1, p{ padding: 0 get-m-vw(20px); }
   h2{
     padding-left: get-m-vw(32px);
-    margin-top: get-m-vw(50px);
+    margin-top: get-m-vw(34px);
     @include m-bebas-22-bold;
     position: relative;
     z-index: 2;
   }
 
   img{
-    width: 100%;
-    margin-top: get-m-vw(-108px);
+    width: get-m-vw(373px);
+    margin-top: get-m-vw(34px);
     display: block;
-    background: linear-gradient(rgba(255, 250, 236, 0) 0%, $sand 12%, $sand 90%, rgba(255, 250, 236, 0) 100%);
   }
 }
 

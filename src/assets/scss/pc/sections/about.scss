@@ -1,11 +1,49 @@
 .pc-hide{ display: none; }
 
+.cinema-efficiency-section{
+  position: relative;
+}
+
+.cinema-efficiency-anchor{
+  min-height: get-vw(640px);
+  max-height: get-vw(800px);
+  height: 100vh;
+  bottom: 0;
+  position: absolute;
+}
+
+#subtitles-wrapper {
+  pointer-events: none;
+  #subtitles-animation {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    svg, canvas{
+      width: 100%!important;
+      height: auto!important;
+      overflow: hidden;
+    }
+  }
+}
+
+#about-wrapper{
+  position: absolute;
+  bottom: 0;
+  height: 200vh;
+}
+
 #about{
   width: 100vw;
   min-height: get-vw(640px);
   max-height: get-vw(800px);
   height: 100vh;
-
+  top:0;
+  position: sticky;
   display: flex;
   justify-content: flex-end;
 
@@ -18,7 +56,7 @@
    url('~assets/images/about_bg_3.jpg');
   background-size: get-vw(320px) auto, 100vw auto, 100vw auto, 100vw auto;
   background-position:
-   left top,
+    left top,
    left calc(0vw - var(--bg-offset, 0vw)) top,
    left calc(100vw - var(--bg-offset, 0vw)) top,
    left calc(200vw - var(--bg-offset, 0vw)) top;
@@ -40,21 +78,18 @@
   height: 100%;
   padding: get-vw(66px) get-vw(14px) get-vw(86px) get-vw(120px);
 
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-rows:
-  max-content 1fr
-  max-content;
-  grid-template-columns: 1fr;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  .text-intro{
-    width: get-vw(578px);
-    justify-self: flex-end;
-    text-align: right;
+  // .text-intro{
+  //   width: get-vw(578px);
+  //   justify-self: flex-end;
+  //   text-align: right;
 
-    p{ margin-top: get-vw(-6px);}
-  }
+  //   p{ margin-top: get-vw(-6px);}
+  // }
+
   .text-main-wrapper{
     transition: 0.5s;
   }
@@ -98,9 +133,15 @@
 }
 
 .about--controls{
-  align-self: flex-end;
-
-  h3{ margin-left: get-vw(-1px); }
+  h2{ 
+    margin-left: get-vw(-1px); 
+    @include bebas-64-bold;
+    span{ 
+      margin-top: get-vw(-4px);
+      display: block;
+      @include bebas-30-bold; 
+    }
+  }
 
   ul{
     margin-top: get-vw(24px);

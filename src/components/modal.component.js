@@ -8,7 +8,7 @@ const ModalWrapper = ({children, device}) => {
   const closeRef = (e) => close(e);
 
   useEffect(() => {
-    document.documentElement.style.overflow = 'hidden';
+    document.documentElement.style.overflowY = 'hidden';
     document.addEventListener('keyup', closeRef);
   }, []);
 

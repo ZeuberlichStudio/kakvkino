@@ -9,7 +9,7 @@ section.popcorn-section{
 
   h1{
     left: get-vw(536px);
-    top: get-vw(644px);
+    bottom: get-vw(50px);
     position: absolute;
     @include helvetica-14-bold;
   }
@@ -18,7 +18,7 @@ section.popcorn-section{
 }
 
 .popcorn-section_text-left{
-  padding: get-vw(40px) 0 get-vw(100px) get-vw(120px);
+  padding: get-vw(82px) 0 get-vw(100px) get-vw(120px);
   display: grid;
   grid-auto-rows: max-content;
   grid-row-gap: get-vw(14px);
@@ -26,6 +26,7 @@ section.popcorn-section{
   h2{
     @include bebas-64-bold;
     span{
+      margin-top: get-vw(-8px);
       display: block;
       @include bebas-30-bold;
       letter-spacing: get-vw(-0.8px);
@@ -80,7 +81,7 @@ section.popcorn-section{
 
   &_notice{
     left: get-vw(120px);
-    top: get-vw(622px);
+    bottom: get-vw(32px);
     position: absolute;
 
     span{

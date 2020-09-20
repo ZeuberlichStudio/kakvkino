@@ -27,6 +27,8 @@
     grid-auto-rows: max-content;
     grid-gap: get-vw(14px) get-vw(20px);
 
+    hr{ display: none; }
+
     input{
       width: 100%;
       padding-left: get-vw(4px);
@@ -42,7 +44,7 @@
     button{
       grid-column: 1/2;
       margin-top: get-vw(10px);
-      width: max-content;
+      width: 100%;
       height: get-vw(32px);
       padding: 0 get-vw(15px);
       border-radius: get-vw(3px);
@@ -53,10 +55,11 @@
   }
 
   &_policy{
-    left: get-vw(130px);
-    bottom: get-vw(24px);
+    width: 45%;
+    right: get-vw(10px);
+    bottom: get-vw(20px);
     position: absolute;
-    @include helvetica-12-bold;
+    @include helvetica-10-bold;
     opacity: 0.75;
   }
 

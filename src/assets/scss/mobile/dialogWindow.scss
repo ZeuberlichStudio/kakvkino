@@ -6,11 +6,11 @@
 .dialog-window_close{
   width: get-m-vw(16px);
   height: get-m-vw(16px);
-  right: get-m-vw(5px); top: get-m-vw(5px);
+  right: get-m-vw(8px); top: get-m-vw(8px);
   display: block;
   position: absolute;
   mask: url('~assets/images/close.svg') center / cover no-repeat;
-  background: $sand;
+  background: $black;
   z-index: 2;
 }
 
@@ -27,7 +27,7 @@ u.dialod-trigger{
   transform: translateX(-50%);
   bottom: calc(100% + #{get-m-vw(10px)});
   position: absolute;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(get-m-vw(8px));
   color: $black;
   border: get-m-vw(2px) solid $black;
   border-radius: get-m-vw(10px);
@@ -48,7 +48,8 @@ u.dialod-trigger{
     width: 0; height: 0;
     left: 0; right: 0;
     margin: auto;
-    bottom: get-m-vw(-10px);
+    bottom: 0;
+    transform: translateY(104%);
     position: absolute;
     border-top: get-m-vw(10px) solid $black;
     border-left: get-m-vw(10px) solid transparent;
@@ -61,8 +62,9 @@ u.dialod-trigger{
     bottom: unset;
 
     &::after{
-      top: get-m-vw(-10px);
+      top: 0;
       bottom: unset;
+      transform: translateY(-104%);
       border-top: 0;
       border-bottom: get-m-vw(10px) solid $black;
     }

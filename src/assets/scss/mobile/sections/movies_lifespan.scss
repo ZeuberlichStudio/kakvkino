@@ -3,14 +3,13 @@ section.popcorn-section{
   position: relative;
   h1{ display: none; }
   br.pc-br{ display: none; }
-  background:
-  linear-gradient($sand 95%, rgba(255, 250, 236, 0) 100% );
+  background: $sand;
 }
 
 .popcorn-section_text-right{
   width: 100%;
   padding: get-m-vw(10px);
-  left: 0; top: get-m-vw(176px);
+  left: 0; top: get-m-vw(146px);
   position: absolute;
   display: grid;
   grid-auto-rows: max-content;
@@ -86,13 +85,15 @@ section.popcorn-section{
 }
 
 .popcorn-section_text-left{
+
+
   h2{
     padding-left: get-m-vw(10px);
     @include m-bebas-35-bold;
     span{
       display: block;
       @include m-bebas-20-bold;
-      //letter-spacing: get-m-vw(-0.8px);
+      letter-spacing: get-m-vw(-0.8px);
     }
   }
 
@@ -144,7 +145,7 @@ section.popcorn-section{
   }
 
   &_block:nth-child(2){
-    margin-top: get-m-vw(500px);
+    margin-top: get-m-vw(510px);
     background: rgba(#A99AF5, 0.35);
   }
 
@@ -166,7 +167,7 @@ section.popcorn-section{
 #popcorn-static{
  width: 100%;
  height: get-m-vw(558px);
- left: 0; top: get-m-vw(110px);
+ left: 0; top: get-m-vw(90px);
  position: absolute;
  background: url('~assets/images/mobile/popcorn.svg') center / 100% auto no-repeat;
 }

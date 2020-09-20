@@ -1,6 +1,7 @@
-.form-wrapper{
-  width: get-m-vw(230px);
-  height: get-m-vw(296px);
+.dreamcast-wrapper{
+  width: get-m-vw(220px);
+  height: max-content;
+  padding-bottom: get-m-vw(28px);
   left: get-m-vw(20px);
   top: get-m-vw(310px);
 
@@ -9,7 +10,7 @@
   z-index: 2;
 }
 
-#form{
+#dreamcast_form{
   padding: get-m-vw(10px) get-m-vw(24px) 0 0;
 
   display: grid;
@@ -23,6 +24,7 @@
     padding-left: get-m-vw(3px);
     display: block;
     color: $black;
+    @include m-bebas-14-bold;
   }
   ::placeholder{
     opacity: 0.6;
@@ -36,6 +38,20 @@
     background-color: $black;
     border: none;
   }
+
+  span {
+    @include m-helvetica-12-medium;
+    letter-spacing: get-m-vw(-0.5px);
+    color: rgba($black, .6);
+
+    a { 
+      line-height: get-m-vw(20px);
+      font-weight: 700;
+      display: block;
+      color: rgba($black, 1);
+    }
+  }
+
   button{
     width: 100%;
     height:  get-m-vw(32px);
@@ -47,5 +63,6 @@
 
     background-color: $black;
     color: $sand;
+    @include m-bebas-20-bold;
   }
 }

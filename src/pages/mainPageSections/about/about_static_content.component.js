@@ -35,9 +35,11 @@ export default class AboutStaticContent extends Component{
             activeSlide === 1 ? "m-bg-1" :
             activeSlide === 2 ? "m-bg-2" : null}`
           }>
-          <TextIntro/>
           <div className="about--controls">
-            <h3 className="bebas-30 m-bebas-30">Потому что кино формирует:</h3>
+            <h2>
+              ЭФФЕКТИВНОСТЬ КИНО
+              <span>влюблять в бренд и формировать:</span>
+            </h2>
             <ul id="about--buttons" className="bebas-20 m-bebas-14 animated">
               <li onClick={ e => this.slideChange(e) }
               data-goto="0"

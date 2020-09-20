@@ -49,6 +49,8 @@ section#make-appointment{
   grid-auto-rows: max-content;
   grid-row-gap: get-m-vw(8px);
 
+  hr{ display: none; }
+
   input{
     -webkit-appearance: none;
     height: get-m-vw(28px);

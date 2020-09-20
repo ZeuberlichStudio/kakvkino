@@ -55,15 +55,15 @@ export default class Contacts extends Component{
           <div className="person">
             <h2 className="vh-bebas-30">Отдел продаж</h2>
             <h3 className="vh-helvetica-14-bold opacity-075">руководитель отдела продаж</h3>
-            <span className="vh-bebas-20">+7 (909) 323 44-43</span>
+            <span className="vh-bebas-20">+7 (495) 147 47-75</span>
             <span className="vh-bebas-20">Sales<span className="opacity-05">@Kakvkino.Group</span></span>
           </div>
 
           <div className="buttons">
-            <a href="tel: +7 (909) 323 44-43" className="vh-bebas-20">
+            <a href="tel: +7 (495) 147 47-75" className="vh-bebas-20">
               Позвонить
             </a>
-            <a href="mailto: SalesManager@Kakvkino.Group" className="vh-bebas-20">
+            <a href="mailto: kakvkino@planagency.ru" className="vh-bebas-20">
               Написать
             </a>
           </div>

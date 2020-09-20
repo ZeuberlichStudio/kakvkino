@@ -1,3 +1,10 @@
+@mixin bebas-80-bold{
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+  font-size: get-vw(80px);
+  line-height: get-vw(80px);
+}
+
 @mixin bebas-64-bold{
   font-family: 'Bebas Neue';
   font-weight: normal;
@@ -45,6 +52,13 @@
   font-weight: normal;
   font-size: get-vw(14px);
   line-height: get-vw(14px);
+}
+
+@mixin helvetica-20-bold{
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: get-vw(20px);
+  line-height: get-vw(20px);
 }
 
 @mixin helvetica-14-bold{

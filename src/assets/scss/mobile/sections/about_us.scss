@@ -33,10 +33,13 @@ section#about-us{
         color: $sand;
         overflow: hidden;
 
+        &:nth-child(1) > a { top: get-m-vw(34px); }
+        &:nth-child(2) > a { top: get-m-vw(14px); }
+
         & > a{
           width: max-content;
           margin: auto;
-          top: get-m-vw(34px);
+          top: get-m-vw(14px);
           left: 0; right: 0;
           position: absolute;
         }

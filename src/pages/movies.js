@@ -58,8 +58,8 @@ export default class Movies extends Component{
 
   state = {
     movies: [],
-    orderBy: '',
-    order: 1,
+    orderBy: 'releaseDate',
+    order: -1,
     filtersOpen: 0,
     year: 0,
     by: '',
